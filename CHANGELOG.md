@@ -1,3 +1,8 @@
+## 1.0.1 (build 82) — Rating prompt
+
+- Weekdot asks for an App Store rating at a quiet moment: the first time 4 hours after first use on a device, after that at most once a week.
+- Only a few seconds after opening, never on the welcome screen or during the splash, never while an event is being edited or a sheet is open, and only when there is at least one event in your calendars.
+
 ## 1.0.0 (build 62) — Alert fixes
 
 - Fixed: tapping an alert crashed Weekdot. iOS calls the notification handler on a background thread; Weekdot now handles taps and actions on the main thread, so tapping opens the event (with its day behind it).

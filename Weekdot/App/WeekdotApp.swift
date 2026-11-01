@@ -22,6 +22,7 @@ struct WeekdotApp: App {
                 .onOpenURL { url in handle(url) }
                 .onAppear {
                     if ScreenshotMode.isActive { prepareScreenshot() }
+                    else { ReviewPrompter.markFirstUse() }
                     applyTimeZone()
                     NotificationScheduler.setUp(store: store)
                     HomeyService.shared.calendarStore = store

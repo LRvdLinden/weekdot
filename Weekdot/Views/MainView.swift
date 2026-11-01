@@ -62,6 +62,7 @@ struct MainView: View {
         } message: {
             Text(store.lastError ?? "")
         }
+        .reviewPrompt()
     }
 
     private var calendarScreen: some View {
