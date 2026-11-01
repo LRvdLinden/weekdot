@@ -7,6 +7,7 @@ import html, json, os
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 W = json.load(open(os.path.join(ROOT, "tools", "i18n", "source.json")))["web"]
 TESTFLIGHT = "https://testflight.apple.com/join/kaFEvrXd"
+APPSTORE = "https://apps.apple.com/app/weekdot/id6826670273"
 COMMUNITY = "https://community.homey.app/t/app-pro-weekdot/161566"
 
 def e(k):
@@ -150,7 +151,7 @@ page = f'''<!doctype html>
     <section class="sp-block sp-steps" data-hide-on-search>
       <h2 data-i18n="hs.start.h">{e("hs.start.h")}</h2>
       <ol>
-        <li><span class="sp-num">1</span><b data-i18n="hs.st1.t">{e("hs.st1.t")}</b><p data-i18n="hs.st1.d">{e("hs.st1.d")}</p><a class="sp-more" href="{TESTFLIGHT}" target="_blank" rel="noopener"><span data-i18n="hs.st.cta">{e("hs.st.cta")}</span>{svg(EXT)}</a></li>
+        <li><span class="sp-num">1</span><b data-i18n="hs.st1.t">{e("hs.st1.t")}</b><p data-i18n="hs.st1.d">{e("hs.st1.d")}</p><a class="sp-more" href="{APPSTORE}" target="_blank" rel="noopener"><span data-i18n="hs.st.store">{e("hs.st.store")}</span>{svg(EXT)}</a></li>
         <li><span class="sp-num">2</span><b data-i18n="hs.st2.t">{e("hs.st2.t")}</b><p data-i18n="hs.st2.d">{e("hs.st2.d")}</p></li>
         <li><span class="sp-num">3</span><b data-i18n="hs.st3.t">{e("hs.st3.t")}</b><p data-i18n="hs.st3.d">{e("hs.st3.d")}</p></li>
       </ol>
