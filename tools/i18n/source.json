@@ -704,7 +704,11 @@
   "Linked",
   "Details",
   "Homey gave Weekdot too few permissions. Sign in with Homey again.",
-  "This Homey is already linked with another Weekdot. Unlink it in the settings of the Weekdot app on your Homey."
+  "This Homey is already linked with another Weekdot. Unlink it in the settings of the Weekdot app on your Homey.",
+  "Discover",
+  "More Apps by the Developer",
+  "Apps for iPhone, iPad, Apple TV and Homey",
+  "Visit"
  ],
  "plist": [
   "Weekdot shows, creates and edits the events in your calendars.",

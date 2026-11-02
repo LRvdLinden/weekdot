@@ -8,6 +8,8 @@ enum Weekdot {
     static let website = URL(string: "https://weekdot.com/")!
     static let privacyURL = URL(string: "https://weekdot.com/privacy/")!
     static let supportURL = URL(string: "https://weekdot.com/support/")!
+    /// The developer's own site with all his apps.
+    static let developerURL = URL(string: "https://lrvdlinden.app")!
 
     static var version: String {
         let v = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "1.0.0"

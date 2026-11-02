@@ -617,7 +617,11 @@
   "Linked": "Połączono",
   "Details": "Szczegóły",
   "Homey gave Weekdot too few permissions. Sign in with Homey again.": "Homey nadał Weekdot za mało uprawnień. Zaloguj się ponownie przez Homey.",
-  "This Homey is already linked with another Weekdot. Unlink it in the settings of the Weekdot app on your Homey.": "Ten Homey jest już połączony z innym Weekdot. Rozłącz go w ustawieniach aplikacji Weekdot na Homey."
+  "This Homey is already linked with another Weekdot. Unlink it in the settings of the Weekdot app on your Homey.": "Ten Homey jest już połączony z innym Weekdot. Rozłącz go w ustawieniach aplikacji Weekdot na Homey.",
+  "Discover": "Odkrywaj",
+  "More Apps by the Developer": "Więcej aplikacji dewelopera",
+  "Apps for iPhone, iPad, Apple TV and Homey": "Aplikacje na iPhone’a, iPada, Apple TV i Homey",
+  "Visit": "Zobacz"
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot pokazuje, tworzy i edytuje wydarzenia w Twoich kalendarzach.",

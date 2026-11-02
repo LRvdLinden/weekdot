@@ -617,7 +617,11 @@
   "Linked": "Συνδέθηκε",
   "Details": "Λεπτομέρειες",
   "Homey gave Weekdot too few permissions. Sign in with Homey again.": "Το Homey έδωσε στο Weekdot πολύ λίγα δικαιώματα. Συνδέσου ξανά με Homey.",
-  "This Homey is already linked with another Weekdot. Unlink it in the settings of the Weekdot app on your Homey.": "Αυτό το Homey είναι ήδη συνδεδεμένο με άλλο Weekdot. Αποσύνδεσέ το στις ρυθμίσεις της εφαρμογής Weekdot στο Homey."
+  "This Homey is already linked with another Weekdot. Unlink it in the settings of the Weekdot app on your Homey.": "Αυτό το Homey είναι ήδη συνδεδεμένο με άλλο Weekdot. Αποσύνδεσέ το στις ρυθμίσεις της εφαρμογής Weekdot στο Homey.",
+  "Discover": "Ανακάλυψη",
+  "More Apps by the Developer": "Περισσότερες εφαρμογές του δημιουργού",
+  "Apps for iPhone, iPad, Apple TV and Homey": "Εφαρμογές για iPhone, iPad, Apple TV και Homey",
+  "Visit": "Προβολή"
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Το Weekdot εμφανίζει, δημιουργεί και επεξεργάζεται τα συμβάντα στα ημερολόγιά σας.",

@@ -617,7 +617,11 @@
   "Linked": "連携済み",
   "Details": "詳細",
   "Homey gave Weekdot too few permissions. Sign in with Homey again.": "HomeyがWeekdotに与えた権限が不足しています。Homeyでもう一度サインインしてください。",
-  "This Homey is already linked with another Weekdot. Unlink it in the settings of the Weekdot app on your Homey.": "このHomeyはすでに別のWeekdotと連携しています。HomeyのWeekdotアプリの設定で連携を解除してください。"
+  "This Homey is already linked with another Weekdot. Unlink it in the settings of the Weekdot app on your Homey.": "このHomeyはすでに別のWeekdotと連携しています。HomeyのWeekdotアプリの設定で連携を解除してください。",
+  "Discover": "見つける",
+  "More Apps by the Developer": "このデベロッパのその他のApp",
+  "Apps for iPhone, iPad, Apple TV and Homey": "iPhone、iPad、Apple TV、Homey向けのApp",
+  "Visit": "見る"
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdotはカレンダー内のイベントを表示、作成、編集します。",

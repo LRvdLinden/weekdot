@@ -617,7 +617,11 @@
   "Linked": "已連結",
   "Details": "詳細資料",
   "Homey gave Weekdot too few permissions. Sign in with Homey again.": "Homey 授予 Weekdot 的權限太少。請重新使用 Homey 登入。",
-  "This Homey is already linked with another Weekdot. Unlink it in the settings of the Weekdot app on your Homey.": "此 Homey 已與另一個 Weekdot 連結。請在 Homey 上的 Weekdot App 設定中解除連結。"
+  "This Homey is already linked with another Weekdot. Unlink it in the settings of the Weekdot app on your Homey.": "此 Homey 已與另一個 Weekdot 連結。請在 Homey 上的 Weekdot App 設定中解除連結。",
+  "Discover": "探索",
+  "More Apps by the Developer": "開發者的更多 App",
+  "Apps for iPhone, iPad, Apple TV and Homey": "適用於 iPhone、iPad、Apple TV 和 Homey 的 App",
+  "Visit": "查看"
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot 會顯示、建立和編輯你行事曆中的行程。",

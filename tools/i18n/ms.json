@@ -617,7 +617,11 @@
   "Linked": "Dipautkan",
   "Details": "Butiran",
   "Homey gave Weekdot too few permissions. Sign in with Homey again.": "Homey memberi Weekdot terlalu sedikit kebenaran. Daftar masuk dengan Homey semula.",
-  "This Homey is already linked with another Weekdot. Unlink it in the settings of the Weekdot app on your Homey.": "Homey ini sudah dipautkan dengan Weekdot lain. Nyahpaut dalam tetapan apl Weekdot pada Homey anda."
+  "This Homey is already linked with another Weekdot. Unlink it in the settings of the Weekdot app on your Homey.": "Homey ini sudah dipautkan dengan Weekdot lain. Nyahpaut dalam tetapan apl Weekdot pada Homey anda.",
+  "Discover": "Teroka",
+  "More Apps by the Developer": "Lebih banyak app daripada pembangun",
+  "Apps for iPhone, iPad, Apple TV and Homey": "App untuk iPhone, iPad, Apple TV dan Homey",
+  "Visit": "Lihat"
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot menunjukkan, mencipta dan mengedit acara dalam kalendar anda.",

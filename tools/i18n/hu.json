@@ -617,7 +617,11 @@
   "Linked": "Összekapcsolva",
   "Details": "Részletek",
   "Homey gave Weekdot too few permissions. Sign in with Homey again.": "A Homey túl kevés jogot adott a Weekdotnak. Jelentkezz be újra a Homeyval.",
-  "This Homey is already linked with another Weekdot. Unlink it in the settings of the Weekdot app on your Homey.": "Ez a Homey már egy másik Weekdothoz van kapcsolva. Bontsd a kapcsolatot a Homeyn lévő Weekdot alkalmazás beállításaiban."
+  "This Homey is already linked with another Weekdot. Unlink it in the settings of the Weekdot app on your Homey.": "Ez a Homey már egy másik Weekdothoz van kapcsolva. Bontsd a kapcsolatot a Homeyn lévő Weekdot alkalmazás beállításaiban.",
+  "Discover": "Felfedezés",
+  "More Apps by the Developer": "A fejlesztő további appjai",
+  "Apps for iPhone, iPad, Apple TV and Homey": "Appok iPhone-ra, iPadre, Apple TV-re és Homey-ra",
+  "Visit": "Megnézem"
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "A Weekdot megjeleníti, létrehozza és szerkeszti a naptáraiban lévő eseményeket.",

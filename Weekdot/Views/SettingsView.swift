@@ -263,6 +263,13 @@ struct SettingsView: View {
                 } header: {
                     Text("About Weekdot")
                 }
+
+                Section {
+                    Link(destination: Weekdot.developerURL) { MoreAppsCard() }
+                        .buttonStyle(.plain)
+                } header: {
+                    Text("Discover")
+                }
                 }
                 .formStyle(.grouped)
                 .tabItem { Label("More", systemImage: "gearshape") }

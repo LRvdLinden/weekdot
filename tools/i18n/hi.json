@@ -617,7 +617,11 @@
   "Linked": "जुड़ा हुआ",
   "Details": "विवरण",
   "Homey gave Weekdot too few permissions. Sign in with Homey again.": "Homey ने Weekdot को बहुत कम अनुमतियाँ दीं। Homey से फिर से साइन इन करें।",
-  "This Homey is already linked with another Weekdot. Unlink it in the settings of the Weekdot app on your Homey.": "यह Homey पहले से किसी दूसरे Weekdot से जुड़ा है। Homey पर Weekdot ऐप की सेटिंग में इसे अलग करें।"
+  "This Homey is already linked with another Weekdot. Unlink it in the settings of the Weekdot app on your Homey.": "यह Homey पहले से किसी दूसरे Weekdot से जुड़ा है। Homey पर Weekdot ऐप की सेटिंग में इसे अलग करें।",
+  "Discover": "खोजें",
+  "More Apps by the Developer": "डेवलपर की और ऐप्स",
+  "Apps for iPhone, iPad, Apple TV and Homey": "iPhone, iPad, Apple TV और Homey के लिए ऐप्स",
+  "Visit": "देखें"
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot आपके कैलेंडर में इवेंट दिखाता, बनाता और संपादित करता है।",

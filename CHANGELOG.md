@@ -1,3 +1,7 @@
+## 1.0.1 (build 83) — More apps
+
+- New Discover section at the bottom of Settings with a card “More Apps by the Developer” in Weekdot's colours; it opens lrvdlinden.app. Translated into all app languages.
+
 ## 1.0.1 (build 82) — Rating prompt
 
 - Weekdot asks for an App Store rating at a quiet moment: the first time 4 hours after first use on a device, after that at most once a week.

@@ -617,7 +617,11 @@
   "Linked": "Conectat",
   "Details": "Detalii",
   "Homey gave Weekdot too few permissions. Sign in with Homey again.": "Homey a dat prea puține permisiuni lui Weekdot. Conectează-te din nou cu Homey.",
-  "This Homey is already linked with another Weekdot. Unlink it in the settings of the Weekdot app on your Homey.": "Acest Homey este deja conectat la alt Weekdot. Deconectează-l din setările aplicației Weekdot de pe Homey."
+  "This Homey is already linked with another Weekdot. Unlink it in the settings of the Weekdot app on your Homey.": "Acest Homey este deja conectat la alt Weekdot. Deconectează-l din setările aplicației Weekdot de pe Homey.",
+  "Discover": "Descoperă",
+  "More Apps by the Developer": "Mai multe aplicații de la dezvoltator",
+  "Apps for iPhone, iPad, Apple TV and Homey": "Aplicații pentru iPhone, iPad, Apple TV și Homey",
+  "Visit": "Vezi"
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot afișează, creează și editează evenimentele din calendarele dvs.",
