@@ -265,8 +265,9 @@ struct SettingsView: View {
                 }
 
                 Section {
-                    Link(destination: Weekdot.developerURL) { MoreAppsCard() }
-                        .buttonStyle(.plain)
+                    MoreAppsCard()
+                        .listRowInsets(EdgeInsets())
+                        .listRowBackground(Color.clear)
                 } header: {
                     Text("Discover")
                 }

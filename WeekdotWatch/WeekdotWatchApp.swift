@@ -116,6 +116,13 @@ struct WatchDayView: View {
                     }
                     NavigationLink { WatchWeekView() } label: { Label("Week", systemImage: "list.bullet") }
                 }
+                Section {
+                    MoreAppsCard()
+                        .listRowInsets(EdgeInsets())
+                        .listRowBackground(Color.clear)
+                } header: {
+                    Text("Discover")
+                }
             }
             .navigationTitle(Text(selected.formatted(.dateTime.weekday(.abbreviated).day().month(.abbreviated))))
 

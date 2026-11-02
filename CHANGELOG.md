@@ -1,3 +1,7 @@
+## 1.0.1 (build 84) — More apps card in the house style
+
+- The “More Apps by the Developer” card now uses the LRvdLinden house style (LR logo, blue accent) from the developer's other apps, on iPhone, iPad, Mac and Apple Watch (bottom of the day view). Opens lrvdlinden.app; texts in all app languages.
+
 ## 1.0.1 (build 83) — More apps
 
 - New Discover section at the bottom of Settings with a card “More Apps by the Developer” in Weekdot's colours; it opens lrvdlinden.app. Translated into all app languages.
