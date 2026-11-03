@@ -1,6 +1,7 @@
 ## 1.0.2 (build 86) — Remembers your view
 
 - Weekdot always reopens with the view you last chose (per device), also after closing the app.
+- Month & List: today and the word Today are always Weekdot red.
 - New installs start in Mini Month. Changing Start View in Settings switches to that view right away.
 
 ## 1.0.2 (build 85) — Month & List

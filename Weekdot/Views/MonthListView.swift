@@ -58,7 +58,7 @@ struct MonthListView: View {
                                 HStack(spacing: 6) {
                                     Text(day.formatted(.dateTime.weekday(.wide).day().month(.wide).year()))
                                     if cal.isDateInToday(day) {
-                                        Text("Today").foregroundStyle(Color.accentColor)
+                                        Text("Today").foregroundStyle(Color.weekdotRed)
                                     }
                                 }
                                 .font(.footnote.weight(.semibold))
@@ -154,7 +154,7 @@ private struct MiniMonthDay: View {
                 .frame(width: 32, height: 32)
                 .background {
                     if isSelected {
-                        Circle().fill(isToday ? Color.accentColor : Color.secondary.opacity(0.55))
+                        Circle().fill(isToday ? Color.weekdotRed : Color.secondary.opacity(0.55))
                     }
                 }
             HStack(spacing: 2.5) {
@@ -207,7 +207,7 @@ private struct MiniMonthDay: View {
 
     private func numberColor(isToday: Bool, isSelected: Bool) -> Color {
         if isSelected { return .white }
-        if isToday { return .accentColor }
+        if isToday { return .weekdotRed }
         return .primary
     }
 }
