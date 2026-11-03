@@ -116,6 +116,7 @@ struct WeekdotApp: App {
         let cal = settings.calendar
         switch ScreenshotMode.scene {
         case "month": state.mode = .month
+        case "monthlist": state.mode = .monthList
         case "day": state.mode = .day
         case "year": state.mode = .year
         case "list": state.mode = .list

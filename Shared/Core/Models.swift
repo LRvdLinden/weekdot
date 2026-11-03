@@ -4,7 +4,7 @@ import Foundation
 
 enum CalendarViewMode: String, Codable, CaseIterable, Identifiable {
     // Keep the existing raw values for users upgrading from 1.0.0.
-    case list, day, days, week, weeks, month, year
+    case list, day, days, week, weeks, month, monthList, year
     var id: String { rawValue }
 
     var titleKey: String {
@@ -15,6 +15,7 @@ enum CalendarViewMode: String, Codable, CaseIterable, Identifiable {
         case .week: return "Week"
         case .weeks: return "Multiple Weeks"
         case .month: return "Mini Month"
+        case .monthList: return "Month & List"
         case .year: return "Year"
         }
     }
@@ -27,6 +28,7 @@ enum CalendarViewMode: String, Codable, CaseIterable, Identifiable {
         case .week: return "calendar"
         case .weeks: return "calendar.badge.clock"
         case .month: return "square.grid.3x3"
+        case .monthList: return "rectangle.split.1x2"
         case .year: return "square.grid.4x3.fill"
         }
     }

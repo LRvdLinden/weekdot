@@ -195,6 +195,8 @@ struct MainView: View {
             CompactCalendarView(anchor: state.date, weekCount: settings.clampedMultiWeekCount)
         case .month:
             MonthView(month: state.date)
+        case .monthList:
+            MonthListView()
         case .year:
             YearView(year: state.date)
         case .list:

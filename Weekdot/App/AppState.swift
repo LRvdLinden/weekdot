@@ -76,7 +76,7 @@ final class AppState: ObservableObject {
             case .days: date = cal.addingDays(direction * settings.clampedMultiDayCount, to: date)
             case .week: date = cal.addingDays(direction * 7, to: date)
             case .weeks: date = cal.addingDays(direction * 7 * settings.clampedMultiWeekCount, to: date)
-            case .month: date = cal.date(byAdding: .month, value: direction, to: date) ?? date
+            case .month, .monthList: date = cal.date(byAdding: .month, value: direction, to: date) ?? date
             case .year: date = cal.date(byAdding: .year, value: direction, to: date) ?? date
             case .list: date = cal.addingDays(direction * 30, to: date)
             }

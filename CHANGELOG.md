@@ -1,3 +1,8 @@
+## 1.0.2 (build 85) — Month & List
+
+- New view “Month & List”: a compact month with coloured dots per day (week numbers and shaded weekends follow your settings) and below it the events from the selected day onwards, grouped per day with place and time. Tap a day to jump to it, double-tap to add an event, swipe to change month. On iPad and Mac the month sits next to the list.
+- Available in the view menu and as start view in Settings › Views; translated into all app languages.
+
 ## 1.0.1 (build 84) — More apps card in the house style
 
 - The “More Apps by the Developer” card now uses the LRvdLinden house style (LR logo, blue accent) from the developer's other apps, on iPhone, iPad, Mac and Apple Watch (bottom of the day view). Opens lrvdlinden.app; texts in all app languages.
