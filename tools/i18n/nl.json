@@ -816,7 +816,7 @@
   "q16": "Kan ik nieuwe functies eerder proberen?",
   "a16": "Ja. Doe mee aan de openbare bèta in TestFlight en probeer nieuwe versies voordat ze in de App Store staan. De link vind je op de ondersteuningspagina.",
   "gallery.title": "Bekijk Weekdot van dichtbij",
-  "gallery.sub": "Echte schermen uit de app. Tik erop om ze groot te bekijken.",
+  "gallery.sub": "Echte schermen uit de app. Scroll erdoorheen en tik op de telefoon om een scherm groot te zien.",
   "gallery.week": "Zeven dagen in één scherm",
   "gallery.day": "Je dag per uur",
   "gallery.month": "De hele maand, met al je afspraken",
@@ -994,6 +994,13 @@
   "hs.c3.d": "Lees wat Weekdot wel en niet met je gegevens doet.",
   "hs.c3.cta": "Privacybeleid",
   "hs.top": "Terug naar boven",
-  "hs.st.store": "Download in de App Store"
+  "hs.st.store": "Download in de App Store",
+  "gallery.week.d": "Je hele week in één keer, als raster van dagvakken of als tijdlijn. Met weeknummers, gekleurde weekenden en je eigen kleuren en emoji.",
+  "gallery.day.d": "Elk uur van je dag, met de hele-dag-afspraken bovenaan. Sleep een afspraak om hem te verplaatsen, of trek aan de rand om de duur te veranderen.",
+  "gallery.month.d": "De hele maand met de namen van je afspraken. Tik op een dag om hem te openen, of tik twee keer om iets nieuws toe te voegen.",
+  "gallery.list.d": "Alles wat eraan komt, per dag gegroepeerd met tijd en plaats. Ideaal om snel vooruit te kijken.",
+  "gallery.event.d": "Plaats, meldingen, reistijd en notities bij elkaar. Dupliceer een afspraak of bewaar hem met één tik als sjabloon.",
+  "gallery.discover.d": "Feestdagen van meer dan 60 landen, schoolvakanties, vlagdagen en de afvalkalender, automatisch actueel.",
+  "gallery.sports.d": "Kies je club, competitie of Formule 1 en elke wedstrijd en race staat in je week."
  }
 }

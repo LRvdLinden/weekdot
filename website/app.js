@@ -288,14 +288,44 @@
     });
     var strip = document.getElementById("gstrip");
     if (!strip) return;
+    if (!gitems.length) { var sec = document.getElementById("screens"); if (sec) sec.hidden = true; return; }
+    // Scroll story: the phone stays in place and shows the screen of the text you are reading.
+    var GLOW = { week: "232,53,47", day: "10,132,255", month: "52,199,89", list: "255,149,0", event: "175,82,222", discover: "0,199,190", sports: "255,45,85" };
+    var device = document.createElement("div"); device.className = "g-device";
+    var phone = document.createElement("button"); phone.type = "button"; phone.className = "g-phone";
+    phone.setAttribute("aria-label", t("gallery.sub"));
+    var glass = document.createElement("div"); glass.className = "g-glass";
+    var steps = document.createElement("div"); steps.className = "g-steps";
     gitems.forEach(function (it, i) {
-      var fig = document.createElement("figure"); fig.className = "g-item";
-      var btn = document.createElement("button"); btn.type = "button"; btn.className = "g-frame"; btn.setAttribute("aria-label", it.cap);
-      var img = document.createElement("img"); img.src = it.src; img.alt = it.cap; img.loading = "lazy"; img.decoding = "async"; img.width = 1000; img.height = 2173;
-      btn.appendChild(img); btn.addEventListener("click", function () { openLightbox(i); });
-      var cap = document.createElement("figcaption"); cap.textContent = it.cap;
-      fig.appendChild(btn); fig.appendChild(cap); strip.appendChild(fig);
+      var img = document.createElement("img"); img.src = it.src; img.alt = it.cap; img.loading = i ? "lazy" : "eager"; img.decoding = "async";
+      img.width = 1000; img.height = 2173; img.setAttribute("data-scene", it.scene); if (!i) img.className = "on";
+      glass.appendChild(img);
+      var art = document.createElement("article"); art.className = "g-step" + (i ? "" : " on"); art.setAttribute("data-scene", it.scene);
+      art.style.setProperty("--c", "rgb(" + (GLOW[it.scene] || GLOW.week) + ")");
+      var num = document.createElement("span"); num.className = "g-num"; num.textContent = (i < 9 ? "0" : "") + (i + 1);
+      var h = document.createElement("h3"); h.textContent = it.cap;
+      var d = document.createElement("p"); d.textContent = t("gallery." + it.scene + ".d");
+      art.appendChild(num); art.appendChild(h); art.appendChild(d);
+      art.addEventListener("click", function () { openLightbox(i); });
+      steps.appendChild(art);
     });
+    phone.appendChild(glass); device.appendChild(phone);
+    strip.className = "g-scrolly"; strip.appendChild(device); strip.appendChild(steps);
+    var current = 0;
+    phone.addEventListener("click", function () { openLightbox(current); });
+    function show(scene) {
+      gitems.forEach(function (it, i) { if (it.scene === scene) current = i; });
+      $$(".g-glass img").forEach(function (im) { im.classList.toggle("on", im.getAttribute("data-scene") === scene); });
+      $$(".g-step").forEach(function (st) { st.classList.toggle("on", st.getAttribute("data-scene") === scene); });
+      device.style.setProperty("--glow", "rgba(" + (GLOW[scene] || GLOW.week) + ",.35)");
+    }
+    show(gitems[0].scene);
+    if ("IntersectionObserver" in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) { if (e.isIntersecting) show(e.target.getAttribute("data-scene")); });
+      }, { rootMargin: "-45% 0px -45% 0px" });
+      $$(".g-step").forEach(function (st) { io.observe(st); });
+    }
     // the device screens in the hero and the band open the matching big screen too
     $$("[data-shot]").forEach(function (screen) {
       var scene = (screen.getAttribute("data-shot") || "").split("-")[1];

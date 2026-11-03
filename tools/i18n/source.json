@@ -825,7 +825,7 @@
   "q16": "Can I try new features early?",
   "a16": "Yes. Join the public beta in TestFlight to try new versions before they reach the App Store. You find the link on the support page.",
   "gallery.title": "See Weekdot up close",
-  "gallery.sub": "Real screens from the app. Tap one to see it full size.",
+  "gallery.sub": "Real screens from the app. Scroll through them, and tap the phone to see a screen full size.",
   "gallery.week": "Seven days on one screen",
   "gallery.day": "Your day by the hour",
   "gallery.month": "The whole month, with every event",
@@ -1003,6 +1003,13 @@
   "hs.c3.d": "Read what Weekdot does and doesn't do with your data.",
   "hs.c3.cta": "Privacy policy",
   "hs.top": "Back to top",
-  "hs.st.store": "Download on the App Store"
+  "hs.st.store": "Download on the App Store",
+  "gallery.week.d": "Your whole week at once, as a grid of day boxes or a time line. With week numbers, shaded weekends and your own colours and emoji.",
+  "gallery.day.d": "Every hour of your day, with all-day events on top. Drag an event to move it, or pull its edge to change how long it takes.",
+  "gallery.month.d": "The whole month with the names of your events. Tap a day to open it, or double-tap to add something new.",
+  "gallery.list.d": "Everything that is coming up, grouped per day with time and place. Ideal for a quick look ahead.",
+  "gallery.event.d": "Place, alerts, travel time and notes together. Duplicate an event or save it as a template in one tap.",
+  "gallery.discover.d": "Public holidays for more than 60 countries, school holidays, flag days and waste collection, kept up to date automatically.",
+  "gallery.sports.d": "Choose your club, competition or Formula 1, and every match and race appears in your week."
  }
 }
