@@ -81,6 +81,7 @@ struct SettingsView: View {
                     Picker("Start View", selection: s.defaultView) {
                         ForEach(CalendarViewMode.allCases) { Text(LocalizedStringKey($0.titleKey)).tag($0) }
                     }
+                    .onChange(of: synced.settings.defaultView) { _, v in state.mode = v }
                     Picker("Week Layout", selection: s.weekLayout) {
                         ForEach(WeekLayout.allCases) { Text(LocalizedStringKey($0.titleKey)).tag($0) }
                     }

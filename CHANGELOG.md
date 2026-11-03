@@ -1,3 +1,8 @@
+## 1.0.2 (build 86) — Remembers your view
+
+- Weekdot always reopens with the view you last chose (per device), also after closing the app.
+- New installs start in Mini Month. Changing Start View in Settings switches to that view right away.
+
 ## 1.0.2 (build 85) — Month & List
 
 - New view “Month & List”: a compact month with coloured dots per day (week numbers and shaded weekends follow your settings) and below it the events from the selected day onwards, grouped per day with place and time. Tap a day to jump to it, double-tap to add an event, swipe to change month. On iPad and Mac the month sits next to the list.

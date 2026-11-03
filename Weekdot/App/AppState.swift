@@ -35,7 +35,14 @@ enum AppSheet: String, Identifiable {
 
 @MainActor
 final class AppState: ObservableObject {
-    @Published var mode: CalendarViewMode
+    /// The chosen view; remembered on this device so Weekdot reopens with it.
+    @Published var mode: CalendarViewMode {
+        didSet {
+            guard mode != oldValue, !ScreenshotMode.isActive else { return }
+            UserDefaults.standard.set(mode.rawValue, forKey: Self.lastModeKey)
+        }
+    }
+    private static let lastModeKey = "lastViewMode"
     @Published var date: Date = Date()
     @Published var editor: EditorRequest?
     @Published var detail: EventItem?
@@ -50,7 +57,14 @@ final class AppState: ObservableObject {
     @Published var undo: UndoAction?
 
     init() {
-        mode = SyncedStore.shared.settings.defaultView
+        // Reopen with the last chosen view; the Start View setting is used until a view was chosen.
+        if !ScreenshotMode.isActive,
+           let raw = UserDefaults.standard.string(forKey: Self.lastModeKey),
+           let last = CalendarViewMode(rawValue: raw) {
+            mode = last
+        } else {
+            mode = SyncedStore.shared.settings.defaultView
+        }
     }
 
     func suggestedStart(settings: AppSettings) -> Date {
