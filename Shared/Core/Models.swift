@@ -83,7 +83,7 @@ struct AppSettings: Codable, Equatable {
     var weekDayCount: Int = 7
     var multiDayCount: Int = 3
     var multiWeekCount: Int = 2
-    var defaultView: CalendarViewMode = .month
+    var defaultView: CalendarViewMode = .week
     /// Week view as day boxes (grid, default) or as a time line.
     var weekLayout: WeekLayout = .grid
     var hourHeight: Double = 52

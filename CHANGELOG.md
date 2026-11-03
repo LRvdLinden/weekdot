@@ -1,3 +1,7 @@
+## 1.0.2 (build 87)
+
+- Week is the default start view again for new installs (build 86 briefly used Mini Month). Weekdot still reopens with the view you last chose.
+
 ## 1.0.2 (build 86) — Remembers your view
 
 - Weekdot always reopens with the view you last chose (per device), also after closing the app.
