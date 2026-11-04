@@ -32,9 +32,17 @@ class Agenda {
       color: /^#[0-9a-fA-F]{6}$/.test(e.color || '') ? e.color : '#E8352F',
       free: e.free === true,
     })).filter(e => !Number.isNaN(Date.parse(e.start)) && !Number.isNaN(Date.parse(e.end)));
-    const calendars = (Array.isArray(body.calendars) ? body.calendars : []).slice(0, 200).map(c => ({
+    let calendars = (Array.isArray(body.calendars) ? body.calendars : []).slice(0, 200).map(c => ({
       id: str(c.id, 200), title: str(c.title, 120), color: /^#[0-9a-fA-F]{6}$/.test(c.color || '') ? c.color : '#E8352F',
     }));
+    // Weekdot did not send its calendar list: use the calendars of the events
+    if (!calendars.length) {
+      const seen = new Map();
+      for (const e of events) {
+        if (e.calendarId && !seen.has(e.calendarId)) seen.set(e.calendarId, { id: e.calendarId, title: e.calendar || e.calendarId, color: e.color });
+      }
+      calendars = [...seen.values()].slice(0, 200);
+    }
     this.data = {
       receivedAt: new Date().toISOString(),
       sentAt: str(body.sentAt, 40),
@@ -55,7 +63,16 @@ class Agenda {
   }
 
   get events() { return (this.data && this.data.events) || []; }
-  get calendars() { return (this.data && this.data.calendars) || []; }
+  get calendars() {
+    const list = (this.data && this.data.calendars) || [];
+    if (list.length) return list;
+    // older schedules without a calendar list: use the calendars of the events
+    const seen = new Map();
+    for (const e of this.events) {
+      if (e.calendarId && !seen.has(e.calendarId)) seen.set(e.calendarId, { id: e.calendarId, title: e.calendar || e.calendarId, color: e.color });
+    }
+    return [...seen.values()];
+  }
 
   // ---- time helpers (Homey's time zone) ----
   get timeZone() { return this.homey.clock.getTimezone(); }

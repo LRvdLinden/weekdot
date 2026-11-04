@@ -131,7 +131,7 @@
         let s = null;
         try { s = await Homey.api('GET', '/status'); } catch (e) { /* app starting */ }
         const linked = s && s.linked;
-        $('state').textContent = linked ? Homey.__('settings.linked', { device: s.device }) : t('settings.not_linked');
+        $('state').textContent = linked ? t('settings.linked').split('__device__').join(s.device || 'Weekdot') : t('settings.not_linked');
         $('state').className = linked ? 'pill ok' : 'pill';
         ['row-updated', 'row-events', 'cal-box', 'clear'].forEach(id => $(id).classList.toggle('hidden', !linked));
         // linked without events yet: show the unlink button, hide the update rows
@@ -143,9 +143,12 @@
           $('events').textContent = String(s.events);
           let until = s.lastDay || '';
           try { if (until) until = new Date(until + 'T12:00:00').toLocaleDateString(undefined, { day: 'numeric', month: 'long' }); } catch (e) { /* keep yyyy-mm-dd */ }
-          document.querySelector('[data-i18n="settings.events"]').textContent = until ? Homey.__('settings.events', { date: until }) : t('settings.events').replace(/\s*\(.*\)$/, '');
+          // fill __date__ ourselves (some Homey versions return the text without replacing tokens)
+          document.querySelector('[data-i18n="settings.events"]').textContent = until
+            ? t('settings.events').split('__date__').join(until) : t('settings.events').replace(/\s*\(.*\)$/, '');
           $('stale').classList.toggle('hidden', Date.now() - at.getTime() < 2 * 86400000);
           $('cals').innerHTML = '';
+          $('cal-box').classList.toggle('hidden', !(s.calendars || []).length);
           for (const c of s.calendars || []) {
             const chip = document.createElement('span');
             chip.className = 'cal';
