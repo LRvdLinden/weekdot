@@ -622,7 +622,7 @@
   "Apps for iPhone, iPad, Apple TV and Homey": "Apps per a iPhone, iPad, Apple TV i Homey",
   "Visit": "Veure",
   "Month & List": "Mes i llista",
-  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 50 days to the Weekdot app on your Homey.": "Inicia la sessió amb el teu compte de Homey i tria el teu Homey. Weekdot enviarà els esdeveniments dels pròxims 50 dies a l'app Weekdot del teu Homey."
+  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 31 days to the Weekdot app on your Homey.": "Inicia la sessió amb el teu compte de Homey i tria el teu Homey. Weekdot enviarà els esdeveniments dels pròxims 31 dies a l'app Weekdot del teu Homey."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "El Weekdot mostra, crea i edita els esdeveniments dels teus calendaris.",
@@ -831,7 +831,7 @@
   "hs.homey.4.q": "Homey diu que el Weekdot no està connectat",
   "hs.homey.4.a": "Toca Actualitza ara al Weekdot, a Configuració › Homey, i comprova que hi hagi seleccionat el Homey correcte. A Detalls veus cada pas de la connexió. Assegura’t que l’app del Weekdot del teu Homey estigui actualitzada.",
   "hs.homey.5.q": "Què envia el Weekdot a Homey?",
-  "hs.homey.5.a": "Els teus esdeveniments dels pròxims 50 dies dels calendaris que triïs, enviats directament al teu propi Homey. Amb Amaga els detalls activat, només s’envien les hores, amb Ocupat com a títol.",
+  "hs.homey.5.a": "Els teus esdeveniments dels pròxims 31 dies dels calendaris que triïs, enviats directament al teu propi Homey. Amb Amaga els detalls activat, només s’envien les hores, amb Ocupat com a títol.",
   "hs.homey.6.q": "Com desconnecto Homey?",
   "hs.homey.6.a": "Toca Tanca la sessió de Homey al Weekdot. Al teu Homey, obre la configuració de l’app del Weekdot i tria desconnectar i eliminar els esdeveniments.",
   "hs.homey.more": "Homey Community",

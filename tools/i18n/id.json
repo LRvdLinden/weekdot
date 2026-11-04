@@ -622,7 +622,7 @@
   "Apps for iPhone, iPad, Apple TV and Homey": "App untuk iPhone, iPad, Apple TV, dan Homey",
   "Visit": "Lihat",
   "Month & List": "Bulan dan daftar",
-  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 50 days to the Weekdot app on your Homey.": "Masuk dengan akun Homey dan pilih Homey Anda. Weekdot lalu mengirim acara 50 hari ke depan ke aplikasi Weekdot di Homey Anda."
+  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 31 days to the Weekdot app on your Homey.": "Masuk dengan akun Homey dan pilih Homey Anda. Weekdot lalu mengirim acara 31 hari ke depan ke aplikasi Weekdot di Homey Anda."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot menampilkan, membuat, dan mengedit acara di kalender Anda.",
@@ -831,7 +831,7 @@
   "hs.homey.4.q": "Homey mengatakan Weekdot tidak terhubung",
   "hs.homey.4.a": "Ketuk Perbarui sekarang di Weekdot pada Pengaturan › Homey dan periksa bahwa Homey yang benar dipilih. Di Detail, Anda dapat melihat setiap langkah koneksi. Pastikan app Weekdot di Homey Anda sudah versi terbaru.",
   "hs.homey.5.q": "Apa yang dikirim Weekdot ke Homey?",
-  "hs.homey.5.a": "Acara Anda untuk 50 hari ke depan dari kalender yang Anda pilih, dikirim langsung ke Homey Anda sendiri. Saat Sembunyikan detail nyala, hanya waktunya yang dikirim, dengan Sibuk sebagai judul.",
+  "hs.homey.5.a": "Acara Anda untuk 31 hari ke depan dari kalender yang Anda pilih, dikirim langsung ke Homey Anda sendiri. Saat Sembunyikan detail nyala, hanya waktunya yang dikirim, dengan Sibuk sebagai judul.",
   "hs.homey.6.q": "Bagaimana cara memutuskan Homey?",
   "hs.homey.6.a": "Ketuk Keluar dari Homey di Weekdot. Di Homey Anda, buka pengaturan app Weekdot dan pilih untuk memutuskan tautan dan menghapus acara.",
   "hs.homey.more": "Homey Community",

@@ -622,7 +622,7 @@
   "Apps for iPhone, iPad, Apple TV and Homey": "Aplikácie pre iPhone, iPad, Apple TV a Homey",
   "Visit": "Zobraziť",
   "Month & List": "Mesiac a zoznam",
-  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 50 days to the Weekdot app on your Homey.": "Prihlás sa účtom Homey a vyber svoj Homey. Weekdot potom odošle udalosti na nasledujúcich 50 dní do aplikácie Weekdot v tvojom Homey."
+  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 31 days to the Weekdot app on your Homey.": "Prihlás sa účtom Homey a vyber svoj Homey. Weekdot potom odošle udalosti na nasledujúcich 31 dní do aplikácie Weekdot v tvojom Homey."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot zobrazuje, vytvára a upravuje udalosti vo vašich kalendároch.",
@@ -831,7 +831,7 @@
   "hs.homey.4.q": "Homey hlási, že Weekdot nie je prepojený",
   "hs.homey.4.a": "Vo Weekdote klepnite na Aktualizovať v Nastavenia › Homey a skontrolujte, že je vybraný správny Homey. V časti Podrobnosti uvidíte jednotlivé kroky pripojenia. Uistite sa, že je aplikácia Weekdot na Homey aktuálna.",
   "hs.homey.5.q": "Čo Weekdot posiela do Homey?",
-  "hs.homey.5.a": "Vaše udalosti na nasledujúcich 50 dní z kalendárov, ktoré vyberiete, odoslané priamo do vášho vlastného Homey. Keď je zapnuté Skryť podrobnosti, posielajú sa len časy a ako názov sa použije Zaneprázdnený.",
+  "hs.homey.5.a": "Vaše udalosti na nasledujúcich 31 dní z kalendárov, ktoré vyberiete, odoslané priamo do vášho vlastného Homey. Keď je zapnuté Skryť podrobnosti, posielajú sa len časy a ako názov sa použije Zaneprázdnený.",
   "hs.homey.6.q": "Ako zruším prepojenie s Homey?",
   "hs.homey.6.a": "Vo Weekdote klepnite na Odhlásiť sa z Homey. Na Homey otvorte nastavenia aplikácie Weekdot a zvoľte zrušenie prepojenia a vymazanie udalostí.",
   "hs.homey.more": "Homey Community",

@@ -622,7 +622,7 @@
   "Apps for iPhone, iPad, Apple TV and Homey": "تطبيقات لـ iPhone وiPad وApple TV وHomey",
   "Visit": "عرض",
   "Month & List": "الشهر والقائمة",
-  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 50 days to the Weekdot app on your Homey.": "سجّل الدخول بحساب Homey واختر جهازك. يرسل Weekdot بعد ذلك مواعيد الأيام الخمسين القادمة إلى تطبيق Weekdot على جهاز Homey."
+  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 31 days to the Weekdot app on your Homey.": "سجّل الدخول بحساب Homey واختر جهازك. يرسل Weekdot بعد ذلك مواعيد الـ31 يومًا القادمة إلى تطبيق Weekdot على جهاز Homey."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "يعرض Weekdot الأحداث في تقويماتك وينشئها ويعدّلها.",

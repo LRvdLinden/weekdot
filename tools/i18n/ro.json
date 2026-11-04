@@ -622,7 +622,7 @@
   "Apps for iPhone, iPad, Apple TV and Homey": "Aplicații pentru iPhone, iPad, Apple TV și Homey",
   "Visit": "Vezi",
   "Month & List": "Lună și listă",
-  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 50 days to the Weekdot app on your Homey.": "Conectează-te cu contul Homey și alege Homey-ul tău. Weekdot trimite apoi evenimentele din următoarele 50 zile către aplicația Weekdot de pe Homey."
+  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 31 days to the Weekdot app on your Homey.": "Conectează-te cu contul Homey și alege Homey-ul tău. Weekdot trimite apoi evenimentele din următoarele 31 de zile către aplicația Weekdot de pe Homey."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot afișează, creează și editează evenimentele din calendarele dvs.",
@@ -831,7 +831,7 @@
   "hs.homey.4.q": "Homey spune că Weekdot nu este conectat",
   "hs.homey.4.a": "Apasă Actualizează acum în Weekdot, la Configurări › Homey, și verifică dacă este selectat Homey-ul corect. La Detalii vezi fiecare pas al conexiunii. Asigură-te că aplicația Weekdot de pe Homey este actualizată.",
   "hs.homey.5.q": "Ce trimite Weekdot către Homey?",
-  "hs.homey.5.a": "Evenimentele tale din următoarele 50 zile din calendarele pe care le alegi, trimise direct către propriul tău Homey. Cu Ascunde detaliile activat, se trimit doar orele, cu Ocupat ca titlu.",
+  "hs.homey.5.a": "Evenimentele tale din următoarele 31 de zile din calendarele pe care le alegi, trimise direct către propriul tău Homey. Cu Ascunde detaliile activat, se trimit doar orele, cu Ocupat ca titlu.",
   "hs.homey.6.q": "Cum deconectez Homey?",
   "hs.homey.6.a": "Apasă Deconectează-te de la Homey în Weekdot. Pe Homey, deschide configurările aplicației Weekdot și alege să deconectezi și să ștergi evenimentele.",
   "hs.homey.more": "Homey Community",

@@ -622,7 +622,7 @@
   "Apps for iPhone, iPad, Apple TV and Homey": "יישומים ל-iPhone, iPad, Apple TV ו-Homey",
   "Visit": "הצג",
   "Month & List": "חודש ורשימה",
-  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 50 days to the Weekdot app on your Homey.": "התחבר עם חשבון Homey ובחר את ה-Homey שלך. Weekdot ישלח את האירועים של 50 הימים הבאים לאפליקציית Weekdot ב-Homey שלך."
+  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 31 days to the Weekdot app on your Homey.": "התחבר עם חשבון Homey ובחר את ה-Homey שלך. Weekdot ישלח את האירועים של 31 הימים הבאים לאפליקציית Weekdot ב-Homey שלך."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot מציג, יוצר ועורך את האירועים בלוחות השנה שלך.",
@@ -831,7 +831,7 @@
   "hs.homey.4.q": "Homey מודיע ש-Weekdot לא מחובר",
   "hs.homey.4.a": "יש להקיש על ״עדכן עכשיו״ ב-Weekdot תחת ״הגדרות › Homey״ ולוודא שנבחר ה-Homey הנכון. תחת ״פרטים״ מופיע כל שלב בחיבור. יש לוודא שהיישום Weekdot ב-Homey מעודכן.",
   "hs.homey.5.q": "מה Weekdot שולח ל-Homey?",
-  "hs.homey.5.a": "האירועים שלך ל-50 הימים הקרובים מלוחות השנה שבחרת, ישירות ל-Homey שלך. כש״הסתר פרטים״ מופעל, נשלחות רק השעות, עם הכותרת ״תפוס״.",
+  "hs.homey.5.a": "האירועים שלך ל-31 הימים הקרובים מלוחות השנה שבחרת, ישירות ל-Homey שלך. כש״הסתר פרטים״ מופעל, נשלחות רק השעות, עם הכותרת ״תפוס״.",
   "hs.homey.6.q": "איך מנתקים את Homey?",
   "hs.homey.6.a": "יש להקיש על ״התנתק מ-Homey״ ב-Weekdot. ב-Homey, יש לפתוח את ההגדרות של היישום Weekdot ולבחור לנתק ולמחוק את האירועים.",
   "hs.homey.more": "Homey Community",

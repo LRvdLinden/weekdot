@@ -622,7 +622,7 @@
   "Apps for iPhone, iPad, Apple TV and Homey": "Appok iPhone-ra, iPadre, Apple TV-re és Homey-ra",
   "Visit": "Megnézem",
   "Month & List": "Hónap és lista",
-  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 50 days to the Weekdot app on your Homey.": "Jelentkezz be a Homey-fiókoddal, és válaszd ki a Homeyt. A Weekdot ezután elküldi a következő 50 nap eseményeit a Homeyn lévő Weekdot alkalmazásnak."
+  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 31 days to the Weekdot app on your Homey.": "Jelentkezz be a Homey-fiókoddal, és válaszd ki a Homeyt. A Weekdot ezután elküldi a következő 31 nap eseményeit a Homeyn lévő Weekdot alkalmazásnak."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "A Weekdot megjeleníti, létrehozza és szerkeszti a naptáraiban lévő eseményeket.",
@@ -831,7 +831,7 @@
   "hs.homey.4.q": "A Homey szerint a Weekdot nincs összekapcsolva",
   "hs.homey.4.a": "Koppints a Frissítés most gombra a Weekdotban a Beállítások › Homey menüben, és ellenőrizd, hogy a megfelelő Homey van-e kiválasztva. A Részletek alatt a kapcsolat minden lépését látod. Győződj meg róla, hogy a Homeyn lévő Weekdot app naprakész.",
   "hs.homey.5.q": "Mit küld a Weekdot a Homeynak?",
-  "hs.homey.5.a": "A következő 50 nap eseményeit a kiválasztott naptárakból, közvetlenül a saját Homeydra küldve. Ha a Részletek elrejtése be van kapcsolva, csak az időpontok kerülnek elküldésre, Foglalt címmel.",
+  "hs.homey.5.a": "A következő 31 nap eseményeit a kiválasztott naptárakból, közvetlenül a saját Homeydra küldve. Ha a Részletek elrejtése be van kapcsolva, csak az időpontok kerülnek elküldésre, Foglalt címmel.",
   "hs.homey.6.q": "Hogyan bonthatom a kapcsolatot a Homeyval?",
   "hs.homey.6.a": "Koppints a Kijelentkezés a Homeyból lehetőségre a Weekdotban. A Homeyn nyisd meg a Weekdot app beállításait, és válaszd a kapcsolat bontását és az események törlését.",
   "hs.homey.more": "Homey Community",

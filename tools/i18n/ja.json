@@ -622,7 +622,7 @@
   "Apps for iPhone, iPad, Apple TV and Homey": "iPhone、iPad、Apple TV、Homey向けのApp",
   "Visit": "見る",
   "Month & List": "月とリスト",
-  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 50 days to the Weekdot app on your Homey.": "Homeyアカウントでサインインし、Homeyを選択してください。Weekdotが今後50日間の予定をHomeyのWeekdotアプリに送信します。"
+  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 31 days to the Weekdot app on your Homey.": "Homeyアカウントでサインインし、Homeyを選択してください。Weekdotが今後31日間の予定をHomeyのWeekdotアプリに送信します。"
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdotはカレンダー内のイベントを表示、作成、編集します。",
@@ -831,7 +831,7 @@
   "hs.homey.4.q": "HomeyでWeekdotが連携されていないと表示される",
   "hs.homey.4.a": "Weekdotの「設定」›「Homey」で「今すぐ更新」をタップし、正しいHomeyが選択されているか確認してください。「詳細」では接続の各ステップを確認できます。HomeyのWeekdotアプリが最新であることも確認しましょう。",
   "hs.homey.5.q": "WeekdotはHomeyに何を送信しますか？",
-  "hs.homey.5.a": "選んだカレンダーの今後50日間の予定を、あなたのHomeyに直接送信します。「詳細を隠す」がオンの場合は時刻だけが送信され、タイトルは「予定あり」になります。",
+  "hs.homey.5.a": "選んだカレンダーの今後31日間の予定を、あなたのHomeyに直接送信します。「詳細を隠す」がオンの場合は時刻だけが送信され、タイトルは「予定あり」になります。",
   "hs.homey.6.q": "Homeyとの連携を解除するには？",
   "hs.homey.6.a": "Weekdotで「Homeyからサインアウト」をタップします。Homeyでは、Weekdotアプリの設定を開き、連携を解除して予定を削除する項目を選びます。",
   "hs.homey.more": "Homey Community",

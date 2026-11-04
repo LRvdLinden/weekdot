@@ -622,7 +622,7 @@
   "Apps for iPhone, iPad, Apple TV and Homey": "Aplikacije za iPhone, iPad, Apple TV i Homey",
   "Visit": "Pogledaj",
   "Month & List": "Mjesec i popis",
-  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 50 days to the Weekdot app on your Homey.": "Prijavi se Homey računom i odaberi svoj Homey. Weekdot zatim šalje događaje za sljedećih 50 dana aplikaciji Weekdot na tvom Homeyju."
+  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 31 days to the Weekdot app on your Homey.": "Prijavi se Homey računom i odaberi svoj Homey. Weekdot zatim šalje događaje za sljedeći 31 dan aplikaciji Weekdot na tvom Homeyju."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot prikazuje, stvara i uređuje događaje u vašim kalendarima.",
@@ -831,7 +831,7 @@
   "hs.homey.4.q": "Homey kaže da Weekdot nije povezan",
   "hs.homey.4.a": "Dodirnite Ažuriraj sada u Weekdotu pod Postavke › Homey i provjerite je li odabran pravi Homey. Pod Pojedinosti vidite svaki korak povezivanja. Provjerite je li aplikacija Weekdot na Homeyju ažurna.",
   "hs.homey.5.q": "Što Weekdot šalje Homeyju?",
-  "hs.homey.5.a": "Vaše događaje za sljedećih 50 dana iz kalendara koje odaberete, poslane izravno na vaš Homey. Kad je uključeno Sakrij pojedinosti, šalju se samo vremena, s naslovom Zauzeto.",
+  "hs.homey.5.a": "Vaše događaje za sljedeći 31 dan iz kalendara koje odaberete, poslane izravno na vaš Homey. Kad je uključeno Sakrij pojedinosti, šalju se samo vremena, s naslovom Zauzeto.",
   "hs.homey.6.q": "Kako prekinuti vezu s Homeyjem?",
   "hs.homey.6.a": "Dodirnite Odjava s Homeyja u Weekdotu. Na Homeyju otvorite postavke aplikacije Weekdot i odaberite prekid veze i brisanje događaja.",
   "hs.homey.more": "Homey Community",

@@ -90642,205 +90642,205 @@
         }
       }
     },
-    "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 50 days to the Weekdot app on your Homey.": {
+    "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 31 days to the Weekdot app on your Homey.": {
       "extractionState": "manual",
       "localizations": {
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "سجّل الدخول بحساب Homey واختر جهازك. يرسل Weekdot بعد ذلك مواعيد الأيام الخمسين القادمة إلى تطبيق Weekdot على جهاز Homey."
+            "value": "سجّل الدخول بحساب Homey واختر جهازك. يرسل Weekdot بعد ذلك مواعيد الـ31 يومًا القادمة إلى تطبيق Weekdot على جهاز Homey."
           }
         },
         "ca": {
           "stringUnit": {
             "state": "translated",
-            "value": "Inicia la sessió amb el teu compte de Homey i tria el teu Homey. Weekdot enviarà els esdeveniments dels pròxims 50 dies a l'app Weekdot del teu Homey."
+            "value": "Inicia la sessió amb el teu compte de Homey i tria el teu Homey. Weekdot enviarà els esdeveniments dels pròxims 31 dies a l'app Weekdot del teu Homey."
           }
         },
         "cs": {
           "stringUnit": {
             "state": "translated",
-            "value": "Přihlas se účtem Homey a vyber svůj Homey. Weekdot pak odešle události na příštích 50 dní do aplikace Weekdot ve tvém Homey."
+            "value": "Přihlas se účtem Homey a vyber svůj Homey. Weekdot pak odešle události na příštích 31 dní do aplikace Weekdot ve tvém Homey."
           }
         },
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Log ind med din Homey-konto, og vælg din Homey. Weekdot sender så dine begivenheder for de næste 50 dage til Weekdot-appen på din Homey."
+            "value": "Log ind med din Homey-konto, og vælg din Homey. Weekdot sender så dine begivenheder for de næste 31 dage til Weekdot-appen på din Homey."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Melde dich mit deinem Homey-Konto an und wähle deinen Homey. Weekdot sendet dann deine Termine der nächsten 50 Tage an die Weekdot-App auf deinem Homey."
+            "value": "Melde dich mit deinem Homey-Konto an und wähle deinen Homey. Weekdot sendet dann deine Termine der nächsten 31 Tage an die Weekdot-App auf deinem Homey."
           }
         },
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Συνδέσου με τον λογαριασμό Homey και επίλεξε το Homey σου. Το Weekdot στέλνει τα γεγονότα των επόμενων 50 ημερών στην εφαρμογή Weekdot του Homey σου."
+            "value": "Συνδέσου με τον λογαριασμό Homey και επίλεξε το Homey σου. Το Weekdot στέλνει τα γεγονότα των επόμενων 31 ημερών στην εφαρμογή Weekdot του Homey σου."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Inicia sesión con tu cuenta de Homey y elige tu Homey. Weekdot enviará tus eventos de los próximos 50 días a la app Weekdot de tu Homey."
+            "value": "Inicia sesión con tu cuenta de Homey y elige tu Homey. Weekdot enviará tus eventos de los próximos 31 días a la app Weekdot de tu Homey."
           }
         },
         "fi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Kirjaudu Homey-tililläsi ja valitse Homey. Weekdot lähettää sitten seuraavien 50 päivän tapahtumat Homeysi Weekdot-appiin."
+            "value": "Kirjaudu Homey-tililläsi ja valitse Homey. Weekdot lähettää sitten seuraavien 31 päivän tapahtumat Homeysi Weekdot-appiin."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Connectez-vous avec votre compte Homey et choisissez votre Homey. Weekdot envoie alors vos événements des 50 prochains jours à l'app Weekdot sur votre Homey."
+            "value": "Connectez-vous avec votre compte Homey et choisissez votre Homey. Weekdot envoie alors vos événements des 31 prochains jours à l'app Weekdot sur votre Homey."
           }
         },
         "he": {
           "stringUnit": {
             "state": "translated",
-            "value": "התחבר עם חשבון Homey ובחר את ה-Homey שלך. Weekdot ישלח את האירועים של 50 הימים הבאים לאפליקציית Weekdot ב-Homey שלך."
+            "value": "התחבר עם חשבון Homey ובחר את ה-Homey שלך. Weekdot ישלח את האירועים של 31 הימים הבאים לאפליקציית Weekdot ב-Homey שלך."
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "अपने Homey खाते से साइन इन करें और अपना Homey चुनें। Weekdot फिर अगले 50 दिनों के इवेंट आपके Homey पर Weekdot ऐप को भेजता है।"
+            "value": "अपने Homey खाते से साइन इन करें और अपना Homey चुनें। Weekdot फिर अगले 31 दिनों के इवेंट आपके Homey पर Weekdot ऐप को भेजता है।"
           }
         },
         "hr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Prijavi se Homey računom i odaberi svoj Homey. Weekdot zatim šalje događaje za sljedećih 50 dana aplikaciji Weekdot na tvom Homeyju."
+            "value": "Prijavi se Homey računom i odaberi svoj Homey. Weekdot zatim šalje događaje za sljedeći 31 dan aplikaciji Weekdot na tvom Homeyju."
           }
         },
         "hu": {
           "stringUnit": {
             "state": "translated",
-            "value": "Jelentkezz be a Homey-fiókoddal, és válaszd ki a Homeyt. A Weekdot ezután elküldi a következő 50 nap eseményeit a Homeyn lévő Weekdot alkalmazásnak."
+            "value": "Jelentkezz be a Homey-fiókoddal, és válaszd ki a Homeyt. A Weekdot ezután elküldi a következő 31 nap eseményeit a Homeyn lévő Weekdot alkalmazásnak."
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Masuk dengan akun Homey dan pilih Homey Anda. Weekdot lalu mengirim acara 50 hari ke depan ke aplikasi Weekdot di Homey Anda."
+            "value": "Masuk dengan akun Homey dan pilih Homey Anda. Weekdot lalu mengirim acara 31 hari ke depan ke aplikasi Weekdot di Homey Anda."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Accedi con il tuo account Homey e scegli il tuo Homey. Weekdot invierà gli eventi dei prossimi 50 giorni all'app Weekdot sul tuo Homey."
+            "value": "Accedi con il tuo account Homey e scegli il tuo Homey. Weekdot invierà gli eventi dei prossimi 31 giorni all'app Weekdot sul tuo Homey."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "Homeyアカウントでサインインし、Homeyを選択してください。Weekdotが今後50日間の予定をHomeyのWeekdotアプリに送信します。"
+            "value": "Homeyアカウントでサインインし、Homeyを選択してください。Weekdotが今後31日間の予定をHomeyのWeekdotアプリに送信します。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "Homey 계정으로 로그인하고 Homey를 선택하세요. Weekdot이 다음 50일의 일정을 Homey의 Weekdot 앱으로 보냅니다."
+            "value": "Homey 계정으로 로그인하고 Homey를 선택하세요. Weekdot이 다음 31일의 일정을 Homey의 Weekdot 앱으로 보냅니다."
           }
         },
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "Daftar masuk dengan akaun Homey dan pilih Homey anda. Weekdot kemudian menghantar acara 50 hari akan datang ke apl Weekdot pada Homey anda."
+            "value": "Daftar masuk dengan akaun Homey dan pilih Homey anda. Weekdot kemudian menghantar acara 31 hari akan datang ke apl Weekdot pada Homey anda."
           }
         },
         "nb": {
           "stringUnit": {
             "state": "translated",
-            "value": "Logg på med Homey-kontoen din og velg Homey-en din. Weekdot sender da avtalene for de neste 50 dagene til Weekdot-appen på Homey-en din."
+            "value": "Logg på med Homey-kontoen din og velg Homey-en din. Weekdot sender da avtalene for de neste 31 dagene til Weekdot-appen på Homey-en din."
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Log in met je Homey-account en kies je Homey. Weekdot stuurt dan je afspraken van de komende 50 dagen naar de Weekdot-app op je Homey."
+            "value": "Log in met je Homey-account en kies je Homey. Weekdot stuurt dan je afspraken van de komende 31 dagen naar de Weekdot-app op je Homey."
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Zaloguj się kontem Homey i wybierz swój Homey. Weekdot wyśle wtedy wydarzenia z najbliższych 50 dni do aplikacji Weekdot na Twoim Homey."
+            "value": "Zaloguj się kontem Homey i wybierz swój Homey. Weekdot wyśle wtedy wydarzenia z najbliższych 31 dni do aplikacji Weekdot na Twoim Homey."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Entre com sua conta Homey e escolha seu Homey. O Weekdot envia seus eventos dos próximos 50 dias para o app Weekdot no seu Homey."
+            "value": "Entre com sua conta Homey e escolha seu Homey. O Weekdot envia seus eventos dos próximos 31 dias para o app Weekdot no seu Homey."
           }
         },
         "pt-PT": {
           "stringUnit": {
             "state": "translated",
-            "value": "Inicie sessão com a sua conta Homey e escolha o seu Homey. O Weekdot envia os eventos dos próximos 50 dias para a app Weekdot no seu Homey."
+            "value": "Inicie sessão com a sua conta Homey e escolha o seu Homey. O Weekdot envia os eventos dos próximos 31 dias para a app Weekdot no seu Homey."
           }
         },
         "ro": {
           "stringUnit": {
             "state": "translated",
-            "value": "Conectează-te cu contul Homey și alege Homey-ul tău. Weekdot trimite apoi evenimentele din următoarele 50 zile către aplicația Weekdot de pe Homey."
+            "value": "Conectează-te cu contul Homey și alege Homey-ul tău. Weekdot trimite apoi evenimentele din următoarele 31 de zile către aplicația Weekdot de pe Homey."
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Войдите в аккаунт Homey и выберите свой Homey. Weekdot будет отправлять события на 50 дней вперёд в приложение Weekdot на вашем Homey."
+            "value": "Войдите в аккаунт Homey и выберите свой Homey. Weekdot будет отправлять события на 31 день вперёд в приложение Weekdot на вашем Homey."
           }
         },
         "sk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Prihlás sa účtom Homey a vyber svoj Homey. Weekdot potom odošle udalosti na nasledujúcich 50 dní do aplikácie Weekdot v tvojom Homey."
+            "value": "Prihlás sa účtom Homey a vyber svoj Homey. Weekdot potom odošle udalosti na nasledujúcich 31 dní do aplikácie Weekdot v tvojom Homey."
           }
         },
         "sv": {
           "stringUnit": {
             "state": "translated",
-            "value": "Logga in med ditt Homey-konto och välj din Homey. Weekdot skickar sedan dina händelser för de kommande 50 dagarna till Weekdot-appen på din Homey."
+            "value": "Logga in med ditt Homey-konto och välj din Homey. Weekdot skickar sedan dina händelser för de kommande 31 dagarna till Weekdot-appen på din Homey."
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "ลงชื่อเข้าด้วยบัญชี Homey และเลือก Homey ของคุณ จากนั้น Weekdot จะส่งกิจกรรม 50 วันข้างหน้าไปยังแอป Weekdot บน Homey ของคุณ"
+            "value": "ลงชื่อเข้าด้วยบัญชี Homey และเลือก Homey ของคุณ จากนั้น Weekdot จะส่งกิจกรรม 31 วันข้างหน้าไปยังแอป Weekdot บน Homey ของคุณ"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Homey hesabınla giriş yap ve Homey'ini seç. Weekdot sonraki 50 günün etkinliklerini Homey'indeki Weekdot uygulamasına gönderir."
+            "value": "Homey hesabınla giriş yap ve Homey'ini seç. Weekdot sonraki 31 günün etkinliklerini Homey'indeki Weekdot uygulamasına gönderir."
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Увійдіть в акаунт Homey і виберіть свій Homey. Weekdot надсилатиме події на 50 днів наперед у застосунок Weekdot на вашому Homey."
+            "value": "Увійдіть в акаунт Homey і виберіть свій Homey. Weekdot надсилатиме події на 31 день наперед у застосунок Weekdot на вашому Homey."
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Đăng nhập bằng tài khoản Homey và chọn Homey của bạn. Weekdot sẽ gửi sự kiện của 50 ngày tới đến ứng dụng Weekdot trên Homey."
+            "value": "Đăng nhập bằng tài khoản Homey và chọn Homey của bạn. Weekdot sẽ gửi sự kiện của 31 ngày tới đến ứng dụng Weekdot trên Homey."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "使用你的 Homey 账户登录并选择你的 Homey。随后 Weekdot 会将未来 50 天的日程发送到你 Homey 上的 Weekdot 应用。"
+            "value": "使用你的 Homey 账户登录并选择你的 Homey。随后 Weekdot 会将未来 31 天的日程发送到你 Homey 上的 Weekdot 应用。"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "使用你的 Homey 帳號登入並選擇你的 Homey。Weekdot 會將未來 50 天的行程傳送到你 Homey 上的 Weekdot App。"
+            "value": "使用你的 Homey 帳號登入並選擇你的 Homey。Weekdot 會將未來 31 天的行程傳送到你 Homey 上的 Weekdot App。"
           }
         }
       }

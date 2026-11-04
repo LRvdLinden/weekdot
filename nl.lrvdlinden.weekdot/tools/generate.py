@@ -78,7 +78,7 @@ def main():
         "images": {"small": "/assets/images/small.png", "large": "/assets/images/large.png", "xlarge": "/assets/images/xlarge.png"},
         "author": {"name": "Léon van der Linden", "email": "homey@vdlinden.xyz", "website": "https://lrvdlinden.app"},
         "homepage": "https://lrvdlinden.app",
-        "support": "mailto:homey@vdlinden.xyz",
+        "support": "https://community.homey.app/t/app-pro-weekdot/161566",
         "bugs": {"url": "https://community.homey.app/t/app-pro-weekdot/161566"},
         "homeyCommunityTopicId": 161566,
         "contributing": {"donate": {"paypal": {"username": "lrvdlinden"}, "bunq": {"username": "lrvdlinden"}}},
@@ -98,8 +98,8 @@ def main():
     # flow cards
     minutes = {"name": "minutes", "type": "number", "min": 1, "max": 1440, "step": 1, "title": S["arg_minutes"], "placeholder": {l: "15" for l in L}}
     time_arg = {"name": "time", "type": "time", "title": S["arg_time"]}
-    # Weekdot 1.0.2+ sends today plus the coming 50 days
-    days_arg = {"name": "days", "type": "number", "min": 1, "max": 50, "step": 1, "title": S["arg_days"], "placeholder": {l: "3" for l in L}}
+    # Weekdot 1.0.2+ sends today plus the coming 31 days
+    days_arg = {"name": "days", "type": "number", "min": 1, "max": 31, "step": 1, "title": S["arg_days"], "placeholder": {l: "3" for l in L}}
     day_arg = {"name": "day", "type": "dropdown", "title": S["arg_day"],
                "values": [{"id": "today", "title": S["today"]}, {"id": "tomorrow", "title": S["tomorrow"]}]}
     triggers = {

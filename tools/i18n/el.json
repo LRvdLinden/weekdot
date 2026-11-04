@@ -622,7 +622,7 @@
   "Apps for iPhone, iPad, Apple TV and Homey": "Εφαρμογές για iPhone, iPad, Apple TV και Homey",
   "Visit": "Προβολή",
   "Month & List": "Μήνας και λίστα",
-  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 50 days to the Weekdot app on your Homey.": "Συνδέσου με τον λογαριασμό Homey και επίλεξε το Homey σου. Το Weekdot στέλνει τα γεγονότα των επόμενων 50 ημερών στην εφαρμογή Weekdot του Homey σου."
+  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 31 days to the Weekdot app on your Homey.": "Συνδέσου με τον λογαριασμό Homey και επίλεξε το Homey σου. Το Weekdot στέλνει τα γεγονότα των επόμενων 31 ημερών στην εφαρμογή Weekdot του Homey σου."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Το Weekdot εμφανίζει, δημιουργεί και επεξεργάζεται τα συμβάντα στα ημερολόγιά σας.",
@@ -831,7 +831,7 @@
   "hs.homey.4.q": "Το Homey λέει ότι το Weekdot δεν είναι συνδεδεμένο",
   "hs.homey.4.a": "Αγγίξτε «Ενημέρωση τώρα» στο Weekdot, στις Ρυθμίσεις › Homey, και ελέγξτε ότι είναι επιλεγμένο το σωστό Homey. Στις «Λεπτομέρειες» βλέπετε κάθε βήμα της σύνδεσης. Βεβαιωθείτε ότι η εφαρμογή Weekdot στο Homey σας είναι ενημερωμένη.",
   "hs.homey.5.q": "Τι στέλνει το Weekdot στο Homey;",
-  "hs.homey.5.a": "Τα συμβάντα σας των επόμενων 50 ημερών από τα ημερολόγια που επιλέγετε, απευθείας στο δικό σας Homey. Με ενεργή την «Απόκρυψη λεπτομερειών», στέλνονται μόνο οι ώρες, με τίτλο «Απασχολημένος».",
+  "hs.homey.5.a": "Τα συμβάντα σας των επόμενων 31 ημερών από τα ημερολόγια που επιλέγετε, απευθείας στο δικό σας Homey. Με ενεργή την «Απόκρυψη λεπτομερειών», στέλνονται μόνο οι ώρες, με τίτλο «Απασχολημένος».",
   "hs.homey.6.q": "Πώς αποσυνδέω το Homey;",
   "hs.homey.6.a": "Αγγίξτε «Αποσύνδεση από το Homey» στο Weekdot. Στο Homey σας, ανοίξτε τις ρυθμίσεις της εφαρμογής Weekdot και επιλέξτε αποσύνδεση και διαγραφή των συμβάντων.",
   "hs.homey.more": "Homey Community",

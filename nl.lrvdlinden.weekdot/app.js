@@ -337,7 +337,7 @@ class WeekdotApp extends Homey.App {
     const dayPairs = new Map();
     for (const arg of await this.daysBefore.getArgumentValues()) {
       const days = Number(arg.days);
-      if (days >= 1 && days <= 50 && arg.time) dayPairs.set(`${days}|${arg.time}`, { days, time: arg.time });
+      if (days >= 1 && days <= 31 && arg.time) dayPairs.set(`${days}|${arg.time}`, { days, time: arg.time });
     }
     for (const { days, time } of dayPairs.values()) {
       if (!timePassed(time)) continue;

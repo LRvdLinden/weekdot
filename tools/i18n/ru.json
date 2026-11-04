@@ -622,7 +622,7 @@
   "Apps for iPhone, iPad, Apple TV and Homey": "Приложения для iPhone, iPad, Apple TV и Homey",
   "Visit": "Открыть",
   "Month & List": "Месяц и список",
-  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 50 days to the Weekdot app on your Homey.": "Войдите в аккаунт Homey и выберите свой Homey. Weekdot будет отправлять события на 50 дней вперёд в приложение Weekdot на вашем Homey."
+  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 31 days to the Weekdot app on your Homey.": "Войдите в аккаунт Homey и выберите свой Homey. Weekdot будет отправлять события на 31 день вперёд в приложение Weekdot на вашем Homey."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot показывает, создает и изменяет события в ваших календарях.",
@@ -831,7 +831,7 @@
   "hs.homey.4.q": "Homey сообщает, что Weekdot не связан",
   "hs.homey.4.a": "Коснитесь «Обновить сейчас» в Weekdot в разделе Настройки › Homey и проверьте, что выбран нужный Homey. В разделе «Подробности» видны все этапы подключения. Убедитесь, что приложение Weekdot на Homey обновлено.",
   "hs.homey.5.q": "Что Weekdot отправляет в Homey?",
-  "hs.homey.5.a": "События на ближайшие 50 дней из выбранных вами календарей — напрямую на ваш собственный Homey. Если включено «Скрывать подробности», отправляется только время, а в качестве названия — «Занят».",
+  "hs.homey.5.a": "События на ближайший 31 день из выбранных вами календарей — напрямую на ваш собственный Homey. Если включено «Скрывать подробности», отправляется только время, а в качестве названия — «Занят».",
   "hs.homey.6.q": "Как отвязать Homey?",
   "hs.homey.6.a": "Коснитесь «Выйти из Homey» в Weekdot. На Homey откройте настройки приложения Weekdot и выберите отвязку и удаление событий.",
   "hs.homey.more": "Homey Community",

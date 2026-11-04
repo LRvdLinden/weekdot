@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * The schedule Weekdot sends (today plus the next 50 days; Weekdot 1.0.1 and older: 8 days) and helpers to read it in Homey's time zone.
+ * The schedule Weekdot sends (today plus the next 31 days; Weekdot 1.0.1 and older: 8 days) and helpers to read it in Homey's time zone.
  * Event: { id, title, emoji?, location?, start, end (ISO), allDay, startDay, endDay (yyyy-mm-dd, end exclusive),
  *          calendarId, calendar, color, free }
  */

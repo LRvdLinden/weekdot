@@ -622,7 +622,7 @@
   "Apps for iPhone, iPad, Apple TV and Homey": "Apps til iPhone, iPad, Apple TV og Homey",
   "Visit": "Se",
   "Month & List": "Måned og liste",
-  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 50 days to the Weekdot app on your Homey.": "Log ind med din Homey-konto, og vælg din Homey. Weekdot sender så dine begivenheder for de næste 50 dage til Weekdot-appen på din Homey."
+  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 31 days to the Weekdot app on your Homey.": "Log ind med din Homey-konto, og vælg din Homey. Weekdot sender så dine begivenheder for de næste 31 dage til Weekdot-appen på din Homey."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot viser, opretter og redigerer begivenhederne i dine kalendere.",
@@ -831,7 +831,7 @@
   "hs.homey.4.q": "Homey siger, at Weekdot ikke er forbundet",
   "hs.homey.4.a": "Tryk på Opdater nu i Weekdot under Indstillinger › Homey, og kontroller, at den rigtige Homey er valgt. Under Detaljer ser du hvert trin i forbindelsen. Sørg for, at Weekdot-appen på din Homey er opdateret.",
   "hs.homey.5.q": "Hvad sender Weekdot til Homey?",
-  "hs.homey.5.a": "Dine begivenheder for de kommende 50 dage fra de kalendere, du vælger, sendt direkte til din egen Homey. Når Skjul detaljer er slået til, sendes kun tidspunkterne, med Optaget som titel.",
+  "hs.homey.5.a": "Dine begivenheder for de kommende 31 dage fra de kalendere, du vælger, sendt direkte til din egen Homey. Når Skjul detaljer er slået til, sendes kun tidspunkterne, med Optaget som titel.",
   "hs.homey.6.q": "Hvordan fjerner jeg forbindelsen til Homey?",
   "hs.homey.6.a": "Tryk på Log ud af Homey i Weekdot. Åbn indstillingerne for Weekdot-appen på din Homey, og vælg at fjerne forbindelsen og slette begivenhederne.",
   "hs.homey.more": "Homey Community",

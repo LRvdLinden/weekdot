@@ -622,7 +622,7 @@
   "Apps for iPhone, iPad, Apple TV and Homey": "iPhone, iPad, Apple TV और Homey के लिए ऐप्स",
   "Visit": "देखें",
   "Month & List": "माह और सूची",
-  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 50 days to the Weekdot app on your Homey.": "अपने Homey खाते से साइन इन करें और अपना Homey चुनें। Weekdot फिर अगले 50 दिनों के इवेंट आपके Homey पर Weekdot ऐप को भेजता है।"
+  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 31 days to the Weekdot app on your Homey.": "अपने Homey खाते से साइन इन करें और अपना Homey चुनें। Weekdot फिर अगले 31 दिनों के इवेंट आपके Homey पर Weekdot ऐप को भेजता है।"
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot आपके कैलेंडर में इवेंट दिखाता, बनाता और संपादित करता है।",
@@ -831,7 +831,7 @@
   "hs.homey.4.q": "Homey कहता है कि Weekdot लिंक नहीं है",
   "hs.homey.4.a": "Weekdot में सेटिंग्ज़ › Homey के अंतर्गत “अभी अपडेट करें” पर टैप करें और जाँचें कि सही Homey चुना गया है। “विवरण” में आपको कनेक्शन का हर चरण दिखता है। पक्का करें कि आपके Homey पर Weekdot ऐप अप टू डेट है।",
   "hs.homey.5.q": "Weekdot, Homey को क्या भेजता है?",
-  "hs.homey.5.a": "आपके चुने हुए कैलेंडर से आने वाले 50 दिनों के इवेंट, सीधे आपके अपने Homey पर। “विवरण छिपाएँ” चालू होने पर सिर्फ़ समय भेजे जाते हैं, शीर्षक के रूप में “व्यस्त” के साथ।",
+  "hs.homey.5.a": "आपके चुने हुए कैलेंडर से आने वाले 31 दिनों के इवेंट, सीधे आपके अपने Homey पर। “विवरण छिपाएँ” चालू होने पर सिर्फ़ समय भेजे जाते हैं, शीर्षक के रूप में “व्यस्त” के साथ।",
   "hs.homey.6.q": "मैं Homey को अनलिंक कैसे करूँ?",
   "hs.homey.6.a": "Weekdot में “Homey से साइन आउट करें” पर टैप करें। अपने Homey पर Weekdot ऐप की सेटिंग्ज़ खोलें और अनलिंक करके इवेंट डिलीट करना चुनें।",
   "hs.homey.more": "Homey Community",

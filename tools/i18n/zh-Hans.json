@@ -622,7 +622,7 @@
   "Apps for iPhone, iPad, Apple TV and Homey": "适用于 iPhone、iPad、Apple TV 和 Homey 的 App",
   "Visit": "查看",
   "Month & List": "月和列表",
-  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 50 days to the Weekdot app on your Homey.": "使用你的 Homey 账户登录并选择你的 Homey。随后 Weekdot 会将未来 50 天的日程发送到你 Homey 上的 Weekdot 应用。"
+  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 31 days to the Weekdot app on your Homey.": "使用你的 Homey 账户登录并选择你的 Homey。随后 Weekdot 会将未来 31 天的日程发送到你 Homey 上的 Weekdot 应用。"
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot 会显示、创建和编辑你日历中的日程。",
@@ -831,7 +831,7 @@
   "hs.homey.4.q": "Homey 显示 Weekdot 未连接",
   "hs.homey.4.a": "在 Weekdot 的“设置”›“Homey”中轻点“立即更新”，并确认已选择正确的 Homey。在“详细信息”中可以看到连接的每个步骤。请确保 Homey 上的 Weekdot App 是最新版本。",
   "hs.homey.5.q": "Weekdot 会向 Homey 发送什么？",
-  "hs.homey.5.a": "你所选日历中未来 50 天的日程，直接发送到你自己的 Homey。打开“隐藏详细信息”后，只会发送时间，标题显示为“忙碌”。",
+  "hs.homey.5.a": "你所选日历中未来 31 天的日程，直接发送到你自己的 Homey。打开“隐藏详细信息”后，只会发送时间，标题显示为“忙碌”。",
   "hs.homey.6.q": "如何断开与 Homey 的连接？",
   "hs.homey.6.a": "在 Weekdot 中轻点“退出 Homey”。在 Homey 上，打开 Weekdot App 的设置，选择断开连接并删除日程。",
   "hs.homey.more": "Homey Community",

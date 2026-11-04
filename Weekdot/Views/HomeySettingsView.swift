@@ -38,7 +38,7 @@ struct HomeySettingsView: View {
                     }
                     .disabled(homey.isBusy)
                 } footer: {
-                    Text("Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 50 days to the Weekdot app on your Homey.")
+                    Text("Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 31 days to the Weekdot app on your Homey.")
                 }
             } else {
                 Section {
