@@ -11,7 +11,7 @@ import AppKit
 /// Links Weekdot to the user's Homey (Athom) and sends the coming days to the Weekdot app on that Homey.
 ///
 /// Flow: sign in with the Homey account (Athom OAuth) → pick a Homey → Weekdot sends a schedule of the next
-/// 8 days to the Homey app `nl.lrvdlinden.weekdot` (`POST /api/app/nl.lrvdlinden.weekdot/schedule`).
+/// 50 days to the Homey app `nl.lrvdlinden.weekdot` (`POST /api/app/nl.lrvdlinden.weekdot/schedule`).
 /// The Homey app sets its own timers from that schedule, so Flows run on time even when the iPhone sleeps.
 ///
 /// The Athom API client (client ID + secret, created at https://tools.developer.homey.app → Web API clients,
@@ -19,6 +19,8 @@ import AppKit
 /// The repository is private, so `Weekdot/HomeyClient.plist` is committed (template: `Config/HomeyClient.example.plist`).
 @MainActor
 final class HomeyService: NSObject, ObservableObject {
+    /// Days of events sent to Homey (today plus the next 50, for "starts in … days" Flows).
+    static let daysSent = 51
     static let shared = HomeyService()
 
     static let homeyAppID = "nl.lrvdlinden.weekdot"
@@ -237,7 +239,7 @@ final class HomeyService: NSObject, ObservableObject {
         }
     }
 
-    /// Sends the next 8 days to Homey. Skipped when nothing changed and the last update is recent.
+    /// Sends the next 50 days to Homey. Skipped when nothing changed and the last update is recent.
     func sync(store: CalendarStore, force: Bool = false) async {
         calendarStore = store
         guard isLinked, !ScreenshotMode.isActive else { return }
@@ -346,7 +348,7 @@ final class HomeyService: NSObject, ObservableObject {
     private func makePayload(store: CalendarStore) -> [String: Any] {
         let cal = store.synced.settings.calendar
         let from = cal.startOfDay(for: Date())
-        let to = cal.addingDays(8, to: from)
+        let to = cal.addingDays(Self.daysSent, to: from)
         let iso = ISO8601DateFormatter()
         let day = DateFormatter()
         day.calendar = Calendar(identifier: .gregorian)

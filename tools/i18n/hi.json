@@ -603,7 +603,6 @@
   "Sign In with Homey": "Homey से साइन इन करें",
   "Sign Out of Homey": "Homey से साइन आउट करें",
   "Sign in to Homey again.": "Homey में फिर से साइन इन करें।",
-  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 8 days to the Weekdot app on your Homey.": "अपने Homey खाते से साइन इन करें और अपना Homey चुनें। Weekdot फिर अगले 8 दिनों के इवेंट आपके Homey पर Weekdot ऐप को भेजता है।",
   "Smart Home": "स्मार्ट होम",
   "Start Flows when an event begins or ends, before an appointment, or with today's agenda.": "इवेंट शुरू या खत्म होने पर, किसी अपॉइंटमेंट से पहले या आज के एजेंडा के साथ Flows चलाएँ।",
   "The Homey connection is not set up in this version of Weekdot.": "Weekdot के इस संस्करण में Homey कनेक्शन सेट नहीं है।",
@@ -622,7 +621,8 @@
   "More Apps by the Developer": "डेवलपर की और ऐप्स",
   "Apps for iPhone, iPad, Apple TV and Homey": "iPhone, iPad, Apple TV और Homey के लिए ऐप्स",
   "Visit": "देखें",
-  "Month & List": "माह और सूची"
+  "Month & List": "माह और सूची",
+  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 50 days to the Weekdot app on your Homey.": "अपने Homey खाते से साइन इन करें और अपना Homey चुनें। Weekdot फिर अगले 50 दिनों के इवेंट आपके Homey पर Weekdot ऐप को भेजता है।"
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot आपके कैलेंडर में इवेंट दिखाता, बनाता और संपादित करता है।",
@@ -824,7 +824,6 @@
   "hs.sync.5.q": "क्या Weekdot मुझे ट्रैक करता है?",
   "hs.sync.5.a": "नहीं। कोई अकाउंट नहीं, कोई ट्रैकिंग नहीं, कोई विज्ञापन नहीं और कोई एनालिटिक्स नहीं। विवरण के लिए गोपनीयता नीति पढ़ें।",
   "hs.homey.1.q": "Weekdot, Homey के साथ क्या कर सकता है?",
-  "hs.homey.1.a": "आपका कैलेंडर आपके Homey पर Flows शुरू करता है: जब कोई इवेंट शुरू या ख़त्म होता है, किसी अपॉइंटमेंट से तय मिनट पहले, या किसी समय पर आज के एजेंडा के साथ। कैलेंडर या शीर्षक के आधार पर फ़िल्टर करें और इवेंट के विवरण को टैग के रूप में इस्तेमाल करें।",
   "hs.homey.2.q": "मुझे क्या चाहिए?",
   "hs.homey.2.a": "Homey App Store से मुफ़्त Weekdot ऐप वाला Homey Pro, और आपका Homey अकाउंट। Homey Cloud समर्थित नहीं है।",
   "hs.homey.3.q": "मैं Weekdot को अपने Homey से कैसे जोड़ूँ?",
@@ -832,7 +831,7 @@
   "hs.homey.4.q": "Homey कहता है कि Weekdot लिंक नहीं है",
   "hs.homey.4.a": "Weekdot में सेटिंग्ज़ › Homey के अंतर्गत “अभी अपडेट करें” पर टैप करें और जाँचें कि सही Homey चुना गया है। “विवरण” में आपको कनेक्शन का हर चरण दिखता है। पक्का करें कि आपके Homey पर Weekdot ऐप अप टू डेट है।",
   "hs.homey.5.q": "Weekdot, Homey को क्या भेजता है?",
-  "hs.homey.5.a": "आपके चुने हुए कैलेंडर से आने वाले 8 दिनों के इवेंट, सीधे आपके अपने Homey पर। “विवरण छिपाएँ” चालू होने पर सिर्फ़ समय भेजे जाते हैं, शीर्षक के रूप में “व्यस्त” के साथ।",
+  "hs.homey.5.a": "आपके चुने हुए कैलेंडर से आने वाले 50 दिनों के इवेंट, सीधे आपके अपने Homey पर। “विवरण छिपाएँ” चालू होने पर सिर्फ़ समय भेजे जाते हैं, शीर्षक के रूप में “व्यस्त” के साथ।",
   "hs.homey.6.q": "मैं Homey को अनलिंक कैसे करूँ?",
   "hs.homey.6.a": "Weekdot में “Homey से साइन आउट करें” पर टैप करें। अपने Homey पर Weekdot ऐप की सेटिंग्ज़ खोलें और अनलिंक करके इवेंट डिलीट करना चुनें।",
   "hs.homey.more": "Homey Community",

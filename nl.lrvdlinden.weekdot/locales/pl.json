@@ -14,6 +14,7 @@
     "all_day": "cały dzień"
   },
   "errors": {
+    "out_of_range": "Weekdot wysłał tylko najbliższe dni (__days__). Zaktualizuj Weekdot na iPhonie, iPadzie lub Macu, aby widzieć dalej.",
     "bad_schedule": "Weekdot wysłał dane, których nie można odczytać."
   },
   "settings": {
@@ -22,13 +23,13 @@
     "not_linked": "Jeszcze nie połączono",
     "linked": "Połączono z __device__",
     "updated": "Ostatnia aktualizacja",
-    "events": "Wydarzenia (najbliższe 8 dni)",
+    "events": "Wydarzenia (najbliższe 50 dni)",
     "calendars": "Kalendarze",
     "stale": "Weekdot od dawna nie wysłał aktualizacji. Otwórz Weekdot na iPhonie.",
     "howto": "Jak połączyć",
     "step1": "Zainstaluj Weekdot na iPhonie, iPadzie lub Macu.",
     "step2": "W Weekdot otwórz Ustawienia › Homey i zaloguj się kontem Homey.",
-    "step3": "Wybierz ten Homey. Weekdot wyśle wydarzenia z najbliższych 8 dni.",
+    "step3": "Wybierz ten Homey. Weekdot wyśle wydarzenia z najbliższych 50 dni.",
     "privacy": "Wydarzenia są przechowywane tylko na tym Homey.",
     "clear": "Usuń wydarzenia z Homey",
     "cleared": "Usunięto.",

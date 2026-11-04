@@ -603,7 +603,6 @@
   "Sign In with Homey": "Entrar com Homey",
   "Sign Out of Homey": "Sair do Homey",
   "Sign in to Homey again.": "Entre no Homey novamente.",
-  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 8 days to the Weekdot app on your Homey.": "Entre com sua conta Homey e escolha seu Homey. O Weekdot envia seus eventos dos próximos 8 dias para o app Weekdot no seu Homey.",
   "Smart Home": "Casa inteligente",
   "Start Flows when an event begins or ends, before an appointment, or with today's agenda.": "Inicie Flows quando um evento começa ou termina, antes de um compromisso ou com a agenda do dia.",
   "The Homey connection is not set up in this version of Weekdot.": "A conexão com o Homey não está configurada nesta versão do Weekdot.",
@@ -622,7 +621,8 @@
   "More Apps by the Developer": "Mais apps do desenvolvedor",
   "Apps for iPhone, iPad, Apple TV and Homey": "Apps para iPhone, iPad, Apple TV e Homey",
   "Visit": "Ver",
-  "Month & List": "Mês e lista"
+  "Month & List": "Mês e lista",
+  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 50 days to the Weekdot app on your Homey.": "Entre com sua conta Homey e escolha seu Homey. O Weekdot envia seus eventos dos próximos 50 dias para o app Weekdot no seu Homey."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "O Weekdot mostra, cria e edita os eventos nos seus calendários.",
@@ -824,7 +824,6 @@
   "hs.sync.5.q": "O Weekdot me rastreia?",
   "hs.sync.5.a": "Não. Sem contas, sem rastreamento, sem anúncios e sem análises. Leia a política de privacidade para mais detalhes.",
   "hs.homey.1.q": "O que o Weekdot pode fazer com o Homey?",
-  "hs.homey.1.a": "Seu calendário inicia Flows no seu Homey: quando um evento começa ou termina, alguns minutos definidos antes de um compromisso ou em um horário com a agenda do dia. Filtre por calendário ou título e use os detalhes do evento como tags.",
   "hs.homey.2.q": "Do que eu preciso?",
   "hs.homey.2.a": "Um Homey Pro com o app gratuito do Weekdot da Homey App Store e sua conta Homey. O Homey Cloud não é compatível.",
   "hs.homey.3.q": "Como conecto o Weekdot ao meu Homey?",
@@ -832,7 +831,7 @@
   "hs.homey.4.q": "O Homey diz que o Weekdot não está conectado",
   "hs.homey.4.a": "Toque em Atualizar agora no Weekdot, em Ajustes › Homey, e confira se o Homey certo está selecionado. Em Detalhes, você vê cada etapa da conexão. Verifique se o app do Weekdot no seu Homey está atualizado.",
   "hs.homey.5.q": "O que o Weekdot envia ao Homey?",
-  "hs.homey.5.a": "Seus eventos dos próximos 8 dias dos calendários que você escolher, enviados direto para o seu próprio Homey. Com Ocultar detalhes ativado, só os horários são enviados, com Ocupado como título.",
+  "hs.homey.5.a": "Seus eventos dos próximos 50 dias dos calendários que você escolher, enviados direto para o seu próprio Homey. Com Ocultar detalhes ativado, só os horários são enviados, com Ocupado como título.",
   "hs.homey.6.q": "Como desconecto o Homey?",
   "hs.homey.6.a": "Toque em Sair do Homey no Weekdot. No seu Homey, abra os ajustes do app do Weekdot e escolha desconectar e apagar os eventos.",
   "hs.homey.more": "Homey Community",

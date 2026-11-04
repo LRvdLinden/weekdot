@@ -603,7 +603,6 @@
   "Sign In with Homey": "Daftar masuk dengan Homey",
   "Sign Out of Homey": "Daftar keluar daripada Homey",
   "Sign in to Homey again.": "Daftar masuk ke Homey semula.",
-  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 8 days to the Weekdot app on your Homey.": "Daftar masuk dengan akaun Homey dan pilih Homey anda. Weekdot kemudian menghantar acara 8 hari akan datang ke apl Weekdot pada Homey anda.",
   "Smart Home": "Rumah pintar",
   "Start Flows when an event begins or ends, before an appointment, or with today's agenda.": "Mulakan Flow apabila acara bermula atau tamat, sebelum temu janji, atau dengan agenda hari ini.",
   "The Homey connection is not set up in this version of Weekdot.": "Sambungan Homey tidak disediakan dalam versi Weekdot ini.",
@@ -622,7 +621,8 @@
   "More Apps by the Developer": "Lebih banyak app daripada pembangun",
   "Apps for iPhone, iPad, Apple TV and Homey": "App untuk iPhone, iPad, Apple TV dan Homey",
   "Visit": "Lihat",
-  "Month & List": "Bulan dan senarai"
+  "Month & List": "Bulan dan senarai",
+  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 50 days to the Weekdot app on your Homey.": "Daftar masuk dengan akaun Homey dan pilih Homey anda. Weekdot kemudian menghantar acara 50 hari akan datang ke apl Weekdot pada Homey anda."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot menunjukkan, mencipta dan mengedit acara dalam kalendar anda.",
@@ -824,7 +824,6 @@
   "hs.sync.5.q": "Adakah Weekdot menjejak saya?",
   "hs.sync.5.a": "Tidak. Tiada akaun, tiada penjejakan, tiada iklan dan tiada analitik. Baca dasar privasi untuk butirannya.",
   "hs.homey.1.q": "Apakah yang boleh dilakukan Weekdot dengan Homey?",
-  "hs.homey.1.a": "Kalendar anda memulakan Flows pada Homey anda: apabila acara bermula atau tamat, beberapa minit yang ditetapkan sebelum temu janji, atau pada masa tertentu dengan agenda hari ini. Tapis mengikut kalendar atau tajuk dan gunakan butiran acara sebagai tag.",
   "hs.homey.2.q": "Apakah yang saya perlukan?",
   "hs.homey.2.a": "Homey Pro dengan app Weekdot percuma daripada Homey App Store, dan akaun Homey anda. Homey Cloud tidak disokong.",
   "hs.homey.3.q": "Bagaimanakah cara memautkan Weekdot ke Homey saya?",
@@ -832,7 +831,7 @@
   "hs.homey.4.q": "Homey mengatakan Weekdot tidak dipautkan",
   "hs.homey.4.a": "Ketik Kemas kini sekarang dalam Weekdot di bawah Seting › Homey dan semak bahawa Homey yang betul dipilih. Di bawah Butiran, anda melihat setiap langkah sambungan. Pastikan app Weekdot pada Homey anda dikemas kini.",
   "hs.homey.5.q": "Apakah yang dihantar Weekdot ke Homey?",
-  "hs.homey.5.a": "Acara anda untuk 8 hari akan datang daripada kalendar yang anda pilih, dihantar terus ke Homey anda sendiri. Apabila Sembunyikan butiran dihidupkan, hanya masa yang dihantar, dengan Sibuk sebagai tajuk.",
+  "hs.homey.5.a": "Acara anda untuk 50 hari akan datang daripada kalendar yang anda pilih, dihantar terus ke Homey anda sendiri. Apabila Sembunyikan butiran dihidupkan, hanya masa yang dihantar, dengan Sibuk sebagai tajuk.",
   "hs.homey.6.q": "Bagaimanakah cara menyahpaut Homey?",
   "hs.homey.6.a": "Ketik Daftar keluar daripada Homey dalam Weekdot. Pada Homey anda, buka seting app Weekdot dan pilih untuk menyahpaut serta memadam acara.",
   "hs.homey.more": "Homey Community",

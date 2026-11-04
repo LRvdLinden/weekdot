@@ -14,6 +14,7 @@
     "all_day": "hele dag"
   },
   "errors": {
+    "out_of_range": "Weekdot heeft alleen de komende __days__ dagen gestuurd. Werk Weekdot bij op je iPhone, iPad of Mac om verder vooruit te kijken.",
     "bad_schedule": "Weekdot stuurde gegevens die niet gelezen konden worden."
   },
   "settings": {
@@ -22,13 +23,13 @@
     "not_linked": "Nog niet gekoppeld",
     "linked": "Gekoppeld met __device__",
     "updated": "Laatste update",
-    "events": "Afspraken (komende 8 dagen)",
+    "events": "Afspraken (komende 50 dagen)",
     "calendars": "Agenda's",
     "stale": "Weekdot heeft al een tijd geen update gestuurd. Open Weekdot op je iPhone om bij te werken.",
     "howto": "Zo koppel je",
     "step1": "Installeer Weekdot op je iPhone, iPad of Mac.",
     "step2": "Open in Weekdot Instellingen › Homey en log in met je Homey-account.",
-    "step3": "Kies deze Homey. Weekdot stuurt dan je afspraken van de komende 8 dagen.",
+    "step3": "Kies deze Homey. Weekdot stuurt dan je afspraken van de komende 50 dagen.",
     "privacy": "Je afspraken worden alleen op deze Homey bewaard.",
     "clear": "Ontkoppelen en afspraken verwijderen",
     "cleared": "Verwijderd.",

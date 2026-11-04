@@ -603,7 +603,6 @@
   "Sign In with Homey": "Logga in med Homey",
   "Sign Out of Homey": "Logga ut från Homey",
   "Sign in to Homey again.": "Logga in på Homey igen.",
-  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 8 days to the Weekdot app on your Homey.": "Logga in med ditt Homey-konto och välj din Homey. Weekdot skickar sedan dina händelser för de kommande 8 dagarna till Weekdot-appen på din Homey.",
   "Smart Home": "Smarta hem",
   "Start Flows when an event begins or ends, before an appointment, or with today's agenda.": "Starta Flows när en händelse börjar eller slutar, före ett möte eller med dagens agenda.",
   "The Homey connection is not set up in this version of Weekdot.": "Homey-anslutningen är inte inställd i den här versionen av Weekdot.",
@@ -622,7 +621,8 @@
   "More Apps by the Developer": "Fler appar från utvecklaren",
   "Apps for iPhone, iPad, Apple TV and Homey": "Appar för iPhone, iPad, Apple TV och Homey",
   "Visit": "Visa",
-  "Month & List": "Månad och lista"
+  "Month & List": "Månad och lista",
+  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 50 days to the Weekdot app on your Homey.": "Logga in med ditt Homey-konto och välj din Homey. Weekdot skickar sedan dina händelser för de kommande 50 dagarna till Weekdot-appen på din Homey."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot visar, skapar och redigerar händelserna i dina kalendrar.",
@@ -824,7 +824,6 @@
   "hs.sync.5.q": "Spårar Weekdot mig?",
   "hs.sync.5.a": "Nej. Inga konton, ingen spårning, ingen reklam och ingen analys. Läs integritetspolicyn för detaljer.",
   "hs.homey.1.q": "Vad kan Weekdot göra med Homey?",
-  "hs.homey.1.a": "Din kalender startar Flows på din Homey: när en händelse börjar eller slutar, ett visst antal minuter före ett möte eller vid en tid med dagens agenda. Filtrera på kalender eller titel och använd händelsedetaljerna som taggar.",
   "hs.homey.2.q": "Vad behöver jag?",
   "hs.homey.2.a": "En Homey Pro med den kostnadsfria Weekdot-appen från Homey App Store och ditt Homey-konto. Homey Cloud stöds inte.",
   "hs.homey.3.q": "Hur kopplar jag Weekdot till min Homey?",
@@ -832,7 +831,7 @@
   "hs.homey.4.q": "Homey säger att Weekdot inte är kopplad",
   "hs.homey.4.a": "Tryck på Uppdatera nu i Weekdot under Inställningar › Homey och kontrollera att rätt Homey är vald. Under Detaljer ser du varje steg i anslutningen. Se till att Weekdot-appen på din Homey är uppdaterad.",
   "hs.homey.5.q": "Vad skickar Weekdot till Homey?",
-  "hs.homey.5.a": "Dina händelser för de kommande 8 dagarna från de kalendrar du väljer, skickade direkt till din egen Homey. Med Dölj detaljer på skickas bara tiderna, med Upptagen som titel.",
+  "hs.homey.5.a": "Dina händelser för de kommande 50 dagarna från de kalendrar du väljer, skickade direkt till din egen Homey. Med Dölj detaljer på skickas bara tiderna, med Upptagen som titel.",
   "hs.homey.6.q": "Hur kopplar jag bort Homey?",
   "hs.homey.6.a": "Tryck på Logga ut från Homey i Weekdot. Öppna inställningarna för Weekdot-appen på din Homey och välj att koppla bort och radera händelserna.",
   "hs.homey.more": "Homey Community",

@@ -603,7 +603,6 @@
   "Sign In with Homey": "התחבר עם Homey",
   "Sign Out of Homey": "התנתק מ-Homey",
   "Sign in to Homey again.": "התחבר שוב ל-Homey.",
-  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 8 days to the Weekdot app on your Homey.": "התחבר עם חשבון Homey ובחר את ה-Homey שלך. Weekdot ישלח את האירועים של 8 הימים הבאים לאפליקציית Weekdot ב-Homey שלך.",
   "Smart Home": "בית חכם",
   "Start Flows when an event begins or ends, before an appointment, or with today's agenda.": "הפעל Flows כשאירוע מתחיל או נגמר, לפני פגישה או עם סדר היום.",
   "The Homey connection is not set up in this version of Weekdot.": "החיבור ל-Homey לא הוגדר בגרסה זו של Weekdot.",
@@ -622,7 +621,8 @@
   "More Apps by the Developer": "עוד יישומים מהמפתח",
   "Apps for iPhone, iPad, Apple TV and Homey": "יישומים ל-iPhone, iPad, Apple TV ו-Homey",
   "Visit": "הצג",
-  "Month & List": "חודש ורשימה"
+  "Month & List": "חודש ורשימה",
+  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 50 days to the Weekdot app on your Homey.": "התחבר עם חשבון Homey ובחר את ה-Homey שלך. Weekdot ישלח את האירועים של 50 הימים הבאים לאפליקציית Weekdot ב-Homey שלך."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot מציג, יוצר ועורך את האירועים בלוחות השנה שלך.",
@@ -824,7 +824,6 @@
   "hs.sync.5.q": "האם Weekdot עוקב אחריי?",
   "hs.sync.5.a": "לא. בלי חשבונות, בלי מעקב, בלי פרסומות ובלי ניתוח נתונים. לפרטים, אפשר לקרוא את מדיניות הפרטיות.",
   "hs.homey.1.q": "מה Weekdot יכול לעשות עם Homey?",
-  "hs.homey.1.a": "לוח השנה שלך מפעיל Flows ב-Homey: כשאירוע מתחיל או מסתיים, מספר דקות מוגדר לפני פגישה, או בשעה מסוימת עם סדר היום של היום. אפשר לסנן לפי לוח שנה או כותרת ולהשתמש בפרטי האירוע כתגים.",
   "hs.homey.2.q": "מה צריך?",
   "hs.homey.2.a": "Homey Pro עם היישום Weekdot החינמי מ-Homey App Store, וחשבון Homey. אין תמיכה ב-Homey Cloud.",
   "hs.homey.3.q": "איך מחברים את Weekdot ל-Homey?",
@@ -832,7 +831,7 @@
   "hs.homey.4.q": "Homey מודיע ש-Weekdot לא מחובר",
   "hs.homey.4.a": "יש להקיש על ״עדכן עכשיו״ ב-Weekdot תחת ״הגדרות › Homey״ ולוודא שנבחר ה-Homey הנכון. תחת ״פרטים״ מופיע כל שלב בחיבור. יש לוודא שהיישום Weekdot ב-Homey מעודכן.",
   "hs.homey.5.q": "מה Weekdot שולח ל-Homey?",
-  "hs.homey.5.a": "האירועים שלך ל-8 הימים הקרובים מלוחות השנה שבחרת, ישירות ל-Homey שלך. כש״הסתר פרטים״ מופעל, נשלחות רק השעות, עם הכותרת ״תפוס״.",
+  "hs.homey.5.a": "האירועים שלך ל-50 הימים הקרובים מלוחות השנה שבחרת, ישירות ל-Homey שלך. כש״הסתר פרטים״ מופעל, נשלחות רק השעות, עם הכותרת ״תפוס״.",
   "hs.homey.6.q": "איך מנתקים את Homey?",
   "hs.homey.6.a": "יש להקיש על ״התנתק מ-Homey״ ב-Weekdot. ב-Homey, יש לפתוח את ההגדרות של היישום Weekdot ולבחור לנתק ולמחוק את האירועים.",
   "hs.homey.more": "Homey Community",

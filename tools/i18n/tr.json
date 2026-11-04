@@ -603,7 +603,6 @@
   "Sign In with Homey": "Homey ile giriş yap",
   "Sign Out of Homey": "Homey'den çıkış yap",
   "Sign in to Homey again.": "Homey'ye yeniden giriş yap.",
-  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 8 days to the Weekdot app on your Homey.": "Homey hesabınla giriş yap ve Homey'ini seç. Weekdot sonraki 8 günün etkinliklerini Homey'indeki Weekdot uygulamasına gönderir.",
   "Smart Home": "Akıllı ev",
   "Start Flows when an event begins or ends, before an appointment, or with today's agenda.": "Bir etkinlik başladığında veya bittiğinde, bir randevudan önce ya da günün programıyla Flow başlat.",
   "The Homey connection is not set up in this version of Weekdot.": "Homey bağlantısı Weekdot'un bu sürümünde ayarlanmamış.",
@@ -622,7 +621,8 @@
   "More Apps by the Developer": "Geliştiricinin diğer uygulamaları",
   "Apps for iPhone, iPad, Apple TV and Homey": "iPhone, iPad, Apple TV ve Homey için uygulamalar",
   "Visit": "Göz At",
-  "Month & List": "Ay ve liste"
+  "Month & List": "Ay ve liste",
+  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 50 days to the Weekdot app on your Homey.": "Homey hesabınla giriş yap ve Homey'ini seç. Weekdot sonraki 50 günün etkinliklerini Homey'indeki Weekdot uygulamasına gönderir."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot, takvimlerinizdeki etkinlikleri gösterir, oluşturur ve düzenler.",
@@ -824,7 +824,6 @@
   "hs.sync.5.q": "Weekdot beni izliyor mu?",
   "hs.sync.5.a": "Hayır. Hesap yok, izleme yok, reklam yok, analiz yok. Ayrıntılar için gizlilik politikasını okuyun.",
   "hs.homey.1.q": "Weekdot, Homey ile neler yapabilir?",
-  "hs.homey.1.a": "Takviminiz Homey'nizde Flows başlatır: bir etkinlik başladığında veya bittiğinde, bir randevudan belirli dakika önce ya da belirli bir saatte bugünün programıyla. Takvime veya başlığa göre filtreleyin ve etkinlik ayrıntılarını etiket olarak kullanın.",
   "hs.homey.2.q": "Neye ihtiyacım var?",
   "hs.homey.2.a": "Homey App Store'daki ücretsiz Weekdot uygulamasına sahip bir Homey Pro ve Homey hesabınız. Homey Cloud desteklenmez.",
   "hs.homey.3.q": "Weekdot'u Homey'me nasıl bağlarım?",
@@ -832,7 +831,7 @@
   "hs.homey.4.q": "Homey, Weekdot'un bağlı olmadığını söylüyor",
   "hs.homey.4.a": "Weekdot'ta Ayarlar › Homey altındaki Şimdi güncelle'ye dokunun ve doğru Homey'nin seçili olduğunu denetleyin. Ayrıntılar altında bağlantının her adımını görürsünüz. Homey'nizdeki Weekdot uygulamasının güncel olduğundan emin olun.",
   "hs.homey.5.q": "Weekdot, Homey'ye ne gönderir?",
-  "hs.homey.5.a": "Seçtiğiniz takvimlerdeki önümüzdeki 8 günün etkinlikleri, doğrudan kendi Homey'nize gönderilir. Ayrıntıları gizle açıkken yalnızca saatler gönderilir ve başlık olarak Meşgul kullanılır.",
+  "hs.homey.5.a": "Seçtiğiniz takvimlerdeki önümüzdeki 50 günün etkinlikleri, doğrudan kendi Homey'nize gönderilir. Ayrıntıları gizle açıkken yalnızca saatler gönderilir ve başlık olarak Meşgul kullanılır.",
   "hs.homey.6.q": "Homey bağlantısını nasıl kaldırırım?",
   "hs.homey.6.a": "Weekdot'ta Homey'den çıkış yap'a dokunun. Homey'nizde Weekdot uygulamasının ayarlarını açın ve bağlantıyı kaldırıp etkinlikleri silmeyi seçin.",
   "hs.homey.more": "Homey Community",

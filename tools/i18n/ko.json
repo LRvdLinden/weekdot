@@ -603,7 +603,6 @@
   "Sign In with Homey": "Homey로 로그인",
   "Sign Out of Homey": "Homey에서 로그아웃",
   "Sign in to Homey again.": "Homey에 다시 로그인하세요.",
-  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 8 days to the Weekdot app on your Homey.": "Homey 계정으로 로그인하고 Homey를 선택하세요. Weekdot이 다음 8일의 일정을 Homey의 Weekdot 앱으로 보냅니다.",
   "Smart Home": "스마트 홈",
   "Start Flows when an event begins or ends, before an appointment, or with today's agenda.": "일정이 시작되거나 끝날 때, 약속 전에, 또는 오늘 일정으로 Flow를 시작하세요.",
   "The Homey connection is not set up in this version of Weekdot.": "이 버전의 Weekdot에는 Homey 연결이 설정되어 있지 않습니다.",
@@ -622,7 +621,8 @@
   "More Apps by the Developer": "개발자의 다른 앱",
   "Apps for iPhone, iPad, Apple TV and Homey": "iPhone, iPad, Apple TV 및 Homey용 앱",
   "Visit": "보기",
-  "Month & List": "월 및 목록"
+  "Month & List": "월 및 목록",
+  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 50 days to the Weekdot app on your Homey.": "Homey 계정으로 로그인하고 Homey를 선택하세요. Weekdot이 다음 50일의 일정을 Homey의 Weekdot 앱으로 보냅니다."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot은 캘린더의 이벤트를 표시, 생성 및 편집합니다.",
@@ -824,7 +824,6 @@
   "hs.sync.5.q": "Weekdot이 나를 추적하나요?",
   "hs.sync.5.a": "아니요. 계정도, 추적도, 광고도, 분석도 없습니다. 자세한 내용은 개인정보 처리방침을 읽어보세요.",
   "hs.homey.1.q": "Weekdot으로 Homey에서 무엇을 할 수 있나요?",
-  "hs.homey.1.a": "캘린더가 Homey의 Flows를 실행합니다. 이벤트가 시작되거나 끝날 때, 약속 몇 분 전에, 또는 오늘의 일정과 함께 지정한 시간에 실행할 수 있습니다. 캘린더나 제목으로 필터링하고 이벤트 세부 정보를 태그로 사용하세요.",
   "hs.homey.2.q": "무엇이 필요한가요?",
   "hs.homey.2.a": "Homey App Store의 무료 Weekdot 앱이 설치된 Homey Pro와 Homey 계정이 필요합니다. Homey Cloud는 지원되지 않습니다.",
   "hs.homey.3.q": "Weekdot을 Homey에 연결하려면 어떻게 하나요?",
@@ -832,7 +831,7 @@
   "hs.homey.4.q": "Homey에 Weekdot이 연결되지 않았다고 표시됩니다",
   "hs.homey.4.a": "Weekdot의 설정 › Homey에서 지금 업데이트를 탭하고 올바른 Homey가 선택되어 있는지 확인하세요. 세부 정보에서 연결의 각 단계를 볼 수 있습니다. Homey의 Weekdot 앱이 최신 버전인지도 확인하세요.",
   "hs.homey.5.q": "Weekdot은 Homey에 무엇을 보내나요?",
-  "hs.homey.5.a": "선택한 캘린더의 향후 8일간 이벤트를 사용자의 Homey로 직접 보냅니다. 세부 정보 숨기기가 켜져 있으면 시간만 전송되고 제목은 바쁨으로 표시됩니다.",
+  "hs.homey.5.a": "선택한 캘린더의 향후 50일간 이벤트를 사용자의 Homey로 직접 보냅니다. 세부 정보 숨기기가 켜져 있으면 시간만 전송되고 제목은 바쁨으로 표시됩니다.",
   "hs.homey.6.q": "Homey 연결은 어떻게 해제하나요?",
   "hs.homey.6.a": "Weekdot에서 Homey에서 로그아웃을 탭하세요. Homey에서는 Weekdot 앱의 설정을 열고 연결 해제 및 이벤트 삭제를 선택하세요.",
   "hs.homey.more": "Homey Community",

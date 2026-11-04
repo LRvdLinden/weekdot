@@ -603,7 +603,6 @@
   "Sign In with Homey": "ลงชื่อเข้าด้วย Homey",
   "Sign Out of Homey": "ลงชื่อออกจาก Homey",
   "Sign in to Homey again.": "ลงชื่อเข้า Homey อีกครั้ง",
-  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 8 days to the Weekdot app on your Homey.": "ลงชื่อเข้าด้วยบัญชี Homey และเลือก Homey ของคุณ จากนั้น Weekdot จะส่งกิจกรรม 8 วันข้างหน้าไปยังแอป Weekdot บน Homey ของคุณ",
   "Smart Home": "บ้านอัจฉริยะ",
   "Start Flows when an event begins or ends, before an appointment, or with today's agenda.": "เริ่ม Flow เมื่อกิจกรรมเริ่มหรือสิ้นสุด ก่อนนัดหมาย หรือด้วยกำหนดการวันนี้",
   "The Homey connection is not set up in this version of Weekdot.": "ยังไม่ได้ตั้งค่าการเชื่อมต่อ Homey ใน Weekdot เวอร์ชันนี้",
@@ -622,7 +621,8 @@
   "More Apps by the Developer": "แอปอื่นๆ ของผู้พัฒนา",
   "Apps for iPhone, iPad, Apple TV and Homey": "แอปสำหรับ iPhone, iPad, Apple TV และ Homey",
   "Visit": "ดู",
-  "Month & List": "เดือนและรายการ"
+  "Month & List": "เดือนและรายการ",
+  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 50 days to the Weekdot app on your Homey.": "ลงชื่อเข้าด้วยบัญชี Homey และเลือก Homey ของคุณ จากนั้น Weekdot จะส่งกิจกรรม 50 วันข้างหน้าไปยังแอป Weekdot บน Homey ของคุณ"
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot แสดง สร้าง และแก้ไขเหตุการณ์ในปฏิทินของคุณ",
@@ -824,7 +824,6 @@
   "hs.sync.5.q": "Weekdot ติดตามฉันไหม",
   "hs.sync.5.a": "ไม่ ไม่มีบัญชี ไม่มีการติดตาม ไม่มีโฆษณา และไม่มีการวิเคราะห์ อ่านรายละเอียดได้ในนโยบายความเป็นส่วนตัว",
   "hs.homey.1.q": "Weekdot ทำอะไรกับ Homey ได้บ้าง",
-  "hs.homey.1.a": "ปฏิทินของคุณจะเริ่ม Flows บน Homey ได้ เมื่อเหตุการณ์เริ่มต้นหรือสิ้นสุด ก่อนนัดหมายตามจำนวนนาทีที่กำหนด หรือในเวลาที่กำหนดพร้อมกำหนดการของวันนี้ กรองตามปฏิทินหรือชื่อเรื่อง และใช้รายละเอียดเหตุการณ์เป็นแท็กได้",
   "hs.homey.2.q": "ต้องมีอะไรบ้าง",
   "hs.homey.2.a": "Homey Pro ที่ติดตั้งแอป Weekdot ฟรีจาก Homey App Store และบัญชี Homey ของคุณ ไม่รองรับ Homey Cloud",
   "hs.homey.3.q": "เชื่อม Weekdot กับ Homey ได้อย่างไร",
@@ -832,7 +831,7 @@
   "hs.homey.4.q": "Homey แจ้งว่า Weekdot ไม่ได้เชื่อมต่ออยู่",
   "hs.homey.4.a": "แตะ อัปเดตตอนนี้ ใน Weekdot ที่ การตั้งค่า › Homey และตรวจสอบว่าเลือก Homey ที่ถูกต้อง ใน รายละเอียด คุณจะเห็นแต่ละขั้นตอนของการเชื่อมต่อ ตรวจสอบให้แน่ใจว่าแอป Weekdot บน Homey ของคุณเป็นเวอร์ชันล่าสุด",
   "hs.homey.5.q": "Weekdot ส่งอะไรไปยัง Homey",
-  "hs.homey.5.a": "เหตุการณ์ใน 8 วันข้างหน้าจากปฏิทินที่คุณเลือก ส่งตรงไปยัง Homey ของคุณเอง เมื่อเปิด ซ่อนรายละเอียด จะส่งเฉพาะเวลา โดยใช้ ไม่ว่าง เป็นชื่อเรื่อง",
+  "hs.homey.5.a": "เหตุการณ์ใน 50 วันข้างหน้าจากปฏิทินที่คุณเลือก ส่งตรงไปยัง Homey ของคุณเอง เมื่อเปิด ซ่อนรายละเอียด จะส่งเฉพาะเวลา โดยใช้ ไม่ว่าง เป็นชื่อเรื่อง",
   "hs.homey.6.q": "ยกเลิกการเชื่อมต่อ Homey ได้อย่างไร",
   "hs.homey.6.a": "แตะ ลงชื่อออกจาก Homey ใน Weekdot บน Homey ของคุณ ให้เปิดการตั้งค่าของแอป Weekdot แล้วเลือกยกเลิกการเชื่อมต่อและลบเหตุการณ์",
   "hs.homey.more": "Homey Community",

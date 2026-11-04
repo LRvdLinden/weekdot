@@ -603,7 +603,6 @@
   "Sign In with Homey": "Masuk dengan Homey",
   "Sign Out of Homey": "Keluar dari Homey",
   "Sign in to Homey again.": "Masuk ke Homey lagi.",
-  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 8 days to the Weekdot app on your Homey.": "Masuk dengan akun Homey dan pilih Homey Anda. Weekdot lalu mengirim acara 8 hari ke depan ke aplikasi Weekdot di Homey Anda.",
   "Smart Home": "Rumah pintar",
   "Start Flows when an event begins or ends, before an appointment, or with today's agenda.": "Jalankan Flow saat acara dimulai atau berakhir, sebelum janji, atau dengan agenda hari ini.",
   "The Homey connection is not set up in this version of Weekdot.": "Koneksi Homey belum diatur di versi Weekdot ini.",
@@ -622,7 +621,8 @@
   "More Apps by the Developer": "App lain dari pengembang",
   "Apps for iPhone, iPad, Apple TV and Homey": "App untuk iPhone, iPad, Apple TV, dan Homey",
   "Visit": "Lihat",
-  "Month & List": "Bulan dan daftar"
+  "Month & List": "Bulan dan daftar",
+  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 50 days to the Weekdot app on your Homey.": "Masuk dengan akun Homey dan pilih Homey Anda. Weekdot lalu mengirim acara 50 hari ke depan ke aplikasi Weekdot di Homey Anda."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot menampilkan, membuat, dan mengedit acara di kalender Anda.",
@@ -824,7 +824,6 @@
   "hs.sync.5.q": "Apakah Weekdot melacak saya?",
   "hs.sync.5.a": "Tidak. Tanpa akun, tanpa pelacakan, tanpa iklan, dan tanpa analitik. Baca kebijakan privasi untuk detailnya.",
   "hs.homey.1.q": "Apa yang dapat dilakukan Weekdot dengan Homey?",
-  "hs.homey.1.a": "Kalender Anda memulai Flows di Homey: saat acara dimulai atau berakhir, beberapa menit tertentu sebelum janji temu, atau pada waktu tertentu dengan agenda hari ini. Saring menurut kalender atau judul, dan gunakan detail acara sebagai tag.",
   "hs.homey.2.q": "Apa yang saya butuhkan?",
   "hs.homey.2.a": "Homey Pro dengan app Weekdot gratis dari Homey App Store, dan akun Homey Anda. Homey Cloud tidak didukung.",
   "hs.homey.3.q": "Bagaimana cara menghubungkan Weekdot ke Homey?",
@@ -832,7 +831,7 @@
   "hs.homey.4.q": "Homey mengatakan Weekdot tidak terhubung",
   "hs.homey.4.a": "Ketuk Perbarui sekarang di Weekdot pada Pengaturan › Homey dan periksa bahwa Homey yang benar dipilih. Di Detail, Anda dapat melihat setiap langkah koneksi. Pastikan app Weekdot di Homey Anda sudah versi terbaru.",
   "hs.homey.5.q": "Apa yang dikirim Weekdot ke Homey?",
-  "hs.homey.5.a": "Acara Anda untuk 8 hari ke depan dari kalender yang Anda pilih, dikirim langsung ke Homey Anda sendiri. Saat Sembunyikan detail nyala, hanya waktunya yang dikirim, dengan Sibuk sebagai judul.",
+  "hs.homey.5.a": "Acara Anda untuk 50 hari ke depan dari kalender yang Anda pilih, dikirim langsung ke Homey Anda sendiri. Saat Sembunyikan detail nyala, hanya waktunya yang dikirim, dengan Sibuk sebagai judul.",
   "hs.homey.6.q": "Bagaimana cara memutuskan Homey?",
   "hs.homey.6.a": "Ketuk Keluar dari Homey di Weekdot. Di Homey Anda, buka pengaturan app Weekdot dan pilih untuk memutuskan tautan dan menghapus acara.",
   "hs.homey.more": "Homey Community",

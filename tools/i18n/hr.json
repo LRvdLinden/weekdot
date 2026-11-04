@@ -603,7 +603,6 @@
   "Sign In with Homey": "Prijava putem Homeyja",
   "Sign Out of Homey": "Odjava s Homeyja",
   "Sign in to Homey again.": "Ponovno se prijavi na Homey.",
-  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 8 days to the Weekdot app on your Homey.": "Prijavi se Homey računom i odaberi svoj Homey. Weekdot zatim šalje događaje za sljedećih 8 dana aplikaciji Weekdot na tvom Homeyju.",
   "Smart Home": "Pametni dom",
   "Start Flows when an event begins or ends, before an appointment, or with today's agenda.": "Pokreći Flowove kad događaj počne ili završi, prije sastanka ili s dnevnim rasporedom.",
   "The Homey connection is not set up in this version of Weekdot.": "Veza s Homeyjem nije postavljena u ovoj verziji Weekdota.",
@@ -622,7 +621,8 @@
   "More Apps by the Developer": "Više aplikacija razvojnog programera",
   "Apps for iPhone, iPad, Apple TV and Homey": "Aplikacije za iPhone, iPad, Apple TV i Homey",
   "Visit": "Pogledaj",
-  "Month & List": "Mjesec i popis"
+  "Month & List": "Mjesec i popis",
+  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 50 days to the Weekdot app on your Homey.": "Prijavi se Homey računom i odaberi svoj Homey. Weekdot zatim šalje događaje za sljedećih 50 dana aplikaciji Weekdot na tvom Homeyju."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot prikazuje, stvara i uređuje događaje u vašim kalendarima.",
@@ -824,7 +824,6 @@
   "hs.sync.5.q": "Prati li me Weekdot?",
   "hs.sync.5.a": "Ne. Bez računa, bez praćenja, bez oglasa i bez analitike. Pojedinosti pročitajte u pravilima privatnosti.",
   "hs.homey.1.q": "Što Weekdot može raditi s Homeyjem?",
-  "hs.homey.1.a": "Vaš kalendar pokreće Flows na Homeyju: kada događaj počne ili završi, zadani broj minuta prije sastanka ili u određeno vrijeme s današnjim rasporedom. Filtrirajte po kalendaru ili naslovu i koristite pojedinosti događaja kao oznake.",
   "hs.homey.2.q": "Što mi je potrebno?",
   "hs.homey.2.a": "Homey Pro s besplatnom aplikacijom Weekdot iz Homey App Storea i vaš Homey račun. Homey Cloud nije podržan.",
   "hs.homey.3.q": "Kako povezati Weekdot s Homeyjem?",
@@ -832,7 +831,7 @@
   "hs.homey.4.q": "Homey kaže da Weekdot nije povezan",
   "hs.homey.4.a": "Dodirnite Ažuriraj sada u Weekdotu pod Postavke › Homey i provjerite je li odabran pravi Homey. Pod Pojedinosti vidite svaki korak povezivanja. Provjerite je li aplikacija Weekdot na Homeyju ažurna.",
   "hs.homey.5.q": "Što Weekdot šalje Homeyju?",
-  "hs.homey.5.a": "Vaše događaje za sljedećih 8 dana iz kalendara koje odaberete, poslane izravno na vaš Homey. Kad je uključeno Sakrij pojedinosti, šalju se samo vremena, s naslovom Zauzeto.",
+  "hs.homey.5.a": "Vaše događaje za sljedećih 50 dana iz kalendara koje odaberete, poslane izravno na vaš Homey. Kad je uključeno Sakrij pojedinosti, šalju se samo vremena, s naslovom Zauzeto.",
   "hs.homey.6.q": "Kako prekinuti vezu s Homeyjem?",
   "hs.homey.6.a": "Dodirnite Odjava s Homeyja u Weekdotu. Na Homeyju otvorite postavke aplikacije Weekdot i odaberite prekid veze i brisanje događaja.",
   "hs.homey.more": "Homey Community",

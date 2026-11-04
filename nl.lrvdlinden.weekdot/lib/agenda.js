@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * The schedule Weekdot sends (next 8 days) and helpers to read it in Homey's time zone.
+ * The schedule Weekdot sends (today plus the next 50 days; Weekdot 1.0.1 and older: 8 days) and helpers to read it in Homey's time zone.
  * Event: { id, title, emoji?, location?, start, end (ISO), allDay, startDay, endDay (yyyy-mm-dd, end exclusive),
  *          calendarId, calendar, color, free }
  */
@@ -79,6 +79,28 @@ class Agenda {
   minuteOfDay(date) {
     const [h, m] = this.time(date).split(':').map(Number);
     return h * 60 + m;
+  }
+
+  /** Last day (yyyy-mm-dd) included in the schedule from Weekdot, or '' without a schedule. */
+  get lastDay() {
+    const to = this.data && Date.parse(this.data.to);
+    if (!to || Number.isNaN(to)) return '';
+    return this.dayKey(new Date(to - 1));
+  }
+
+  /** Is the day yyyy-mm-dd inside the period Weekdot sent? */
+  covers(day) {
+    const last = this.lastDay;
+    return !!last && day <= last;
+  }
+
+  /** Number of days from today that Weekdot sent (today included). */
+  daysCovered(now = new Date()) {
+    const last = this.lastDay;
+    if (!last) return 0;
+    let n = 0;
+    while (n < 400 && this.dayKey(now, n) <= last) n += 1;
+    return n;
   }
 
   /** Does the event cover (part of) the day yyyy-mm-dd? */

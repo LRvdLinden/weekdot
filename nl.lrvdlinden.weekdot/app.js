@@ -43,6 +43,15 @@ class WeekdotApp extends Homey.App {
       event_now: args => this.agenda.events.some(e => this.agenda.isNow(e, now()) && this.agenda.matches(e, args)),
       event_today: args => this.agenda.eventsOn(this.agenda.dayKey(now())).some(e => this.agenda.matches(e, args)),
       event_tomorrow: args => this.agenda.eventsOn(this.agenda.dayKey(now(), 1)).some(e => this.agenda.matches(e, args)),
+      event_in_days: args => {
+        const days = Number(args.days);
+        const day = this.agenda.dayKey(now(), days);
+        // only answer for days Weekdot has sent, so an inverted card does not say "no event" without knowing
+        if (!this.agenda.covers(day)) {
+          throw new Error(this.homey.__('errors.out_of_range', { days: this.agenda.daysCovered(now()) }));
+        }
+        return this.agenda.eventsOn(day).some(e => this.agenda.matches(e, args));
+      },
     };
     for (const [id, fn] of Object.entries(conditions)) {
       const card = flow.getConditionCard(id);
@@ -219,7 +228,7 @@ class WeekdotApp extends Homey.App {
     const dayPairs = new Map();
     for (const arg of await this.daysBefore.getArgumentValues()) {
       const days = Number(arg.days);
-      if (days >= 1 && days <= 7 && arg.time) dayPairs.set(`${days}|${arg.time}`, { days, time: arg.time });
+      if (days >= 1 && days <= 50 && arg.time) dayPairs.set(`${days}|${arg.time}`, { days, time: arg.time });
     }
     for (const { days, time } of dayPairs.values()) {
       if (!timePassed(time)) continue;

@@ -603,7 +603,6 @@
   "Sign In with Homey": "Bejelentkezés Homeyval",
   "Sign Out of Homey": "Kijelentkezés a Homeyból",
   "Sign in to Homey again.": "Jelentkezz be újra a Homeyba.",
-  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 8 days to the Weekdot app on your Homey.": "Jelentkezz be a Homey-fiókoddal, és válaszd ki a Homeyt. A Weekdot ezután elküldi a következő 8 nap eseményeit a Homeyn lévő Weekdot alkalmazásnak.",
   "Smart Home": "Okosotthon",
   "Start Flows when an event begins or ends, before an appointment, or with today's agenda.": "Indíts Flow-kat, amikor egy esemény kezdődik vagy véget ér, egy találkozó előtt vagy a napi programmal.",
   "The Homey connection is not set up in this version of Weekdot.": "A Homey-kapcsolat nincs beállítva a Weekdot ezen verziójában.",
@@ -622,7 +621,8 @@
   "More Apps by the Developer": "A fejlesztő további appjai",
   "Apps for iPhone, iPad, Apple TV and Homey": "Appok iPhone-ra, iPadre, Apple TV-re és Homey-ra",
   "Visit": "Megnézem",
-  "Month & List": "Hónap és lista"
+  "Month & List": "Hónap és lista",
+  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 50 days to the Weekdot app on your Homey.": "Jelentkezz be a Homey-fiókoddal, és válaszd ki a Homeyt. A Weekdot ezután elküldi a következő 50 nap eseményeit a Homeyn lévő Weekdot alkalmazásnak."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "A Weekdot megjeleníti, létrehozza és szerkeszti a naptáraiban lévő eseményeket.",
@@ -824,7 +824,6 @@
   "hs.sync.5.q": "Követ engem a Weekdot?",
   "hs.sync.5.a": "Nem. Nincsenek fiókok, nincs követés, nincsenek reklámok és nincs analitika. A részleteket az adatvédelmi szabályzatban olvashatod.",
   "hs.homey.1.q": "Mire képes a Weekdot a Homeyval?",
-  "hs.homey.1.a": "A naptárad Flows-okat indít a Homeyn: amikor egy esemény elkezdődik vagy véget ér, egy megadott számú perccel egy találkozó előtt, vagy egy adott időpontban a mai napirenddel. Szűrj naptárra vagy címre, és használd az esemény részleteit címkékként.",
   "hs.homey.2.q": "Mire van szükségem?",
   "hs.homey.2.a": "Egy Homey Pro-ra az ingyenes Weekdot appal a Homey App Store-ból, valamint a Homey-fiókodra. A Homey Cloud nem támogatott.",
   "hs.homey.3.q": "Hogyan kapcsolhatom össze a Weekdotot a Homeymmal?",
@@ -832,7 +831,7 @@
   "hs.homey.4.q": "A Homey szerint a Weekdot nincs összekapcsolva",
   "hs.homey.4.a": "Koppints a Frissítés most gombra a Weekdotban a Beállítások › Homey menüben, és ellenőrizd, hogy a megfelelő Homey van-e kiválasztva. A Részletek alatt a kapcsolat minden lépését látod. Győződj meg róla, hogy a Homeyn lévő Weekdot app naprakész.",
   "hs.homey.5.q": "Mit küld a Weekdot a Homeynak?",
-  "hs.homey.5.a": "A következő 8 nap eseményeit a kiválasztott naptárakból, közvetlenül a saját Homeydra küldve. Ha a Részletek elrejtése be van kapcsolva, csak az időpontok kerülnek elküldésre, Foglalt címmel.",
+  "hs.homey.5.a": "A következő 50 nap eseményeit a kiválasztott naptárakból, közvetlenül a saját Homeydra küldve. Ha a Részletek elrejtése be van kapcsolva, csak az időpontok kerülnek elküldésre, Foglalt címmel.",
   "hs.homey.6.q": "Hogyan bonthatom a kapcsolatot a Homeyval?",
   "hs.homey.6.a": "Koppints a Kijelentkezés a Homeyból lehetőségre a Weekdotban. A Homeyn nyisd meg a Weekdot app beállításait, és válaszd a kapcsolat bontását és az események törlését.",
   "hs.homey.more": "Homey Community",

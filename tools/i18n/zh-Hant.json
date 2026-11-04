@@ -603,7 +603,6 @@
   "Sign In with Homey": "使用 Homey 登入",
   "Sign Out of Homey": "登出 Homey",
   "Sign in to Homey again.": "請重新登入 Homey。",
-  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 8 days to the Weekdot app on your Homey.": "使用你的 Homey 帳號登入並選擇你的 Homey。Weekdot 會將未來 8 天的行程傳送到你 Homey 上的 Weekdot App。",
   "Smart Home": "智慧家庭",
   "Start Flows when an event begins or ends, before an appointment, or with today's agenda.": "在行程開始或結束時、約會前或依今日行程啟動 Flow。",
   "The Homey connection is not set up in this version of Weekdot.": "此版本的 Weekdot 尚未設定 Homey 連線。",
@@ -622,7 +621,8 @@
   "More Apps by the Developer": "開發者的更多 App",
   "Apps for iPhone, iPad, Apple TV and Homey": "適用於 iPhone、iPad、Apple TV 和 Homey 的 App",
   "Visit": "查看",
-  "Month & List": "月與列表"
+  "Month & List": "月與列表",
+  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 50 days to the Weekdot app on your Homey.": "使用你的 Homey 帳號登入並選擇你的 Homey。Weekdot 會將未來 50 天的行程傳送到你 Homey 上的 Weekdot App。"
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot 會顯示、建立和編輯你行事曆中的行程。",
@@ -824,7 +824,6 @@
   "hs.sync.5.q": "Weekdot 會追蹤我嗎？",
   "hs.sync.5.a": "不會。沒有帳號、沒有追蹤、沒有廣告，也沒有分析。詳細資訊請閱讀隱私權政策。",
   "hs.homey.1.q": "Weekdot 能與 Homey 做什麼？",
-  "hs.homey.1.a": "你的行事曆可在 Homey 上啟動 Flows：在行程開始或結束時、在約會前指定的分鐘數，或在某個時間搭配今天的行程安排。可依行事曆或標題篩選，並將行程詳細資料當作標籤使用。",
   "hs.homey.2.q": "需要什麼？",
   "hs.homey.2.a": "一台從 Homey App Store 安裝了免費 Weekdot App 的 Homey Pro，以及你的 Homey 帳號。不支援 Homey Cloud。",
   "hs.homey.3.q": "如何將 Weekdot 連結到 Homey？",
@@ -832,7 +831,7 @@
   "hs.homey.4.q": "Homey 顯示 Weekdot 未連結",
   "hs.homey.4.a": "在 Weekdot 的「設定」›「Homey」中點一下「立即更新」，並確認已選擇正確的 Homey。在「詳細資料」中可以看到連線的每個步驟。請確認 Homey 上的 Weekdot App 是最新版本。",
   "hs.homey.5.q": "Weekdot 會傳送什麼給 Homey？",
-  "hs.homey.5.a": "你所選行事曆中未來 8 天的行程，會直接傳送到你自己的 Homey。開啟「隱藏詳細資料」時，只會傳送時間，標題則顯示為「忙碌」。",
+  "hs.homey.5.a": "你所選行事曆中未來 50 天的行程，會直接傳送到你自己的 Homey。開啟「隱藏詳細資料」時，只會傳送時間，標題則顯示為「忙碌」。",
   "hs.homey.6.q": "如何取消與 Homey 的連結？",
   "hs.homey.6.a": "在 Weekdot 中點一下「登出 Homey」。在 Homey 上，打開 Weekdot App 的設定，選擇取消連結並刪除行程。",
   "hs.homey.more": "Homey Community",

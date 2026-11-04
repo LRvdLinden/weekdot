@@ -14,6 +14,7 @@
     "all_day": "طوال اليوم"
   },
   "errors": {
+    "out_of_range": "أرسل Weekdot الأيام القادمة فقط (__days__). حدّث Weekdot على iPhone أو iPad أو Mac لترى أبعد من ذلك.",
     "bad_schedule": "أرسل Weekdot بيانات تعذرت قراءتها."
   },
   "settings": {

@@ -603,7 +603,6 @@
   "Sign In with Homey": "Homeyでサインイン",
   "Sign Out of Homey": "Homeyからサインアウト",
   "Sign in to Homey again.": "Homeyにもう一度サインインしてください。",
-  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 8 days to the Weekdot app on your Homey.": "Homeyアカウントでサインインし、Homeyを選択してください。Weekdotが今後8日間の予定をHomeyのWeekdotアプリに送信します。",
   "Smart Home": "スマートホーム",
   "Start Flows when an event begins or ends, before an appointment, or with today's agenda.": "予定の開始・終了時、予定の前、または今日の予定でFlowを開始できます。",
   "The Homey connection is not set up in this version of Weekdot.": "このバージョンのWeekdotではHomeyとの連携が設定されていません。",
@@ -622,7 +621,8 @@
   "More Apps by the Developer": "このデベロッパのその他のApp",
   "Apps for iPhone, iPad, Apple TV and Homey": "iPhone、iPad、Apple TV、Homey向けのApp",
   "Visit": "見る",
-  "Month & List": "月とリスト"
+  "Month & List": "月とリスト",
+  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 50 days to the Weekdot app on your Homey.": "Homeyアカウントでサインインし、Homeyを選択してください。Weekdotが今後50日間の予定をHomeyのWeekdotアプリに送信します。"
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdotはカレンダー内のイベントを表示、作成、編集します。",
@@ -824,7 +824,6 @@
   "hs.sync.5.q": "Weekdotはトラッキングをしますか？",
   "hs.sync.5.a": "いいえ。アカウントも、トラッキングも、広告も、分析もありません。詳しくはプライバシーポリシーをご覧ください。",
   "hs.homey.1.q": "WeekdotはHomeyで何ができますか？",
-  "hs.homey.1.a": "カレンダーがHomeyのFlowsを開始させます。予定の開始時や終了時、予定の指定した分数前、または今日の予定一覧と共に指定した時刻に実行できます。カレンダーやタイトルで絞り込み、予定の詳細をタグとして使えます。",
   "hs.homey.2.q": "何が必要ですか？",
   "hs.homey.2.a": "Homey App Storeから無料のWeekdotアプリを入れたHomey Proと、Homeyアカウントです。Homey Cloudには対応していません。",
   "hs.homey.3.q": "WeekdotをHomeyと連携するには？",
@@ -832,7 +831,7 @@
   "hs.homey.4.q": "HomeyでWeekdotが連携されていないと表示される",
   "hs.homey.4.a": "Weekdotの「設定」›「Homey」で「今すぐ更新」をタップし、正しいHomeyが選択されているか確認してください。「詳細」では接続の各ステップを確認できます。HomeyのWeekdotアプリが最新であることも確認しましょう。",
   "hs.homey.5.q": "WeekdotはHomeyに何を送信しますか？",
-  "hs.homey.5.a": "選んだカレンダーの今後8日間の予定を、あなたのHomeyに直接送信します。「詳細を隠す」がオンの場合は時刻だけが送信され、タイトルは「予定あり」になります。",
+  "hs.homey.5.a": "選んだカレンダーの今後50日間の予定を、あなたのHomeyに直接送信します。「詳細を隠す」がオンの場合は時刻だけが送信され、タイトルは「予定あり」になります。",
   "hs.homey.6.q": "Homeyとの連携を解除するには？",
   "hs.homey.6.a": "Weekdotで「Homeyからサインアウト」をタップします。Homeyでは、Weekdotアプリの設定を開き、連携を解除して予定を削除する項目を選びます。",
   "hs.homey.more": "Homey Community",

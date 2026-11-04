@@ -14,6 +14,7 @@
     "all_day": "hele dagen"
   },
   "errors": {
+    "out_of_range": "Weekdot har bare sendt de neste __days__ dagene. Oppdater Weekdot på iPhone, iPad eller Mac for å se lenger frem.",
     "bad_schedule": "Weekdot sendte data som ikke kunne leses."
   },
   "settings": {
@@ -22,13 +23,13 @@
     "not_linked": "Ikke koblet ennå",
     "linked": "Koblet til __device__",
     "updated": "Sist oppdatert",
-    "events": "Avtaler (neste 8 dager)",
+    "events": "Avtaler (neste 50 dager)",
     "calendars": "Kalendere",
     "stale": "Weekdot har ikke sendt en oppdatering på en stund. Åpne Weekdot på iPhone.",
     "howto": "Slik kobler du",
     "step1": "Installer Weekdot på iPhone, iPad eller Mac.",
     "step2": "Åpne Innstillinger › Homey i Weekdot og logg inn med Homey-kontoen din.",
-    "step3": "Velg denne Homey. Weekdot sender da avtalene for de neste 8 dagene.",
+    "step3": "Velg denne Homey. Weekdot sender da avtalene for de neste 50 dagene.",
     "privacy": "Avtalene dine lagres bare på denne Homey.",
     "clear": "Fjern avtaler fra Homey",
     "cleared": "Fjernet.",

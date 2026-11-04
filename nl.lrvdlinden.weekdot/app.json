@@ -721,7 +721,7 @@
             "name": "days",
             "type": "number",
             "min": 1,
-            "max": 7,
+            "max": 50,
             "step": 1,
             "title": {
               "en": "Days",
@@ -2159,6 +2159,147 @@
       }
     ],
     "conditions": [
+      {
+        "title": {
+          "en": "There is an event in … days",
+          "nl": "Er is over … dagen een afspraak",
+          "de": "In … Tagen gibt es einen Termin",
+          "fr": "Il y a un événement dans … jours",
+          "it": "C'è un evento tra … giorni",
+          "sv": "Det finns en händelse om … dagar",
+          "no": "Det er en avtale om … dager",
+          "es": "Hay un evento en … días",
+          "da": "Der er en begivenhed om … dage",
+          "ru": "Через … дн. есть событие",
+          "pl": "Za … dni jest wydarzenie",
+          "ko": "… 일 후 일정이 있음",
+          "ar": "يوجد موعد بعد … أيام"
+        },
+        "titleFormatted": {
+          "en": "There !{{is|is no}} event [[keyword]] in [[calendar]] in [[days]] days",
+          "nl": "Er !{{is|is geen}} afspraak [[keyword]] in [[calendar]] over [[days]] dagen",
+          "de": "In [[days]] Tagen !{{gibt es einen|gibt es keinen}} Termin [[keyword]] in [[calendar]]",
+          "fr": "Il !{{y a|n'y a pas}} d'événement [[keyword]] dans [[calendar]] dans [[days]] jours",
+          "it": "Tra [[days]] giorni !{{c'è|non c'è}} un evento [[keyword]] in [[calendar]]",
+          "sv": "Det !{{finns|finns ingen}} händelse [[keyword]] i [[calendar]] om [[days]] dagar",
+          "no": "Det !{{er|er ingen}} avtale [[keyword]] i [[calendar]] om [[days]] dager",
+          "es": "!{{Hay|No hay}} un evento [[keyword]] en [[calendar]] en [[days]] días",
+          "da": "Der !{{er|er ingen}} begivenhed [[keyword]] i [[calendar]] om [[days]] dage",
+          "ru": "Через [[days]] дн. !{{есть|нет}} события [[keyword]] в [[calendar]]",
+          "pl": "Za [[days]] dni !{{jest|nie ma}} wydarzenia [[keyword]] w [[calendar]]",
+          "ko": "[[days]]일 후 [[calendar]]에 일정 [[keyword]]이(가) !{{있음|없음}}",
+          "ar": "!{{يوجد|لا يوجد}} موعد [[keyword]] في [[calendar]] بعد [[days]] أيام"
+        },
+        "args": [
+          {
+            "name": "keyword",
+            "type": "text",
+            "required": false,
+            "title": {
+              "en": "Title contains (optional)",
+              "nl": "Titel bevat (optioneel)",
+              "de": "Titel enthält (optional)",
+              "fr": "Le titre contient (facultatif)",
+              "it": "Il titolo contiene (facoltativo)",
+              "sv": "Titeln innehåller (valfritt)",
+              "no": "Tittelen inneholder (valgfritt)",
+              "es": "El título contiene (opcional)",
+              "da": "Titlen indeholder (valgfrit)",
+              "ru": "Название содержит (необязательно)",
+              "pl": "Tytuł zawiera (opcjonalnie)",
+              "ko": "제목에 포함(선택)",
+              "ar": "العنوان يحتوي على (اختياري)"
+            },
+            "placeholder": {
+              "en": "with any title",
+              "nl": "met elke titel",
+              "de": "mit beliebigem Titel",
+              "fr": "avec n'importe quel titre",
+              "it": "con qualsiasi titolo",
+              "sv": "med valfri titel",
+              "no": "med hvilken som helst tittel",
+              "es": "con cualquier título",
+              "da": "med enhver titel",
+              "ru": "с любым названием",
+              "pl": "z dowolnym tytułem",
+              "ko": "모든 제목",
+              "ar": "بأي عنوان"
+            }
+          },
+          {
+            "name": "calendar",
+            "type": "autocomplete",
+            "title": {
+              "en": "Calendar",
+              "nl": "Agenda",
+              "de": "Kalender",
+              "fr": "Calendrier",
+              "it": "Calendario",
+              "sv": "Kalender",
+              "no": "Kalender",
+              "es": "Calendario",
+              "da": "Kalender",
+              "ru": "Календарь",
+              "pl": "Kalendarz",
+              "ko": "캘린더",
+              "ar": "التقويم"
+            },
+            "placeholder": {
+              "en": "Any calendar",
+              "nl": "Elke agenda",
+              "de": "Jeder Kalender",
+              "fr": "N'importe quel calendrier",
+              "it": "Qualsiasi calendario",
+              "sv": "Valfri kalender",
+              "no": "Hvilken som helst kalender",
+              "es": "Cualquier calendario",
+              "da": "Enhver kalender",
+              "ru": "Любой календарь",
+              "pl": "Dowolny kalendarz",
+              "ko": "모든 캘린더",
+              "ar": "أي تقويم"
+            }
+          },
+          {
+            "name": "days",
+            "type": "number",
+            "min": 1,
+            "max": 50,
+            "step": 1,
+            "title": {
+              "en": "Days",
+              "nl": "Dagen",
+              "de": "Tage",
+              "fr": "Jours",
+              "it": "Giorni",
+              "sv": "Dagar",
+              "no": "Dager",
+              "es": "Días",
+              "da": "Dage",
+              "ru": "Дни",
+              "pl": "Dni",
+              "ko": "일",
+              "ar": "الأيام"
+            },
+            "placeholder": {
+              "en": "3",
+              "nl": "3",
+              "de": "3",
+              "fr": "3",
+              "it": "3",
+              "sv": "3",
+              "no": "3",
+              "es": "3",
+              "da": "3",
+              "ru": "3",
+              "pl": "3",
+              "ko": "3",
+              "ar": "3"
+            }
+          }
+        ],
+        "id": "event_in_days"
+      },
       {
         "title": {
           "en": "There is an event right now",

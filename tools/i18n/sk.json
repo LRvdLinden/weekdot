@@ -603,7 +603,6 @@
   "Sign In with Homey": "Prihlásiť sa cez Homey",
   "Sign Out of Homey": "Odhlásiť sa z Homey",
   "Sign in to Homey again.": "Prihlás sa znova do Homey.",
-  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 8 days to the Weekdot app on your Homey.": "Prihlás sa účtom Homey a vyber svoj Homey. Weekdot potom odošle udalosti na nasledujúcich 8 dní do aplikácie Weekdot v tvojom Homey.",
   "Smart Home": "Inteligentná domácnosť",
   "Start Flows when an event begins or ends, before an appointment, or with today's agenda.": "Spúšťaj Flow, keď udalosť začína alebo končí, pred stretnutím alebo s programom dňa.",
   "The Homey connection is not set up in this version of Weekdot.": "Pripojenie k Homey nie je v tejto verzii Weekdotu nastavené.",
@@ -622,7 +621,8 @@
   "More Apps by the Developer": "Ďalšie aplikácie od vývojára",
   "Apps for iPhone, iPad, Apple TV and Homey": "Aplikácie pre iPhone, iPad, Apple TV a Homey",
   "Visit": "Zobraziť",
-  "Month & List": "Mesiac a zoznam"
+  "Month & List": "Mesiac a zoznam",
+  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 50 days to the Weekdot app on your Homey.": "Prihlás sa účtom Homey a vyber svoj Homey. Weekdot potom odošle udalosti na nasledujúcich 50 dní do aplikácie Weekdot v tvojom Homey."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot zobrazuje, vytvára a upravuje udalosti vo vašich kalendároch.",
@@ -824,7 +824,6 @@
   "hs.sync.5.q": "Sleduje ma Weekdot?",
   "hs.sync.5.a": "Nie. Žiadne účty, žiadne sledovanie, žiadne reklamy a žiadna analytika. Podrobnosti nájdete v zásadách ochrany súkromia.",
   "hs.homey.1.q": "Čo dokáže Weekdot s Homey?",
-  "hs.homey.1.a": "Váš kalendár spúšťa Flows na vašom Homey: keď sa udalosť začne alebo skončí, určitý počet minút pred stretnutím alebo v daný čas s dnešným programom. Filtrujte podľa kalendára alebo názvu a používajte podrobnosti udalosti ako tagy.",
   "hs.homey.2.q": "Čo potrebujem?",
   "hs.homey.2.a": "Homey Pro s bezplatnou aplikáciou Weekdot z Homey App Storu a váš účet Homey. Homey Cloud nie je podporovaný.",
   "hs.homey.3.q": "Ako prepojím Weekdot so svojím Homey?",
@@ -832,7 +831,7 @@
   "hs.homey.4.q": "Homey hlási, že Weekdot nie je prepojený",
   "hs.homey.4.a": "Vo Weekdote klepnite na Aktualizovať v Nastavenia › Homey a skontrolujte, že je vybraný správny Homey. V časti Podrobnosti uvidíte jednotlivé kroky pripojenia. Uistite sa, že je aplikácia Weekdot na Homey aktuálna.",
   "hs.homey.5.q": "Čo Weekdot posiela do Homey?",
-  "hs.homey.5.a": "Vaše udalosti na nasledujúcich 8 dní z kalendárov, ktoré vyberiete, odoslané priamo do vášho vlastného Homey. Keď je zapnuté Skryť podrobnosti, posielajú sa len časy a ako názov sa použije Zaneprázdnený.",
+  "hs.homey.5.a": "Vaše udalosti na nasledujúcich 50 dní z kalendárov, ktoré vyberiete, odoslané priamo do vášho vlastného Homey. Keď je zapnuté Skryť podrobnosti, posielajú sa len časy a ako názov sa použije Zaneprázdnený.",
   "hs.homey.6.q": "Ako zruším prepojenie s Homey?",
   "hs.homey.6.a": "Vo Weekdote klepnite na Odhlásiť sa z Homey. Na Homey otvorte nastavenia aplikácie Weekdot a zvoľte zrušenie prepojenia a vymazanie udalostí.",
   "hs.homey.more": "Homey Community",

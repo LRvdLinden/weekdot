@@ -97,8 +97,8 @@ def main():
     # flow cards
     minutes = {"name": "minutes", "type": "number", "min": 1, "max": 1440, "step": 1, "title": S["arg_minutes"], "placeholder": {l: "15" for l in L}}
     time_arg = {"name": "time", "type": "time", "title": S["arg_time"]}
-    # Weekdot sends the coming 8 days, so up to 7 days ahead
-    days_arg = {"name": "days", "type": "number", "min": 1, "max": 7, "step": 1, "title": S["arg_days"], "placeholder": {l: "3" for l in L}}
+    # Weekdot 1.0.2+ sends today plus the coming 50 days
+    days_arg = {"name": "days", "type": "number", "min": 1, "max": 50, "step": 1, "title": S["arg_days"], "placeholder": {l: "3" for l in L}}
     day_arg = {"name": "day", "type": "dropdown", "title": S["arg_day"],
                "values": [{"id": "today", "title": S["today"]}, {"id": "tomorrow", "title": S["tomorrow"]}]}
     triggers = {
@@ -113,6 +113,7 @@ def main():
                                   [tok("count", "number", "tok_count", 12), tok("device", "string", "tok_device", {l: "iPhone" for l in L})]),
     }
     conditions = {k: card(k, [keyword_arg(), calendar_arg()]) for k in ["event_now", "event_today", "event_tomorrow"]}
+    conditions["event_in_days"] = card("event_in_days", [keyword_arg(), calendar_arg(), days_arg])
     next_tokens = [tok("found", "boolean", "tok_found", True)] + EVENT_TOKENS[:5] + [
         tok("date", "string", "tok_date", {l: "2026-10-30" for l in L}),
         tok("minutes_until", "number", "tok_minutes_until", 45)]

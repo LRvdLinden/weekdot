@@ -1,3 +1,7 @@
+## 1.0.2 (build 88) — Homey: 50 days ahead
+
+- Weekdot now sends today plus the coming 50 days to Homey (was 8), so the new Homey Flow cards “An event starts in … days” and “There is an event in … days” can look up to 50 days ahead. Text in Settings › Homey updated in all languages.
+
 ## 1.0.2 (build 87)
 
 - Week is the default start view again for new installs (build 86 briefly used Mini Month). Weekdot still reopens with the view you last chose.

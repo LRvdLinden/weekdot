@@ -603,7 +603,6 @@
   "Sign In with Homey": "Đăng nhập bằng Homey",
   "Sign Out of Homey": "Đăng xuất khỏi Homey",
   "Sign in to Homey again.": "Hãy đăng nhập lại Homey.",
-  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 8 days to the Weekdot app on your Homey.": "Đăng nhập bằng tài khoản Homey và chọn Homey của bạn. Weekdot sẽ gửi sự kiện của 8 ngày tới đến ứng dụng Weekdot trên Homey.",
   "Smart Home": "Nhà thông minh",
   "Start Flows when an event begins or ends, before an appointment, or with today's agenda.": "Chạy Flow khi sự kiện bắt đầu hoặc kết thúc, trước cuộc hẹn hoặc với lịch trình hôm nay.",
   "The Homey connection is not set up in this version of Weekdot.": "Kết nối Homey chưa được thiết lập trong phiên bản Weekdot này.",
@@ -622,7 +621,8 @@
   "More Apps by the Developer": "Thêm ứng dụng của nhà phát triển",
   "Apps for iPhone, iPad, Apple TV and Homey": "Ứng dụng cho iPhone, iPad, Apple TV và Homey",
   "Visit": "Xem",
-  "Month & List": "Tháng và danh sách"
+  "Month & List": "Tháng và danh sách",
+  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 50 days to the Weekdot app on your Homey.": "Đăng nhập bằng tài khoản Homey và chọn Homey của bạn. Weekdot sẽ gửi sự kiện của 50 ngày tới đến ứng dụng Weekdot trên Homey."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot hiển thị, tạo và sửa các sự kiện trong lịch của bạn.",
@@ -824,7 +824,6 @@
   "hs.sync.5.q": "Weekdot có theo dõi tôi không?",
   "hs.sync.5.a": "Không. Không tài khoản, không theo dõi, không quảng cáo và không phân tích. Đọc chính sách quyền riêng tư để biết chi tiết.",
   "hs.homey.1.q": "Weekdot có thể làm gì với Homey?",
-  "hs.homey.1.a": "Lịch của bạn kích hoạt Flows trên Homey: khi sự kiện bắt đầu hoặc kết thúc, một số phút nhất định trước cuộc hẹn, hoặc vào một thời điểm kèm lịch trình hôm nay. Lọc theo lịch hoặc tiêu đề và dùng chi tiết sự kiện làm thẻ.",
   "hs.homey.2.q": "Tôi cần những gì?",
   "hs.homey.2.a": "Một Homey Pro có ứng dụng Weekdot miễn phí từ Homey App Store và tài khoản Homey của bạn. Homey Cloud không được hỗ trợ.",
   "hs.homey.3.q": "Làm cách nào để kết nối Weekdot với Homey?",
@@ -832,7 +831,7 @@
   "hs.homey.4.q": "Homey báo Weekdot chưa được kết nối",
   "hs.homey.4.a": "Chạm vào Cập nhật ngay trong Weekdot tại Cài đặt › Homey và kiểm tra rằng đã chọn đúng Homey. Trong Chi tiết, bạn sẽ thấy từng bước của quá trình kết nối. Hãy đảm bảo ứng dụng Weekdot trên Homey đã được cập nhật.",
   "hs.homey.5.q": "Weekdot gửi gì đến Homey?",
-  "hs.homey.5.a": "Các sự kiện trong 8 ngày tới từ những lịch bạn chọn, được gửi thẳng đến Homey của riêng bạn. Khi Ẩn chi tiết đang bật, chỉ thời gian được gửi, với tiêu đề là Bận.",
+  "hs.homey.5.a": "Các sự kiện trong 50 ngày tới từ những lịch bạn chọn, được gửi thẳng đến Homey của riêng bạn. Khi Ẩn chi tiết đang bật, chỉ thời gian được gửi, với tiêu đề là Bận.",
   "hs.homey.6.q": "Làm cách nào để hủy kết nối Homey?",
   "hs.homey.6.a": "Chạm vào Đăng xuất khỏi Homey trong Weekdot. Trên Homey, mở cài đặt của ứng dụng Weekdot và chọn hủy kết nối rồi xóa các sự kiện.",
   "hs.homey.more": "Homey Community",

@@ -603,7 +603,6 @@
   "Sign In with Homey": "Kirjaudu Homeylla",
   "Sign Out of Homey": "Kirjaudu ulos Homeysta",
   "Sign in to Homey again.": "Kirjaudu Homeyhin uudelleen.",
-  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 8 days to the Weekdot app on your Homey.": "Kirjaudu Homey-tililläsi ja valitse Homey. Weekdot lähettää sitten seuraavien 8 päivän tapahtumat Homeysi Weekdot-appiin.",
   "Smart Home": "Älykoti",
   "Start Flows when an event begins or ends, before an appointment, or with today's agenda.": "Käynnistä Flowt, kun tapahtuma alkaa tai päättyy, ennen tapaamista tai päivän ohjelman kanssa.",
   "The Homey connection is not set up in this version of Weekdot.": "Homey-yhteyttä ei ole määritetty tässä Weekdotin versiossa.",
@@ -622,7 +621,8 @@
   "More Apps by the Developer": "Lisää kehittäjän appeja",
   "Apps for iPhone, iPad, Apple TV and Homey": "Appeja iPhonelle, iPadille, Apple TV:lle ja Homeylle",
   "Visit": "Näytä",
-  "Month & List": "Kuukausi ja luettelo"
+  "Month & List": "Kuukausi ja luettelo",
+  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 50 days to the Weekdot app on your Homey.": "Kirjaudu Homey-tililläsi ja valitse Homey. Weekdot lähettää sitten seuraavien 50 päivän tapahtumat Homeysi Weekdot-appiin."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot näyttää, luo ja muokkaa kalentereidesi tapahtumia.",
@@ -824,7 +824,6 @@
   "hs.sync.5.q": "Seuraako Weekdot minua?",
   "hs.sync.5.a": "Ei. Ei tilejä, ei seurantaa, ei mainoksia eikä analytiikkaa. Lue tarkemmat tiedot tietosuojakäytännöstä.",
   "hs.homey.1.q": "Mitä Weekdot voi tehdä Homeyn kanssa?",
-  "hs.homey.1.a": "Kalenterisi käynnistää Flows-toimintoja Homeyssasi: kun tapahtuma alkaa tai päättyy, tietyn määrän minuutteja ennen tapaamista tai tiettyyn aikaan päivän ohjelman kanssa. Suodata kalenterin tai otsikon mukaan ja käytä tapahtuman tietoja tageina.",
   "hs.homey.2.q": "Mitä tarvitsen?",
   "hs.homey.2.a": "Homey Pron, jossa on ilmainen Weekdot-appi Homey App Storesta, sekä Homey-tilisi. Homey Cloudia ei tueta.",
   "hs.homey.3.q": "Miten yhdistän Weekdotin Homeyhin?",
@@ -832,7 +831,7 @@
   "hs.homey.4.q": "Homey sanoo, ettei Weekdotia ole yhdistetty",
   "hs.homey.4.a": "Napauta Weekdotissa Päivitä nyt kohdassa Asetukset › Homey ja tarkista, että oikea Homey on valittuna. Kohdassa Tiedot näet yhteyden jokaisen vaiheen. Varmista, että Homeysi Weekdot-appi on ajan tasalla.",
   "hs.homey.5.q": "Mitä Weekdot lähettää Homeyhin?",
-  "hs.homey.5.a": "Tulevien 8 päivän tapahtumasi valitsemistasi kalentereista, suoraan omaan Homeyhisi. Kun Piilota tiedot on päällä, lähetetään vain ajat, ja otsikkona on Varattu.",
+  "hs.homey.5.a": "Tulevien 50 päivän tapahtumasi valitsemistasi kalentereista, suoraan omaan Homeyhisi. Kun Piilota tiedot on päällä, lähetetään vain ajat, ja otsikkona on Varattu.",
   "hs.homey.6.q": "Miten poistan Homey-yhteyden?",
   "hs.homey.6.a": "Napauta Weekdotissa Kirjaudu ulos Homeysta. Avaa Homeyssa Weekdot-apin asetukset ja valitse yhteyden poistaminen ja tapahtumien poistaminen.",
   "hs.homey.more": "Homey Community",
