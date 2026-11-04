@@ -33,7 +33,8 @@
     "privacy": "События хранятся только на этом Homey.",
     "clear": "Удалить события с Homey",
     "cleared": "Удалено.",
-    "website": "Подробнее о Weekdot"
+    "website": "Подробнее о Weekdot",
+    "dir": "ltr"
   },
   "widget": {
     "today": "Сегодня",
@@ -55,6 +56,14 @@
     "countdown_setup": "Укажите слово из названия в настройках виджета.",
     "countdown_none": "Нет предстоящих событий с «__word__»",
     "events_count": "События: __count__",
-    "week_n": "Неделя __n__"
+    "week_n": "Неделя __n__",
+    "dir": "ltr"
+  },
+  "more_apps": {
+    "section": "Обзор",
+    "title": "Другие приложения разработчика",
+    "subtitle": "Приложения для iPhone, iPad, Apple TV и Homey",
+    "action": "Открыть",
+    "aria": "Другие приложения разработчика на lrvdlinden.app"
   }
 }

@@ -33,7 +33,8 @@
     "privacy": "일정은 이 Homey에만 저장됩니다.",
     "clear": "Homey에서 일정 삭제",
     "cleared": "삭제됨.",
-    "website": "Weekdot 자세히 보기"
+    "website": "Weekdot 자세히 보기",
+    "dir": "ltr"
   },
   "widget": {
     "today": "오늘",
@@ -55,6 +56,14 @@
     "countdown_setup": "위젯 설정에서 제목의 단어를 선택하세요.",
     "countdown_none": "“__word__” 관련 예정된 일정 없음",
     "events_count": "일정: __count__",
-    "week_n": "__n__주차"
+    "week_n": "__n__주차",
+    "dir": "ltr"
+  },
+  "more_apps": {
+    "section": "둘러보기",
+    "title": "개발자의 다른 앱",
+    "subtitle": "iPhone, iPad, Apple TV 및 Homey용 앱",
+    "action": "보기",
+    "aria": "lrvdlinden.app에서 개발자의 다른 앱 보기"
   }
 }

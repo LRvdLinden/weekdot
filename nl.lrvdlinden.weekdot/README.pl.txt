@@ -1,5 +1,3 @@
-Niech kalendarz steruje Twoim domem. Wydarzenia z najbliższych dni trafiają do Homey, więc Flow mogą startować, gdy spotkanie się zaczyna lub kończy, kilka minut przed spotkaniem albo z planem dnia. Filtruj według kalendarza lub słowa w tytule, używaj tagów w zaawansowanych Flow i dodaj widżet Plan do pulpitu.
+Niech kalendarz steruje Twoim domem. Wydarzenia trafiają do Homey, więc Flow mogą startować, gdy spotkanie się zaczyna lub kończy, kilka minut lub dni wcześniej albo z planem dnia. Filtruj według kalendarza lub słowa w tytule, używaj szczegółów jako tagów i pokaż dzień, tydzień lub miesiąc na pulpicie dzięki siedmiu widżetom.
 
-Wymaga darmowej aplikacji Weekdot na iPhone'a, iPada lub Maca. Sam wybierasz udostępniane kalendarze, a wydarzenia zostają na Twoim Homey.
-
-Pytania i pomoc w konfiguracji znajdziesz w wątku tej aplikacji na Homey Community.
+Działa z darmową aplikacją Weekdot na iPhone'a, iPada lub Maca, w której wybierasz, które kalendarze udostępnić; wydarzenia zostają na Twoim Homey. Pytania i pomoc znajdziesz w wątku tej aplikacji w Homey Community.

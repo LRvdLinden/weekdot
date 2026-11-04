@@ -1,5 +1,3 @@
-Lass deinen Kalender dein Zuhause steuern. Deine Termine der nächsten Tage kommen auf Homey, sodass Flows starten können, wenn ein Termin beginnt oder endet, einige Minuten vor einem Termin oder mit der Tagesübersicht. Filtere nach einem Kalender oder einem Wort im Titel, nutze die Tags in Advanced Flows und füge das Termine-Widget zum Dashboard hinzu.
+Lass deinen Kalender dein Zuhause steuern. Deine Termine kommen auf Homey, sodass Flows starten können, wenn ein Termin beginnt oder endet, Minuten oder Tage vorher oder mit der Tagesübersicht. Filtere nach Kalender oder einem Wort im Titel, nutze die Details als Tags und zeige deinen Tag, deine Woche oder deinen Monat mit sieben Widgets auf deinem Dashboard.
 
-Benötigt die kostenlose Weekdot-App für iPhone, iPad oder Mac. Du wählst, welche Kalender geteilt werden, und deine Termine bleiben auf deinem eigenen Homey.
-
-Fragen und Hilfe bei der Einrichtung findest du im Homey Community-Thema dieser App.
+Funktioniert mit der kostenlosen Weekdot-App für iPhone, iPad oder Mac, in der du auswählst, welche Kalender geteilt werden; deine Termine bleiben auf deinem eigenen Homey. Fragen und Hilfe findest du im Homey-Community-Thema dieser App.

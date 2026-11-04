@@ -33,7 +33,8 @@
     "privacy": "Avtalene dine lagres bare på denne Homey.",
     "clear": "Fjern avtaler fra Homey",
     "cleared": "Fjernet.",
-    "website": "Mer om Weekdot"
+    "website": "Mer om Weekdot",
+    "dir": "ltr"
   },
   "widget": {
     "today": "I dag",
@@ -55,6 +56,14 @@
     "countdown_setup": "Velg et ord fra tittelen i widgetinnstillingene.",
     "countdown_none": "Ingen kommende avtale med «__word__»",
     "events_count": "Avtaler: __count__",
-    "week_n": "Uke __n__"
+    "week_n": "Uke __n__",
+    "dir": "ltr"
+  },
+  "more_apps": {
+    "section": "Oppdag",
+    "title": "Flere apper fra utvikleren",
+    "subtitle": "Apper for iPhone, iPad, Apple TV og Homey",
+    "action": "Vis",
+    "aria": "Flere apper fra utvikleren på lrvdlinden.app"
   }
 }

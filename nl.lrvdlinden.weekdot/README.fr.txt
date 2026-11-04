@@ -1,5 +1,3 @@
-Laissez votre calendrier piloter votre maison. Vos événements des prochains jours arrivent sur Homey, pour que des Flows démarrent quand un rendez-vous commence ou se termine, quelques minutes avant un rendez-vous, ou avec l'agenda du jour. Filtrez par calendrier ou par mot du titre, utilisez les tags dans les Flows avancés et ajoutez le widget Agenda à votre tableau de bord.
+Laissez votre calendrier piloter votre maison. Vos événements arrivent sur Homey, pour que des Flows démarrent quand un rendez-vous commence ou se termine, quelques minutes ou jours avant, ou avec l'agenda du jour. Filtrez par calendrier ou par mot du titre, utilisez les détails comme tags et affichez votre journée, votre semaine ou votre mois sur le tableau de bord avec sept widgets.
 
-Nécessite l'app gratuite Weekdot pour iPhone, iPad ou Mac. Vous choisissez les calendriers partagés, et vos événements restent sur votre propre Homey.
-
-Questions et aide à la configuration : consultez le sujet de cette app sur la Homey Community.
+Fonctionne avec l'app gratuite Weekdot pour iPhone, iPad ou Mac, où vous choisissez les calendriers partagés ; vos événements restent sur votre propre Homey. Pour vos questions et de l'aide, rendez-vous sur le sujet de cette app dans la Homey Community.

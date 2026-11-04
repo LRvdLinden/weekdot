@@ -77,8 +77,9 @@ def main():
         "brandColor": "#E8352F",
         "images": {"small": "/assets/images/small.png", "large": "/assets/images/large.png", "xlarge": "/assets/images/xlarge.png"},
         "author": {"name": "Léon van der Linden", "email": "homey@vdlinden.xyz", "website": "https://lrvdlinden.app"},
-        "homepage": "https://weekdot.com",
-        "support": "https://community.homey.app/t/app-pro-weekdot/161566",
+        "homepage": "https://lrvdlinden.app",
+        "support": "mailto:homey@vdlinden.xyz",
+        "bugs": {"url": "https://community.homey.app/t/app-pro-weekdot/161566"},
         "homeyCommunityTopicId": 161566,
         "contributing": {"donate": {"paypal": {"username": "lrvdlinden"}, "bunq": {"username": "lrvdlinden"}}},
         "api": {

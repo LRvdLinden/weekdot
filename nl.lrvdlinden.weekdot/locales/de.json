@@ -33,7 +33,8 @@
     "privacy": "Deine Termine werden nur auf diesem Homey gespeichert.",
     "clear": "Termine von Homey entfernen",
     "cleared": "Entfernt.",
-    "website": "Mehr über Weekdot"
+    "website": "Mehr über Weekdot",
+    "dir": "ltr"
   },
   "widget": {
     "today": "Heute",
@@ -55,6 +56,14 @@
     "countdown_setup": "Wähle in den Widget-Einstellungen ein Wort aus dem Titel.",
     "countdown_none": "Kein anstehender Termin mit „__word__“",
     "events_count": "Termine: __count__",
-    "week_n": "KW __n__"
+    "week_n": "KW __n__",
+    "dir": "ltr"
+  },
+  "more_apps": {
+    "section": "Entdecken",
+    "title": "Weitere Apps des Entwicklers",
+    "subtitle": "Apps für iPhone, iPad, Apple TV und Homey",
+    "action": "Ansehen",
+    "aria": "Weitere Apps des Entwicklers auf lrvdlinden.app"
   }
 }

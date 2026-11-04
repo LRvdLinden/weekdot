@@ -35,7 +35,7 @@
     .pill.ok { color: var(--ok); background: color-mix(in srgb, var(--ok) 13%, transparent); }
     .row { display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-top: 1px solid var(--line); font-size: 15px; }
     .row:first-of-type { margin-top: 12px; }
-    .row span:last-child { color: var(--muted); font-variant-numeric: tabular-nums; text-align: right; }
+    .row span:last-child { color: var(--muted); font-variant-numeric: tabular-nums; text-align: end; }
     .warn { color: var(--red); font-size: 14px; margin: 10px 0 0; }
     .cals { display: flex; flex-wrap: wrap; gap: 8px; }
     .cal { display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--line); font-size: 14px; font-weight: 600; }
@@ -51,6 +51,23 @@
     .foot { text-align: center; font-size: 14px; }
     .foot a { color: var(--red); text-decoration: none; font-weight: 600; }
     .hidden { display: none; }
+
+    /* "More apps from the developer": LRvdLinden house style (as MoreAppsCard.swift in Homey Store) */
+    .ma-sec { font-size: 12px; font-weight: 700; color: var(--muted); letter-spacing: .08em; text-transform: uppercase; margin: 22px 4px 8px; }
+    .ma { --ma-accent: #2747E8; --ma-on: #FFFFFF; --ma-muted: #5D6578; --ma-surface: #FFFFFF; --ma-line: #DDE2EC;
+      display: flex; align-items: center; gap: 14px; width: 100%; padding: 16px; margin: 0 0 18px; text-align: start; font: inherit; cursor: pointer;
+      background: var(--ma-surface); border: 1px solid var(--ma-line); border-radius: 22px; color: inherit; }
+    @media (prefers-color-scheme: dark) {
+      .ma { --ma-accent: #8A9DFF; --ma-on: #0D1018; --ma-muted: #98A0B3; --ma-surface: #161B27; --ma-line: #262D3D; }
+    }
+    .ma:focus-visible { outline: 3px solid var(--ma-accent); outline-offset: 2px; }
+    .ma-logo { width: 56px; height: 56px; flex: none; border-radius: 13px; box-shadow: 0 0 0 1px var(--ma-line); }
+    .ma-txt { flex: 1; min-width: 0; }
+    .ma-title { display: block; font-weight: 700; font-size: 16px; color: var(--ma-accent); line-height: 1.25; }
+    .ma-sub { display: block; font-size: 14px; color: var(--ma-muted); line-height: 1.35; margin-top: 2px; }
+    .ma-act { flex: none; display: flex; flex-direction: column; align-items: center; gap: 4px; }
+    .ma-pill { background: var(--ma-accent); color: var(--ma-on); font-weight: 700; font-size: 14px; border-radius: 999px; padding: 6px 14px; white-space: nowrap; }
+    .ma-host { font-size: 11px; color: var(--ma-muted); white-space: nowrap; }
   </style>
 </head>
 <body>
@@ -86,13 +103,29 @@
   </section>
 
   <button class="btn hidden" id="clear" data-i18n="settings.clear"></button>
-  <p class="foot"><a href="https://weekdot.com" target="_blank" data-i18n="settings.website"></a></p>
+
+  <h2 class="ma-sec" data-i18n="more_apps.section"></h2>
+  <button class="ma" id="more-apps" type="button" data-i18n-aria="more_apps.aria">
+    <svg class="ma-logo" viewBox="0 0 512 512" aria-hidden="true">
+      <rect width="512" height="512" rx="116" fill="#121726"/>
+      <path d="M132 146V370H232M292 370V146H340A62 62 0 0 1 340 270H292M338 270L390 370" fill="none" stroke="#fff" stroke-width="46" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="404" cy="126" r="34" fill="#4C6BFF" stroke="#121726" stroke-width="14"/>
+    </svg>
+    <span class="ma-txt"><span class="ma-title" data-i18n="more_apps.title"></span><span class="ma-sub" data-i18n="more_apps.subtitle"></span></span>
+    <span class="ma-act"><span class="ma-pill" data-i18n="more_apps.action"></span><span class="ma-host">lrvdlinden.app</span></span>
+  </button>
+
+  <p class="foot"><a href="https://weekdot.com" id="website" data-i18n="settings.website"></a></p>
 
   <script type="text/javascript">
     function onHomeyReady(Homey) {
       const $ = id => document.getElementById(id);
       const t = k => Homey.__(k);
+      document.documentElement.dir = t('settings.dir') === 'rtl' ? 'rtl' : 'ltr';
       document.querySelectorAll('[data-i18n]').forEach(el => { el.textContent = t(el.getAttribute('data-i18n')); });
+      document.querySelectorAll('[data-i18n-aria]').forEach(el => { el.setAttribute('aria-label', t(el.getAttribute('data-i18n-aria'))); });
+      $('more-apps').addEventListener('click', () => Homey.openURL('https://lrvdlinden.app'));
+      $('website').addEventListener('click', e => { e.preventDefault(); Homey.openURL('https://weekdot.com'); });
 
       async function load() {
         let s = null;

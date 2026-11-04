@@ -53,6 +53,7 @@ const header = (label, right) => `<div class="hdr">${LOGO}<div class="lab">${esc
 
 function onHomeyReady(Homey) {
   const t = (key, v) => fill(Homey.__('widget.' + key) || '', v);
+  document.documentElement.dir = t('dir') === 'rtl' ? 'rtl' : 'ltr';
   const settings = Homey.getSettings() || {};
   const root = document.getElementById('root');
   let first = true;

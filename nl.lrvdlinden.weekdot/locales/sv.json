@@ -33,7 +33,8 @@
     "privacy": "Dina händelser sparas bara på den här Homey.",
     "clear": "Ta bort händelser från Homey",
     "cleared": "Borttaget.",
-    "website": "Mer om Weekdot"
+    "website": "Mer om Weekdot",
+    "dir": "ltr"
   },
   "widget": {
     "today": "Idag",
@@ -55,6 +56,14 @@
     "countdown_setup": "Välj ett ord från titeln i widgetens inställningar.",
     "countdown_none": "Ingen kommande händelse med ”__word__”",
     "events_count": "Händelser: __count__",
-    "week_n": "Vecka __n__"
+    "week_n": "Vecka __n__",
+    "dir": "ltr"
+  },
+  "more_apps": {
+    "section": "Upptäck",
+    "title": "Fler appar från utvecklaren",
+    "subtitle": "Appar för iPhone, iPad, Apple TV och Homey",
+    "action": "Visa",
+    "aria": "Fler appar från utvecklaren på lrvdlinden.app"
   }
 }

@@ -33,6 +33,7 @@ const header = (label, right) => `<div class="hdr">${LOGO}<div class="lab">${esc
 
 function onHomeyReady(Homey) {
   const t = (key, v) => fill(Homey.__('widget.' + key) || '', v);
+  document.documentElement.dir = t('dir') === 'rtl' ? 'rtl' : 'ltr';
   const settings = Homey.getSettings() || {};
   const root = document.getElementById('root');
   let first = true;
@@ -157,6 +158,7 @@ function render(d, t) {
 }
 """),
  "timeline": dict(height=120, name="wn_timeline", settings=["calendar"], css="""
+.tl,.hours{direction:ltr}
 .tl{position:relative;height:46px;background:var(--soft);border-radius:10px;overflow:hidden}
 .blk{position:absolute;top:7px;bottom:7px;border-radius:6px;color:#fff;font-size:10.5px;font-weight:700;padding:3px 5px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;min-width:4px}
 .now{position:absolute;top:0;bottom:0;width:2px;background:var(--red);box-shadow:0 0 0 1px rgba(255,255,255,.6)}

@@ -33,7 +33,8 @@
     "privacy": "Je afspraken worden alleen op deze Homey bewaard.",
     "clear": "Ontkoppelen en afspraken verwijderen",
     "cleared": "Verwijderd.",
-    "website": "Meer over Weekdot"
+    "website": "Meer over Weekdot",
+    "dir": "ltr"
   },
   "widget": {
     "today": "Vandaag",
@@ -55,6 +56,14 @@
     "countdown_setup": "Kies een woord uit de titel in de instellingen van de widget.",
     "countdown_none": "Geen komende afspraak met “__word__”",
     "events_count": "Afspraken: __count__",
-    "week_n": "Week __n__"
+    "week_n": "Week __n__",
+    "dir": "ltr"
+  },
+  "more_apps": {
+    "section": "Ontdekken",
+    "title": "Meer apps van de ontwikkelaar",
+    "subtitle": "Apps voor iPhone, iPad, Apple TV en Homey",
+    "action": "Bekijk",
+    "aria": "Meer apps van de ontwikkelaar op lrvdlinden.app"
   }
 }

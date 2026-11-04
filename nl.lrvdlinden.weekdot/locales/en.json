@@ -33,7 +33,8 @@
     "privacy": "Your events are only stored on this Homey.",
     "clear": "Unlink and remove events",
     "cleared": "Removed.",
-    "website": "More about Weekdot"
+    "website": "More about Weekdot",
+    "dir": "ltr"
   },
   "widget": {
     "today": "Today",
@@ -55,6 +56,14 @@
     "countdown_setup": "Choose a word from the title in the widget settings.",
     "countdown_none": "No upcoming event with “__word__”",
     "events_count": "Events: __count__",
-    "week_n": "Week __n__"
+    "week_n": "Week __n__",
+    "dir": "ltr"
+  },
+  "more_apps": {
+    "section": "Discover",
+    "title": "More apps from the developer",
+    "subtitle": "Apps for iPhone, iPad, Apple TV and Homey",
+    "action": "View",
+    "aria": "More apps from the developer on lrvdlinden.app"
   }
 }

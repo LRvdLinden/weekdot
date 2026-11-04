@@ -33,7 +33,8 @@
     "privacy": "Dine begivenheder gemmes kun på denne Homey.",
     "clear": "Fjern begivenheder fra Homey",
     "cleared": "Fjernet.",
-    "website": "Mere om Weekdot"
+    "website": "Mere om Weekdot",
+    "dir": "ltr"
   },
   "widget": {
     "today": "I dag",
@@ -55,6 +56,14 @@
     "countdown_setup": "Vælg et ord fra titlen i widgettens indstillinger.",
     "countdown_none": "Ingen kommende begivenhed med »__word__«",
     "events_count": "Begivenheder: __count__",
-    "week_n": "Uge __n__"
+    "week_n": "Uge __n__",
+    "dir": "ltr"
+  },
+  "more_apps": {
+    "section": "Opdag",
+    "title": "Flere apps fra udvikleren",
+    "subtitle": "Apps til iPhone, iPad, Apple TV og Homey",
+    "action": "Vis",
+    "aria": "Flere apps fra udvikleren på lrvdlinden.app"
   }
 }

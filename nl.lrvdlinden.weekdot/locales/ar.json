@@ -23,17 +23,18 @@
     "not_linked": "غير مرتبط بعد",
     "linked": "مرتبط بـ __device__",
     "updated": "آخر تحديث",
-    "events": "المواعيد (الأيام الثمانية القادمة)",
+    "events": "المواعيد (الأيام الخمسين القادمة)",
     "calendars": "التقويمات",
     "stale": "لم يرسل Weekdot تحديثًا منذ فترة. افتح Weekdot على iPhone للتحديث.",
     "howto": "طريقة الربط",
     "step1": "ثبّت Weekdot على iPhone أو iPad أو Mac.",
     "step2": "في Weekdot افتح الإعدادات › Homey وسجّل الدخول بحساب Homey.",
-    "step3": "اختر جهاز Homey هذا. سيرسل Weekdot مواعيد الأيام الثمانية القادمة.",
+    "step3": "اختر جهاز Homey هذا. سيرسل Weekdot مواعيد الأيام الخمسين القادمة.",
     "privacy": "تُحفظ مواعيدك على جهاز Homey هذا فقط.",
     "clear": "إزالة المواعيد من Homey",
     "cleared": "تمت الإزالة.",
-    "website": "المزيد عن Weekdot"
+    "website": "المزيد عن Weekdot",
+    "dir": "rtl"
   },
   "widget": {
     "today": "اليوم",
@@ -55,6 +56,14 @@
     "countdown_setup": "اختر كلمة من العنوان في إعدادات الأداة.",
     "countdown_none": "لا يوجد موعد قادم يحتوي على «__word__»",
     "events_count": "المواعيد: __count__",
-    "week_n": "الأسبوع __n__"
+    "week_n": "الأسبوع __n__",
+    "dir": "rtl"
+  },
+  "more_apps": {
+    "section": "اكتشف",
+    "title": "المزيد من تطبيقات المطوّر",
+    "subtitle": "تطبيقات لـ iPhone وiPad وApple TV وHomey",
+    "action": "عرض",
+    "aria": "المزيد من تطبيقات المطوّر على lrvdlinden.app"
   }
 }

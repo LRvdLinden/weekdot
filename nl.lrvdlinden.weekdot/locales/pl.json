@@ -33,7 +33,8 @@
     "privacy": "Wydarzenia są przechowywane tylko na tym Homey.",
     "clear": "Usuń wydarzenia z Homey",
     "cleared": "Usunięto.",
-    "website": "Więcej o Weekdot"
+    "website": "Więcej o Weekdot",
+    "dir": "ltr"
   },
   "widget": {
     "today": "Dzisiaj",
@@ -55,6 +56,14 @@
     "countdown_setup": "Wybierz słowo z tytułu w ustawieniach widżetu.",
     "countdown_none": "Brak nadchodzących wydarzeń z „__word__”",
     "events_count": "Wydarzenia: __count__",
-    "week_n": "Tydzień __n__"
+    "week_n": "Tydzień __n__",
+    "dir": "ltr"
+  },
+  "more_apps": {
+    "section": "Odkrywaj",
+    "title": "Więcej aplikacji od dewelopera",
+    "subtitle": "Aplikacje na iPhone’a, iPada, Apple TV i Homey",
+    "action": "Zobacz",
+    "aria": "Więcej aplikacji od dewelopera na lrvdlinden.app"
   }
 }

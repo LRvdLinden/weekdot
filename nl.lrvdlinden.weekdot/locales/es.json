@@ -33,7 +33,8 @@
     "privacy": "Tus eventos solo se guardan en este Homey.",
     "clear": "Eliminar eventos de Homey",
     "cleared": "Eliminado.",
-    "website": "Más sobre Weekdot"
+    "website": "Más sobre Weekdot",
+    "dir": "ltr"
   },
   "widget": {
     "today": "Hoy",
@@ -55,6 +56,14 @@
     "countdown_setup": "Elige una palabra del título en los ajustes del widget.",
     "countdown_none": "No hay eventos próximos con «__word__»",
     "events_count": "Eventos: __count__",
-    "week_n": "Semana __n__"
+    "week_n": "Semana __n__",
+    "dir": "ltr"
+  },
+  "more_apps": {
+    "section": "Descubrir",
+    "title": "Más apps del desarrollador",
+    "subtitle": "Apps para iPhone, iPad, Apple TV y Homey",
+    "action": "Ver",
+    "aria": "Más apps del desarrollador en lrvdlinden.app"
   }
 }
