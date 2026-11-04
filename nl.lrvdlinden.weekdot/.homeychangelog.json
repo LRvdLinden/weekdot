@@ -1,0 +1,32 @@
+{
+  "1.0.0": {
+    "en": "First release: Flows for your Weekdot events, daily agenda and an Agenda widget.",
+    "nl": "Eerste versie: Flows voor je Weekdot-afspraken, de dagagenda en een Agenda-widget.",
+    "de": "Erste Version: Flows für deine Weekdot-Termine, die Tagesübersicht und ein Agenda-Widget.",
+    "fr": "Première version : Flows pour vos événements Weekdot, l'agenda du jour et un widget Agenda.",
+    "it": "Prima versione: Flow per i tuoi eventi Weekdot, l'agenda del giorno e un widget Agenda.",
+    "sv": "Första versionen: Flows för dina Weekdot-händelser, dagens agenda och en Agenda-widget.",
+    "no": "Første versjon: Flows for Weekdot-avtalene dine, dagens agenda og en Agenda-widget.",
+    "es": "Primera versión: Flows para tus eventos de Weekdot, la agenda del día y un widget de Agenda.",
+    "da": "Første version: Flows til dine Weekdot-begivenheder, dagens program og en Agenda-widget.",
+    "ru": "Первая версия: Flow для событий Weekdot, план на день и виджет «Агенда».",
+    "pl": "Pierwsza wersja: Flow dla wydarzeń Weekdot, plan dnia i widżet Agenda.",
+    "ko": "첫 버전: Weekdot 일정용 Flow, 오늘 일정 및 일정 위젯.",
+    "ar": "الإصدار الأول: تدفقات لمواعيد Weekdot وجدول اليوم وأداة الأجندة."
+  },
+  "1.0.1": {
+    "en": "New trigger \"An event starts in … days\": hear at a time you choose that an event is coming up in 1 to 7 days, also for all-day events. With the date and the number of days as tags.",
+    "nl": "Nieuwe trigger \"Een afspraak begint over … dagen\": hoor op een tijdstip dat jij kiest dat er over 1 tot 7 dagen een afspraak aankomt, ook voor hele-dag-afspraken. Met de datum en het aantal dagen als tags.",
+    "de": "Neuer Auslöser „Ein Termin beginnt in … Tagen“: Erfahre zu einer Uhrzeit deiner Wahl, dass in 1 bis 7 Tagen ein Termin ansteht, auch ganztägige. Mit Datum und Anzahl der Tage als Tags.",
+    "fr": "Nouveau déclencheur « Un événement commence dans … jours » : soyez prévenu à l'heure de votre choix qu'un événement arrive dans 1 à 7 jours, y compris les événements sur la journée. Avec la date et le nombre de jours comme tags.",
+    "it": "Nuovo trigger \"Un evento inizia tra … giorni\": scopri all'ora che scegli che tra 1 e 7 giorni c'è un evento, anche quelli di tutto il giorno. Con la data e il numero di giorni come tag.",
+    "sv": "Ny trigger \"En händelse börjar om … dagar\": få veta vid en tid du väljer att en händelse kommer om 1 till 7 dagar, även heldagshändelser. Med datum och antal dagar som taggar.",
+    "no": "Ny trigger \"En avtale starter om … dager\": få vite på et tidspunkt du velger at en avtale kommer om 1 til 7 dager, også heldagsavtaler. Med dato og antall dager som tagger.",
+    "es": "Nuevo disparador \"Un evento empieza en … días\": entérate a la hora que elijas de que en 1 a 7 días hay un evento, también los de todo el día. Con la fecha y el número de días como etiquetas.",
+    "da": "Ny trigger \"En begivenhed starter om … dage\": få at vide på et tidspunkt, du vælger, at en begivenhed kommer om 1 til 7 dage, også heldagsbegivenheder. Med dato og antal dage som tags.",
+    "ru": "Новый триггер «Событие начнётся через … дн.»: в выбранное время узнайте, что через 1–7 дней будет событие, в том числе на весь день. Дата и число дней доступны как теги.",
+    "pl": "Nowy wyzwalacz „Wydarzenie zacznie się za … dni”: o wybranej godzinie dowiesz się, że za 1–7 dni jest wydarzenie, także całodniowe. Z datą i liczbą dni jako tagami.",
+    "ko": "새 트리거 \"… 일 후 일정 시작\": 선택한 시간에 1~7일 후 일정(종일 일정 포함)을 알려 줍니다. 날짜와 남은 일수를 태그로 제공합니다.",
+    "ar": "مشغّل جديد \"يبدأ موعد بعد … أيام\": اعرف في الوقت الذي تختاره أن موعدًا قادمًا بعد 1 إلى 7 أيام، بما فيها مواعيد اليوم الكامل. مع التاريخ وعدد الأيام كوسوم."
+  }
+}

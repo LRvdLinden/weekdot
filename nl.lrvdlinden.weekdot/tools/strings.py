@@ -27,6 +27,8 @@ S = {
  "arg_keyword_ph": T("with any title","met elke titel","mit beliebigem Titel","avec n'importe quel titre","con qualsiasi titolo","med valfri titel","med hvilken som helst tittel","con cualquier título","med enhver titel","с любым названием","z dowolnym tytułem","모든 제목","بأي عنوان"),
  "arg_minutes": T("Minutes","Minuten","Minuten","Minutes","Minuti","Minuter","Minutter","Minutos","Minutter","Минуты","Minuty","분","الدقائق"),
  "arg_time": T("Time","Tijd","Uhrzeit","Heure","Ora","Tid","Tid","Hora","Tidspunkt","Время","Godzina","시간","الوقت"),
+ "arg_days": T("Days","Dagen","Tage","Jours","Giorni","Dagar","Dager","Días","Dage","Дни","Dni","일","الأيام"),
+ "tok_days": T("Days until","Dagen tot","Tage bis","Jours restants","Giorni mancanti","Dagar kvar","Dager igjen","Días restantes","Dage tilbage","Дней до события","Dni do","남은 일수","الأيام المتبقية"),
  "arg_day": T("Day","Dag","Tag","Jour","Giorno","Dag","Dag","Día","Dag","День","Dzień","날짜","اليوم"),
  "today": T("Today","Vandaag","Heute","Aujourd'hui","Oggi","Idag","I dag","Hoy","I dag","Сегодня","Dzisiaj","오늘","اليوم"),
  "tomorrow": T("Tomorrow","Morgen","Morgen","Demain","Domani","Imorgon","I morgen","Mañana","I morgen","Завтра","Jutro","내일","غدًا"),
@@ -63,6 +65,9 @@ C = {
  "event_starts_in": (
   T("An event starts in … minutes","Een afspraak begint over … minuten","Ein Termin beginnt in … Minuten","Un événement commence dans … minutes","Un evento inizia tra … minuti","En händelse börjar om … minuter","En avtale starter om … minutter","Un evento empieza en … minutos","En begivenhed starter om … minutter","Событие начнётся через … минут","Wydarzenie zacznie się za … minut","… 분 후 일정 시작","يبدأ موعد بعد … دقيقة"),
   T("An event [[keyword]] in [[calendar]] starts in [[minutes]] minutes","Een afspraak [[keyword]] in [[calendar]] begint over [[minutes]] minuten","Ein Termin [[keyword]] in [[calendar]] beginnt in [[minutes]] Minuten","Un événement [[keyword]] dans [[calendar]] commence dans [[minutes]] minutes","Un evento [[keyword]] in [[calendar]] inizia tra [[minutes]] minuti","En händelse [[keyword]] i [[calendar]] börjar om [[minutes]] minuter","En avtale [[keyword]] i [[calendar]] starter om [[minutes]] minutter","Un evento [[keyword]] en [[calendar]] empieza en [[minutes]] minutos","En begivenhed [[keyword]] i [[calendar]] starter om [[minutes]] minutter","Событие [[keyword]] в [[calendar]] начнётся через [[minutes]] мин.","Wydarzenie [[keyword]] w [[calendar]] zacznie się za [[minutes]] min","[[calendar]]의 일정 [[keyword]]이(가) [[minutes]]분 후 시작","يبدأ موعد [[keyword]] في [[calendar]] بعد [[minutes]] دقيقة")),
+ "event_days_before": (
+  T("An event starts in … days","Een afspraak begint over … dagen","Ein Termin beginnt in … Tagen","Un événement commence dans … jours","Un evento inizia tra … giorni","En händelse börjar om … dagar","En avtale starter om … dager","Un evento empieza en … días","En begivenhed starter om … dage","Событие начнётся через … дн.","Wydarzenie zacznie się za … dni","… 일 후 일정 시작","يبدأ موعد بعد … أيام"),
+  T("At [[time]]: an event [[keyword]] in [[calendar]] starts in [[days]] days","Om [[time]]: een afspraak [[keyword]] in [[calendar]] begint over [[days]] dagen","Um [[time]]: ein Termin [[keyword]] in [[calendar]] beginnt in [[days]] Tagen","À [[time]] : un événement [[keyword]] dans [[calendar]] commence dans [[days]] jours","Alle [[time]]: un evento [[keyword]] in [[calendar]] inizia tra [[days]] giorni","Kl. [[time]]: en händelse [[keyword]] i [[calendar]] börjar om [[days]] dagar","Kl. [[time]]: en avtale [[keyword]] i [[calendar]] starter om [[days]] dager","A las [[time]]: un evento [[keyword]] en [[calendar]] empieza en [[days]] días","Kl. [[time]]: en begivenhed [[keyword]] i [[calendar]] starter om [[days]] dage","В [[time]]: событие [[keyword]] в [[calendar]] начнётся через [[days]] дн.","O [[time]]: wydarzenie [[keyword]] w [[calendar]] zacznie się za [[days]] dni","[[time]]에: [[calendar]]의 일정 [[keyword]]이(가) [[days]]일 후 시작","في [[time]]: يبدأ موعد [[keyword]] في [[calendar]] بعد [[days]] أيام")),
  "agenda_at_time": (
   T("Daily agenda at a set time","Dagagenda op een vast tijdstip","Tagesübersicht zu einer festen Uhrzeit","Agenda du jour à heure fixe","Agenda del giorno a un orario fisso","Dagens agenda vid en viss tid","Dagens agenda på et fast tidspunkt","Agenda del día a una hora fija","Dagens program på et fast tidspunkt","План на день в заданное время","Plan dnia o ustalonej godzinie","정해진 시간에 오늘 일정","جدول اليوم في وقت محدد"),
   T("Today's agenda at [[time]]","De agenda van vandaag om [[time]]","Die Termine von heute um [[time]]","L'agenda du jour à [[time]]","L'agenda di oggi alle [[time]]","Dagens agenda kl. [[time]]","Dagens agenda kl. [[time]]","La agenda de hoy a las [[time]]","Dagens program kl. [[time]]","План на сегодня в [[time]]","Plan na dziś o [[time]]","[[time]]에 오늘 일정","جدول اليوم في [[time]]")),
@@ -209,4 +214,35 @@ iPhone, iPad 또는 Mac용 무료 Weekdot 앱이 필요합니다. 공유할 캘�
 يتطلب تطبيق Weekdot المجاني لأجهزة iPhone أو iPad أو Mac. أنت تختار التقويمات المشتركة، وتبقى مواعيدك على جهاز Homey الخاص بك.
 
 تجد الأسئلة والمساعدة في الإعداد في موضوع هذا التطبيق على منتدى Homey Community.""",
+}
+
+
+# .homeychangelog.json (newest first is not required; Homey shows the entry of each version)
+CHANGELOG = {
+ "1.0.0": T("First release: Flows for your Weekdot events, daily agenda and an Agenda widget.",
+   "Eerste versie: Flows voor je Weekdot-afspraken, de dagagenda en een Agenda-widget.",
+   "Erste Version: Flows für deine Weekdot-Termine, die Tagesübersicht und ein Agenda-Widget.",
+   "Première version : Flows pour vos événements Weekdot, l'agenda du jour et un widget Agenda.",
+   "Prima versione: Flow per i tuoi eventi Weekdot, l'agenda del giorno e un widget Agenda.",
+   "Första versionen: Flows för dina Weekdot-händelser, dagens agenda och en Agenda-widget.",
+   "Første versjon: Flows for Weekdot-avtalene dine, dagens agenda og en Agenda-widget.",
+   "Primera versión: Flows para tus eventos de Weekdot, la agenda del día y un widget de Agenda.",
+   "Første version: Flows til dine Weekdot-begivenheder, dagens program og en Agenda-widget.",
+   "Первая версия: Flow для событий Weekdot, план на день и виджет «Агенда».",
+   "Pierwsza wersja: Flow dla wydarzeń Weekdot, plan dnia i widżet Agenda.",
+   "첫 버전: Weekdot 일정용 Flow, 오늘 일정 및 일정 위젯.",
+   "الإصدار الأول: تدفقات لمواعيد Weekdot وجدول اليوم وأداة الأجندة."),
+ "1.0.1": T("New trigger \"An event starts in … days\": hear at a time you choose that an event is coming up in 1 to 7 days, also for all-day events. With the date and the number of days as tags.",
+   "Nieuwe trigger \"Een afspraak begint over … dagen\": hoor op een tijdstip dat jij kiest dat er over 1 tot 7 dagen een afspraak aankomt, ook voor hele-dag-afspraken. Met de datum en het aantal dagen als tags.",
+   "Neuer Auslöser „Ein Termin beginnt in … Tagen“: Erfahre zu einer Uhrzeit deiner Wahl, dass in 1 bis 7 Tagen ein Termin ansteht, auch ganztägige. Mit Datum und Anzahl der Tage als Tags.",
+   "Nouveau déclencheur « Un événement commence dans … jours » : soyez prévenu à l'heure de votre choix qu'un événement arrive dans 1 à 7 jours, y compris les événements sur la journée. Avec la date et le nombre de jours comme tags.",
+   "Nuovo trigger \"Un evento inizia tra … giorni\": scopri all'ora che scegli che tra 1 e 7 giorni c'è un evento, anche quelli di tutto il giorno. Con la data e il numero di giorni come tag.",
+   "Ny trigger \"En händelse börjar om … dagar\": få veta vid en tid du väljer att en händelse kommer om 1 till 7 dagar, även heldagshändelser. Med datum och antal dagar som taggar.",
+   "Ny trigger \"En avtale starter om … dager\": få vite på et tidspunkt du velger at en avtale kommer om 1 til 7 dager, også heldagsavtaler. Med dato og antall dager som tagger.",
+   "Nuevo disparador \"Un evento empieza en … días\": entérate a la hora que elijas de que en 1 a 7 días hay un evento, también los de todo el día. Con la fecha y el número de días como etiquetas.",
+   "Ny trigger \"En begivenhed starter om … dage\": få at vide på et tidspunkt, du vælger, at en begivenhed kommer om 1 til 7 dage, også heldagsbegivenheder. Med dato og antal dage som tags.",
+   "Новый триггер «Событие начнётся через … дн.»: в выбранное время узнайте, что через 1–7 дней будет событие, в том числе на весь день. Дата и число дней доступны как теги.",
+   "Nowy wyzwalacz „Wydarzenie zacznie się za … dni”: o wybranej godzinie dowiesz się, że za 1–7 dni jest wydarzenie, także całodniowe. Z datą i liczbą dni jako tagami.",
+   "새 트리거 \"… 일 후 일정 시작\": 선택한 시간에 1~7일 후 일정(종일 일정 포함)을 알려 줍니다. 날짜와 남은 일수를 태그로 제공합니다.",
+   "مشغّل جديد \"يبدأ موعد بعد … أيام\": اعرف في الوقت الذي تختاره أن موعدًا قادمًا بعد 1 إلى 7 أيام، بما فيها مواعيد اليوم الكامل. مع التاريخ وعدد الأيام كوسوم."),
 }

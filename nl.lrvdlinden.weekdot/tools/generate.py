@@ -7,9 +7,9 @@ import json, os, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
-from strings import L, S, C, R, W, TAGS, README  # noqa: E402
+from strings import L, S, C, R, W, TAGS, README, CHANGELOG  # noqa: E402
 
-VERSION = "1.0.0"
+VERSION = "1.0.1"
 
 
 def write(path, data):
@@ -97,12 +97,17 @@ def main():
     # flow cards
     minutes = {"name": "minutes", "type": "number", "min": 1, "max": 1440, "step": 1, "title": S["arg_minutes"], "placeholder": {l: "15" for l in L}}
     time_arg = {"name": "time", "type": "time", "title": S["arg_time"]}
+    # Weekdot sends the coming 8 days, so up to 7 days ahead
+    days_arg = {"name": "days", "type": "number", "min": 1, "max": 7, "step": 1, "title": S["arg_days"], "placeholder": {l: "3" for l in L}}
     day_arg = {"name": "day", "type": "dropdown", "title": S["arg_day"],
                "values": [{"id": "today", "title": S["today"]}, {"id": "tomorrow", "title": S["tomorrow"]}]}
     triggers = {
         "event_started": card("event_started", [keyword_arg(), calendar_arg()], EVENT_TOKENS),
         "event_ended": card("event_ended", [keyword_arg(), calendar_arg()], EVENT_TOKENS),
         "event_starts_in": card("event_starts_in", [keyword_arg(), calendar_arg(), minutes], EVENT_TOKENS),
+        "event_days_before": card("event_days_before", [keyword_arg(), calendar_arg(), days_arg, time_arg],
+                                  EVENT_TOKENS + [tok("date", "string", "tok_date", {l: "2026-11-07" for l in L}),
+                                                  tok("days", "number", "tok_days", 3)]),
         "agenda_at_time": card("agenda_at_time", [time_arg], AGENDA_TOKENS),
         "schedule_received": card("schedule_received", None,
                                   [tok("count", "number", "tok_count", 12), tok("device", "string", "tok_device", {l: "iPhone" for l in L})]),
@@ -144,6 +149,8 @@ def main():
                 node = node.setdefault(p, {})
             node[parts[-1]] = val[l]
         write(f"locales/{l}.json", out)
+
+    write(".homeychangelog.json", CHANGELOG)
 
     # READMEs
     for l in L:

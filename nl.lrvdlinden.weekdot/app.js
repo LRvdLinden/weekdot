@@ -23,6 +23,7 @@ class WeekdotApp extends Homey.App {
     this.started = flow.getTriggerCard('event_started');
     this.ended = flow.getTriggerCard('event_ended');
     this.startsIn = flow.getTriggerCard('event_starts_in');
+    this.daysBefore = flow.getTriggerCard('event_days_before');
     this.atTime = flow.getTriggerCard('agenda_at_time');
     this.received = flow.getTriggerCard('schedule_received');
 
@@ -32,6 +33,9 @@ class WeekdotApp extends Homey.App {
     }
     this.startsIn.registerRunListener(async (args, state) => Number(args.minutes) === state.minutes && this.agenda.matches(state.event, args));
     this.startsIn.registerArgumentAutocompleteListener('calendar', calendarAutocomplete);
+    this.daysBefore.registerRunListener(async (args, state) => Number(args.days) === state.days && args.time === state.time
+      && this.agenda.matches(state.event, args));
+    this.daysBefore.registerArgumentAutocompleteListener('calendar', calendarAutocomplete);
     this.atTime.registerRunListener(async (args, state) => args.time === state.time);
 
     const now = () => new Date();
@@ -200,14 +204,37 @@ class WeekdotApp extends Homey.App {
       }
     }
 
+    // "starts in … days": at the chosen time, for events that start that many days from today
+    const fromDate = new Date(from);
+    const nowDate = new Date(nowMs);
+    const sameDay = this.agenda.dayKey(fromDate) === this.agenda.dayKey(nowDate);
+    const a = sameDay ? this.agenda.minuteOfDay(fromDate) : -1;
+    const b = this.agenda.minuteOfDay(nowDate);
+    const timePassed = time => {
+      const [h, mi] = String(time).split(':').map(Number);
+      const t = h * 60 + mi;
+      return t > a && t <= b;
+    };
+    const today = this.agenda.dayKey(nowDate);
+    const dayPairs = new Map();
+    for (const arg of await this.daysBefore.getArgumentValues()) {
+      const days = Number(arg.days);
+      if (days >= 1 && days <= 7 && arg.time) dayPairs.set(`${days}|${arg.time}`, { days, time: arg.time });
+    }
+    for (const { days, time } of dayPairs.values()) {
+      if (!timePassed(time)) continue;
+      const target = this.agenda.dayKey(nowDate, days);
+      for (const e of this.agenda.events) {
+        const startDay = e.allDay ? e.startDay : this.agenda.dayKey(new Date(e.start));
+        if (startDay !== target || !once(`d|${days}|${time}|${e.id}|${startDay}|${today}`)) continue;
+        await this.daysBefore.trigger({ ...this.agenda.tokens(e), date: startDay, days }, { event: e, days, time })
+          .catch(err => this.error(err));
+      }
+    }
+
     // daily agenda at a set time
     const times = new Set((await this.atTime.getArgumentValues()).map(a => a.time).filter(Boolean));
     if (times.size) {
-      const fromDate = new Date(from);
-      const nowDate = new Date(nowMs);
-      const sameDay = this.agenda.dayKey(fromDate) === this.agenda.dayKey(nowDate);
-      const a = sameDay ? this.agenda.minuteOfDay(fromDate) : -1;
-      const b = this.agenda.minuteOfDay(nowDate);
       for (const time of times) {
         const [h, mi] = time.split(':').map(Number);
         const t = h * 60 + mi;
