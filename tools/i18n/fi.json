@@ -622,7 +622,9 @@
   "Apps for iPhone, iPad, Apple TV and Homey": "Appeja iPhonelle, iPadille, Apple TV:lle ja Homeylle",
   "Visit": "Näytä",
   "Month & List": "Kuukausi ja luettelo",
-  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 31 days to the Weekdot app on your Homey.": "Kirjaudu Homey-tililläsi ja valitse Homey. Weekdot lähettää sitten seuraavien 31 päivän tapahtumat Homeysi Weekdot-appiin."
+  "Sign in with your Homey account and choose your Homey. Weekdot then sends your upcoming events to the Weekdot app on your Homey.": "Kirjaudu Homey-tililläsi ja valitse Homeysi. Weekdot lähettää sitten tulevat tapahtumasi Homeyn Weekdot-appiin.",
+  "Send to Homey": "Lähetä Homeyhin",
+  "Flows on Homey can look this far ahead, for example to remind you days before an appointment.": "Näin pitkälle Homeyn Flowt voivat katsoa eteenpäin, esimerkiksi muistuttaakseen tapaamisesta päiviä etukäteen."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot näyttää, luo ja muokkaa kalentereidesi tapahtumia.",
@@ -831,7 +833,6 @@
   "hs.homey.4.q": "Homey sanoo, ettei Weekdotia ole yhdistetty",
   "hs.homey.4.a": "Napauta Weekdotissa Päivitä nyt kohdassa Asetukset › Homey ja tarkista, että oikea Homey on valittuna. Kohdassa Tiedot näet yhteyden jokaisen vaiheen. Varmista, että Homeysi Weekdot-appi on ajan tasalla.",
   "hs.homey.5.q": "Mitä Weekdot lähettää Homeyhin?",
-  "hs.homey.5.a": "Tulevien 31 päivän tapahtumasi valitsemistasi kalentereista, suoraan omaan Homeyhisi. Kun Piilota tiedot on päällä, lähetetään vain ajat, ja otsikkona on Varattu.",
   "hs.homey.6.q": "Miten poistan Homey-yhteyden?",
   "hs.homey.6.a": "Napauta Weekdotissa Kirjaudu ulos Homeysta. Avaa Homeyssa Weekdot-apin asetukset ja valitse yhteyden poistaminen ja tapahtumien poistaminen.",
   "hs.homey.more": "Homey Community",

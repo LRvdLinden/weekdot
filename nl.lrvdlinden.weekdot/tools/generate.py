@@ -98,8 +98,8 @@ def main():
     # flow cards
     minutes = {"name": "minutes", "type": "number", "min": 1, "max": 1440, "step": 1, "title": S["arg_minutes"], "placeholder": {l: "15" for l in L}}
     time_arg = {"name": "time", "type": "time", "title": S["arg_time"]}
-    # Weekdot 1.0.2+ sends today plus the coming 31 days
-    days_arg = {"name": "days", "type": "number", "min": 1, "max": 31, "step": 1, "title": S["arg_days"], "placeholder": {l: "3" for l in L}}
+    # Weekdot 1.0.3 sends today plus 1, 2 or 3 months (user choice), so up to 92 days ahead
+    days_arg = {"name": "days", "type": "number", "min": 1, "max": 92, "step": 1, "title": S["arg_days"], "placeholder": {l: "3" for l in L}}
     day_arg = {"name": "day", "type": "dropdown", "title": S["arg_day"],
                "values": [{"id": "today", "title": S["today"]}, {"id": "tomorrow", "title": S["tomorrow"]}]}
     triggers = {

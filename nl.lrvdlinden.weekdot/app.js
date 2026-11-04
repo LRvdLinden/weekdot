@@ -144,7 +144,7 @@ class WeekdotApp extends Homey.App {
     return {
       app: 'Weekdot', version: this.homey.manifest.version, linked: !!d || paired, paired,
       device: d ? d.device : (this.homey.settings.get('pairedDevice') || null), receivedAt: d ? d.receivedAt : null,
-      events: this.agenda.events.length, calendars: this.agenda.calendars,
+      events: this.agenda.events.length, calendars: this.agenda.calendars, lastDay: this.agenda.lastDay || null,
     };
   }
 
@@ -337,7 +337,7 @@ class WeekdotApp extends Homey.App {
     const dayPairs = new Map();
     for (const arg of await this.daysBefore.getArgumentValues()) {
       const days = Number(arg.days);
-      if (days >= 1 && days <= 31 && arg.time) dayPairs.set(`${days}|${arg.time}`, { days, time: arg.time });
+      if (days >= 1 && days <= 92 && arg.time) dayPairs.set(`${days}|${arg.time}`, { days, time: arg.time });
     }
     for (const { days, time } of dayPairs.values()) {
       if (!timePassed(time)) continue;

@@ -622,7 +622,9 @@
   "Apps for iPhone, iPad, Apple TV and Homey": "App untuk iPhone, iPad, Apple TV dan Homey",
   "Visit": "Lihat",
   "Month & List": "Bulan dan senarai",
-  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 31 days to the Weekdot app on your Homey.": "Daftar masuk dengan akaun Homey dan pilih Homey anda. Weekdot kemudian menghantar acara 31 hari akan datang ke apl Weekdot pada Homey anda."
+  "Sign in with your Homey account and choose your Homey. Weekdot then sends your upcoming events to the Weekdot app on your Homey.": "Daftar masuk dengan akaun Homey dan pilih Homey anda. Weekdot kemudian menghantar acara akan datang ke app Weekdot pada Homey anda.",
+  "Send to Homey": "Hantar ke Homey",
+  "Flows on Homey can look this far ahead, for example to remind you days before an appointment.": "Flow pada Homey boleh melihat sejauh ini ke hadapan, contohnya untuk mengingatkan anda beberapa hari sebelum temu janji."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot menunjukkan, mencipta dan mengedit acara dalam kalendar anda.",
@@ -831,7 +833,6 @@
   "hs.homey.4.q": "Homey mengatakan Weekdot tidak dipautkan",
   "hs.homey.4.a": "Ketik Kemas kini sekarang dalam Weekdot di bawah Seting › Homey dan semak bahawa Homey yang betul dipilih. Di bawah Butiran, anda melihat setiap langkah sambungan. Pastikan app Weekdot pada Homey anda dikemas kini.",
   "hs.homey.5.q": "Apakah yang dihantar Weekdot ke Homey?",
-  "hs.homey.5.a": "Acara anda untuk 31 hari akan datang daripada kalendar yang anda pilih, dihantar terus ke Homey anda sendiri. Apabila Sembunyikan butiran dihidupkan, hanya masa yang dihantar, dengan Sibuk sebagai tajuk.",
   "hs.homey.6.q": "Bagaimanakah cara menyahpaut Homey?",
   "hs.homey.6.a": "Ketik Daftar keluar daripada Homey dalam Weekdot. Pada Homey anda, buka seting app Weekdot dan pilih untuk menyahpaut serta memadam acara.",
   "hs.homey.more": "Homey Community",

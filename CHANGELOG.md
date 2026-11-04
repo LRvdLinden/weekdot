@@ -1,3 +1,7 @@
+## 1.0.3 (build 90) — Homey: choose 1, 2 or 3 months
+
+- New setting in Settings › Homey: “Send to Homey” 1, 2 or 3 months ahead (default 1 month). The Homey app's “… days” cards can look as far ahead as you send. Texts in all languages.
+
 ## 1.0.2 (build 89) — Homey: one month ahead
 
 - Weekdot sends today plus the coming 31 days to Homey (build 88 sent 50), matching the Homey app's "… days" cards (1 to 31 days). Text in Settings › Homey updated in all languages.

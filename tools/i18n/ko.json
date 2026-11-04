@@ -622,7 +622,9 @@
   "Apps for iPhone, iPad, Apple TV and Homey": "iPhone, iPad, Apple TV 및 Homey용 앱",
   "Visit": "보기",
   "Month & List": "월 및 목록",
-  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 31 days to the Weekdot app on your Homey.": "Homey 계정으로 로그인하고 Homey를 선택하세요. Weekdot이 다음 31일의 일정을 Homey의 Weekdot 앱으로 보냅니다."
+  "Sign in with your Homey account and choose your Homey. Weekdot then sends your upcoming events to the Weekdot app on your Homey.": "Homey 계정으로 로그인하고 Homey를 선택하세요. Weekdot이 다가오는 일정을 Homey의 Weekdot 앱으로 보냅니다.",
+  "Send to Homey": "Homey로 보내기",
+  "Flows on Homey can look this far ahead, for example to remind you days before an appointment.": "Homey의 Flow가 이만큼 앞을 볼 수 있습니다. 예를 들어 약속 며칠 전에 알려 줄 수 있습니다."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot은 캘린더의 이벤트를 표시, 생성 및 편집합니다.",
@@ -831,7 +833,6 @@
   "hs.homey.4.q": "Homey에 Weekdot이 연결되지 않았다고 표시됩니다",
   "hs.homey.4.a": "Weekdot의 설정 › Homey에서 지금 업데이트를 탭하고 올바른 Homey가 선택되어 있는지 확인하세요. 세부 정보에서 연결의 각 단계를 볼 수 있습니다. Homey의 Weekdot 앱이 최신 버전인지도 확인하세요.",
   "hs.homey.5.q": "Weekdot은 Homey에 무엇을 보내나요?",
-  "hs.homey.5.a": "선택한 캘린더의 향후 31일간 이벤트를 사용자의 Homey로 직접 보냅니다. 세부 정보 숨기기가 켜져 있으면 시간만 전송되고 제목은 바쁨으로 표시됩니다.",
   "hs.homey.6.q": "Homey 연결은 어떻게 해제하나요?",
   "hs.homey.6.a": "Weekdot에서 Homey에서 로그아웃을 탭하세요. Homey에서는 Weekdot 앱의 설정을 열고 연결 해제 및 이벤트 삭제를 선택하세요.",
   "hs.homey.more": "Homey Community",

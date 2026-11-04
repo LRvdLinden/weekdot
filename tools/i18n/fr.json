@@ -622,7 +622,9 @@
   "Apps for iPhone, iPad, Apple TV and Homey": "Apps pour iPhone, iPad, Apple TV et Homey",
   "Visit": "Voir",
   "Month & List": "Mois et liste",
-  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 31 days to the Weekdot app on your Homey.": "Connectez-vous avec votre compte Homey et choisissez votre Homey. Weekdot envoie alors vos événements des 31 prochains jours à l'app Weekdot sur votre Homey."
+  "Sign in with your Homey account and choose your Homey. Weekdot then sends your upcoming events to the Weekdot app on your Homey.": "Connectez-vous avec votre compte Homey et choisissez votre Homey. Weekdot envoie alors vos événements à venir à l'app Weekdot sur votre Homey.",
+  "Send to Homey": "Envoyer à Homey",
+  "Flows on Homey can look this far ahead, for example to remind you days before an appointment.": "Les Flows sur Homey peuvent anticiper jusqu'à cette limite, par exemple pour vous rappeler un rendez-vous quelques jours avant."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot affiche, crée et modifie les événements de vos calendriers.",
@@ -831,7 +833,6 @@
   "hs.homey.4.q": "Homey indique que Weekdot n’est pas relié",
   "hs.homey.4.a": "Touchez Mettre à jour dans Weekdot, sous Réglages › Homey, et vérifiez que le bon Homey est sélectionné. Sous Détails, vous voyez chaque étape de la connexion. Assurez-vous que l’app Weekdot sur votre Homey est à jour.",
   "hs.homey.5.q": "Qu’est-ce que Weekdot envoie à Homey ?",
-  "hs.homey.5.a": "Vos événements des 31 prochains jours issus des calendriers que vous choisissez, envoyés directement à votre propre Homey. Avec Masquer les détails activé, seuls les horaires sont envoyés, avec Occupé comme titre.",
   "hs.homey.6.q": "Comment dissocier Homey ?",
   "hs.homey.6.a": "Touchez Se déconnecter de Homey dans Weekdot. Sur votre Homey, ouvrez les réglages de l’app Weekdot et choisissez de dissocier et de supprimer les événements.",
   "hs.homey.more": "Homey Community",

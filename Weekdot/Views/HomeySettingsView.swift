@@ -2,6 +2,14 @@ import SwiftUI
 
 /// Settings › Homey: sign in with the Homey account, pick a Homey and choose what Weekdot sends to it.
 struct HomeySettingsView: View {
+    /// "1 month", "2 months", … in the app's language.
+    static func monthsText(_ n: Int) -> String {
+        let f = DateComponentsFormatter()
+        f.unitsStyle = .full
+        f.allowedUnits = [.month]
+        return f.string(from: DateComponents(month: n)) ?? "\(n)"
+    }
+
     @EnvironmentObject private var store: CalendarStore
     @ObservedObject private var homey = HomeyService.shared
     @Environment(\.openURL) private var openURL
@@ -38,7 +46,7 @@ struct HomeySettingsView: View {
                     }
                     .disabled(homey.isBusy)
                 } footer: {
-                    Text("Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 31 days to the Weekdot app on your Homey.")
+                    Text("Sign in with your Homey account and choose your Homey. Weekdot then sends your upcoming events to the Weekdot app on your Homey.")
                 }
             } else {
                 Section {
@@ -95,6 +103,16 @@ struct HomeySettingsView: View {
                     Text("Your Homey")
                 } footer: {
                     Text("Weekdot updates Homey when your events change, when you open the app and now and then in the background.")
+                }
+
+                Section {
+                    Picker("Send to Homey", selection: $homey.monthsAhead) {
+                        ForEach(HomeyService.monthChoices, id: \.self) { n in
+                            Text(verbatim: Self.monthsText(n)).tag(n)
+                        }
+                    }
+                } footer: {
+                    Text("Flows on Homey can look this far ahead, for example to remind you days before an appointment.")
                 }
 
                 Section {

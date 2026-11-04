@@ -622,7 +622,9 @@
   "Apps for iPhone, iPad, Apple TV and Homey": "Apps für iPhone, iPad, Apple TV und Homey",
   "Visit": "Ansehen",
   "Month & List": "Monat und Liste",
-  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 31 days to the Weekdot app on your Homey.": "Melde dich mit deinem Homey-Konto an und wähle deinen Homey. Weekdot sendet dann deine Termine der nächsten 31 Tage an die Weekdot-App auf deinem Homey."
+  "Sign in with your Homey account and choose your Homey. Weekdot then sends your upcoming events to the Weekdot app on your Homey.": "Melde dich mit deinem Homey-Konto an und wähle deinen Homey. Weekdot sendet dann deine anstehenden Termine an die Weekdot-App auf deinem Homey.",
+  "Send to Homey": "An Homey senden",
+  "Flows on Homey can look this far ahead, for example to remind you days before an appointment.": "So weit können Flows auf Homey vorausschauen, zum Beispiel um dich Tage vor einem Termin zu erinnern."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot zeigt, erstellt und bearbeitet die Ereignisse in deinen Kalendern.",
@@ -831,7 +833,6 @@
   "hs.homey.4.q": "Homey meldet, dass Weekdot nicht verbunden ist",
   "hs.homey.4.a": "Tippe in Weekdot unter Einstellungen › Homey auf „Jetzt aktualisieren“ und prüfe, ob der richtige Homey ausgewählt ist. Unter „Details“ siehst du jeden Schritt der Verbindung. Achte darauf, dass die Weekdot-App auf deinem Homey aktuell ist.",
   "hs.homey.5.q": "Was sendet Weekdot an Homey?",
-  "hs.homey.5.a": "Deine Ereignisse der nächsten 31 Tage aus den Kalendern, die du wählst, direkt an deinen eigenen Homey. Mit aktiviertem „Details ausblenden“ werden nur die Uhrzeiten gesendet, mit „Beschäftigt“ als Titel.",
   "hs.homey.6.q": "Wie trenne ich Homey?",
   "hs.homey.6.a": "Tippe in Weekdot auf „Von Homey abmelden“. Öffne auf deinem Homey die Einstellungen der Weekdot-App und wähle, die Verbindung zu trennen und die Ereignisse zu löschen.",
   "hs.homey.more": "Homey Community",

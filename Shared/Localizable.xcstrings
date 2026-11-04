@@ -44616,6 +44616,209 @@
         }
       }
     },
+    "Flows on Homey can look this far ahead, for example to remind you days before an appointment.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يمكن للتدفقات في Homey النظر إلى هذا الحد مسبقًا، مثلًا لتذكيرك بموعد قبل أيام."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Els Flows de Homey poden mirar fins aquí, per exemple per recordar-te una cita uns dies abans."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tak daleko dopředu mohou Flow v Homey hledět, například aby vám připomněly schůzku několik dní předem."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Så langt frem kan Flows på Homey se, for eksempel for at minde dig om en aftale dage før."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "So weit können Flows auf Homey vorausschauen, zum Beispiel um dich Tage vor einem Termin zu erinnern."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Τόσο μπροστά μπορούν να κοιτάξουν τα Flows στο Homey, για παράδειγμα για να σας υπενθυμίσουν ένα ραντεβού μέρες πριν."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los Flows de Homey pueden mirar hasta este punto, por ejemplo para recordarte una cita unos días antes."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Näin pitkälle Homeyn Flowt voivat katsoa eteenpäin, esimerkiksi muistuttaakseen tapaamisesta päiviä etukäteen."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les Flows sur Homey peuvent anticiper jusqu'à cette limite, par exemple pour vous rappeler un rendez-vous quelques jours avant."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "עד כאן Flows ב-Homey יכולים להסתכל קדימה, למשל כדי להזכיר לך פגישה כמה ימים מראש."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Homey पर Flows इतनी दूर तक आगे देख सकते हैं, जैसे किसी अपॉइंटमेंट से कुछ दिन पहले आपको याद दिलाने के लिए।"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toliko unaprijed Flowovi na Homeyju mogu gledati, primjerice da vas podsjete na sastanak danima prije."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eddig láthatnak előre a Homey Flow-jai, például hogy napokkal előtte emlékeztessenek egy találkozóra."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Flow di Homey dapat melihat sejauh ini ke depan, misalnya untuk mengingatkan Anda beberapa hari sebelum janji."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I Flow su Homey possono guardare fino a qui, ad esempio per ricordarti un appuntamento qualche giorno prima."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "HomeyのFlowはここまで先を見られます。たとえば予定の数日前に知らせることができます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Homey의 Flow가 이만큼 앞을 볼 수 있습니다. 예를 들어 약속 며칠 전에 알려 줄 수 있습니다."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Flow pada Homey boleh melihat sejauh ini ke hadapan, contohnya untuk mengingatkan anda beberapa hari sebelum temu janji."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Så langt frem kan Flows på Homey se, for eksempel for å minne deg på en avtale dager i forveien."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Flows op Homey kunnen zo ver vooruitkijken, bijvoorbeeld om je dagen van tevoren aan een afspraak te herinneren."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tak daleko w przód mogą patrzeć Flow w Homey, na przykład aby przypomnieć Ci o spotkaniu kilka dni wcześniej."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Os Flows no Homey podem olhar até esse ponto, por exemplo para lembrar você de um compromisso dias antes."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Os Flows no Homey podem olhar até este ponto, por exemplo para o lembrar de um compromisso dias antes."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Până aici pot privi înainte Flow-urile din Homey, de exemplu ca să-ți amintească de o întâlnire cu câteva zile înainte."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Настолько вперёд смогут смотреть Flow в Homey, например чтобы напомнить о встрече за несколько дней."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tak ďaleko dopredu môžu Flow v Homey hľadieť, napríklad aby vám pripomenuli stretnutie niekoľko dní vopred."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Så långt fram kan Flows på Homey titta, till exempel för att påminna dig dagar före ett möte."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Flow บน Homey มองล่วงหน้าได้ไกลเท่านี้ เช่น เพื่อเตือนคุณก่อนนัดหมายหลายวัน"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Homey'deki Flow'lar bu kadar ileriye bakabilir; örneğin bir randevuyu günler öncesinden hatırlatmak için."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Настільки наперед зможуть дивитися Flow у Homey, наприклад щоб нагадати про зустріч за кілька днів."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Flow trên Homey có thể nhìn trước xa đến mức này, ví dụ để nhắc bạn về một cuộc hẹn trước vài ngày."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Homey 上的 Flow 可以向前查看这么远，例如在约会前几天提醒你。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Homey 上的 Flow 可以向前查看到這裡，例如在約會前幾天提醒你。"
+          }
+        }
+      }
+    },
     "Follow the biggest matches": {
       "extractionState": "manual",
       "localizations": {
@@ -86974,6 +87177,209 @@
         }
       }
     },
+    "Send to Homey": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الإرسال إلى Homey"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Envia a Homey"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odesílat do Homey"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Send til Homey"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "An Homey senden"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Αποστολή στο Homey"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enviar a Homey"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lähetä Homeyhin"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Envoyer à Homey"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "שליחה ל-Homey"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Homey को भेजें"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Šalji na Homey"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Küldés a Homeyra"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kirim ke Homey"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Invia a Homey"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Homeyに送信"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Homey로 보내기"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hantar ke Homey"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Send til Homey"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Naar Homey sturen"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wysyłaj do Homey"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enviar para o Homey"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enviar para o Homey"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trimite la Homey"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отправлять в Homey"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odosielať do Homey"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skicka till Homey"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ส่งไปยัง Homey"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Homey'e gönder"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Надсилати в Homey"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gửi đến Homey"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "发送到 Homey"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "傳送到 Homey"
+          }
+        }
+      }
+    },
     "Sends only the times, with “Busy” as the title, without places or emoji.": {
       "extractionState": "manual",
       "localizations": {
@@ -90642,205 +91048,205 @@
         }
       }
     },
-    "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 31 days to the Weekdot app on your Homey.": {
+    "Sign in with your Homey account and choose your Homey. Weekdot then sends your upcoming events to the Weekdot app on your Homey.": {
       "extractionState": "manual",
       "localizations": {
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "سجّل الدخول بحساب Homey واختر جهازك. يرسل Weekdot بعد ذلك مواعيد الـ31 يومًا القادمة إلى تطبيق Weekdot على جهاز Homey."
+            "value": "سجّل الدخول بحساب Homey واختر جهازك. يرسل Weekdot بعد ذلك مواعيدك القادمة إلى تطبيق Weekdot على جهاز Homey."
           }
         },
         "ca": {
           "stringUnit": {
             "state": "translated",
-            "value": "Inicia la sessió amb el teu compte de Homey i tria el teu Homey. Weekdot enviarà els esdeveniments dels pròxims 31 dies a l'app Weekdot del teu Homey."
+            "value": "Inicia la sessió amb el teu compte de Homey i tria el teu Homey. Aleshores Weekdot envia els teus propers esdeveniments a l'app Weekdot del teu Homey."
           }
         },
         "cs": {
           "stringUnit": {
             "state": "translated",
-            "value": "Přihlas se účtem Homey a vyber svůj Homey. Weekdot pak odešle události na příštích 31 dní do aplikace Weekdot ve tvém Homey."
+            "value": "Přihlaste se účtem Homey a vyberte svůj Homey. Weekdot pak odešle nadcházející události do aplikace Weekdot ve vašem Homey."
           }
         },
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Log ind med din Homey-konto, og vælg din Homey. Weekdot sender så dine begivenheder for de næste 31 dage til Weekdot-appen på din Homey."
+            "value": "Log ind med din Homey-konto, og vælg din Homey. Weekdot sender derefter dine kommende begivenheder til Weekdot-appen på din Homey."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Melde dich mit deinem Homey-Konto an und wähle deinen Homey. Weekdot sendet dann deine Termine der nächsten 31 Tage an die Weekdot-App auf deinem Homey."
+            "value": "Melde dich mit deinem Homey-Konto an und wähle deinen Homey. Weekdot sendet dann deine anstehenden Termine an die Weekdot-App auf deinem Homey."
           }
         },
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Συνδέσου με τον λογαριασμό Homey και επίλεξε το Homey σου. Το Weekdot στέλνει τα γεγονότα των επόμενων 31 ημερών στην εφαρμογή Weekdot του Homey σου."
+            "value": "Συνδεθείτε με τον λογαριασμό Homey και επιλέξτε το Homey σας. Το Weekdot στέλνει τότε τα επερχόμενα συμβάντα σας στην εφαρμογή Weekdot του Homey."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Inicia sesión con tu cuenta de Homey y elige tu Homey. Weekdot enviará tus eventos de los próximos 31 días a la app Weekdot de tu Homey."
+            "value": "Inicia sesión con tu cuenta de Homey y elige tu Homey. Weekdot enviará tus próximos eventos a la app Weekdot de tu Homey."
           }
         },
         "fi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Kirjaudu Homey-tililläsi ja valitse Homey. Weekdot lähettää sitten seuraavien 31 päivän tapahtumat Homeysi Weekdot-appiin."
+            "value": "Kirjaudu Homey-tililläsi ja valitse Homeysi. Weekdot lähettää sitten tulevat tapahtumasi Homeyn Weekdot-appiin."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Connectez-vous avec votre compte Homey et choisissez votre Homey. Weekdot envoie alors vos événements des 31 prochains jours à l'app Weekdot sur votre Homey."
+            "value": "Connectez-vous avec votre compte Homey et choisissez votre Homey. Weekdot envoie alors vos événements à venir à l'app Weekdot sur votre Homey."
           }
         },
         "he": {
           "stringUnit": {
             "state": "translated",
-            "value": "התחבר עם חשבון Homey ובחר את ה-Homey שלך. Weekdot ישלח את האירועים של 31 הימים הבאים לאפליקציית Weekdot ב-Homey שלך."
+            "value": "התחבר עם חשבון Homey ובחר את ה-Homey שלך. Weekdot ישלח את האירועים הקרובים שלך לאפליקציית Weekdot ב-Homey."
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "अपने Homey खाते से साइन इन करें और अपना Homey चुनें। Weekdot फिर अगले 31 दिनों के इवेंट आपके Homey पर Weekdot ऐप को भेजता है।"
+            "value": "अपने Homey खाते से साइन इन करें और अपना Homey चुनें। Weekdot फिर आपके आगामी इवेंट आपके Homey पर Weekdot ऐप को भेजता है।"
           }
         },
         "hr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Prijavi se Homey računom i odaberi svoj Homey. Weekdot zatim šalje događaje za sljedeći 31 dan aplikaciji Weekdot na tvom Homeyju."
+            "value": "Prijavite se Homey računom i odaberite svoj Homey. Weekdot tada šalje nadolazeće događaje u aplikaciju Weekdot na vašem Homeyju."
           }
         },
         "hu": {
           "stringUnit": {
             "state": "translated",
-            "value": "Jelentkezz be a Homey-fiókoddal, és válaszd ki a Homeyt. A Weekdot ezután elküldi a következő 31 nap eseményeit a Homeyn lévő Weekdot alkalmazásnak."
+            "value": "Jelentkezz be a Homey-fiókoddal, és válaszd ki a Homeyt. A Weekdot ezután elküldi a közelgő eseményeidet a Homey Weekdot appjába."
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Masuk dengan akun Homey dan pilih Homey Anda. Weekdot lalu mengirim acara 31 hari ke depan ke aplikasi Weekdot di Homey Anda."
+            "value": "Masuk dengan akun Homey dan pilih Homey Anda. Weekdot lalu mengirim acara mendatang ke app Weekdot di Homey Anda."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Accedi con il tuo account Homey e scegli il tuo Homey. Weekdot invierà gli eventi dei prossimi 31 giorni all'app Weekdot sul tuo Homey."
+            "value": "Accedi con il tuo account Homey e scegli il tuo Homey. Weekdot invierà i tuoi prossimi eventi all'app Weekdot sul tuo Homey."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "Homeyアカウントでサインインし、Homeyを選択してください。Weekdotが今後31日間の予定をHomeyのWeekdotアプリに送信します。"
+            "value": "Homeyアカウントでサインインし、Homeyを選択してください。WeekdotがこれからのイベントをHomeyのWeekdotアプリに送信します。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "Homey 계정으로 로그인하고 Homey를 선택하세요. Weekdot이 다음 31일의 일정을 Homey의 Weekdot 앱으로 보냅니다."
+            "value": "Homey 계정으로 로그인하고 Homey를 선택하세요. Weekdot이 다가오는 일정을 Homey의 Weekdot 앱으로 보냅니다."
           }
         },
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "Daftar masuk dengan akaun Homey dan pilih Homey anda. Weekdot kemudian menghantar acara 31 hari akan datang ke apl Weekdot pada Homey anda."
+            "value": "Daftar masuk dengan akaun Homey dan pilih Homey anda. Weekdot kemudian menghantar acara akan datang ke app Weekdot pada Homey anda."
           }
         },
         "nb": {
           "stringUnit": {
             "state": "translated",
-            "value": "Logg på med Homey-kontoen din og velg Homey-en din. Weekdot sender da avtalene for de neste 31 dagene til Weekdot-appen på Homey-en din."
+            "value": "Logg inn med Homey-kontoen din og velg din Homey. Weekdot sender da de kommende avtalene dine til Weekdot-appen på Homey."
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Log in met je Homey-account en kies je Homey. Weekdot stuurt dan je afspraken van de komende 31 dagen naar de Weekdot-app op je Homey."
+            "value": "Log in met je Homey-account en kies je Homey. Weekdot stuurt dan je komende afspraken naar de Weekdot-app op je Homey."
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Zaloguj się kontem Homey i wybierz swój Homey. Weekdot wyśle wtedy wydarzenia z najbliższych 31 dni do aplikacji Weekdot na Twoim Homey."
+            "value": "Zaloguj się kontem Homey i wybierz swój Homey. Weekdot wyśle wtedy nadchodzące wydarzenia do aplikacji Weekdot na Twoim Homey."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Entre com sua conta Homey e escolha seu Homey. O Weekdot envia seus eventos dos próximos 31 dias para o app Weekdot no seu Homey."
+            "value": "Entre com sua conta Homey e escolha seu Homey. O Weekdot então envia seus próximos eventos para o app Weekdot no seu Homey."
           }
         },
         "pt-PT": {
           "stringUnit": {
             "state": "translated",
-            "value": "Inicie sessão com a sua conta Homey e escolha o seu Homey. O Weekdot envia os eventos dos próximos 31 dias para a app Weekdot no seu Homey."
+            "value": "Inicie sessão com a sua conta Homey e escolha o seu Homey. O Weekdot envia então os seus próximos eventos para a app Weekdot no seu Homey."
           }
         },
         "ro": {
           "stringUnit": {
             "state": "translated",
-            "value": "Conectează-te cu contul Homey și alege Homey-ul tău. Weekdot trimite apoi evenimentele din următoarele 31 de zile către aplicația Weekdot de pe Homey."
+            "value": "Conectează-te cu contul Homey și alege-ți Homey-ul. Weekdot trimite apoi evenimentele viitoare către aplicația Weekdot de pe Homey."
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Войдите в аккаунт Homey и выберите свой Homey. Weekdot будет отправлять события на 31 день вперёд в приложение Weekdot на вашем Homey."
+            "value": "Войдите в аккаунт Homey и выберите свой Homey. Weekdot будет отправлять предстоящие события в приложение Weekdot на вашем Homey."
           }
         },
         "sk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Prihlás sa účtom Homey a vyber svoj Homey. Weekdot potom odošle udalosti na nasledujúcich 31 dní do aplikácie Weekdot v tvojom Homey."
+            "value": "Prihláste sa účtom Homey a vyberte svoj Homey. Weekdot potom odošle nadchádzajúce udalosti do aplikácie Weekdot vo vašom Homey."
           }
         },
         "sv": {
           "stringUnit": {
             "state": "translated",
-            "value": "Logga in med ditt Homey-konto och välj din Homey. Weekdot skickar sedan dina händelser för de kommande 31 dagarna till Weekdot-appen på din Homey."
+            "value": "Logga in med ditt Homey-konto och välj din Homey. Weekdot skickar sedan dina kommande händelser till Weekdot-appen på din Homey."
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "ลงชื่อเข้าด้วยบัญชี Homey และเลือก Homey ของคุณ จากนั้น Weekdot จะส่งกิจกรรม 31 วันข้างหน้าไปยังแอป Weekdot บน Homey ของคุณ"
+            "value": "ลงชื่อเข้าด้วยบัญชี Homey และเลือก Homey ของคุณ จากนั้น Weekdot จะส่งกิจกรรมที่กำลังจะมาถึงไปยังแอป Weekdot บน Homey ของคุณ"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Homey hesabınla giriş yap ve Homey'ini seç. Weekdot sonraki 31 günün etkinliklerini Homey'indeki Weekdot uygulamasına gönderir."
+            "value": "Homey hesabınla giriş yap ve Homey'ini seç. Weekdot yaklaşan etkinliklerini Homey'indeki Weekdot uygulamasına gönderir."
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Увійдіть в акаунт Homey і виберіть свій Homey. Weekdot надсилатиме події на 31 день наперед у застосунок Weekdot на вашому Homey."
+            "value": "Увійдіть в обліковий запис Homey і виберіть свій Homey. Weekdot надсилатиме майбутні події в програму Weekdot на вашому Homey."
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Đăng nhập bằng tài khoản Homey và chọn Homey của bạn. Weekdot sẽ gửi sự kiện của 31 ngày tới đến ứng dụng Weekdot trên Homey."
+            "value": "Đăng nhập bằng tài khoản Homey và chọn Homey của bạn. Weekdot sẽ gửi các sự kiện sắp tới đến ứng dụng Weekdot trên Homey."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "使用你的 Homey 账户登录并选择你的 Homey。随后 Weekdot 会将未来 31 天的日程发送到你 Homey 上的 Weekdot 应用。"
+            "value": "使用你的 Homey 账户登录并选择你的 Homey。随后 Weekdot 会将即将到来的日程发送到你 Homey 上的 Weekdot 应用。"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "使用你的 Homey 帳號登入並選擇你的 Homey。Weekdot 會將未來 31 天的行程傳送到你 Homey 上的 Weekdot App。"
+            "value": "使用你的 Homey 帳號登入並選擇你的 Homey。隨後 Weekdot 會將即將到來的行程傳送到你 Homey 上的 Weekdot App。"
           }
         }
       }

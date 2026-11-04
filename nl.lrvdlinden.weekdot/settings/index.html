@@ -141,6 +141,9 @@
           const at = new Date(s.receivedAt);
           $('updated').textContent = at.toLocaleString();
           $('events').textContent = String(s.events);
+          let until = s.lastDay || '';
+          try { if (until) until = new Date(until + 'T12:00:00').toLocaleDateString(undefined, { day: 'numeric', month: 'long' }); } catch (e) { /* keep yyyy-mm-dd */ }
+          document.querySelector('[data-i18n="settings.events"]').textContent = until ? Homey.__('settings.events', { date: until }) : t('settings.events').replace(/\s*\(.*\)$/, '');
           $('stale').classList.toggle('hidden', Date.now() - at.getTime() < 2 * 86400000);
           $('cals').innerHTML = '';
           for (const c of s.calendars || []) {

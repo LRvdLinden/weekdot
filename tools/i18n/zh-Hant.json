@@ -622,7 +622,9 @@
   "Apps for iPhone, iPad, Apple TV and Homey": "適用於 iPhone、iPad、Apple TV 和 Homey 的 App",
   "Visit": "查看",
   "Month & List": "月與列表",
-  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 31 days to the Weekdot app on your Homey.": "使用你的 Homey 帳號登入並選擇你的 Homey。Weekdot 會將未來 31 天的行程傳送到你 Homey 上的 Weekdot App。"
+  "Sign in with your Homey account and choose your Homey. Weekdot then sends your upcoming events to the Weekdot app on your Homey.": "使用你的 Homey 帳號登入並選擇你的 Homey。隨後 Weekdot 會將即將到來的行程傳送到你 Homey 上的 Weekdot App。",
+  "Send to Homey": "傳送到 Homey",
+  "Flows on Homey can look this far ahead, for example to remind you days before an appointment.": "Homey 上的 Flow 可以向前查看到這裡，例如在約會前幾天提醒你。"
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot 會顯示、建立和編輯你行事曆中的行程。",
@@ -831,7 +833,6 @@
   "hs.homey.4.q": "Homey 顯示 Weekdot 未連結",
   "hs.homey.4.a": "在 Weekdot 的「設定」›「Homey」中點一下「立即更新」，並確認已選擇正確的 Homey。在「詳細資料」中可以看到連線的每個步驟。請確認 Homey 上的 Weekdot App 是最新版本。",
   "hs.homey.5.q": "Weekdot 會傳送什麼給 Homey？",
-  "hs.homey.5.a": "你所選行事曆中未來 31 天的行程，會直接傳送到你自己的 Homey。開啟「隱藏詳細資料」時，只會傳送時間，標題則顯示為「忙碌」。",
   "hs.homey.6.q": "如何取消與 Homey 的連結？",
   "hs.homey.6.a": "在 Weekdot 中點一下「登出 Homey」。在 Homey 上，打開 Weekdot App 的設定，選擇取消連結並刪除行程。",
   "hs.homey.more": "Homey Community",

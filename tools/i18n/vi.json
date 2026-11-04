@@ -622,7 +622,9 @@
   "Apps for iPhone, iPad, Apple TV and Homey": "Ứng dụng cho iPhone, iPad, Apple TV và Homey",
   "Visit": "Xem",
   "Month & List": "Tháng và danh sách",
-  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 31 days to the Weekdot app on your Homey.": "Đăng nhập bằng tài khoản Homey và chọn Homey của bạn. Weekdot sẽ gửi sự kiện của 31 ngày tới đến ứng dụng Weekdot trên Homey."
+  "Sign in with your Homey account and choose your Homey. Weekdot then sends your upcoming events to the Weekdot app on your Homey.": "Đăng nhập bằng tài khoản Homey và chọn Homey của bạn. Weekdot sẽ gửi các sự kiện sắp tới đến ứng dụng Weekdot trên Homey.",
+  "Send to Homey": "Gửi đến Homey",
+  "Flows on Homey can look this far ahead, for example to remind you days before an appointment.": "Flow trên Homey có thể nhìn trước xa đến mức này, ví dụ để nhắc bạn về một cuộc hẹn trước vài ngày."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot hiển thị, tạo và sửa các sự kiện trong lịch của bạn.",
@@ -831,7 +833,6 @@
   "hs.homey.4.q": "Homey báo Weekdot chưa được kết nối",
   "hs.homey.4.a": "Chạm vào Cập nhật ngay trong Weekdot tại Cài đặt › Homey và kiểm tra rằng đã chọn đúng Homey. Trong Chi tiết, bạn sẽ thấy từng bước của quá trình kết nối. Hãy đảm bảo ứng dụng Weekdot trên Homey đã được cập nhật.",
   "hs.homey.5.q": "Weekdot gửi gì đến Homey?",
-  "hs.homey.5.a": "Các sự kiện trong 31 ngày tới từ những lịch bạn chọn, được gửi thẳng đến Homey của riêng bạn. Khi Ẩn chi tiết đang bật, chỉ thời gian được gửi, với tiêu đề là Bận.",
   "hs.homey.6.q": "Làm cách nào để hủy kết nối Homey?",
   "hs.homey.6.a": "Chạm vào Đăng xuất khỏi Homey trong Weekdot. Trên Homey, mở cài đặt của ứng dụng Weekdot và chọn hủy kết nối rồi xóa các sự kiện.",
   "hs.homey.more": "Homey Community",

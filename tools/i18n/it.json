@@ -622,7 +622,9 @@
   "Apps for iPhone, iPad, Apple TV and Homey": "App per iPhone, iPad, Apple TV e Homey",
   "Visit": "Vedi",
   "Month & List": "Mese ed elenco",
-  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 31 days to the Weekdot app on your Homey.": "Accedi con il tuo account Homey e scegli il tuo Homey. Weekdot invierà gli eventi dei prossimi 31 giorni all'app Weekdot sul tuo Homey."
+  "Sign in with your Homey account and choose your Homey. Weekdot then sends your upcoming events to the Weekdot app on your Homey.": "Accedi con il tuo account Homey e scegli il tuo Homey. Weekdot invierà i tuoi prossimi eventi all'app Weekdot sul tuo Homey.",
+  "Send to Homey": "Invia a Homey",
+  "Flows on Homey can look this far ahead, for example to remind you days before an appointment.": "I Flow su Homey possono guardare fino a qui, ad esempio per ricordarti un appuntamento qualche giorno prima."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot mostra, crea e modifica gli eventi nei tuoi calendari.",
@@ -831,7 +833,6 @@
   "hs.homey.4.q": "Homey dice che Weekdot non è collegato",
   "hs.homey.4.a": "Tocca Aggiorna ora in Weekdot, in Impostazioni › Homey, e verifica che sia selezionato l’Homey giusto. In Dettagli vedi ogni passaggio della connessione. Assicurati che l’app Weekdot sul tuo Homey sia aggiornata.",
   "hs.homey.5.q": "Cosa invia Weekdot a Homey?",
-  "hs.homey.5.a": "I tuoi eventi dei prossimi 31 giorni dai calendari che scegli, inviati direttamente al tuo Homey. Con Nascondi dettagli attivo vengono inviati solo gli orari, con Occupato come titolo.",
   "hs.homey.6.q": "Come scollego Homey?",
   "hs.homey.6.a": "Tocca Esci da Homey in Weekdot. Sul tuo Homey, apri le impostazioni dell’app Weekdot e scegli di scollegare ed eliminare gli eventi.",
   "hs.homey.more": "Homey Community",

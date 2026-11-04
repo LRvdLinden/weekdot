@@ -622,7 +622,9 @@
   "Apps for iPhone, iPad, Apple TV and Homey": "Apper for iPhone, iPad, Apple TV og Homey",
   "Visit": "Se",
   "Month & List": "Måned og liste",
-  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 31 days to the Weekdot app on your Homey.": "Logg på med Homey-kontoen din og velg Homey-en din. Weekdot sender da avtalene for de neste 31 dagene til Weekdot-appen på Homey-en din."
+  "Sign in with your Homey account and choose your Homey. Weekdot then sends your upcoming events to the Weekdot app on your Homey.": "Logg inn med Homey-kontoen din og velg din Homey. Weekdot sender da de kommende avtalene dine til Weekdot-appen på Homey.",
+  "Send to Homey": "Send til Homey",
+  "Flows on Homey can look this far ahead, for example to remind you days before an appointment.": "Så langt frem kan Flows på Homey se, for eksempel for å minne deg på en avtale dager i forveien."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot viser, oppretter og redigerer hendelsene i kalenderne dine.",
@@ -831,7 +833,6 @@
   "hs.homey.4.q": "Homey sier at Weekdot ikke er koblet til",
   "hs.homey.4.a": "Trykk på Oppdater nå i Weekdot under Innstillinger › Homey, og sjekk at riktig Homey er valgt. Under Detaljer ser du hvert trinn i tilkoblingen. Sørg for at Weekdot-appen på Homey er oppdatert.",
   "hs.homey.5.q": "Hva sender Weekdot til Homey?",
-  "hs.homey.5.a": "Hendelsene dine for de neste 31 dagene fra kalenderne du velger, sendt rett til din egen Homey. Når Skjul detaljer er på, sendes bare tidspunktene, med Opptatt som tittel.",
   "hs.homey.6.q": "Hvordan kobler jeg fra Homey?",
   "hs.homey.6.a": "Trykk på Logg av Homey i Weekdot. På Homey åpner du innstillingene for Weekdot-appen og velger å koble fra og slette hendelsene.",
   "hs.homey.more": "Homey Community",

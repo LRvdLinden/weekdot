@@ -11,7 +11,7 @@ import AppKit
 /// Links Weekdot to the user's Homey (Athom) and sends the coming days to the Weekdot app on that Homey.
 ///
 /// Flow: sign in with the Homey account (Athom OAuth) → pick a Homey → Weekdot sends a schedule of the next
-/// 31 days to the Homey app `nl.lrvdlinden.weekdot` (`POST /api/app/nl.lrvdlinden.weekdot/schedule`).
+/// coming 1, 2 or 3 months to the Homey app `nl.lrvdlinden.weekdot` (`POST /api/app/nl.lrvdlinden.weekdot/schedule`).
 /// The Homey app sets its own timers from that schedule, so Flows run on time even when the iPhone sleeps.
 ///
 /// The Athom API client (client ID + secret, created at https://tools.developer.homey.app → Web API clients,
@@ -19,8 +19,8 @@ import AppKit
 /// The repository is private, so `Weekdot/HomeyClient.plist` is committed (template: `Config/HomeyClient.example.plist`).
 @MainActor
 final class HomeyService: NSObject, ObservableObject {
-    /// Days of events sent to Homey (today plus the next 31, for "starts in … days" Flows).
-    static let daysSent = 32
+    /// Months of events sent to Homey (1, 2 or 3), chosen in Settings › Homey.
+    static let monthChoices = [1, 2, 3]
     static let shared = HomeyService()
 
     static let homeyAppID = "nl.lrvdlinden.weekdot"
@@ -80,6 +80,10 @@ final class HomeyService: NSObject, ObservableObject {
     @Published var hideDetails: Bool {
         didSet { defaults.set(hideDetails, forKey: Key.hideDetails); forceNextSync() }
     }
+    /// How many months ahead Weekdot sends (1, 2 or 3); the Homey "… days" cards can look as far ahead.
+    @Published var monthsAhead: Int {
+        didSet { defaults.set(monthsAhead, forKey: Key.months); forceNextSync() }
+    }
     /// Calendars that are not sent to Homey.
     @Published var excludedCalendarIDs: Set<String> {
         didSet { defaults.set(Array(excludedCalendarIDs), forKey: Key.excluded); forceNextSync() }
@@ -91,6 +95,7 @@ final class HomeyService: NSObject, ObservableObject {
         static let digest = "weekdot.homey.digest"
         static let hideDetails = "weekdot.homey.hideDetails"
         static let excluded = "weekdot.homey.excluded"
+        static let months = "weekdot.homey.months"
         static let tokens = "homey.tokens"
     }
 
@@ -105,6 +110,8 @@ final class HomeyService: NSObject, ObservableObject {
     private override init() {
         hideDetails = UserDefaults.standard.bool(forKey: Key.hideDetails)
         excludedCalendarIDs = Set(UserDefaults.standard.stringArray(forKey: Key.excluded) ?? [])
+        let months = UserDefaults.standard.integer(forKey: Key.months)
+        monthsAhead = Self.monthChoices.contains(months) ? months : 1
         super.init()
         tokens = Keychain.read(Key.tokens).flatMap { try? JSONDecoder().decode(Tokens.self, from: $0) }
         // property observers don't run inside init, so set the signed-in state here too
@@ -239,7 +246,7 @@ final class HomeyService: NSObject, ObservableObject {
         }
     }
 
-    /// Sends the next 31 days to Homey. Skipped when nothing changed and the last update is recent.
+    /// Sends the coming 1, 2 or 3 months to Homey. Skipped when nothing changed and the last update is recent.
     func sync(store: CalendarStore, force: Bool = false) async {
         calendarStore = store
         guard isLinked, !ScreenshotMode.isActive else { return }
@@ -348,7 +355,8 @@ final class HomeyService: NSObject, ObservableObject {
     private func makePayload(store: CalendarStore) -> [String: Any] {
         let cal = store.synced.settings.calendar
         let from = cal.startOfDay(for: Date())
-        let to = cal.addingDays(Self.daysSent, to: from)
+        // today plus the chosen number of months (the day of the month itself included)
+        let to = cal.addingDays(1, to: cal.date(byAdding: .month, value: monthsAhead, to: from) ?? cal.addingDays(31 * monthsAhead, to: from))
         let iso = ISO8601DateFormatter()
         let day = DateFormatter()
         day.calendar = Calendar(identifier: .gregorian)

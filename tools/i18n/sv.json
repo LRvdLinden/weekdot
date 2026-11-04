@@ -622,7 +622,9 @@
   "Apps for iPhone, iPad, Apple TV and Homey": "Appar för iPhone, iPad, Apple TV och Homey",
   "Visit": "Visa",
   "Month & List": "Månad och lista",
-  "Sign in with your Homey account and choose your Homey. Weekdot then sends your events of the coming 31 days to the Weekdot app on your Homey.": "Logga in med ditt Homey-konto och välj din Homey. Weekdot skickar sedan dina händelser för de kommande 31 dagarna till Weekdot-appen på din Homey."
+  "Sign in with your Homey account and choose your Homey. Weekdot then sends your upcoming events to the Weekdot app on your Homey.": "Logga in med ditt Homey-konto och välj din Homey. Weekdot skickar sedan dina kommande händelser till Weekdot-appen på din Homey.",
+  "Send to Homey": "Skicka till Homey",
+  "Flows on Homey can look this far ahead, for example to remind you days before an appointment.": "Så långt fram kan Flows på Homey titta, till exempel för att påminna dig dagar före ett möte."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot visar, skapar och redigerar händelserna i dina kalendrar.",
@@ -831,7 +833,6 @@
   "hs.homey.4.q": "Homey säger att Weekdot inte är kopplad",
   "hs.homey.4.a": "Tryck på Uppdatera nu i Weekdot under Inställningar › Homey och kontrollera att rätt Homey är vald. Under Detaljer ser du varje steg i anslutningen. Se till att Weekdot-appen på din Homey är uppdaterad.",
   "hs.homey.5.q": "Vad skickar Weekdot till Homey?",
-  "hs.homey.5.a": "Dina händelser för de kommande 31 dagarna från de kalendrar du väljer, skickade direkt till din egen Homey. Med Dölj detaljer på skickas bara tiderna, med Upptagen som titel.",
   "hs.homey.6.q": "Hur kopplar jag bort Homey?",
   "hs.homey.6.a": "Tryck på Logga ut från Homey i Weekdot. Öppna inställningarna för Weekdot-appen på din Homey och välj att koppla bort och radera händelserna.",
   "hs.homey.more": "Homey Community",
