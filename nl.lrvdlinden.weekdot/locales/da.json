@@ -41,6 +41,20 @@
     "nothing": "Intet planlagt",
     "not_linked": "Åbn Weekdot på iPhone, og forbind Homey under Indstillinger › Homey.",
     "all_day": "Hele dagen",
-    "now": "Nu"
+    "now": "Nu",
+    "busy_until": "Optaget til __time__",
+    "busy": "Optaget",
+    "free_until": "Ledig til __time__",
+    "free_rest": "Ledig resten af dagen",
+    "then_free_until": "derefter ledig til __time__",
+    "then_free": "derefter ledig",
+    "next_is": "Derefter: __title__",
+    "no_next": "Ingen kommende begivenheder",
+    "now_until": "Nu · til __time__",
+    "until_title": "til __title__",
+    "countdown_setup": "Vælg et ord fra titlen i widgettens indstillinger.",
+    "countdown_none": "Ingen kommende begivenhed med »__word__«",
+    "events_count": "Begivenheder: __count__",
+    "week_n": "Uge __n__"
   }
 }

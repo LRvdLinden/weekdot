@@ -41,6 +41,20 @@
     "nothing": "Niets gepland",
     "not_linked": "Open Weekdot op je iPhone en koppel je Homey bij Instellingen › Homey.",
     "all_day": "Hele dag",
-    "now": "Nu"
+    "now": "Nu",
+    "busy_until": "Bezet tot __time__",
+    "busy": "Bezet",
+    "free_until": "Vrij tot __time__",
+    "free_rest": "Vrij voor de rest van de dag",
+    "then_free_until": "daarna vrij tot __time__",
+    "then_free": "daarna vrij",
+    "next_is": "Hierna: __title__",
+    "no_next": "Geen komende afspraken",
+    "now_until": "Nu · tot __time__",
+    "until_title": "tot __title__",
+    "countdown_setup": "Kies een woord uit de titel in de instellingen van de widget.",
+    "countdown_none": "Geen komende afspraak met “__word__”",
+    "events_count": "Afspraken: __count__",
+    "week_n": "Week __n__"
   }
 }

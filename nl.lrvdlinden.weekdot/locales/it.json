@@ -41,6 +41,20 @@
     "nothing": "Niente in programma",
     "not_linked": "Apri Weekdot sull'iPhone e collega Homey in Impostazioni › Homey.",
     "all_day": "Tutto il giorno",
-    "now": "Adesso"
+    "now": "Adesso",
+    "busy_until": "Occupato fino alle __time__",
+    "busy": "Occupato",
+    "free_until": "Libero fino alle __time__",
+    "free_rest": "Libero per il resto della giornata",
+    "then_free_until": "poi libero fino alle __time__",
+    "then_free": "poi libero",
+    "next_is": "Dopo: __title__",
+    "no_next": "Nessun evento in arrivo",
+    "now_until": "Adesso · fino alle __time__",
+    "until_title": "a __title__",
+    "countdown_setup": "Scegli una parola del titolo nelle impostazioni del widget.",
+    "countdown_none": "Nessun evento in arrivo con “__word__”",
+    "events_count": "Eventi: __count__",
+    "week_n": "Settimana __n__"
   }
 }

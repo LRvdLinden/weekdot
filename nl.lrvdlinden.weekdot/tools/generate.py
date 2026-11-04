@@ -140,6 +140,10 @@ def main():
         "api": {"getAgenda": {"method": "GET", "path": "/"}},
     })
 
+    # the six small widgets (tools/widgets.py)
+    from widgets import write_widgets
+    write_widgets(S, W)
+
     # locales
     for i, l in enumerate(L):
         out = {"tokens": {"next_title": S["g_next_title"][l], "next_time": S["g_next_time"][l], "today_count": S["g_today_count"][l]}}

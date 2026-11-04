@@ -1,0 +1,66 @@
+{
+  "name": {
+    "en": "Next event",
+    "nl": "Volgende afspraak",
+    "de": "Nächster Termin",
+    "fr": "Prochain événement",
+    "it": "Prossimo evento",
+    "sv": "Nästa händelse",
+    "no": "Neste avtale",
+    "es": "Próximo evento",
+    "da": "Næste begivenhed",
+    "ru": "Следующее событие",
+    "pl": "Następne wydarzenie",
+    "ko": "다음 일정",
+    "ar": "الموعد التالي"
+  },
+  "height": 120,
+  "transparent": false,
+  "settings": [
+    {
+      "id": "calendar",
+      "type": "autocomplete",
+      "title": {
+        "en": "Calendar",
+        "nl": "Agenda",
+        "de": "Kalender",
+        "fr": "Calendrier",
+        "it": "Calendario",
+        "sv": "Kalender",
+        "no": "Kalender",
+        "es": "Calendario",
+        "da": "Kalender",
+        "ru": "Календарь",
+        "pl": "Kalendarz",
+        "ko": "캘린더",
+        "ar": "التقويم"
+      }
+    },
+    {
+      "id": "keyword",
+      "type": "text",
+      "title": {
+        "en": "Title contains (optional)",
+        "nl": "Titel bevat (optioneel)",
+        "de": "Titel enthält (optional)",
+        "fr": "Le titre contient (facultatif)",
+        "it": "Il titolo contiene (facoltativo)",
+        "sv": "Titeln innehåller (valfritt)",
+        "no": "Tittelen inneholder (valgfritt)",
+        "es": "El título contiene (opcional)",
+        "da": "Titlen indeholder (valgfrit)",
+        "ru": "Название содержит (необязательно)",
+        "pl": "Tytuł zawiera (opcjonalnie)",
+        "ko": "제목에 포함(선택)",
+        "ar": "العنوان يحتوي على (اختياري)"
+      },
+      "value": ""
+    }
+  ],
+  "api": {
+    "getData": {
+      "method": "GET",
+      "path": "/"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "name": {
+    "en": "Free or busy",
+    "nl": "Vrij of bezet",
+    "de": "Frei oder belegt",
+    "fr": "Libre ou occupé",
+    "it": "Libero o occupato",
+    "sv": "Ledig eller upptagen",
+    "no": "Ledig eller opptatt",
+    "es": "Libre u ocupado",
+    "da": "Ledig eller optaget",
+    "ru": "Свободен или занят",
+    "pl": "Wolny czy zajęty",
+    "ko": "한가함 또는 바쁨",
+    "ar": "متاح أو مشغول"
+  },
+  "height": 100,
+  "transparent": false,
+  "settings": [
+    {
+      "id": "calendar",
+      "type": "autocomplete",
+      "title": {
+        "en": "Calendar",
+        "nl": "Agenda",
+        "de": "Kalender",
+        "fr": "Calendrier",
+        "it": "Calendario",
+        "sv": "Kalender",
+        "no": "Kalender",
+        "es": "Calendario",
+        "da": "Kalender",
+        "ru": "Календарь",
+        "pl": "Kalendarz",
+        "ko": "캘린더",
+        "ar": "التقويم"
+      }
+    }
+  ],
+  "api": {
+    "getData": {
+      "method": "GET",
+      "path": "/"
+    }
+  }
+}

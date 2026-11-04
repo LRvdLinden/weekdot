@@ -262,3 +262,48 @@ CHANGELOG = {
    "새 기능: \"… 일 후 일정 시작\"(1~50일 전, 원하는 시간에, 종일 일정 포함)과 조건 \"… 일 후 일정이 있음\". 모든 조건을 반전할 수 있습니다. 7일보다 먼 일정에는 Weekdot 1.0.2 이상이 필요합니다.",
    "جديد: \"يبدأ موعد بعد … أيام\" (قبل 1 إلى 50 يومًا، في الوقت الذي تختاره، بما فيها مواعيد اليوم الكامل) والشرط \"يوجد موعد بعد … أيام\". يمكن عكس كل الشروط. لأكثر من 7 أيام يلزم Weekdot 1.0.2 أو أحدث."),
 }
+
+# ---- 1.0.1: six extra widgets ----
+W.update({
+ "wn_next_event": T("Next event","Volgende afspraak","Nächster Termin","Prochain événement","Prossimo evento","Nästa händelse","Neste avtale","Próximo evento","Næste begivenhed","Следующее событие","Następne wydarzenie","다음 일정","الموعد التالي"),
+ "wn_free_busy": T("Free or busy","Vrij of bezet","Frei oder belegt","Libre ou occupé","Libero o occupato","Ledig eller upptagen","Ledig eller opptatt","Libre u ocupado","Ledig eller optaget","Свободен или занят","Wolny czy zajęty","한가함 또는 바쁨","متاح أو مشغول"),
+ "wn_countdown": T("Countdown","Aftellen","Countdown","Compte à rebours","Conto alla rovescia","Nedräkning","Nedtelling","Cuenta atrás","Nedtælling","Обратный отсчёт","Odliczanie","카운트다운","العد التنازلي"),
+ "wn_week": T("This week","Deze week","Diese Woche","Cette semaine","Questa settimana","Den här veckan","Denne uken","Esta semana","Denne uge","Эта неделя","Ten tydzień","이번 주","هذا الأسبوع"),
+ "wn_timeline": T("Today's timeline","Tijdlijn van vandaag","Zeitleiste von heute","Chronologie du jour","Timeline di oggi","Dagens tidslinje","Dagens tidslinje","Cronología de hoy","Dagens tidslinje","Шкала дня","Oś dnia","오늘 타임라인","الخط الزمني لليوم"),
+ "wn_month": T("Mini month","Minimaand","Minimonat","Mini-mois","Mini mese","Minimånad","Minimåned","Minimes","Minimåned","Мини-месяц","Minimiesiąc","미니 월","شهر مصغّر"),
+ "ws_week_start": T("Week starts on","Week begint op","Woche beginnt am","La semaine commence le","La settimana inizia il","Veckan börjar på","Uken starter på","La semana empieza el","Ugen starter på","Неделя начинается с","Tydzień zaczyna się w","주 시작 요일","يبدأ الأسبوع يوم"),
+ "ws_monday": T("Monday","Maandag","Montag","Lundi","Lunedì","Måndag","Mandag","Lunes","Mandag","Понедельник","Poniedziałek","월요일","الاثنين"),
+ "ws_sunday": T("Sunday","Zondag","Sonntag","Dimanche","Domenica","Söndag","Søndag","Domingo","Søndag","Воскресенье","Niedziela","일요일","الأحد"),
+ "ws_keyword_cd": T("Word in the title","Woord in de titel","Wort im Titel","Mot du titre","Parola nel titolo","Ord i titeln","Ord i tittelen","Palabra del título","Ord i titlen","Слово в названии","Słowo w tytule","제목의 단어","كلمة في العنوان"),
+})
+R.update({
+ "widget.busy_until": T("Busy until __time__","Bezet tot __time__","Belegt bis __time__","Occupé jusqu'à __time__","Occupato fino alle __time__","Upptagen till __time__","Opptatt til __time__","Ocupado hasta las __time__","Optaget til __time__","Занят до __time__","Zajęty do __time__","__time__까지 바쁨","مشغول حتى __time__"),
+ "widget.busy": T("Busy","Bezet","Belegt","Occupé","Occupato","Upptagen","Opptatt","Ocupado","Optaget","Занят","Zajęty","바쁨","مشغول"),
+ "widget.free_until": T("Free until __time__","Vrij tot __time__","Frei bis __time__","Libre jusqu'à __time__","Libero fino alle __time__","Ledig till __time__","Ledig til __time__","Libre hasta las __time__","Ledig til __time__","Свободен до __time__","Wolny do __time__","__time__까지 한가함","متاح حتى __time__"),
+ "widget.free_rest": T("Free for the rest of the day","Vrij voor de rest van de dag","Für den Rest des Tages frei","Libre le reste de la journée","Libero per il resto della giornata","Ledig resten av dagen","Ledig resten av dagen","Libre el resto del día","Ledig resten af dagen","Свободен до конца дня","Wolny do końca dnia","오늘은 더 이상 일정 없음","متاح لبقية اليوم"),
+ "widget.then_free_until": T("then free until __time__","daarna vrij tot __time__","danach frei bis __time__","puis libre jusqu'à __time__","poi libero fino alle __time__","sedan ledig till __time__","deretter ledig til __time__","luego libre hasta las __time__","derefter ledig til __time__","затем свободен до __time__","potem wolny do __time__","이후 __time__까지 한가함","ثم متاح حتى __time__"),
+ "widget.then_free": T("then free","daarna vrij","danach frei","puis libre","poi libero","sedan ledig","deretter ledig","luego libre","derefter ledig","затем свободен","potem wolny","이후 한가함","ثم متاح"),
+ "widget.next_is": T("Next: __title__","Hierna: __title__","Danach: __title__","Ensuite : __title__","Dopo: __title__","Sedan: __title__","Deretter: __title__","Después: __title__","Derefter: __title__","Далее: __title__","Następnie: __title__","다음: __title__","التالي: __title__"),
+ "widget.no_next": T("No upcoming events","Geen komende afspraken","Keine anstehenden Termine","Aucun événement à venir","Nessun evento in arrivo","Inga kommande händelser","Ingen kommende avtaler","No hay eventos próximos","Ingen kommende begivenheder","Нет предстоящих событий","Brak nadchodzących wydarzeń","예정된 일정 없음","لا توجد مواعيد قادمة"),
+ "widget.now_until": T("Now · until __time__","Nu · tot __time__","Jetzt · bis __time__","Maintenant · jusqu'à __time__","Adesso · fino alle __time__","Nu · till __time__","Nå · til __time__","Ahora · hasta las __time__","Nu · til __time__","Сейчас · до __time__","Teraz · do __time__","지금 · __time__까지","الآن · حتى __time__"),
+ "widget.until_title": T("until __title__","tot __title__","bis __title__","avant __title__","a __title__","till __title__","til __title__","para __title__","til __title__","до «__title__»","do __title__","__title__까지","حتى __title__"),
+ "widget.countdown_setup": T("Choose a word from the title in the widget settings.","Kies een woord uit de titel in de instellingen van de widget.","Wähle in den Widget-Einstellungen ein Wort aus dem Titel.","Choisissez un mot du titre dans les réglages du widget.","Scegli una parola del titolo nelle impostazioni del widget.","Välj ett ord från titeln i widgetens inställningar.","Velg et ord fra tittelen i widgetinnstillingene.","Elige una palabra del título en los ajustes del widget.","Vælg et ord fra titlen i widgettens indstillinger.","Укажите слово из названия в настройках виджета.","Wybierz słowo z tytułu w ustawieniach widżetu.","위젯 설정에서 제목의 단어를 선택하세요.","اختر كلمة من العنوان في إعدادات الأداة."),
+ "widget.countdown_none": T("No upcoming event with “__word__”","Geen komende afspraak met “__word__”","Kein anstehender Termin mit „__word__“","Aucun événement à venir avec « __word__ »","Nessun evento in arrivo con “__word__”","Ingen kommande händelse med ”__word__”","Ingen kommende avtale med «__word__»","No hay eventos próximos con «__word__»","Ingen kommende begivenhed med »__word__«","Нет предстоящих событий с «__word__»","Brak nadchodzących wydarzeń z „__word__”","“__word__” 관련 예정된 일정 없음","لا يوجد موعد قادم يحتوي على «__word__»"),
+ "widget.events_count": T("Events: __count__","Afspraken: __count__","Termine: __count__","Événements : __count__","Eventi: __count__","Händelser: __count__","Avtaler: __count__","Eventos: __count__","Begivenheder: __count__","События: __count__","Wydarzenia: __count__","일정: __count__","المواعيد: __count__"),
+ "widget.week_n": T("Week __n__","Week __n__","KW __n__","Semaine __n__","Settimana __n__","Vecka __n__","Uke __n__","Semana __n__","Uge __n__","Неделя __n__","Tydzień __n__","__n__주차","الأسبوع __n__"),
+})
+
+_WIDGETS_NOTE = T(" Six new widgets: Next event, Free or busy, Countdown, This week, Today's timeline and Mini month.",
+  " Zes nieuwe widgets: Volgende afspraak, Vrij of bezet, Aftellen, Deze week, Tijdlijn van vandaag en Minimaand.",
+  " Sechs neue Widgets: Nächster Termin, Frei oder belegt, Countdown, Diese Woche, Zeitleiste von heute und Minimonat.",
+  " Six nouveaux widgets : Prochain événement, Libre ou occupé, Compte à rebours, Cette semaine, Chronologie du jour et Mini-mois.",
+  " Sei nuovi widget: Prossimo evento, Libero o occupato, Conto alla rovescia, Questa settimana, Timeline di oggi e Mini mese.",
+  " Sex nya widgetar: Nästa händelse, Ledig eller upptagen, Nedräkning, Den här veckan, Dagens tidslinje och Minimånad.",
+  " Seks nye widgeter: Neste avtale, Ledig eller opptatt, Nedtelling, Denne uken, Dagens tidslinje og Minimåned.",
+  " Seis widgets nuevos: Próximo evento, Libre u ocupado, Cuenta atrás, Esta semana, Cronología de hoy y Minimes.",
+  " Seks nye widgets: Næste begivenhed, Ledig eller optaget, Nedtælling, Denne uge, Dagens tidslinje og Minimåned.",
+  " Шесть новых виджетов: Следующее событие, Свободен или занят, Обратный отсчёт, Эта неделя, Шкала дня и Мини-месяц.",
+  " Sześć nowych widżetów: Następne wydarzenie, Wolny czy zajęty, Odliczanie, Ten tydzień, Oś dnia i Minimiesiąc.",
+  " 새 위젯 6개: 다음 일정, 한가함 또는 바쁨, 카운트다운, 이번 주, 오늘 타임라인, 미니 월.",
+  " ست أدوات جديدة: الموعد التالي، متاح أو مشغول، العد التنازلي، هذا الأسبوع، الخط الزمني لليوم، شهر مصغّر.")
+CHANGELOG["1.0.1"] = {l: CHANGELOG["1.0.1"][l] + _WIDGETS_NOTE[l] for l in L}

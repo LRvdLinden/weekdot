@@ -3288,6 +3288,444 @@
         }
       },
       "id": "agenda"
+    },
+    "countdown": {
+      "name": {
+        "en": "Countdown",
+        "nl": "Aftellen",
+        "de": "Countdown",
+        "fr": "Compte à rebours",
+        "it": "Conto alla rovescia",
+        "sv": "Nedräkning",
+        "no": "Nedtelling",
+        "es": "Cuenta atrás",
+        "da": "Nedtælling",
+        "ru": "Обратный отсчёт",
+        "pl": "Odliczanie",
+        "ko": "카운트다운",
+        "ar": "العد التنازلي"
+      },
+      "height": 120,
+      "transparent": false,
+      "settings": [
+        {
+          "id": "keyword",
+          "type": "text",
+          "title": {
+            "en": "Word in the title",
+            "nl": "Woord in de titel",
+            "de": "Wort im Titel",
+            "fr": "Mot du titre",
+            "it": "Parola nel titolo",
+            "sv": "Ord i titeln",
+            "no": "Ord i tittelen",
+            "es": "Palabra del título",
+            "da": "Ord i titlen",
+            "ru": "Слово в названии",
+            "pl": "Słowo w tytule",
+            "ko": "제목의 단어",
+            "ar": "كلمة في العنوان"
+          },
+          "value": ""
+        },
+        {
+          "id": "calendar",
+          "type": "autocomplete",
+          "title": {
+            "en": "Calendar",
+            "nl": "Agenda",
+            "de": "Kalender",
+            "fr": "Calendrier",
+            "it": "Calendario",
+            "sv": "Kalender",
+            "no": "Kalender",
+            "es": "Calendario",
+            "da": "Kalender",
+            "ru": "Календарь",
+            "pl": "Kalendarz",
+            "ko": "캘린더",
+            "ar": "التقويم"
+          }
+        }
+      ],
+      "api": {
+        "getData": {
+          "method": "GET",
+          "path": "/"
+        }
+      },
+      "id": "countdown"
+    },
+    "free_busy": {
+      "name": {
+        "en": "Free or busy",
+        "nl": "Vrij of bezet",
+        "de": "Frei oder belegt",
+        "fr": "Libre ou occupé",
+        "it": "Libero o occupato",
+        "sv": "Ledig eller upptagen",
+        "no": "Ledig eller opptatt",
+        "es": "Libre u ocupado",
+        "da": "Ledig eller optaget",
+        "ru": "Свободен или занят",
+        "pl": "Wolny czy zajęty",
+        "ko": "한가함 또는 바쁨",
+        "ar": "متاح أو مشغول"
+      },
+      "height": 100,
+      "transparent": false,
+      "settings": [
+        {
+          "id": "calendar",
+          "type": "autocomplete",
+          "title": {
+            "en": "Calendar",
+            "nl": "Agenda",
+            "de": "Kalender",
+            "fr": "Calendrier",
+            "it": "Calendario",
+            "sv": "Kalender",
+            "no": "Kalender",
+            "es": "Calendario",
+            "da": "Kalender",
+            "ru": "Календарь",
+            "pl": "Kalendarz",
+            "ko": "캘린더",
+            "ar": "التقويم"
+          }
+        }
+      ],
+      "api": {
+        "getData": {
+          "method": "GET",
+          "path": "/"
+        }
+      },
+      "id": "free_busy"
+    },
+    "month": {
+      "name": {
+        "en": "Mini month",
+        "nl": "Minimaand",
+        "de": "Minimonat",
+        "fr": "Mini-mois",
+        "it": "Mini mese",
+        "sv": "Minimånad",
+        "no": "Minimåned",
+        "es": "Minimes",
+        "da": "Minimåned",
+        "ru": "Мини-месяц",
+        "pl": "Minimiesiąc",
+        "ko": "미니 월",
+        "ar": "شهر مصغّر"
+      },
+      "height": 230,
+      "transparent": false,
+      "settings": [
+        {
+          "id": "calendar",
+          "type": "autocomplete",
+          "title": {
+            "en": "Calendar",
+            "nl": "Agenda",
+            "de": "Kalender",
+            "fr": "Calendrier",
+            "it": "Calendario",
+            "sv": "Kalender",
+            "no": "Kalender",
+            "es": "Calendario",
+            "da": "Kalender",
+            "ru": "Календарь",
+            "pl": "Kalendarz",
+            "ko": "캘린더",
+            "ar": "التقويم"
+          }
+        },
+        {
+          "id": "weekStart",
+          "type": "dropdown",
+          "title": {
+            "en": "Week starts on",
+            "nl": "Week begint op",
+            "de": "Woche beginnt am",
+            "fr": "La semaine commence le",
+            "it": "La settimana inizia il",
+            "sv": "Veckan börjar på",
+            "no": "Uken starter på",
+            "es": "La semana empieza el",
+            "da": "Ugen starter på",
+            "ru": "Неделя начинается с",
+            "pl": "Tydzień zaczyna się w",
+            "ko": "주 시작 요일",
+            "ar": "يبدأ الأسبوع يوم"
+          },
+          "value": "monday",
+          "values": [
+            {
+              "id": "monday",
+              "title": {
+                "en": "Monday",
+                "nl": "Maandag",
+                "de": "Montag",
+                "fr": "Lundi",
+                "it": "Lunedì",
+                "sv": "Måndag",
+                "no": "Mandag",
+                "es": "Lunes",
+                "da": "Mandag",
+                "ru": "Понедельник",
+                "pl": "Poniedziałek",
+                "ko": "월요일",
+                "ar": "الاثنين"
+              }
+            },
+            {
+              "id": "sunday",
+              "title": {
+                "en": "Sunday",
+                "nl": "Zondag",
+                "de": "Sonntag",
+                "fr": "Dimanche",
+                "it": "Domenica",
+                "sv": "Söndag",
+                "no": "Søndag",
+                "es": "Domingo",
+                "da": "Søndag",
+                "ru": "Воскресенье",
+                "pl": "Niedziela",
+                "ko": "일요일",
+                "ar": "الأحد"
+              }
+            }
+          ]
+        }
+      ],
+      "api": {
+        "getData": {
+          "method": "GET",
+          "path": "/"
+        }
+      },
+      "id": "month"
+    },
+    "next_event": {
+      "name": {
+        "en": "Next event",
+        "nl": "Volgende afspraak",
+        "de": "Nächster Termin",
+        "fr": "Prochain événement",
+        "it": "Prossimo evento",
+        "sv": "Nästa händelse",
+        "no": "Neste avtale",
+        "es": "Próximo evento",
+        "da": "Næste begivenhed",
+        "ru": "Следующее событие",
+        "pl": "Następne wydarzenie",
+        "ko": "다음 일정",
+        "ar": "الموعد التالي"
+      },
+      "height": 120,
+      "transparent": false,
+      "settings": [
+        {
+          "id": "calendar",
+          "type": "autocomplete",
+          "title": {
+            "en": "Calendar",
+            "nl": "Agenda",
+            "de": "Kalender",
+            "fr": "Calendrier",
+            "it": "Calendario",
+            "sv": "Kalender",
+            "no": "Kalender",
+            "es": "Calendario",
+            "da": "Kalender",
+            "ru": "Календарь",
+            "pl": "Kalendarz",
+            "ko": "캘린더",
+            "ar": "التقويم"
+          }
+        },
+        {
+          "id": "keyword",
+          "type": "text",
+          "title": {
+            "en": "Title contains (optional)",
+            "nl": "Titel bevat (optioneel)",
+            "de": "Titel enthält (optional)",
+            "fr": "Le titre contient (facultatif)",
+            "it": "Il titolo contiene (facoltativo)",
+            "sv": "Titeln innehåller (valfritt)",
+            "no": "Tittelen inneholder (valgfritt)",
+            "es": "El título contiene (opcional)",
+            "da": "Titlen indeholder (valgfrit)",
+            "ru": "Название содержит (необязательно)",
+            "pl": "Tytuł zawiera (opcjonalnie)",
+            "ko": "제목에 포함(선택)",
+            "ar": "العنوان يحتوي على (اختياري)"
+          },
+          "value": ""
+        }
+      ],
+      "api": {
+        "getData": {
+          "method": "GET",
+          "path": "/"
+        }
+      },
+      "id": "next_event"
+    },
+    "timeline": {
+      "name": {
+        "en": "Today's timeline",
+        "nl": "Tijdlijn van vandaag",
+        "de": "Zeitleiste von heute",
+        "fr": "Chronologie du jour",
+        "it": "Timeline di oggi",
+        "sv": "Dagens tidslinje",
+        "no": "Dagens tidslinje",
+        "es": "Cronología de hoy",
+        "da": "Dagens tidslinje",
+        "ru": "Шкала дня",
+        "pl": "Oś dnia",
+        "ko": "오늘 타임라인",
+        "ar": "الخط الزمني لليوم"
+      },
+      "height": 120,
+      "transparent": false,
+      "settings": [
+        {
+          "id": "calendar",
+          "type": "autocomplete",
+          "title": {
+            "en": "Calendar",
+            "nl": "Agenda",
+            "de": "Kalender",
+            "fr": "Calendrier",
+            "it": "Calendario",
+            "sv": "Kalender",
+            "no": "Kalender",
+            "es": "Calendario",
+            "da": "Kalender",
+            "ru": "Календарь",
+            "pl": "Kalendarz",
+            "ko": "캘린더",
+            "ar": "التقويم"
+          }
+        }
+      ],
+      "api": {
+        "getData": {
+          "method": "GET",
+          "path": "/"
+        }
+      },
+      "id": "timeline"
+    },
+    "week": {
+      "name": {
+        "en": "This week",
+        "nl": "Deze week",
+        "de": "Diese Woche",
+        "fr": "Cette semaine",
+        "it": "Questa settimana",
+        "sv": "Den här veckan",
+        "no": "Denne uken",
+        "es": "Esta semana",
+        "da": "Denne uge",
+        "ru": "Эта неделя",
+        "pl": "Ten tydzień",
+        "ko": "이번 주",
+        "ar": "هذا الأسبوع"
+      },
+      "height": 130,
+      "transparent": false,
+      "settings": [
+        {
+          "id": "calendar",
+          "type": "autocomplete",
+          "title": {
+            "en": "Calendar",
+            "nl": "Agenda",
+            "de": "Kalender",
+            "fr": "Calendrier",
+            "it": "Calendario",
+            "sv": "Kalender",
+            "no": "Kalender",
+            "es": "Calendario",
+            "da": "Kalender",
+            "ru": "Календарь",
+            "pl": "Kalendarz",
+            "ko": "캘린더",
+            "ar": "التقويم"
+          }
+        },
+        {
+          "id": "weekStart",
+          "type": "dropdown",
+          "title": {
+            "en": "Week starts on",
+            "nl": "Week begint op",
+            "de": "Woche beginnt am",
+            "fr": "La semaine commence le",
+            "it": "La settimana inizia il",
+            "sv": "Veckan börjar på",
+            "no": "Uken starter på",
+            "es": "La semana empieza el",
+            "da": "Ugen starter på",
+            "ru": "Неделя начинается с",
+            "pl": "Tydzień zaczyna się w",
+            "ko": "주 시작 요일",
+            "ar": "يبدأ الأسبوع يوم"
+          },
+          "value": "monday",
+          "values": [
+            {
+              "id": "monday",
+              "title": {
+                "en": "Monday",
+                "nl": "Maandag",
+                "de": "Montag",
+                "fr": "Lundi",
+                "it": "Lunedì",
+                "sv": "Måndag",
+                "no": "Mandag",
+                "es": "Lunes",
+                "da": "Mandag",
+                "ru": "Понедельник",
+                "pl": "Poniedziałek",
+                "ko": "월요일",
+                "ar": "الاثنين"
+              }
+            },
+            {
+              "id": "sunday",
+              "title": {
+                "en": "Sunday",
+                "nl": "Zondag",
+                "de": "Sonntag",
+                "fr": "Dimanche",
+                "it": "Domenica",
+                "sv": "Söndag",
+                "no": "Søndag",
+                "es": "Domingo",
+                "da": "Søndag",
+                "ru": "Воскресенье",
+                "pl": "Niedziela",
+                "ko": "일요일",
+                "ar": "الأحد"
+              }
+            }
+          ]
+        }
+      ],
+      "api": {
+        "getData": {
+          "method": "GET",
+          "path": "/"
+        }
+      },
+      "id": "week"
     }
   }
 }

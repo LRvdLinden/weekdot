@@ -1,0 +1,104 @@
+{
+  "name": {
+    "en": "This week",
+    "nl": "Deze week",
+    "de": "Diese Woche",
+    "fr": "Cette semaine",
+    "it": "Questa settimana",
+    "sv": "Den här veckan",
+    "no": "Denne uken",
+    "es": "Esta semana",
+    "da": "Denne uge",
+    "ru": "Эта неделя",
+    "pl": "Ten tydzień",
+    "ko": "이번 주",
+    "ar": "هذا الأسبوع"
+  },
+  "height": 130,
+  "transparent": false,
+  "settings": [
+    {
+      "id": "calendar",
+      "type": "autocomplete",
+      "title": {
+        "en": "Calendar",
+        "nl": "Agenda",
+        "de": "Kalender",
+        "fr": "Calendrier",
+        "it": "Calendario",
+        "sv": "Kalender",
+        "no": "Kalender",
+        "es": "Calendario",
+        "da": "Kalender",
+        "ru": "Календарь",
+        "pl": "Kalendarz",
+        "ko": "캘린더",
+        "ar": "التقويم"
+      }
+    },
+    {
+      "id": "weekStart",
+      "type": "dropdown",
+      "title": {
+        "en": "Week starts on",
+        "nl": "Week begint op",
+        "de": "Woche beginnt am",
+        "fr": "La semaine commence le",
+        "it": "La settimana inizia il",
+        "sv": "Veckan börjar på",
+        "no": "Uken starter på",
+        "es": "La semana empieza el",
+        "da": "Ugen starter på",
+        "ru": "Неделя начинается с",
+        "pl": "Tydzień zaczyna się w",
+        "ko": "주 시작 요일",
+        "ar": "يبدأ الأسبوع يوم"
+      },
+      "value": "monday",
+      "values": [
+        {
+          "id": "monday",
+          "title": {
+            "en": "Monday",
+            "nl": "Maandag",
+            "de": "Montag",
+            "fr": "Lundi",
+            "it": "Lunedì",
+            "sv": "Måndag",
+            "no": "Mandag",
+            "es": "Lunes",
+            "da": "Mandag",
+            "ru": "Понедельник",
+            "pl": "Poniedziałek",
+            "ko": "월요일",
+            "ar": "الاثنين"
+          }
+        },
+        {
+          "id": "sunday",
+          "title": {
+            "en": "Sunday",
+            "nl": "Zondag",
+            "de": "Sonntag",
+            "fr": "Dimanche",
+            "it": "Domenica",
+            "sv": "Söndag",
+            "no": "Søndag",
+            "es": "Domingo",
+            "da": "Søndag",
+            "ru": "Воскресенье",
+            "pl": "Niedziela",
+            "ko": "일요일",
+            "ar": "الأحد"
+          }
+        }
+      ]
+    }
+  ],
+  "api": {
+    "getData": {
+      "method": "GET",
+      "path": "/"
+    }
+  }
+}

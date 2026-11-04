@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+:root{--text:#141418;--sec:#6e6e78;--line:rgba(0,0,0,.08);--soft:rgba(0,0,0,.05);--red:#E8352F;--redsoft:rgba(232,53,47,.1);--green:#34C759}
+@media (prefers-color-scheme:dark){:root{--text:#f4f4f6;--sec:#9b9ba6;--line:rgba(255,255,255,.09);--soft:rgba(255,255,255,.07);--red:#ff5a4f;--redsoft:rgba(255,90,79,.16);--green:#30d158}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,"SF Pro Text",Inter,Roboto,sans-serif;color:var(--text);padding:12px 14px 12px;-webkit-font-smoothing:antialiased;overflow:hidden}
+.hdr{display:flex;align-items:center;gap:7px;margin-bottom:8px;min-width:0}
+.logo{width:16px;height:16px;flex:none}
+.lab{font-size:11px;font-weight:700;color:var(--sec);text-transform:uppercase;letter-spacing:.4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sp{flex:1}
+.right{font-size:11px;font-weight:700;color:var(--red);text-transform:uppercase;letter-spacing:.3px;white-space:nowrap}
+.hint{font-size:12px;color:var(--sec);line-height:1.4;padding:2px 0}
+.ell{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+.ev{display:flex;gap:11px;align-items:stretch}
+.bar{width:5px;border-radius:3px;flex:none}
+.ti{font-size:19px;font-weight:800;line-height:1.2;letter-spacing:-.2px}
+.meta{font-size:13px;color:var(--sec);margin-top:2px}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/javascript">
+function rel(ms) {
+  const mins = Math.round(ms / 60000);
+  try {
+    const f = new Intl.RelativeTimeFormat(undefined, { numeric: 'auto' });
+    if (Math.abs(mins) < 60) return f.format(mins, 'minute');
+    if (Math.abs(mins) < 36 * 60) return f.format(Math.round(mins / 60), 'hour');
+    return f.format(Math.round(mins / 1440), 'day');
+  } catch (e) { return ''; }
+}
+function render(d, t) {
+  const e = d.event;
+  if (!e) return header(t('no_next')) + `<div class="hint">${esc(t('no_next'))}</div>`;
+  const right = e.now ? t('now_until', { time: e.end }) : rel(e.startMs - d.now);
+  const when = e.allDay ? `${fmtDay(e.day, { weekday: 'short', day: 'numeric', month: 'short' })} · ${t('all_day')}`
+    : `${e.day !== d.today ? fmtDay(e.day, { weekday: 'short', day: 'numeric', month: 'short' }) + ' · ' : ''}${e.start} – ${e.end}`;
+  const label = e.day === d.today ? t('today') : fmtDay(e.day, { weekday: 'long', day: 'numeric', month: 'short' });
+  return header(label, right)
+    + `<div class="ev"><div class="bar" style="background:${esc(e.color)}"></div><div style="min-width:0">`
+    + `<div class="ti ell">${e.emoji ? esc(e.emoji) + ' ' : ''}${esc(e.title)}</div>`
+    + `<div class="meta ell">${esc(when)}${e.location ? ' · ' + esc(e.location) : ''}</div></div></div>`;
+}
+
+const LOGO = '<svg class="logo" viewBox="0 0 64 64"><defs><clipPath id="wdc"><rect x="2" y="2" width="60" height="60" rx="14"/></clipPath></defs><g clip-path="url(#wdc)"><rect x="2" y="2" width="60" height="60" fill="#fff"/><rect x="2" y="2" width="60" height="19" fill="#E8352F"/><circle cx="13.0" cy="10" r="2.1" fill="#fff"/><circle cx="19.3" cy="10" r="2.1" fill="#fff"/><circle cx="25.6" cy="10" r="2.1" fill="#fff"/><circle cx="31.9" cy="10" r="2.1" fill="#fff"/><circle cx="38.2" cy="10" r="2.1" fill="#fff"/><circle cx="44.5" cy="10" r="2.1" fill="#fff"/><circle cx="50.8" cy="10" r="2.1" fill="#fff"/><rect x="14" y="34" width="36" height="7" rx="3.5" fill="#E8352F"/></g><rect x="2.5" y="2.5" width="59" height="59" rx="13.5" fill="none" stroke="rgba(0,0,0,.12)"/></svg>';
+const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const fill = (s, v) => Object.keys(v || {}).reduce((r, k) => r.split(`__${k}__`).join(v[k]), s);
+const fmtDay = (day, o) => { try { return new Date(day + 'T12:00:00').toLocaleDateString(undefined, o); } catch (e) { return day; } };
+const header = (label, right) => `<div class="hdr">${LOGO}<div class="lab">${esc(label)}</div><div class="sp"></div>${right ? `<div class="right">${esc(right)}</div>` : ''}</div>`;
+
+function onHomeyReady(Homey) {
+  const t = (key, v) => fill(Homey.__('widget.' + key) || '', v);
+  const settings = Homey.getSettings() || {};
+  const root = document.getElementById('root');
+  let first = true;
+  const query = () => {
+    const p = new URLSearchParams();
+    if (settings.calendar && settings.calendar.id && settings.calendar.id !== '*') p.set('calendar', settings.calendar.id);
+    if (settings.keyword) p.set('keyword', settings.keyword);
+    if (settings.weekStart) p.set('weekStart', settings.weekStart);
+    return '/?' + p.toString();
+  };
+  async function load() {
+    let data = null;
+    try { data = await Homey.api('GET', query()); } catch (e) { data = null; }
+    if (!data || !data.linked) root.innerHTML = header('Weekdot') + `<div class="hint">${esc(t('not_linked'))}</div>`;
+    else root.innerHTML = render(data, t, settings);
+    const h = Math.max(document.body.scrollHeight, 70);
+    if (first) { first = false; Homey.ready({ height: h }); } else Homey.setHeight(h);
+  }
+  load();
+  Homey.on('update', load);
+  setInterval(load, 60 * 1000);
+}
+</script>
+</body>
+</html>

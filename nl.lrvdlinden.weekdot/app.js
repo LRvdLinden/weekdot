@@ -5,6 +5,7 @@ const Homey = require('homey');
 const Agenda = require('./lib/agenda');
 
 const TICK = 30 * 1000;
+const WIDGETS = ['next_event', 'free_busy', 'countdown', 'week', 'timeline', 'month'];
 const MAX_LATE = 10 * 60 * 1000; // after a restart, do not fire triggers that are more than 10 minutes old
 
 class WeekdotApp extends Homey.App {
@@ -85,6 +86,13 @@ class WeekdotApp extends Homey.App {
       todayCount: await flow.createToken('today_count', { type: 'number', title: this.homey.__('tokens.today_count') }),
     };
 
+    // widgets: choose a calendar in the widget settings
+    for (const id of WIDGETS) {
+      try {
+        this.homey.dashboards.getWidget(id).registerSettingAutocompleteListener('calendar', async query => calendarAutocomplete(query));
+      } catch (err) { this.error('widget', id, err.message); }
+    }
+
     await this.updateTokens();
     this.homey.setInterval(() => this.tick().catch(err => this.error('tick', err)), TICK);
     this.log('Weekdot ready,', this.agenda.events.length, 'events');
@@ -164,6 +172,107 @@ class WeekdotApp extends Homey.App {
       return { offset, day, events };
     });
     return { linked: !!this.agenda.data, receivedAt: this.agenda.data ? this.agenda.data.receivedAt : null, days: list };
+  }
+
+  /** Data for the small widgets (see widgets/*). q: { calendar, keyword, weekStart } */
+  widgetFeed(type, q = {}) {
+    const a = this.agenda;
+    if (!a.data) return { linked: false };
+    const now = new Date();
+    const nowMs = now.getTime();
+    const today = a.dayKey(now);
+    const args = { calendar: q.calendar ? { id: String(q.calendar) } : null, keyword: String(q.keyword || '') };
+    const evs = a.events.filter(e => a.matches(e, args));
+    const addDays = (day, n) => {
+      const [y, m, d] = day.split('-').map(Number);
+      return new Date(Date.UTC(y, m - 1, d + n)).toISOString().slice(0, 10);
+    };
+    const dayDiff = (from, to) => Math.round((Date.parse(`${to}T00:00:00Z`) - Date.parse(`${from}T00:00:00Z`)) / 86400000);
+    const weekday = day => new Date(`${day}T00:00:00Z`).getUTCDay(); // 0 = Sunday
+    const startDay = e => (e.allDay ? e.startDay : a.dayKey(new Date(e.start)));
+    const view = e => (e ? {
+      title: e.title, emoji: e.emoji, location: e.location, color: e.color, allDay: e.allDay, day: startDay(e),
+      start: e.allDay ? '' : a.time(new Date(e.start)), end: e.allDay ? '' : a.time(new Date(e.end)),
+      startMs: Date.parse(e.start), endMs: Date.parse(e.end), now: a.isNow(e, now),
+    } : null);
+    const colorsOn = day => {
+      const list = evs.filter(e => a.onDay(e, day));
+      return { count: list.length, colors: [...new Set(list.map(e => e.color))].slice(0, 4) };
+    };
+    const base = { linked: true, now: nowMs, today, lastDay: a.lastDay };
+
+    switch (type) {
+      case 'next_event': {
+        const cur = evs.find(e => !e.allDay && a.isNow(e, now));
+        const next = evs.find(e => (e.allDay ? e.startDay > today : Date.parse(e.start) > nowMs));
+        return { ...base, event: view(cur || next) };
+      }
+      case 'free_busy': {
+        const timed = evs.filter(e => !e.allDay && !e.free && Date.parse(e.end) > nowMs && a.onDay(e, today));
+        const running = timed.filter(e => Date.parse(e.start) <= nowMs);
+        if (running.length) {
+          let until = Math.max(...running.map(e => Date.parse(e.end)));
+          for (let changed = true; changed;) { // back-to-back events count as one busy block
+            changed = false;
+            for (const e of timed) {
+              const s = Date.parse(e.start), en = Date.parse(e.end);
+              if (s <= until && en > until) { until = en; changed = true; }
+            }
+          }
+          const after = timed.find(e => Date.parse(e.start) > until);
+          const endsToday = a.dayKey(new Date(until - 1)) === today;
+          return { ...base, busy: true, title: running[0].title, emoji: running[0].emoji, color: running[0].color,
+            until: endsToday ? a.time(new Date(until)) : '', freeUntil: after ? a.time(new Date(after.start)) : '' };
+        }
+        const next = timed.find(e => Date.parse(e.start) > nowMs);
+        return { ...base, busy: false, freeUntil: next ? a.time(new Date(next.start)) : '',
+          nextTitle: next ? `${next.emoji ? `${next.emoji} ` : ''}${next.title}` : '' };
+      }
+      case 'countdown': {
+        if (!args.keyword.trim()) return { ...base, setup: true };
+        const e = evs.find(x => (x.allDay ? x.startDay >= today : Date.parse(x.start) > nowMs));
+        return { ...base, event: view(e), days: e ? dayDiff(today, startDay(e)) : null, keyword: args.keyword };
+      }
+      case 'week': {
+        const first = q.weekStart === 'sunday' ? 0 : 1;
+        const start = addDays(today, -((weekday(today) - first + 7) % 7));
+        const days = Array.from({ length: 7 }, (_, i) => {
+          const day = addDays(start, i);
+          return { day, today: day === today, known: !!a.lastDay && day <= a.lastDay, ...colorsOn(day) };
+        });
+        return { ...base, days, total: days.reduce((n, d) => n + d.count, 0) };
+      }
+      case 'timeline': {
+        const list = evs.filter(e => a.onDay(e, today));
+        const mins = ms => {
+          if (a.dayKey(new Date(ms)) < today) return 0;
+          if (a.dayKey(new Date(ms)) > today) return 1440;
+          return a.minuteOfDay(new Date(ms));
+        };
+        const timed = list.filter(e => !e.allDay).map(e => ({
+          title: e.title, emoji: e.emoji, color: e.color, from: mins(Date.parse(e.start)), to: Math.max(mins(Date.parse(e.end)), mins(Date.parse(e.start)) + 15),
+          start: a.time(new Date(e.start)), end: a.time(new Date(e.end)),
+        }));
+        const allDay = list.filter(e => e.allDay).map(e => ({ title: e.title, emoji: e.emoji, color: e.color }));
+        return { ...base, minute: a.minuteOfDay(now), timed, allDay };
+      }
+      case 'month': {
+        const first = q.weekStart === 'sunday' ? 0 : 1;
+        const monthStart = `${today.slice(0, 8)}01`;
+        const gridStart = addDays(monthStart, -((weekday(monthStart) - first + 7) % 7));
+        const [y, m] = today.split('-').map(Number);
+        const daysInMonth = new Date(Date.UTC(y, m, 0)).getUTCDate();
+        const cells = Math.ceil(((weekday(monthStart) - first + 7) % 7 + daysInMonth) / 7) * 7;
+        const days = Array.from({ length: cells }, (_, i) => {
+          const day = addDays(gridStart, i);
+          const c = colorsOn(day);
+          return { day, inMonth: day.slice(0, 7) === today.slice(0, 7), today: day === today, colors: c.colors.slice(0, 3) };
+        });
+        return { ...base, month: today.slice(0, 7), days };
+      }
+      default:
+        return base;
+    }
   }
 
   // ---- internals ----

@@ -41,6 +41,20 @@
     "nothing": "Ничего не запланировано",
     "not_linked": "Откройте Weekdot на iPhone и подключите Homey в Настройки › Homey.",
     "all_day": "Весь день",
-    "now": "Сейчас"
+    "now": "Сейчас",
+    "busy_until": "Занят до __time__",
+    "busy": "Занят",
+    "free_until": "Свободен до __time__",
+    "free_rest": "Свободен до конца дня",
+    "then_free_until": "затем свободен до __time__",
+    "then_free": "затем свободен",
+    "next_is": "Далее: __title__",
+    "no_next": "Нет предстоящих событий",
+    "now_until": "Сейчас · до __time__",
+    "until_title": "до «__title__»",
+    "countdown_setup": "Укажите слово из названия в настройках виджета.",
+    "countdown_none": "Нет предстоящих событий с «__word__»",
+    "events_count": "События: __count__",
+    "week_n": "Неделя __n__"
   }
 }

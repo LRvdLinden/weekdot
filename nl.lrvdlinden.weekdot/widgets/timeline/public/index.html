@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+:root{--text:#141418;--sec:#6e6e78;--line:rgba(0,0,0,.08);--soft:rgba(0,0,0,.05);--red:#E8352F;--redsoft:rgba(232,53,47,.1);--green:#34C759}
+@media (prefers-color-scheme:dark){:root{--text:#f4f4f6;--sec:#9b9ba6;--line:rgba(255,255,255,.09);--soft:rgba(255,255,255,.07);--red:#ff5a4f;--redsoft:rgba(255,90,79,.16);--green:#30d158}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,"SF Pro Text",Inter,Roboto,sans-serif;color:var(--text);padding:12px 14px 12px;-webkit-font-smoothing:antialiased;overflow:hidden}
+.hdr{display:flex;align-items:center;gap:7px;margin-bottom:8px;min-width:0}
+.logo{width:16px;height:16px;flex:none}
+.lab{font-size:11px;font-weight:700;color:var(--sec);text-transform:uppercase;letter-spacing:.4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sp{flex:1}
+.right{font-size:11px;font-weight:700;color:var(--red);text-transform:uppercase;letter-spacing:.3px;white-space:nowrap}
+.hint{font-size:12px;color:var(--sec);line-height:1.4;padding:2px 0}
+.ell{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+.tl{position:relative;height:46px;background:var(--soft);border-radius:10px;overflow:hidden}
+.blk{position:absolute;top:7px;bottom:7px;border-radius:6px;color:#fff;font-size:10.5px;font-weight:700;padding:3px 5px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;min-width:4px}
+.now{position:absolute;top:0;bottom:0;width:2px;background:var(--red);box-shadow:0 0 0 1px rgba(255,255,255,.6)}
+.hours{position:relative;height:14px;margin-top:3px;font-size:10px;color:var(--sec)}
+.hours span{position:absolute;transform:translateX(-50%);font-variant-numeric:tabular-nums}
+.cur{font-size:12px;color:var(--sec);margin-top:4px}
+.cur b{color:var(--text);font-variant-numeric:tabular-nums}
+.ad{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:6px}
+.ad span{font-size:11px;font-weight:700;color:#fff;border-radius:6px;padding:2px 7px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/javascript">
+function render(d, t) {
+  const from = Math.min(7 * 60, ...d.timed.map(e => e.from), d.minute - 60);
+  const to = Math.max(23 * 60, ...d.timed.map(e => e.to), d.minute + 60);
+  const a = Math.max(0, Math.floor(from / 60) * 60), b = Math.min(1440, Math.ceil(to / 60) * 60);
+  const pos = m => ((Math.min(Math.max(m, a), b) - a) / (b - a)) * 100;
+  const blocks = d.timed.map(e => {
+    const w = pos(e.to) - pos(e.from);
+    const label = w >= 14 ? `${e.emoji ? esc(e.emoji) + ' ' : ''}${esc(e.title)}` : (w >= 6 && e.emoji ? esc(e.emoji) : '');
+    return `<div class="blk" style="left:${pos(e.from)}%;width:calc(${w}% - 2px);background:${esc(e.color)}">${label}</div>`;
+  }).join('');
+  const cur = d.timed.find(e => e.from <= d.minute && d.minute < e.to) || d.timed.find(e => e.from > d.minute);
+  const line = cur ? `<div class="cur ell"><b>${esc(cur.start)}</b> ${cur.emoji ? esc(cur.emoji) + ' ' : ''}${esc(cur.title)}</div>` : '';
+  const step = (b - a) / 60 > 12 ? 180 : 120;
+  let hours = '';
+  for (let m = a; m <= b; m += step) hours += `<span style="left:${pos(m)}%">${String(Math.floor(m / 60) % 24).padStart(2, '0')}</span>`;
+  const ad = d.allDay.length ? `<div class="ad">${d.allDay.map(e => `<span style="background:${esc(e.color)}">${e.emoji ? esc(e.emoji) + ' ' : ''}${esc(e.title)}</span>`).join('')}</div>` : '';
+  const empty = !d.timed.length && !d.allDay.length ? `<div class="hint" style="margin-bottom:6px">${esc(t('nothing'))}</div>` : '';
+  return header(t('today'), fmtDay(d.today, { weekday: 'long', day: 'numeric', month: 'short' }))
+    + ad + empty + `<div class="tl">${blocks}<div class="now" style="left:${pos(d.minute)}%"></div></div><div class="hours">${hours}</div>` + line;
+}
+
+const LOGO = '<svg class="logo" viewBox="0 0 64 64"><defs><clipPath id="wdc"><rect x="2" y="2" width="60" height="60" rx="14"/></clipPath></defs><g clip-path="url(#wdc)"><rect x="2" y="2" width="60" height="60" fill="#fff"/><rect x="2" y="2" width="60" height="19" fill="#E8352F"/><circle cx="13.0" cy="10" r="2.1" fill="#fff"/><circle cx="19.3" cy="10" r="2.1" fill="#fff"/><circle cx="25.6" cy="10" r="2.1" fill="#fff"/><circle cx="31.9" cy="10" r="2.1" fill="#fff"/><circle cx="38.2" cy="10" r="2.1" fill="#fff"/><circle cx="44.5" cy="10" r="2.1" fill="#fff"/><circle cx="50.8" cy="10" r="2.1" fill="#fff"/><rect x="14" y="34" width="36" height="7" rx="3.5" fill="#E8352F"/></g><rect x="2.5" y="2.5" width="59" height="59" rx="13.5" fill="none" stroke="rgba(0,0,0,.12)"/></svg>';
+const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const fill = (s, v) => Object.keys(v || {}).reduce((r, k) => r.split(`__${k}__`).join(v[k]), s);
+const fmtDay = (day, o) => { try { return new Date(day + 'T12:00:00').toLocaleDateString(undefined, o); } catch (e) { return day; } };
+const header = (label, right) => `<div class="hdr">${LOGO}<div class="lab">${esc(label)}</div><div class="sp"></div>${right ? `<div class="right">${esc(right)}</div>` : ''}</div>`;
+
+function onHomeyReady(Homey) {
+  const t = (key, v) => fill(Homey.__('widget.' + key) || '', v);
+  const settings = Homey.getSettings() || {};
+  const root = document.getElementById('root');
+  let first = true;
+  const query = () => {
+    const p = new URLSearchParams();
+    if (settings.calendar && settings.calendar.id && settings.calendar.id !== '*') p.set('calendar', settings.calendar.id);
+    if (settings.keyword) p.set('keyword', settings.keyword);
+    if (settings.weekStart) p.set('weekStart', settings.weekStart);
+    return '/?' + p.toString();
+  };
+  async function load() {
+    let data = null;
+    try { data = await Homey.api('GET', query()); } catch (e) { data = null; }
+    if (!data || !data.linked) root.innerHTML = header('Weekdot') + `<div class="hint">${esc(t('not_linked'))}</div>`;
+    else root.innerHTML = render(data, t, settings);
+    const h = Math.max(document.body.scrollHeight, 70);
+    if (first) { first = false; Homey.ready({ height: h }); } else Homey.setHeight(h);
+  }
+  load();
+  Homey.on('update', load);
+  setInterval(load, 60 * 1000);
+}
+</script>
+</body>
+</html>

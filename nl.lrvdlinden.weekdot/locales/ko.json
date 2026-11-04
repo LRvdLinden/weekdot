@@ -41,6 +41,20 @@
     "nothing": "일정 없음",
     "not_linked": "iPhone에서 Weekdot을 열고 설정 › Homey에서 Homey를 연결하세요.",
     "all_day": "하루 종일",
-    "now": "지금"
+    "now": "지금",
+    "busy_until": "__time__까지 바쁨",
+    "busy": "바쁨",
+    "free_until": "__time__까지 한가함",
+    "free_rest": "오늘은 더 이상 일정 없음",
+    "then_free_until": "이후 __time__까지 한가함",
+    "then_free": "이후 한가함",
+    "next_is": "다음: __title__",
+    "no_next": "예정된 일정 없음",
+    "now_until": "지금 · __time__까지",
+    "until_title": "__title__까지",
+    "countdown_setup": "위젯 설정에서 제목의 단어를 선택하세요.",
+    "countdown_none": "“__word__” 관련 예정된 일정 없음",
+    "events_count": "일정: __count__",
+    "week_n": "__n__주차"
   }
 }

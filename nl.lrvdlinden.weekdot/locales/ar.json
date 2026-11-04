@@ -41,6 +41,20 @@
     "nothing": "لا شيء مخطط",
     "not_linked": "افتح Weekdot على iPhone واربط Homey من الإعدادات › Homey.",
     "all_day": "طوال اليوم",
-    "now": "الآن"
+    "now": "الآن",
+    "busy_until": "مشغول حتى __time__",
+    "busy": "مشغول",
+    "free_until": "متاح حتى __time__",
+    "free_rest": "متاح لبقية اليوم",
+    "then_free_until": "ثم متاح حتى __time__",
+    "then_free": "ثم متاح",
+    "next_is": "التالي: __title__",
+    "no_next": "لا توجد مواعيد قادمة",
+    "now_until": "الآن · حتى __time__",
+    "until_title": "حتى __title__",
+    "countdown_setup": "اختر كلمة من العنوان في إعدادات الأداة.",
+    "countdown_none": "لا يوجد موعد قادم يحتوي على «__word__»",
+    "events_count": "المواعيد: __count__",
+    "week_n": "الأسبوع __n__"
   }
 }

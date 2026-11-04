@@ -1,0 +1,46 @@
+{
+  "name": {
+    "en": "Today's timeline",
+    "nl": "Tijdlijn van vandaag",
+    "de": "Zeitleiste von heute",
+    "fr": "Chronologie du jour",
+    "it": "Timeline di oggi",
+    "sv": "Dagens tidslinje",
+    "no": "Dagens tidslinje",
+    "es": "Cronología de hoy",
+    "da": "Dagens tidslinje",
+    "ru": "Шкала дня",
+    "pl": "Oś dnia",
+    "ko": "오늘 타임라인",
+    "ar": "الخط الزمني لليوم"
+  },
+  "height": 120,
+  "transparent": false,
+  "settings": [
+    {
+      "id": "calendar",
+      "type": "autocomplete",
+      "title": {
+        "en": "Calendar",
+        "nl": "Agenda",
+        "de": "Kalender",
+        "fr": "Calendrier",
+        "it": "Calendario",
+        "sv": "Kalender",
+        "no": "Kalender",
+        "es": "Calendario",
+        "da": "Kalender",
+        "ru": "Календарь",
+        "pl": "Kalendarz",
+        "ko": "캘린더",
+        "ar": "التقويم"
+      }
+    }
+  ],
+  "api": {
+    "getData": {
+      "method": "GET",
+      "path": "/"
+    }
+  }
+}

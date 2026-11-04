@@ -41,6 +41,20 @@
     "nothing": "Nic nie zaplanowano",
     "not_linked": "Otwórz Weekdot na iPhonie i połącz Homey w Ustawienia › Homey.",
     "all_day": "Cały dzień",
-    "now": "Teraz"
+    "now": "Teraz",
+    "busy_until": "Zajęty do __time__",
+    "busy": "Zajęty",
+    "free_until": "Wolny do __time__",
+    "free_rest": "Wolny do końca dnia",
+    "then_free_until": "potem wolny do __time__",
+    "then_free": "potem wolny",
+    "next_is": "Następnie: __title__",
+    "no_next": "Brak nadchodzących wydarzeń",
+    "now_until": "Teraz · do __time__",
+    "until_title": "do __title__",
+    "countdown_setup": "Wybierz słowo z tytułu w ustawieniach widżetu.",
+    "countdown_none": "Brak nadchodzących wydarzeń z „__word__”",
+    "events_count": "Wydarzenia: __count__",
+    "week_n": "Tydzień __n__"
   }
 }

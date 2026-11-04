@@ -1,0 +1,66 @@
+{
+  "name": {
+    "en": "Countdown",
+    "nl": "Aftellen",
+    "de": "Countdown",
+    "fr": "Compte à rebours",
+    "it": "Conto alla rovescia",
+    "sv": "Nedräkning",
+    "no": "Nedtelling",
+    "es": "Cuenta atrás",
+    "da": "Nedtælling",
+    "ru": "Обратный отсчёт",
+    "pl": "Odliczanie",
+    "ko": "카운트다운",
+    "ar": "العد التنازلي"
+  },
+  "height": 120,
+  "transparent": false,
+  "settings": [
+    {
+      "id": "keyword",
+      "type": "text",
+      "title": {
+        "en": "Word in the title",
+        "nl": "Woord in de titel",
+        "de": "Wort im Titel",
+        "fr": "Mot du titre",
+        "it": "Parola nel titolo",
+        "sv": "Ord i titeln",
+        "no": "Ord i tittelen",
+        "es": "Palabra del título",
+        "da": "Ord i titlen",
+        "ru": "Слово в названии",
+        "pl": "Słowo w tytule",
+        "ko": "제목의 단어",
+        "ar": "كلمة في العنوان"
+      },
+      "value": ""
+    },
+    {
+      "id": "calendar",
+      "type": "autocomplete",
+      "title": {
+        "en": "Calendar",
+        "nl": "Agenda",
+        "de": "Kalender",
+        "fr": "Calendrier",
+        "it": "Calendario",
+        "sv": "Kalender",
+        "no": "Kalender",
+        "es": "Calendario",
+        "da": "Kalender",
+        "ru": "Календарь",
+        "pl": "Kalendarz",
+        "ko": "캘린더",
+        "ar": "التقويم"
+      }
+    }
+  ],
+  "api": {
+    "getData": {
+      "method": "GET",
+      "path": "/"
+    }
+  }
+}
