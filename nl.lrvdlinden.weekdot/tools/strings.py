@@ -391,3 +391,17 @@ R.update({
    "이 Homey를 선택하세요. Weekdot에서 선택한 대로 앞으로 1, 2 또는 3개월의 일정을 보냅니다.",
    "اختر جهاز Homey هذا. سيرسل Weekdot مواعيد الشهر أو الشهرين أو الأشهر الثلاثة القادمة، حسب اختيارك في Weekdot."),
 })
+
+CHANGELOG["1.0.2"] = T("Widgets now follow the light or dark mode of your Homey dashboard, so all text is readable again.",
+  "Widgets volgen nu de lichte of donkere modus van je Homey-dashboard, zodat alle tekst weer goed leesbaar is.",
+  "Widgets folgen jetzt dem hellen oder dunklen Modus deines Homey-Dashboards, sodass alle Texte wieder gut lesbar sind.",
+  "Les widgets suivent désormais le mode clair ou sombre de votre tableau de bord Homey : tous les textes sont à nouveau lisibles.",
+  "I widget ora seguono la modalità chiara o scura della dashboard di Homey, così tutti i testi tornano leggibili.",
+  "Widgetarna följer nu det ljusa eller mörka läget i din Homey-instrumentpanel, så all text går att läsa igen.",
+  "Widgetene følger nå lys eller mørk modus på Homey-dashbordet ditt, så all tekst er lesbar igjen.",
+  "Los widgets siguen ahora el modo claro u oscuro de tu panel de Homey, así que todo el texto vuelve a leerse bien.",
+  "Widgets følger nu den lyse eller mørke tilstand på dit Homey-dashboard, så al tekst kan læses igen.",
+  "Виджеты теперь следуют светлой или тёмной теме панели Homey, поэтому весь текст снова хорошо читается.",
+  "Widżety korzystają teraz z jasnego lub ciemnego trybu pulpitu Homey, więc cały tekst jest znowu czytelny.",
+  "위젯이 이제 Homey 대시보드의 라이트 또는 다크 모드를 따르므로 모든 텍스트를 다시 잘 읽을 수 있습니다.",
+  "تتبع الأدوات الآن الوضع الفاتح أو الداكن للوحة تحكم Homey، فأصبحت كل النصوص مقروءة مجددًا.")

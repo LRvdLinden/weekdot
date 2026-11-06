@@ -5,8 +5,9 @@ import json, os
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-BASE_CSS = """:root{--text:#141418;--sec:#6e6e78;--line:rgba(0,0,0,.08);--soft:rgba(0,0,0,.05);--red:#E8352F;--redsoft:rgba(232,53,47,.1);--green:#34C759}
-@media (prefers-color-scheme:dark){:root{--text:#f4f4f6;--sec:#9b9ba6;--line:rgba(255,255,255,.09);--soft:rgba(255,255,255,.07);--red:#ff5a4f;--redsoft:rgba(255,90,79,.16);--green:#30d158}}
+BASE_CSS = """/* Light/dark follow Homey's dashboard (.homey-dark-mode + Homey's own CSS variables), not the phone's setting */
+body{--text:var(--homey-text-color,#141418);--sec:var(--homey-text-color-light,#6e6e78);--line:var(--homey-line-color,rgba(0,0,0,.08));--soft:rgba(0,0,0,.05);--red:#E8352F;--redsoft:rgba(232,53,47,.1);--green:#34C759;--now:rgba(232,53,47,.08)}
+.homey-dark-mode,.homey-dark-mode body{--text:var(--homey-text-color,#f4f4f6);--sec:var(--homey-text-color-light,#a3a3ad);--line:var(--homey-line-color,rgba(255,255,255,.12));--soft:rgba(255,255,255,.08);--red:#ff5a4f;--redsoft:rgba(255,90,79,.16);--green:#30d158;--now:rgba(255,90,79,.16)}
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,"SF Pro Text",Inter,Roboto,sans-serif;color:var(--text);padding:12px 14px 12px;-webkit-font-smoothing:antialiased;overflow:hidden}
 .hdr{display:flex;align-items:center;gap:7px;margin-bottom:8px;min-width:0}
@@ -213,7 +214,7 @@ function render(d) {
 def html(w):
     js = BASE_JS.replace("__LOGO__", LOGO.replace("'", "\\'"))
     return (f"<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n"
-            f"<style>\n{BASE_CSS}{w['css']}</style>\n</head>\n<body>\n<div id=\"root\"></div>\n<script type=\"text/javascript\">{w['js']}{js}</script>\n</body>\n</html>\n")
+            f"<style>\n{BASE_CSS}{w['css']}</style>\n</head>\n<body class=\"homey-widget\">\n<div id=\"root\"></div>\n<script type=\"text/javascript\">{w['js']}{js}</script>\n</body>\n</html>\n")
 
 
 API = """'use strict';

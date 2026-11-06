@@ -4,8 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-:root{--text:#141418;--sec:#6e6e78;--line:rgba(0,0,0,.08);--red:#E8352F;--now:rgba(232,53,47,.08)}
-@media (prefers-color-scheme:dark){:root{--text:#f4f4f6;--sec:#9b9ba6;--line:rgba(255,255,255,.09);--red:#ff5a4f;--now:rgba(255,90,79,.14)}}
+/* Light/dark follow Homey's dashboard (.homey-dark-mode + Homey's own CSS variables), not the phone's setting */
+body{--text:var(--homey-text-color,#141418);--sec:var(--homey-text-color-light,#6e6e78);--line:var(--homey-line-color,rgba(0,0,0,.08));--red:#E8352F;--redsoft:rgba(232,53,47,.1);--green:#34C759;--now:rgba(232,53,47,.08)}
+.homey-dark-mode,.homey-dark-mode body{--text:var(--homey-text-color,#f4f4f6);--sec:var(--homey-text-color-light,#a3a3ad);--line:var(--homey-line-color,rgba(255,255,255,.12));--red:#ff5a4f;--redsoft:rgba(255,90,79,.16);--green:#30d158;--now:rgba(255,90,79,.16)}
+
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,"SF Pro Text",Inter,Roboto,sans-serif;color:var(--text);padding:12px 14px 10px;-webkit-font-smoothing:antialiased;overflow:hidden}
 .hdr{display:flex;align-items:center;gap:7px;margin-bottom:8px}
@@ -29,7 +31,7 @@ body{font-family:-apple-system,"SF Pro Text",Inter,Roboto,sans-serif;color:var(-
 .hint{font-size:12px;color:var(--sec);line-height:1.4;padding:4px 0}
 </style>
 </head>
-<body>
+<body class="homey-widget">
 <div id="root"></div>
 <script type="text/javascript">
 const LOGO = '<svg class="logo" viewBox="0 0 64 64"><defs><clipPath id="wdc"><rect x="2" y="2" width="60" height="60" rx="14"/></clipPath></defs><g clip-path="url(#wdc)"><rect x="2" y="2" width="60" height="60" fill="#fff"/><rect x="2" y="2" width="60" height="19" fill="#E8352F"/><circle cx="13.0" cy="10" r="2.1" fill="#fff"/><circle cx="19.3" cy="10" r="2.1" fill="#fff"/><circle cx="25.6" cy="10" r="2.1" fill="#fff"/><circle cx="31.9" cy="10" r="2.1" fill="#fff"/><circle cx="38.2" cy="10" r="2.1" fill="#fff"/><circle cx="44.5" cy="10" r="2.1" fill="#fff"/><circle cx="50.8" cy="10" r="2.1" fill="#fff"/><rect x="14" y="34" width="36" height="7" rx="3.5" fill="#E8352F"/></g><rect x="2.5" y="2.5" width="59" height="59" rx="13.5" fill="none" stroke="rgba(0,0,0,.12)"/></svg>';

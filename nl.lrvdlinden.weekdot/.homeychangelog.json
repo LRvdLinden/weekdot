@@ -28,5 +28,20 @@
     "pl": "Nowość: „Wydarzenie zacznie się za … dni” (do 3 miesięcy wcześniej, o wybranej godzinie, także całodniowe) i warunek „Za … dni jest wydarzenie”. Wszystkie warunki można odwrócić. Powyżej 7 dni potrzebny jest Weekdot 1.0.3 lub nowszy. Sześć nowych widżetów: Następne wydarzenie, Wolny czy zajęty, Odliczanie, Ten tydzień, Oś dnia i Minimiesiąc.",
     "ko": "새 기능: \"… 일 후 일정 시작\"(최대 3개월 전, 원하는 시간에, 종일 일정 포함)과 조건 \"… 일 후 일정이 있음\". 모든 조건을 반전할 수 있습니다. 7일보다 먼 일정에는 Weekdot 1.0.3 이상이 필요합니다. 새 위젯 6개: 다음 일정, 한가함 또는 바쁨, 카운트다운, 이번 주, 오늘 타임라인, 미니 월.",
     "ar": "جديد: \"يبدأ موعد بعد … أيام\" (حتى 3 أشهر مقدمًا، في الوقت الذي تختاره، بما فيها مواعيد اليوم الكامل) والشرط \"يوجد موعد بعد … أيام\". يمكن عكس كل الشروط. لأكثر من 7 أيام يلزم Weekdot 1.0.3 أو أحدث. ست أدوات جديدة: الموعد التالي، متاح أو مشغول، العد التنازلي، هذا الأسبوع، الخط الزمني لليوم، شهر مصغّر."
+  },
+  "1.0.2": {
+    "en": "Widgets now follow the light or dark mode of your Homey dashboard, so all text is readable again.",
+    "nl": "Widgets volgen nu de lichte of donkere modus van je Homey-dashboard, zodat alle tekst weer goed leesbaar is.",
+    "de": "Widgets folgen jetzt dem hellen oder dunklen Modus deines Homey-Dashboards, sodass alle Texte wieder gut lesbar sind.",
+    "fr": "Les widgets suivent désormais le mode clair ou sombre de votre tableau de bord Homey : tous les textes sont à nouveau lisibles.",
+    "it": "I widget ora seguono la modalità chiara o scura della dashboard di Homey, così tutti i testi tornano leggibili.",
+    "sv": "Widgetarna följer nu det ljusa eller mörka läget i din Homey-instrumentpanel, så all text går att läsa igen.",
+    "no": "Widgetene følger nå lys eller mørk modus på Homey-dashbordet ditt, så all tekst er lesbar igjen.",
+    "es": "Los widgets siguen ahora el modo claro u oscuro de tu panel de Homey, así que todo el texto vuelve a leerse bien.",
+    "da": "Widgets følger nu den lyse eller mørke tilstand på dit Homey-dashboard, så al tekst kan læses igen.",
+    "ru": "Виджеты теперь следуют светлой или тёмной теме панели Homey, поэтому весь текст снова хорошо читается.",
+    "pl": "Widżety korzystają teraz z jasnego lub ciemnego trybu pulpitu Homey, więc cały tekst jest znowu czytelny.",
+    "ko": "위젯이 이제 Homey 대시보드의 라이트 또는 다크 모드를 따르므로 모든 텍스트를 다시 잘 읽을 수 있습니다.",
+    "ar": "تتبع الأدوات الآن الوضع الفاتح أو الداكن للوحة تحكم Homey، فأصبحت كل النصوص مقروءة مجددًا."
   }
 }
