@@ -23,19 +23,19 @@
     "ar": "Weekdot"
   },
   "description": {
-    "en": "Your Weekdot calendar in Homey: Flows for your events and your daily agenda",
-    "nl": "Je Weekdot-agenda in Homey: Flows voor je afspraken en je dagagenda",
-    "de": "Dein Weekdot-Kalender in Homey: Flows für deine Termine und deine Tagesübersicht",
-    "fr": "Votre calendrier Weekdot dans Homey : des Flows pour vos événements et votre agenda du jour",
-    "it": "Il tuo calendario Weekdot in Homey: Flow per i tuoi eventi e l'agenda del giorno",
-    "sv": "Din Weekdot-kalender i Homey: Flows för dina händelser och dagens agenda",
-    "no": "Weekdot-kalenderen din i Homey: Flows for avtalene dine og dagens agenda",
-    "es": "Tu calendario Weekdot en Homey: Flows para tus eventos y tu agenda del día",
-    "da": "Din Weekdot-kalender i Homey: Flows til dine begivenheder og dagens program",
-    "ru": "Ваш календарь Weekdot в Homey: Flow для событий и плана на день",
-    "pl": "Twój kalendarz Weekdot w Homey: Flow dla wydarzeń i planu dnia",
-    "ko": "Homey에서 만나는 Weekdot 캘린더: 일정과 오늘의 일정을 위한 Flow",
-    "ar": "تقويم Weekdot في Homey: تدفقات لمواعيدك وجدول يومك"
+    "en": "Let your calendar start Flows and remind you days ahead",
+    "nl": "Laat je agenda Flows starten en je dagen vooruit herinneren",
+    "de": "Lass deinen Kalender Flows starten und dich Tage vorher erinnern",
+    "fr": "Votre agenda lance des Flows et vous prévient des jours à l'avance",
+    "it": "Il tuo calendario avvia i Flow e ti avvisa giorni prima",
+    "sv": "Låt kalendern starta Flows och påminna dig dagar i förväg",
+    "no": "La kalenderen starte Flows og minne deg på ting dager i forveien",
+    "es": "Deja que tu calendario inicie Flows y te avise días antes",
+    "da": "Lad kalenderen starte Flows og minde dig om ting dage i forvejen",
+    "ru": "Календарь запускает Flow и напоминает о событиях заранее",
+    "pl": "Niech kalendarz uruchamia Flow i przypomina z wyprzedzeniem",
+    "ko": "캘린더로 Flow를 실행하고 며칠 전에 미리 알림 받기",
+    "ar": "دع تقويمك يشغّل التدفقات ويذكّرك قبل أيام"
   },
   "category": [
     "tools"

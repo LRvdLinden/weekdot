@@ -405,3 +405,18 @@ CHANGELOG["1.0.2"] = T("Widgets now follow the light or dark mode of your Homey 
   "Widżety korzystają teraz z jasnego lub ciemnego trybu pulpitu Homey, więc cały tekst jest znowu czytelny.",
   "위젯이 이제 Homey 대시보드의 라이트 또는 다크 모드를 따르므로 모든 텍스트를 다시 잘 읽을 수 있습니다.",
   "تتبع الأدوات الآن الوضع الفاتح أو الداكن للوحة تحكم Homey، فأصبحت كل النصوص مقروءة مجددًا.")
+
+# ---- 1.0.2 publish audit: subtitle that sells the value (one natural sentence per language) ----
+S["app_desc"] = T("Let your calendar start Flows and remind you days ahead",
+  "Laat je agenda Flows starten en je dagen vooruit herinneren",
+  "Lass deinen Kalender Flows starten und dich Tage vorher erinnern",
+  "Votre agenda lance des Flows et vous prévient des jours à l'avance",
+  "Il tuo calendario avvia i Flow e ti avvisa giorni prima",
+  "Låt kalendern starta Flows och påminna dig dagar i förväg",
+  "La kalenderen starte Flows og minne deg på ting dager i forveien",
+  "Deja que tu calendario inicie Flows y te avise días antes",
+  "Lad kalenderen starte Flows og minde dig om ting dage i forvejen",
+  "Календарь запускает Flow и напоминает о событиях заранее",
+  "Niech kalendarz uruchamia Flow i przypomina z wyprzedzeniem",
+  "캘린더로 Flow를 실행하고 며칠 전에 미리 알림 받기",
+  "دع تقويمك يشغّل التدفقات ويذكّرك قبل أيام")
