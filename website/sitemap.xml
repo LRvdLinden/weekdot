@@ -2,26 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://weekdot.com/</loc>
-    <lastmod>2026-10-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://weekdot.com/assets/og-en.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://weekdot.com/assets/og-nl.jpg</image:loc>
-    </image:image>
+    <lastmod>2026-11-09</lastmod>
+    <image:image><image:loc>https://weekdot.com/og/home-en.jpg</image:loc></image:image>
+    <image:image><image:loc>https://weekdot.com/og/home-nl.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://weekdot.com/support/</loc>
-    <lastmod>2026-10-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2026-11-09</lastmod>
+    <image:image><image:loc>https://weekdot.com/og/support-en.jpg</image:loc></image:image>
+    <image:image><image:loc>https://weekdot.com/og/support-nl.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://weekdot.com/privacy/</loc>
-    <lastmod>2026-10-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
+    <lastmod>2026-11-09</lastmod>
   </url>
 </urlset>

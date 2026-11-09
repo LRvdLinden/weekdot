@@ -74,7 +74,7 @@ ld = {"@context": "https://schema.org", "@graph": [
         {"@type": "ListItem", "position": 2, "name": W["hs.title"], "item": "https://weekdot.com/support/"}]}]}
 
 meta = ea("hs.meta")
-title = "Weekdot — " + ea("hs.title")
+title = ea("hs.title") + " | Weekdot"
 page = f'''<!doctype html>
 <html lang="en">
 <head>
@@ -97,20 +97,21 @@ page = f'''<!doctype html>
 <meta property="og:url" content="https://weekdot.com/support/">
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{meta}">
-<meta property="og:image" content="https://weekdot.com/assets/og-en.jpg">
-<meta property="og:image:secure_url" content="https://weekdot.com/assets/og-en.jpg">
+<meta property="og:image" content="https://weekdot.com/og/support-en.jpg">
+<meta property="og:image:secure_url" content="https://weekdot.com/og/support-en.jpg">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Weekdot — your week at a glance: the week view and sports subscriptions on iPhone">
+<meta property="og:image:alt" content="Weekdot help: answers about calendars, alerts, widgets, sync and Homey, with the event and list view on iPhone">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="nl_NL">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{title}">
 <meta name="twitter:description" content="{meta}">
-<meta name="twitter:image" content="https://weekdot.com/assets/og-en.jpg">
-<meta name="twitter:image:alt" content="Weekdot — your week at a glance: the week view and sports subscriptions on iPhone">
-<link rel="icon" type="image/png" href="/assets/favicon.png">
+<meta name="twitter:image" content="https://weekdot.com/og/support-en.jpg">
+<meta name="twitter:image:alt" content="Weekdot help: answers about calendars, alerts, widgets, sync and Homey, with the event and list view on iPhone">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="manifest" href="/site.webmanifest">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <script>document.documentElement.setAttribute("data-i18n-wait","");setTimeout(function(){{document.documentElement.removeAttribute("data-i18n-wait")}},1500)</script>
 <style>html[data-i18n-wait] body{{visibility:hidden}}</style>

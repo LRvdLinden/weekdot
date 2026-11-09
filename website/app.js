@@ -35,7 +35,7 @@
     $$("[data-i18n-aria]").forEach(function (el) { var v = t(el.getAttribute("data-i18n-aria")); if (v) el.setAttribute("aria-label", v); });
     $$("[data-i18n-ph]").forEach(function (el) { var v = t(el.getAttribute("data-i18n-ph")); if (v) el.setAttribute("placeholder", v); });
     var title = document.querySelector("[data-i18n-title]");
-    if (title) { var tv = t(title.getAttribute("data-i18n-title")); document.title = tv ? "Weekdot — " + tv : "Weekdot"; }
+    if (title) { var tv = t(title.getAttribute("data-i18n-title")); document.title = tv ? tv + " | Weekdot" : "Weekdot"; }
     render();
     document.documentElement.removeAttribute("data-i18n-wait");
   }
