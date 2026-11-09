@@ -570,3 +570,8 @@ footer nav { flex-wrap: wrap; }
   .g-num { display: none; }
 }
 @media (prefers-reduced-motion: reduce) { .g-glass img, .g-step { transition: none; } }
+
+/* official App Store badge (Apple Marketing Tools) */
+.as-badge { display: inline-block; line-height: 0; }
+.as-badge:hover { opacity: .9; }
+@media (max-width: 480px) { .as-badge img { width: 200px !important; height: 67px !important; } }

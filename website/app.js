@@ -22,6 +22,12 @@
 
   function apply() {
     document.documentElement.lang = lang;
+    // official App Store badge in the visitor's language (Apple Marketing Tools)
+    $$("[data-appstore-badge]").forEach(function (img) {
+      var nl = lang === "nl";
+      img.src = "https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/white/" + (nl ? "nl-nl" : "en-us") + "?releaseDate=1793491200";
+      img.alt = nl ? "Download in de App Store" : "Download on the App Store";
+    });
     document.documentElement.dir = RTL.indexOf(lang) >= 0 ? "rtl" : "ltr";
     $$("[data-i18n]").forEach(function (el) { var v = t(el.getAttribute("data-i18n")); if (v) el.textContent = v; });
     $$("[data-i18n-content]").forEach(function (el) { var v = t(el.getAttribute("data-i18n-content")); if (v) el.setAttribute("content", v); });
