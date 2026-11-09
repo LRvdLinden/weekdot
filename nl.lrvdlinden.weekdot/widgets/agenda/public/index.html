@@ -21,7 +21,9 @@ body{font-family:-apple-system,"SF Pro Text",Inter,Roboto,sans-serif;color:var(-
 .ev.now{background:var(--now)}
 .ev.past{opacity:.45}
 .bar{width:4px;border-radius:3px;flex:none}
-.tm{width:42px;flex:none;font-size:12px;font-weight:600;font-variant-numeric:tabular-nums;line-height:1.25}
+/* time column: as wide as its longest label ("Ganztägig", "Tutto il giorno"), min 42px, always one line */
+.tm{width:var(--tmw,42px);flex:none;font-size:12px;font-weight:600;font-variant-numeric:tabular-nums;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#root.measure .tm{width:auto}
 .tm small{display:block;font-weight:400;color:var(--sec)}
 .tx{min-width:0;flex:1}
 .ti{font-size:13px;font-weight:600;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -72,6 +74,17 @@ function onHomeyReady(Homey) {
       html += d.events.length ? d.events.map(row).join('') : `<div class="empty">${esc(t('nothing'))}</div>`;
     }
     root.innerHTML = html;
+    fitTimeColumn();
+  }
+
+  // Size the time column to the widest label actually shown, so titles never overlap and stay aligned.
+  function fitTimeColumn() {
+    root.classList.add('measure');
+    let w = 42;
+    root.querySelectorAll('.tm').forEach(el => { w = Math.max(w, Math.ceil(el.getBoundingClientRect().width)); });
+    root.classList.remove('measure');
+    const max = Math.max(42, Math.floor(root.clientWidth * 0.4));
+    root.style.setProperty('--tmw', Math.min(w, max) + 'px');
   }
 
   async function load() {

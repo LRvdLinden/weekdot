@@ -9,7 +9,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
 from strings import L, S, C, R, W, TAGS, README, CHANGELOG  # noqa: E402
 
-VERSION = "1.0.2"
+VERSION = "1.0.3"
 
 
 def write(path, data):

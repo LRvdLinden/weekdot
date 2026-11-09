@@ -406,6 +406,20 @@ CHANGELOG["1.0.2"] = T("Widgets now follow the light or dark mode of your Homey 
   "위젯이 이제 Homey 대시보드의 라이트 또는 다크 모드를 따르므로 모든 텍스트를 다시 잘 읽을 수 있습니다.",
   "تتبع الأدوات الآن الوضع الفاتح أو الداكن للوحة تحكم Homey، فأصبحت كل النصوص مقروءة مجددًا.")
 
+CHANGELOG["1.0.3"] = T("Agenda widget: the label for all-day events no longer overlaps the title in German and other languages, and stays on one line.",
+  "Agenda-widget: het label voor afspraken die de hele dag duren valt niet meer over de titel heen in het Duits en andere talen, en blijft op één regel.",
+  "Agenda-Widget: Die Beschriftung „Ganztägig“ überlappt den Titel nicht mehr und bleibt in einer Zeile.",
+  "Widget Agenda : le libellé des événements sur la journée ne chevauche plus le titre et reste sur une seule ligne.",
+  "Widget Agenda: l'etichetta degli eventi di tutto il giorno non si sovrappone più al titolo e resta su una sola riga.",
+  "Agenda-widget: etiketten för heldagshändelser överlappar inte längre titeln och stannar på en rad.",
+  "Agenda-widget: etiketten for heldagsavtaler overlapper ikke lenger tittelen og holder seg på én linje.",
+  "Widget Agenda: la etiqueta de los eventos de todo el día ya no se superpone al título y se queda en una sola línea.",
+  "Agenda-widget: etiketten for heldagsaftaler overlapper ikke længere titlen og bliver på én linje.",
+  "Виджет «Повестка»: подпись событий на весь день больше не наезжает на название и умещается в одну строку.",
+  "Widżet Agenda: etykieta wydarzeń całodniowych nie nachodzi już na tytuł i mieści się w jednym wierszu.",
+  "일정 위젯: 하루 종일 일정의 라벨이 더 이상 제목과 겹치지 않고 한 줄로 표시됩니다.",
+  "أداة الأجندة: لم تعد تسمية أحداث طوال اليوم تتداخل مع العنوان وتبقى في سطر واحد.")
+
 # ---- 1.0.2 publish audit: subtitle that sells the value (one natural sentence per language) ----
 S["app_desc"] = T("Let your calendar start Flows and remind you days ahead",
   "Laat je agenda Flows starten en je dagen vooruit herinneren",
