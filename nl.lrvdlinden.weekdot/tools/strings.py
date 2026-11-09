@@ -406,7 +406,7 @@ CHANGELOG["1.0.2"] = T("Widgets now follow the light or dark mode of your Homey 
   "위젯이 이제 Homey 대시보드의 라이트 또는 다크 모드를 따르므로 모든 텍스트를 다시 잘 읽을 수 있습니다.",
   "تتبع الأدوات الآن الوضع الفاتح أو الداكن للوحة تحكم Homey، فأصبحت كل النصوص مقروءة مجددًا.")
 
-CHANGELOG["1.0.3"] = T("Agenda widget: the label for all-day events no longer overlaps the title in German and other languages, and stays on one line.",
+CHANGELOG["1.0.4"] = T("Agenda widget: the label for all-day events no longer overlaps the title in German and other languages, and stays on one line.",
   "Agenda-widget: het label voor afspraken die de hele dag duren valt niet meer over de titel heen in het Duits en andere talen, en blijft op één regel.",
   "Agenda-Widget: Die Beschriftung „Ganztägig“ überlappt den Titel nicht mehr und bleibt in einer Zeile.",
   "Widget Agenda : le libellé des événements sur la journée ne chevauche plus le titre et reste sur une seule ligne.",
