@@ -726,7 +726,8 @@
   "The meeting could not be created. Try again.": "De vergadering kon niet worden gemaakt. Probeer het opnieuw.",
   "Microsoft only allows Teams meetings from apps for work or school accounts.": "Microsoft staat Teams-vergaderingen vanuit apps alleen toe voor werk- of schoolaccounts.",
   "Join with %@: %@": "Deelnemen met %@: %@",
-  "Dial in: %@, conference ID %@": "Inbellen: %@, vergader-ID %@"
+  "Dial in: %@, conference ID %@": "Inbellen: %@, vergader-ID %@",
+  "Weekdot did not get permission to create meetings with %@. Try again and tick the box for creating meetings when you sign in.": "Weekdot kreeg geen toestemming om vergaderingen te maken met %@. Probeer het opnieuw en vink bij het inloggen het vakje voor het maken van vergaderingen aan."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot toont, maakt en wijzigt de activiteiten in je agenda's.",
@@ -1029,6 +1030,7 @@
   "gallery.event.d": "Plaats, meldingen, reistijd en notities bij elkaar. Dupliceer een afspraak of bewaar hem met één tik als sjabloon.",
   "gallery.discover.d": "Feestdagen van meer dan 60 landen, schoolvakanties, vlagdagen en de afvalkalender, automatisch actueel.",
   "gallery.sports.d": "Kies je club, competitie of Formule 1 en elke wedstrijd en race staat in je week.",
-  "privacy.meetings": "Videogesprekken (optioneel): als je een Google Meet- of Microsoft Teams-vergadering aan een afspraak toevoegt, log je in met dat Google- of Microsoft-account en vraagt Weekdot Google of Microsoft om een vergaderlink te maken (voor Teams met de titel en tijd van de afspraak). Weekdot bewaart de inlog alleen op je apparaat, ziet alleen vergaderingen die het zelf heeft gemaakt en leest je mail, contacten of andere agenda's niet. Knoppen om deel te nemen aan links die al in je afspraken staan werken op je apparaat zonder account. Je kunt op elk moment uitloggen via Instellingen › Videogesprekken."
+  "privacy.meetings": "Videogesprekken (optioneel): als je een Google Meet- of Microsoft Teams-vergadering aan een afspraak toevoegt, log je in met dat Google- of Microsoft-account en vraagt Weekdot Google of Microsoft om een vergaderlink te maken (voor Teams met de titel en tijd van de afspraak). Weekdot bewaart de inlog alleen op je apparaat, ziet alleen vergaderingen die het zelf heeft gemaakt en leest je mail, contacten of andere agenda's niet. Knoppen om deel te nemen aan links die al in je afspraken staan werken op je apparaat zonder account. Je kunt op elk moment uitloggen via Instellingen › Videogesprekken.",
+  "privacy.google": "Gegevens van Google: Weekdot vraagt alleen toestemming om Google Meet-vergaderruimtes te maken (meetings.space.created) en om je e-mailadres, zodat je ziet welk account is ingelogd. Weekdot gebruikt dit alleen om op jouw verzoek een vergaderlink te maken, bewaart die nergens anders dan in de afspraak die je opslaat, deelt hem met niemand, gebruikt hem niet voor advertenties en niet om AI-modellen te trainen. Het gebruik en de overdracht door Weekdot van informatie die van Google API's is ontvangen, aan welke andere app dan ook, voldoet aan het Google API Services User Data Policy, inclusief de Limited Use-vereisten."
  }
 }

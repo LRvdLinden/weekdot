@@ -1,3 +1,8 @@
+## 1.0.4 (build 94) — Google Meet permission
+
+- Google sign-in checks that the Meet permission was granted (Google lets people untick it); if not, Weekdot explains and asks again. A Meet request refused for missing permission signs in again with consent and retries once. New text in all languages.
+- Privacy page: Google user data and Limited Use statement (needed for Google's app verification).
+
 ## 1.0.4 (build 93) — Microsoft Teams switched on
 
 - Microsoft client ID filled in (Weekdot/MeetingClients.plist): Add Video Call › Microsoft Teams and Settings › Video Calls › Microsoft are now available (work or school accounts).

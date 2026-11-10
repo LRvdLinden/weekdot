@@ -649,7 +649,8 @@
   "The meeting could not be created. Try again.": "Mesyuarat tidak dapat dicipta. Cuba lagi.",
   "Microsoft only allows Teams meetings from apps for work or school accounts.": "Microsoft hanya membenarkan mesyuarat Teams daripada app untuk akaun kerja atau sekolah.",
   "Join with %@: %@": "Sertai dengan %@: %@",
-  "Dial in: %@, conference ID %@": "Dail masuk: %@, ID persidangan %@"
+  "Dial in: %@, conference ID %@": "Dail masuk: %@, ID persidangan %@",
+  "Weekdot did not get permission to create meetings with %@. Try again and tick the box for creating meetings when you sign in.": "Weekdot tidak mendapat kebenaran untuk mencipta mesyuarat dengan %@. Cuba lagi dan tandakan kotak untuk mencipta mesyuarat semasa log masuk."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot menunjukkan, mencipta dan mengedit acara dalam kalendar anda.",

@@ -649,7 +649,8 @@
   "The meeting could not be created. Try again.": "No s’ha pogut crear la reunió. Torna-ho a provar.",
   "Microsoft only allows Teams meetings from apps for work or school accounts.": "Microsoft només permet reunions de Teams des d’apps per a comptes de feina o d’escola.",
   "Join with %@: %@": "Uneix-te amb %@: %@",
-  "Dial in: %@, conference ID %@": "Trucada: %@, ID de conferència %@"
+  "Dial in: %@, conference ID %@": "Trucada: %@, ID de conferència %@",
+  "Weekdot did not get permission to create meetings with %@. Try again and tick the box for creating meetings when you sign in.": "El Weekdot no ha rebut permís per crear reunions amb %@. Torna-ho a provar i marca la casella per crear reunions quan iniciïs la sessió."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "El Weekdot mostra, crea i edita els esdeveniments dels teus calendaris.",

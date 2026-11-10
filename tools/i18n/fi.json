@@ -649,7 +649,8 @@
   "The meeting could not be created. Try again.": "Kokousta ei voitu luoda. Yritä uudelleen.",
   "Microsoft only allows Teams meetings from apps for work or school accounts.": "Microsoft sallii Teams-kokoukset apeista vain työpaikan tai oppilaitoksen tileille.",
   "Join with %@: %@": "Liity palvelulla %@: %@",
-  "Dial in: %@, conference ID %@": "Soita sisään: %@, kokoustunnus %@"
+  "Dial in: %@, conference ID %@": "Soita sisään: %@, kokoustunnus %@",
+  "Weekdot did not get permission to create meetings with %@. Try again and tick the box for creating meetings when you sign in.": "Weekdot ei saanut lupaa luoda kokouksia palvelulla %@. Yritä uudelleen ja valitse kirjautuessa kokousten luomisen valintaruutu."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot näyttää, luo ja muokkaa kalentereidesi tapahtumia.",

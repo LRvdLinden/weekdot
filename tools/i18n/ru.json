@@ -649,7 +649,8 @@
   "The meeting could not be created. Try again.": "Не удалось создать встречу. Попробуйте ещё раз.",
   "Microsoft only allows Teams meetings from apps for work or school accounts.": "Microsoft разрешает встречи Teams из приложений только для рабочих или учебных учётных записей.",
   "Join with %@: %@": "Подключиться через %@: %@",
-  "Dial in: %@, conference ID %@": "Дозвон: %@, ID конференции %@"
+  "Dial in: %@, conference ID %@": "Дозвон: %@, ID конференции %@",
+  "Weekdot did not get permission to create meetings with %@. Try again and tick the box for creating meetings when you sign in.": "Weekdot не получил разрешения создавать встречи в %@. Попробуйте ещё раз и при входе отметьте флажок создания встреч."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot показывает, создает и изменяет события в ваших календарях.",

@@ -736,7 +736,8 @@
   "The meeting could not be created. Try again.",
   "Microsoft only allows Teams meetings from apps for work or school accounts.",
   "Join with %@: %@",
-  "Dial in: %@, conference ID %@"
+  "Dial in: %@, conference ID %@",
+  "Weekdot did not get permission to create meetings with %@. Try again and tick the box for creating meetings when you sign in."
  ],
  "plist": [
   "Weekdot shows, creates and edits the events in your calendars.",
@@ -1038,6 +1039,7 @@
   "gallery.event.d": "Place, alerts, travel time and notes together. Duplicate an event or save it as a template in one tap.",
   "gallery.discover.d": "Public holidays for more than 60 countries, school holidays, flag days and waste collection, kept up to date automatically.",
   "gallery.sports.d": "Choose your club, competition or Formula 1, and every match and race appears in your week.",
-  "privacy.meetings": "Video calls (optional): when you add a Google Meet or Microsoft Teams meeting to an event, you sign in with that Google or Microsoft account and Weekdot asks Google or Microsoft to create a meeting link (for Teams with the event title and time). Weekdot keeps the sign-in only on your device, can only see meetings it created itself and does not read your mail, contacts or other calendars. Join buttons for links already in your events work on your device without any account. You can sign out at any time in Settings › Video Calls."
+  "privacy.meetings": "Video calls (optional): when you add a Google Meet or Microsoft Teams meeting to an event, you sign in with that Google or Microsoft account and Weekdot asks Google or Microsoft to create a meeting link (for Teams with the event title and time). Weekdot keeps the sign-in only on your device, can only see meetings it created itself and does not read your mail, contacts or other calendars. Join buttons for links already in your events work on your device without any account. You can sign out at any time in Settings › Video Calls.",
+  "privacy.google": "Google user data: Weekdot only requests permission to create Google Meet meeting spaces (meetings.space.created) and your e-mail address to show which account is signed in. Weekdot uses this only to create a meeting link at your request, does not store it anywhere other than in the event you save, does not share it with anyone, does not use it for advertising and does not use it to train AI models. Weekdot's use and transfer of information received from Google APIs to any other app will adhere to the Google API Services User Data Policy, including the Limited Use requirements."
  }
 }

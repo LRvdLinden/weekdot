@@ -649,7 +649,8 @@
   "The meeting could not be created. Try again.": "Không thể tạo cuộc họp. Hãy thử lại.",
   "Microsoft only allows Teams meetings from apps for work or school accounts.": "Microsoft chỉ cho phép tạo cuộc họp Teams từ ứng dụng với tài khoản cơ quan hoặc trường học.",
   "Join with %@: %@": "Tham gia bằng %@: %@",
-  "Dial in: %@, conference ID %@": "Gọi vào: %@, ID hội nghị %@"
+  "Dial in: %@, conference ID %@": "Gọi vào: %@, ID hội nghị %@",
+  "Weekdot did not get permission to create meetings with %@. Try again and tick the box for creating meetings when you sign in.": "Weekdot chưa được cấp quyền tạo cuộc họp bằng %@. Hãy thử lại và đánh dấu ô tạo cuộc họp khi đăng nhập."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot hiển thị, tạo và sửa các sự kiện trong lịch của bạn.",

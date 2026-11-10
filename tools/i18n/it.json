@@ -649,7 +649,8 @@
   "The meeting could not be created. Try again.": "Impossibile creare la riunione. Riprova.",
   "Microsoft only allows Teams meetings from apps for work or school accounts.": "Microsoft consente riunioni Teams dalle app solo per account di lavoro o dell’istituto.",
   "Join with %@: %@": "Partecipa con %@: %@",
-  "Dial in: %@, conference ID %@": "Chiamata: %@, ID conferenza %@"
+  "Dial in: %@, conference ID %@": "Chiamata: %@, ID conferenza %@",
+  "Weekdot did not get permission to create meetings with %@. Try again and tick the box for creating meetings when you sign in.": "Weekdot non ha ricevuto l’autorizzazione a creare riunioni con %@. Riprova e seleziona la casella per creare riunioni quando accedi."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot mostra, crea e modifica gli eventi nei tuoi calendari.",

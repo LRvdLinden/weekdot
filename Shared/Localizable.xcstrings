@@ -123666,6 +123666,209 @@
         }
       }
     },
+    "Weekdot did not get permission to create meetings with %@. Try again and tick the box for creating meetings when you sign in.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لم يحصل Weekdot على إذن لإنشاء اجتماعات باستخدام %@. حاول مرة أخرى وحدّد مربع إنشاء الاجتماعات عند تسجيل الدخول."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El Weekdot no ha rebut permís per crear reunions amb %@. Torna-ho a provar i marca la casella per crear reunions quan iniciïs la sessió."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot nedostal oprávnění vytvářet schůzky v %@. Zkuste to znovu a při přihlášení zaškrtněte políčko pro vytváření schůzek."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot fik ikke tilladelse til at oprette møder med %@. Prøv igen, og sæt flueben ved oprettelse af møder, når du logger ind."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot hat keine Erlaubnis erhalten, mit %@ Besprechungen zu erstellen. Versuche es erneut und setze beim Anmelden das Häkchen für das Erstellen von Besprechungen."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το Weekdot δεν έλαβε άδεια να δημιουργεί συσκέψεις με %@. Δοκιμάστε ξανά και επιλέξτε το πλαίσιο για δημιουργία συσκέψεων κατά τη σύνδεση."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot no recibió permiso para crear reuniones con %@. Inténtalo de nuevo y marca la casilla para crear reuniones al iniciar sesión."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot ei saanut lupaa luoda kokouksia palvelulla %@. Yritä uudelleen ja valitse kirjautuessa kokousten luomisen valintaruutu."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot n’a pas reçu l’autorisation de créer des réunions avec %@. Réessayez et cochez la case de création de réunions lors de la connexion."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot לא קיבל הרשאה ליצור פגישות עם %@. נסה/י שוב וסמן/י את התיבה ליצירת פגישות בעת ההתחברות."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot को %@ के साथ मीटिंग बनाने की अनुमति नहीं मिली। फिर से कोशिश करें और साइन इन करते समय मीटिंग बनाने वाला बॉक्स चुनें।"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot nije dobio dopuštenje za izradu sastanaka putem %@. Pokušajte ponovno i pri prijavi označite okvir za izradu sastanaka."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Weekdot nem kapott engedélyt megbeszélések létrehozására ezzel: %@. Próbáld újra, és bejelentkezéskor jelöld be a megbeszélések létrehozására vonatkozó négyzetet."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot tidak mendapat izin untuk membuat rapat dengan %@. Coba lagi dan centang kotak untuk membuat rapat saat masuk."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot non ha ricevuto l’autorizzazione a creare riunioni con %@. Riprova e seleziona la casella per creare riunioni quando accedi."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdotは%@で会議を作成する権限を取得できませんでした。もう一度お試しいただき、サインイン時に会議の作成のチェックボックスをオンにしてください。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot이 %@(으)로 회의를 만들 권한을 받지 못했습니다. 다시 시도하고 로그인할 때 회의 만들기 확인란을 선택하세요."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot tidak mendapat kebenaran untuk mencipta mesyuarat dengan %@. Cuba lagi dan tandakan kotak untuk mencipta mesyuarat semasa log masuk."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot fikk ikke tillatelse til å opprette møter med %@. Prøv igjen og huk av for å opprette møter når du logger på."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot kreeg geen toestemming om vergaderingen te maken met %@. Probeer het opnieuw en vink bij het inloggen het vakje voor het maken van vergaderingen aan."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot nie otrzymał uprawnień do tworzenia spotkań w %@. Spróbuj ponownie i podczas logowania zaznacz pole tworzenia spotkań."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Weekdot não recebeu permissão para criar reuniões com %@. Tente novamente e marque a caixa para criar reuniões ao entrar."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Weekdot não recebeu autorização para criar reuniões com %@. Tente novamente e assinale a caixa para criar reuniões ao iniciar sessão."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot nu a primit permisiunea de a crea întâlniri cu %@. Încearcă din nou și bifează caseta pentru crearea întâlnirilor la conectare."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot не получил разрешения создавать встречи в %@. Попробуйте ещё раз и при входе отметьте флажок создания встреч."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot nedostal povolenie vytvárať schôdze v %@. Skúste to znova a pri prihlásení začiarknite políčko na vytváranie schôdzí."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot fick inte behörighet att skapa möten med %@. Försök igen och kryssa i rutan för att skapa möten när du loggar in."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot ไม่ได้รับสิทธิ์สร้างการประชุมด้วย %@ ลองอีกครั้งและเลือกช่องสำหรับการสร้างการประชุมเมื่อลงชื่อเข้าใช้"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot, %@ ile toplantı oluşturma izni alamadı. Yeniden deneyin ve giriş yaparken toplantı oluşturma kutusunu işaretleyin."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot не отримав дозволу створювати наради в %@. Спробуйте ще раз і під час входу позначте прапорець створення нарад."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot chưa được cấp quyền tạo cuộc họp bằng %@. Hãy thử lại và đánh dấu ô tạo cuộc họp khi đăng nhập."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot 未获得使用 %@ 创建会议的权限。请重试，并在登录时勾选创建会议的选项。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot 未取得使用 %@ 建立會議的權限。請再試一次，並在登入時勾選建立會議的選項。"
+          }
+        }
+      }
+    },
     "Weekdot follows the language of your device. Choose another language in System Settings › General › Language & Region › Applications.": {
       "extractionState": "manual",
       "localizations": {

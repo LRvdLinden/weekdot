@@ -649,7 +649,8 @@
   "The meeting could not be created. Try again.": "Не вдалося створити нараду. Спробуйте ще раз.",
   "Microsoft only allows Teams meetings from apps for work or school accounts.": "Microsoft дозволяє наради Teams із програм лише для робочих або навчальних облікових записів.",
   "Join with %@: %@": "Приєднатися через %@: %@",
-  "Dial in: %@, conference ID %@": "Дозвон: %@, ID конференції %@"
+  "Dial in: %@, conference ID %@": "Дозвон: %@, ID конференції %@",
+  "Weekdot did not get permission to create meetings with %@. Try again and tick the box for creating meetings when you sign in.": "Weekdot не отримав дозволу створювати наради в %@. Спробуйте ще раз і під час входу позначте прапорець створення нарад."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot показує, створює й редагує події у ваших календарях.",

@@ -649,7 +649,8 @@
   "The meeting could not be created. Try again.": "Schůzku se nepodařilo vytvořit. Zkuste to znovu.",
   "Microsoft only allows Teams meetings from apps for work or school accounts.": "Microsoft povoluje schůzky Teams z aplikací jen pro pracovní nebo školní účty.",
   "Join with %@: %@": "Připojit přes %@: %@",
-  "Dial in: %@, conference ID %@": "Vytáčení: %@, ID konference %@"
+  "Dial in: %@, conference ID %@": "Vytáčení: %@, ID konference %@",
+  "Weekdot did not get permission to create meetings with %@. Try again and tick the box for creating meetings when you sign in.": "Weekdot nedostal oprávnění vytvářet schůzky v %@. Zkuste to znovu a při přihlášení zaškrtněte políčko pro vytváření schůzek."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot zobrazuje, vytváří a upravuje události ve vašich kalendářích.",

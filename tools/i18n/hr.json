@@ -649,7 +649,8 @@
   "The meeting could not be created. Try again.": "Sastanak nije bilo moguće izraditi. Pokušajte ponovno.",
   "Microsoft only allows Teams meetings from apps for work or school accounts.": "Microsoft dopušta Teams sastanke iz aplikacija samo za poslovne ili školske račune.",
   "Join with %@: %@": "Pridruži se putem %@: %@",
-  "Dial in: %@, conference ID %@": "Biranje: %@, ID konferencije %@"
+  "Dial in: %@, conference ID %@": "Biranje: %@, ID konferencije %@",
+  "Weekdot did not get permission to create meetings with %@. Try again and tick the box for creating meetings when you sign in.": "Weekdot nije dobio dopuštenje za izradu sastanaka putem %@. Pokušajte ponovno i pri prijavi označite okvir za izradu sastanaka."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot prikazuje, stvara i uređuje događaje u vašim kalendarima.",

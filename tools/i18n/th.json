@@ -649,7 +649,8 @@
   "The meeting could not be created. Try again.": "ไม่สามารถสร้างการประชุมได้ ลองอีกครั้ง",
   "Microsoft only allows Teams meetings from apps for work or school accounts.": "Microsoft อนุญาตให้สร้างการประชุม Teams จากแอปเฉพาะบัญชีที่ทำงานหรือโรงเรียนเท่านั้น",
   "Join with %@: %@": "เข้าร่วมผ่าน %@: %@",
-  "Dial in: %@, conference ID %@": "โทรเข้า: %@, รหัสการประชุม %@"
+  "Dial in: %@, conference ID %@": "โทรเข้า: %@, รหัสการประชุม %@",
+  "Weekdot did not get permission to create meetings with %@. Try again and tick the box for creating meetings when you sign in.": "Weekdot ไม่ได้รับสิทธิ์สร้างการประชุมด้วย %@ ลองอีกครั้งและเลือกช่องสำหรับการสร้างการประชุมเมื่อลงชื่อเข้าใช้"
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot แสดง สร้าง และแก้ไขเหตุการณ์ในปฏิทินของคุณ",

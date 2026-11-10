@@ -34,12 +34,14 @@ final class MeetingService: NSObject, ObservableObject {
     }
 
     enum MeetingError: LocalizedError {
-        case notConfigured, cancelled, bad, personalAccount, http(Int, String?)
+        case notConfigured, cancelled, bad, personalAccount, missingPermission(String), http(Int, String?)
         var errorDescription: String? {
             switch self {
             case .notConfigured: return String(localized: "This service is not available in this version of Weekdot.")
             case .cancelled: return nil
             case .bad: return String(localized: "The meeting could not be created. Try again.")
+            case .missingPermission(let account):
+                return String(localized: "Weekdot did not get permission to create meetings with \(account). Try again and tick the box for creating meetings when you sign in.")
             case .personalAccount:
                 return String(localized: "Microsoft only allows Teams meetings from apps for work or school accounts.")
             case .http(let code, let msg): return msg.map { "\($0) (\(code))" } ?? String(localized: "The meeting could not be created. Try again.") + " (\(code))"
@@ -56,6 +58,13 @@ final class MeetingService: NSObject, ObservableObject {
         var refresh: String?
         var expires: Date
         var account: String?
+        /// Scopes the user actually granted (Google lets people untick a permission on the consent screen).
+        var scope: String?
+    }
+
+    /// The permission each provider needs to create meetings.
+    private static func requiredScope(_ p: Provider) -> String {
+        p == .google ? "https://www.googleapis.com/auth/meetings.space.created" : "OnlineMeetings.ReadWrite"
     }
 
     private struct Config {
@@ -117,6 +126,17 @@ final class MeetingService: NSObject, ObservableObject {
     func create(_ p: Provider, title: String, start: Date, end: Date) async throws -> Created {
         isBusy = true
         defer { isBusy = false }
+        do {
+            return try await createOnce(p, title: title, start: start, end: end)
+        } catch MeetingError.http(let code, _) where p == .google && (code == 401 || code == 403) {
+            // token without the Meet permission (or revoked): sign in again, asking for consent, and retry once
+            signOut(p)
+            try await signIn(p)
+            return try await createOnce(p, title: title, start: start, end: end)
+        }
+    }
+
+    private func createOnce(_ p: Provider, title: String, start: Date, end: Date) async throws -> Created {
         let token = try await validToken(p)
         switch p {
         case .google:
@@ -192,6 +212,10 @@ final class MeetingService: NSObject, ObservableObject {
         var t = try await tokenRequest(c, ["grant_type": "authorization_code", "code": code,
                                            "redirect_uri": c.redirect, "code_verifier": verifier])
         if t.account == nil { t.account = p.accountName }
+        if let granted = t.scope, !granted.contains(Self.requiredScope(p)) {
+            signOut(p)
+            throw MeetingError.missingPermission(p.accountName)
+        }
         save(t, for: p)
     }
 
@@ -248,7 +272,8 @@ final class MeetingService: NSObject, ObservableObject {
         let expiresIn = (obj["expires_in"] as? Double) ?? Double(obj["expires_in"] as? String ?? "") ?? 3600
         return Tokens(access: access, refresh: obj["refresh_token"] as? String,
                       expires: Date().addingTimeInterval(expiresIn),
-                      account: (obj["id_token"] as? String).flatMap(Self.email(fromIDToken:)))
+                      account: (obj["id_token"] as? String).flatMap(Self.email(fromIDToken:)),
+                      scope: obj["scope"] as? String)
     }
 
     private func request(_ method: String, _ url: String, token: String, json: [String: Any]) async throws -> Data {
