@@ -57,7 +57,10 @@
     "countdown_none": "Kein anstehender Termin mit „__word__“",
     "events_count": "Termine: __count__",
     "week_n": "KW __n__",
-    "dir": "ltr"
+    "dir": "ltr",
+    "video_call": "Videoanruf",
+    "no_call": "Keine anstehenden Videoanrufe",
+    "no_call_hint": "Weekdot 1.0.4 oder neuer auf dem iPhone sendet Meet-, Teams-, FaceTime- und Zoom-Anrufe hierher."
   },
   "more_apps": {
     "section": "Entdecken",

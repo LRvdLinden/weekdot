@@ -57,7 +57,10 @@
     "countdown_none": "Нет предстоящих событий с «__word__»",
     "events_count": "События: __count__",
     "week_n": "Неделя __n__",
-    "dir": "ltr"
+    "dir": "ltr",
+    "video_call": "Видеозвонок",
+    "no_call": "Нет предстоящих видеозвонков",
+    "no_call_hint": "Weekdot 1.0.4 или новее на iPhone отправляет сюда звонки Meet, Teams, FaceTime и Zoom."
   },
   "more_apps": {
     "section": "Обзор",

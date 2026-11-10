@@ -57,7 +57,10 @@
     "countdown_none": "لا يوجد موعد قادم يحتوي على «__word__»",
     "events_count": "المواعيد: __count__",
     "week_n": "الأسبوع __n__",
-    "dir": "rtl"
+    "dir": "rtl",
+    "video_call": "مكالمة فيديو",
+    "no_call": "لا توجد مكالمات فيديو قادمة",
+    "no_call_hint": "يرسل Weekdot 1.0.4 أو أحدث على iPhone مكالمات Meet وTeams وFaceTime وZoom إلى هنا."
   },
   "more_apps": {
     "section": "اكتشف",

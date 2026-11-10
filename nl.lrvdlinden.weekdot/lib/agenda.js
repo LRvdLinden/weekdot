@@ -3,10 +3,18 @@
 /**
  * The schedule Weekdot sends (today plus 1, 2 or 3 months as chosen in Weekdot; Weekdot 1.0.1 and older: 8 days) and helpers to read it in Homey's time zone.
  * Event: { id, title, emoji?, location?, start, end (ISO), allDay, startDay, endDay (yyyy-mm-dd, end exclusive),
- *          calendarId, calendar, color, free }
+ *          calendarId, calendar, color, free, travelMinutes?, call?, callUrl? }
+ * call: the video-call service Weekdot found in the event (Weekdot 1.0.4+), callUrl only when details are shared.
  */
 const MAX_EVENTS = 3000;
 const str = (v, max = 300) => (typeof v === 'string' ? v.slice(0, max) : '');
+const CALLS = {
+  facetime: 'FaceTime', teams: 'Microsoft Teams', meet: 'Google Meet', zoom: 'Zoom', webex: 'Webex', whatsapp: 'WhatsApp',
+  gotomeeting: 'GoTo Meeting', jitsi: 'Jitsi Meet', whereby: 'Whereby', slack: 'Slack Huddle', chime: 'Amazon Chime',
+  ringcentral: 'RingCentral', bluejeans: 'BlueJeans', lifesize: 'Lifesize', dialpad: 'Dialpad', gather: 'Gather',
+  discord: 'Discord', signal: 'Signal', telegram: 'Telegram', generic: 'Video',
+};
+const callLink = v => (typeof v === 'string' && /^(https:\/\/|facetime:)/i.test(v) ? v.slice(0, 500) : '');
 
 class Agenda {
   constructor(homey) {
@@ -31,6 +39,9 @@ class Agenda {
       calendar: str(e.calendar, 120),
       color: /^#[0-9a-fA-F]{6}$/.test(e.color || '') ? e.color : '#E8352F',
       free: e.free === true,
+      travelMinutes: Number.isFinite(Number(e.travelMinutes)) ? Math.max(0, Math.min(600, Math.round(Number(e.travelMinutes)))) : 0,
+      call: Object.prototype.hasOwnProperty.call(CALLS, e.call) ? e.call : '',
+      callUrl: callLink(e.callUrl),
     })).filter(e => !Number.isNaN(Date.parse(e.start)) && !Number.isNaN(Date.parse(e.end)));
     let calendars = (Array.isArray(body.calendars) ? body.calendars : []).slice(0, 200).map(c => ({
       id: str(c.id, 200), title: str(c.title, 120), color: /^#[0-9a-fA-F]{6}$/.test(c.color || '') ? c.color : '#E8352F',
@@ -158,6 +169,23 @@ class Agenda {
     return list.length === 1 ? t('agenda.one', { list: items[0] }) : t('agenda.many', { count: list.length, list: items.join(', ') });
   }
 
+  /** Name of the video-call service of an event ('' without a call). */
+  callName(e) { return e && e.call ? CALLS[e.call] || '' : ''; }
+
+  /** Time to leave (HH:MM) for an event with travel time, else ''. */
+  leaveTime(e) {
+    if (!e || e.allDay || !e.travelMinutes) return '';
+    return this.time(new Date(Date.parse(e.start) - e.travelMinutes * 60000));
+  }
+
+  /** Is the event a timed event that blocks time (not all-day, not "free")? */
+  isBusy(e) { return !e.allDay && !e.free; }
+
+  /** First timed event of a day (yyyy-mm-dd) that starts that day and matches the arguments. */
+  firstOfDay(day, args = {}) {
+    return this.events.find(e => !e.allDay && this.dayKey(new Date(e.start)) === day && this.matches(e, args)) || null;
+  }
+
   /** Flow tokens of one event. */
   tokens(e) {
     return {
@@ -168,6 +196,10 @@ class Agenda {
       start_time: e.allDay ? '' : this.time(new Date(e.start)),
       end_time: e.allDay ? '' : this.time(new Date(e.end)),
       all_day: e.allDay,
+      call_service: this.callName(e),
+      call_link: e.callUrl || '',
+      travel_minutes: e.travelMinutes || 0,
+      leave_time: this.leaveTime(e),
     };
   }
 

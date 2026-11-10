@@ -57,7 +57,10 @@
     "countdown_none": "Ingen kommende avtale med «__word__»",
     "events_count": "Avtaler: __count__",
     "week_n": "Uke __n__",
-    "dir": "ltr"
+    "dir": "ltr",
+    "video_call": "Videosamtale",
+    "no_call": "Ingen kommende videosamtaler",
+    "no_call_hint": "Weekdot 1.0.4 eller nyere på iPhone sender Meet-, Teams-, FaceTime- og Zoom-samtaler hit."
   },
   "more_apps": {
     "section": "Oppdag",

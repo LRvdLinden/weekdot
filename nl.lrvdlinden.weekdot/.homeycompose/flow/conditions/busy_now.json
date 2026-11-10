@@ -1,0 +1,68 @@
+{
+  "title": {
+    "en": "I'm busy",
+    "nl": "Ik ben bezet",
+    "de": "Ich bin beschäftigt",
+    "fr": "Je suis occupé",
+    "it": "Sono occupato",
+    "sv": "Jag är upptagen",
+    "no": "Jeg er opptatt",
+    "es": "Estoy ocupado",
+    "da": "Jeg er optaget",
+    "ru": "Я занят",
+    "pl": "Jestem zajęty",
+    "ko": "바쁨",
+    "ar": "أنا مشغول"
+  },
+  "titleFormatted": {
+    "en": "I !{{am|am not}} busy in [[calendar]] right now",
+    "nl": "Ik ben nu !{{wel|niet}} bezet in [[calendar]]",
+    "de": "Ich bin gerade !{{beschäftigt|nicht beschäftigt}} in [[calendar]]",
+    "fr": "Je !{{suis|ne suis pas}} occupé dans [[calendar]] en ce moment",
+    "it": "!{{Sono|Non sono}} occupato in [[calendar]] adesso",
+    "sv": "Jag !{{är|är inte}} upptagen i [[calendar]] nu",
+    "no": "Jeg !{{er|er ikke}} opptatt i [[calendar]] nå",
+    "es": "!{{Estoy|No estoy}} ocupado en [[calendar]] ahora",
+    "da": "Jeg !{{er|er ikke}} optaget i [[calendar]] nu",
+    "ru": "Я сейчас !{{занят|не занят}} в [[calendar]]",
+    "pl": "!{{Jestem|Nie jestem}} teraz zajęty w [[calendar]]",
+    "ko": "지금 [[calendar]]에서 !{{바쁨|바쁘지 않음}}",
+    "ar": "!{{أنا|لست}} مشغولًا في [[calendar]] الآن"
+  },
+  "args": [
+    {
+      "name": "calendar",
+      "type": "autocomplete",
+      "title": {
+        "en": "Calendar",
+        "nl": "Agenda",
+        "de": "Kalender",
+        "fr": "Calendrier",
+        "it": "Calendario",
+        "sv": "Kalender",
+        "no": "Kalender",
+        "es": "Calendario",
+        "da": "Kalender",
+        "ru": "Календарь",
+        "pl": "Kalendarz",
+        "ko": "캘린더",
+        "ar": "التقويم"
+      },
+      "placeholder": {
+        "en": "Any calendar",
+        "nl": "Elke agenda",
+        "de": "Jeder Kalender",
+        "fr": "N'importe quel calendrier",
+        "it": "Qualsiasi calendario",
+        "sv": "Valfri kalender",
+        "no": "Hvilken som helst kalender",
+        "es": "Cualquier calendario",
+        "da": "Enhver kalender",
+        "ru": "Любой календарь",
+        "pl": "Dowolny kalendarz",
+        "ko": "모든 캘린더",
+        "ar": "أي تقويم"
+      }
+    }
+  ]
+}

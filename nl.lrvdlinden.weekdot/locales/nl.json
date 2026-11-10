@@ -57,7 +57,10 @@
     "countdown_none": "Geen komende afspraak met “__word__”",
     "events_count": "Afspraken: __count__",
     "week_n": "Week __n__",
-    "dir": "ltr"
+    "dir": "ltr",
+    "video_call": "Videogesprek",
+    "no_call": "Geen komende videogesprekken",
+    "no_call_hint": "Weekdot 1.0.4 of nieuwer op je iPhone stuurt Meet-, Teams-, FaceTime- en Zoom-gesprekken hierheen."
   },
   "more_apps": {
     "section": "Ontdekken",

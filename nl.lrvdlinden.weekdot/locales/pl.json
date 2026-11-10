@@ -57,7 +57,10 @@
     "countdown_none": "Brak nadchodzących wydarzeń z „__word__”",
     "events_count": "Wydarzenia: __count__",
     "week_n": "Tydzień __n__",
-    "dir": "ltr"
+    "dir": "ltr",
+    "video_call": "Rozmowa wideo",
+    "no_call": "Brak nadchodzących rozmów wideo",
+    "no_call_hint": "Weekdot 1.0.4 lub nowszy na iPhonie wysyła tu rozmowy Meet, Teams, FaceTime i Zoom."
   },
   "more_apps": {
     "section": "Odkrywaj",

@@ -5,7 +5,7 @@ const Homey = require('homey');
 const Agenda = require('./lib/agenda');
 
 const TICK = 30 * 1000;
-const WIDGETS = ['next_event', 'free_busy', 'countdown', 'week', 'timeline', 'month'];
+const WIDGETS = ['next_event', 'free_busy', 'countdown', 'week', 'timeline', 'month', 'next_call'];
 const MAX_LATE = 10 * 60 * 1000; // after a restart, do not fire triggers that are more than 10 minutes old
 
 class WeekdotApp extends Homey.App {
@@ -27,6 +27,12 @@ class WeekdotApp extends Homey.App {
     this.daysBefore = flow.getTriggerCard('event_days_before');
     this.atTime = flow.getTriggerCard('agenda_at_time');
     this.received = flow.getTriggerCard('schedule_received');
+    // 1.0.5: video calls, first event of the day, time to leave
+    this.callStartsIn = flow.getTriggerCard('call_starts_in');
+    this.callStarted = flow.getTriggerCard('call_started');
+    this.callEnded = flow.getTriggerCard('call_ended');
+    this.firstStartsIn = flow.getTriggerCard('first_event_starts_in');
+    this.leave = flow.getTriggerCard('time_to_leave');
 
     for (const card of [this.started, this.ended]) {
       card.registerRunListener(async (args, state) => this.agenda.matches(state.event, args));
@@ -38,6 +44,18 @@ class WeekdotApp extends Homey.App {
       && this.agenda.matches(state.event, args));
     this.daysBefore.registerArgumentAutocompleteListener('calendar', calendarAutocomplete);
     this.atTime.registerRunListener(async (args, state) => args.time === state.time);
+    for (const card of [this.callStarted, this.callEnded]) {
+      card.registerRunListener(async (args, state) => this.agenda.matches(state.event, args));
+      card.registerArgumentAutocompleteListener('calendar', calendarAutocomplete);
+    }
+    for (const card of [this.callStartsIn, this.leave]) {
+      card.registerRunListener(async (args, state) => Number(args.minutes) === state.minutes && this.agenda.matches(state.event, args));
+      card.registerArgumentAutocompleteListener('calendar', calendarAutocomplete);
+    }
+    // "first event of the day" depends on the card's own filter, so every card only answers for its own filter
+    this.firstKey = args => `${Number(args.minutes)}|${(args.calendar && args.calendar.id) || '*'}|${(args.keyword || '').trim().toLowerCase()}`;
+    this.firstStartsIn.registerRunListener(async (args, state) => this.firstKey(args) === state.key);
+    this.firstStartsIn.registerArgumentAutocompleteListener('calendar', calendarAutocomplete);
 
     const now = () => new Date();
     const conditions = {
@@ -53,6 +71,8 @@ class WeekdotApp extends Homey.App {
         }
         return this.agenda.eventsOn(day).some(e => this.agenda.matches(e, args));
       },
+      in_call: args => this.agenda.events.some(e => e.call && !e.allDay && this.agenda.isNow(e, now()) && this.agenda.matches(e, args)),
+      busy_now: args => this.agenda.events.some(e => this.agenda.isBusy(e) && this.agenda.isNow(e, now()) && this.agenda.matches(e, args)),
     };
     for (const [id, fn] of Object.entries(conditions)) {
       const card = flow.getConditionCard(id);
@@ -270,6 +290,11 @@ class WeekdotApp extends Homey.App {
         });
         return { ...base, month: today.slice(0, 7), days };
       }
+      case 'next_call': {
+        const calls = evs.filter(e => e.call && !e.allDay && Date.parse(e.end) > nowMs);
+        const e = calls.find(x => a.isNow(x, now)) || calls[0] || null;
+        return { ...base, event: view(e), service: a.callName(e), hasLink: !!(e && e.callUrl) };
+      }
       default:
         return base;
     }
@@ -304,9 +329,48 @@ class WeekdotApp extends Homey.App {
       const end = Date.parse(e.end);
       if (crossed(start) && once(`s|${e.id}|${start}`)) {
         await this.started.trigger(this.agenda.tokens(e), { event: e }).catch(err => this.error(err));
+        if (e.call && !e.allDay) await this.callStarted.trigger(this.agenda.tokens(e), { event: e }).catch(err => this.error(err));
       }
       if (crossed(end) && once(`e|${e.id}|${end}`)) {
         await this.ended.trigger(this.agenda.tokens(e), { event: e }).catch(err => this.error(err));
+        if (e.call && !e.allDay) await this.callEnded.trigger(this.agenda.tokens(e), { event: e }).catch(err => this.error(err));
+      }
+    }
+
+    // video call starts in … minutes / time to leave (travel time + … minutes) / first event of the day in … minutes
+    const minutesOf = async (card, min) => new Set((await card.getArgumentValues()).map(x => Number(x.minutes)).filter(m => m >= min));
+    for (const m of await minutesOf(this.callStartsIn, 1)) {
+      for (const e of this.agenda.events) {
+        if (!e.call || e.allDay) continue;
+        const at = Date.parse(e.start) - m * 60000;
+        if (crossed(at) && once(`c|${m}|${e.id}|${at}`)) {
+          await this.callStartsIn.trigger(this.agenda.tokens(e), { event: e, minutes: m }).catch(err => this.error(err));
+        }
+      }
+    }
+    for (const m of await minutesOf(this.leave, 0)) {
+      for (const e of this.agenda.events) {
+        if (e.allDay || !e.travelMinutes) continue;
+        const at = Date.parse(e.start) - (e.travelMinutes + m) * 60000;
+        if (crossed(at) && once(`l|${m}|${e.id}|${at}`)) {
+          await this.leave.trigger(this.agenda.tokens(e), { event: e, minutes: m }).catch(err => this.error(err));
+        }
+      }
+    }
+    const firstArgs = await this.firstStartsIn.getArgumentValues();
+    if (firstArgs.length) {
+      for (const offset of [0, 1]) {            // the first event of tomorrow can be less than … minutes after midnight
+        const day = this.agenda.dayKey(new Date(nowMs), offset);
+        for (const arg of firstArgs) {
+          const m = Number(arg.minutes);
+          const e = this.agenda.firstOfDay(day, arg);
+          if (!e || !(m >= 1)) continue;
+          const at = Date.parse(e.start) - m * 60000;
+          const key = this.firstKey(arg);
+          if (crossed(at) && once(`f|${key}|${e.id}|${at}`)) {
+            await this.firstStartsIn.trigger(this.agenda.tokens(e), { event: e, minutes: m, key }).catch(err => this.error(err));
+          }
+        }
       }
     }
 

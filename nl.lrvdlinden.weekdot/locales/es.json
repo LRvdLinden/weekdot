@@ -57,7 +57,10 @@
     "countdown_none": "No hay eventos próximos con «__word__»",
     "events_count": "Eventos: __count__",
     "week_n": "Semana __n__",
-    "dir": "ltr"
+    "dir": "ltr",
+    "video_call": "Videollamada",
+    "no_call": "No hay videollamadas próximas",
+    "no_call_hint": "Weekdot 1.0.4 o posterior en tu iPhone envía aquí las llamadas de Meet, Teams, FaceTime y Zoom."
   },
   "more_apps": {
     "section": "Descubrir",

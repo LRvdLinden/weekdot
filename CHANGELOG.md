@@ -1,3 +1,7 @@
+## 1.0.4 (build 95) — Video calls for Homey
+
+- Weekdot sends the video-call service of each event to Homey (and the link when details are shown), for the new cards in the Weekdot Homey app 1.0.5: a video call starts / ends / starts in … minutes, I'm in a video call, and the Next video call widget.
+
 ## 1.0.4 (build 94) — Google Meet permission
 
 - Google sign-in checks that the Meet permission was granted (Google lets people untick it); if not, Weekdot explains and asks again. A Meet request refused for missing permission signs in again with consent and retries once. New text in all languages.

@@ -9,7 +9,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
 from strings import L, S, C, R, W, TAGS, README, CHANGELOG  # noqa: E402
 
-VERSION = "1.0.4"
+VERSION = "1.0.5"
 
 
 def write(path, data):
@@ -40,6 +40,11 @@ EVENT_TOKENS = [
     tok("start_time", "string", "tok_start", {l: "12:30" for l in L}),
     tok("end_time", "string", "tok_end", {l: "13:30" for l in L}),
     tok("all_day", "boolean", "tok_allday", False),
+    # 1.0.5 (filled by Weekdot 1.0.4 and later)
+    tok("call_service", "string", "tok_call_service", {l: "Google Meet" for l in L}),
+    tok("call_link", "string", "tok_call_link", {l: "https://meet.google.com/abc-defg-hij" for l in L}),
+    tok("travel_minutes", "number", "tok_travel", 15),
+    tok("leave_time", "string", "tok_leave_time", {l: "12:15" for l in L}),
 ]
 AGENDA_TOKENS = [
     tok("count", "number", "tok_count", 3),
@@ -98,6 +103,7 @@ def main():
     # flow cards
     minutes = {"name": "minutes", "type": "number", "min": 1, "max": 1440, "step": 1, "title": S["arg_minutes"], "placeholder": {l: "15" for l in L}}
     time_arg = {"name": "time", "type": "time", "title": S["arg_time"]}
+    extra = {"name": "minutes", "type": "number", "min": 0, "max": 240, "step": 1, "title": S["arg_minutes_extra"], "placeholder": {l: "5" for l in L}}
     # Weekdot 1.0.3 sends today plus 1, 2 or 3 months (user choice), so up to 92 days ahead
     days_arg = {"name": "days", "type": "number", "min": 1, "max": 92, "step": 1, "title": S["arg_days"], "placeholder": {l: "3" for l in L}}
     day_arg = {"name": "day", "type": "dropdown", "title": S["arg_day"],
@@ -110,11 +116,18 @@ def main():
                                   EVENT_TOKENS + [tok("date", "string", "tok_date", {l: "2026-11-07" for l in L}),
                                                   tok("days", "number", "tok_days", 3)]),
         "agenda_at_time": card("agenda_at_time", [time_arg], AGENDA_TOKENS),
+        "call_starts_in": card("call_starts_in", [keyword_arg(), calendar_arg(), minutes], EVENT_TOKENS),
+        "call_started": card("call_started", [keyword_arg(), calendar_arg()], EVENT_TOKENS),
+        "call_ended": card("call_ended", [keyword_arg(), calendar_arg()], EVENT_TOKENS),
+        "first_event_starts_in": card("first_event_starts_in", [keyword_arg(), calendar_arg(), minutes], EVENT_TOKENS),
+        "time_to_leave": card("time_to_leave", [keyword_arg(), calendar_arg(), extra], EVENT_TOKENS),
         "schedule_received": card("schedule_received", None,
                                   [tok("count", "number", "tok_count", 12), tok("device", "string", "tok_device", {l: "iPhone" for l in L})]),
     }
     conditions = {k: card(k, [keyword_arg(), calendar_arg()]) for k in ["event_now", "event_today", "event_tomorrow"]}
     conditions["event_in_days"] = card("event_in_days", [keyword_arg(), calendar_arg(), days_arg])
+    conditions["in_call"] = card("in_call", [keyword_arg(), calendar_arg()])
+    conditions["busy_now"] = card("busy_now", [calendar_arg()])
     next_tokens = [tok("found", "boolean", "tok_found", True)] + EVENT_TOKENS[:5] + [
         tok("date", "string", "tok_date", {l: "2026-10-30" for l in L}),
         tok("minutes_until", "number", "tok_minutes_until", 45)]

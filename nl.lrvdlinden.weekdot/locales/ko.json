@@ -57,7 +57,10 @@
     "countdown_none": "“__word__” 관련 예정된 일정 없음",
     "events_count": "일정: __count__",
     "week_n": "__n__주차",
-    "dir": "ltr"
+    "dir": "ltr",
+    "video_call": "영상 통화",
+    "no_call": "예정된 영상 통화 없음",
+    "no_call_hint": "iPhone의 Weekdot 1.0.4 이상이 Meet, Teams, FaceTime, Zoom 통화를 여기로 보냅니다."
   },
   "more_apps": {
     "section": "둘러보기",

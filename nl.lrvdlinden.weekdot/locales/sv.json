@@ -57,7 +57,10 @@
     "countdown_none": "Ingen kommande händelse med ”__word__”",
     "events_count": "Händelser: __count__",
     "week_n": "Vecka __n__",
-    "dir": "ltr"
+    "dir": "ltr",
+    "video_call": "Videosamtal",
+    "no_call": "Inga kommande videosamtal",
+    "no_call_hint": "Weekdot 1.0.4 eller senare på din iPhone skickar Meet-, Teams-, FaceTime- och Zoom-samtal hit."
   },
   "more_apps": {
     "section": "Upptäck",

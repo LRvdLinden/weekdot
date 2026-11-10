@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Writes the six small widgets (widgets/<id>/widget.compose.json, api.js, public/index.html).
+"""Writes the small widgets (widgets/<id>/widget.compose.json, api.js, public/index.html).
 Called by generate.py. Texts live in strings.py (W = compose, R["widget.*"] = runtime)."""
 import json, os
 
@@ -86,6 +86,40 @@ function render(d, t) {
     + `<div class="ev"><div class="bar" style="background:${esc(e.color)}"></div><div style="min-width:0">`
     + `<div class="ti ell">${e.emoji ? esc(e.emoji) + ' ' : ''}${esc(e.title)}</div>`
     + `<div class="meta ell">${esc(when)}${e.location ? ' · ' + esc(e.location) : ''}</div></div></div>`;
+}
+"""),
+ "next_call": dict(height=130, name="wn_next_call", settings=["calendar", "keyword"], css="""
+.ev{display:flex;gap:11px;align-items:center}
+.cam{width:40px;height:40px;border-radius:12px;flex:none;display:grid;place-items:center;background:var(--soft);color:var(--sec)}
+.cam.live{background:#34b553;color:#fff}
+.cam svg{width:22px;height:22px}
+.ti{font-size:18px;font-weight:800;line-height:1.2;letter-spacing:-.2px}
+.meta{font-size:13px;color:var(--sec);margin-top:2px}
+.svc{display:inline-block;margin-top:8px;font-size:11.5px;font-weight:700;border-radius:99px;padding:3px 9px;background:var(--soft)}
+.svc.live{background:#34b553;color:#fff}
+""", js=r"""
+const CAM = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 7.5A2.5 2.5 0 0 1 5.5 5h8A2.5 2.5 0 0 1 16 7.5v9a2.5 2.5 0 0 1-2.5 2.5h-8A2.5 2.5 0 0 1 3 16.5zM17 10l4-2.6v9.2L17 14z"/></svg>';
+function rel(ms) {
+  const mins = Math.round(ms / 60000);
+  try {
+    const f = new Intl.RelativeTimeFormat(undefined, { numeric: 'auto' });
+    if (Math.abs(mins) < 60) return f.format(mins, 'minute');
+    if (Math.abs(mins) < 36 * 60) return f.format(Math.round(mins / 60), 'hour');
+    return f.format(Math.round(mins / 1440), 'day');
+  } catch (e) { return ''; }
+}
+function render(d, t) {
+  const e = d.event;
+  if (!e) return header(t('video_call')) + `<div class="hint">${esc(t('no_call'))}<br>${esc(t('no_call_hint'))}</div>`;
+  // green from 10 minutes before the start, like the Join button in Weekdot
+  const live = e.now || (e.startMs - d.now) <= 10 * 60000;
+  const right = e.now ? t('now_until', { time: e.end }) : rel(e.startMs - d.now);
+  const when = `${e.day !== d.today ? fmtDay(e.day, { weekday: 'short', day: 'numeric', month: 'short' }) + ' · ' : ''}${e.start} – ${e.end}`;
+  return header(t('video_call'), right)
+    + `<div class="ev"><div class="cam${live ? ' live' : ''}">${CAM}</div><div style="min-width:0">`
+    + `<div class="ti ell">${e.emoji ? esc(e.emoji) + ' ' : ''}${esc(e.title)}</div>`
+    + `<div class="meta ell">${esc(when)}</div></div></div>`
+    + (d.service ? `<span class="svc${live ? ' live' : ''}">${esc(d.service)}</span>` : '');
 }
 """),
  "free_busy": dict(height=100, name="wn_free_busy", settings=["calendar"], css="""

@@ -1,0 +1,103 @@
+{
+  "title": {
+    "en": "I'm in a video call",
+    "nl": "Ik zit in een videogesprek",
+    "de": "Ich bin in einem Videoanruf",
+    "fr": "Je suis en appel vidéo",
+    "it": "Sono in videochiamata",
+    "sv": "Jag är i ett videosamtal",
+    "no": "Jeg er i en videosamtale",
+    "es": "Estoy en una videollamada",
+    "da": "Jeg er i et videoopkald",
+    "ru": "Я на видеозвонке",
+    "pl": "Jestem na rozmowie wideo",
+    "ko": "영상 통화 중",
+    "ar": "أنا في مكالمة فيديو"
+  },
+  "titleFormatted": {
+    "en": "I !{{am|am not}} in a video call [[keyword]] in [[calendar]] right now",
+    "nl": "Ik zit nu !{{wel|niet}} in een videogesprek [[keyword]] in [[calendar]]",
+    "de": "Ich bin gerade !{{in einem|in keinem}} Videoanruf [[keyword]] in [[calendar]]",
+    "fr": "Je !{{suis|ne suis pas}} en appel vidéo [[keyword]] dans [[calendar]] en ce moment",
+    "it": "!{{Sono|Non sono}} in una videochiamata [[keyword]] in [[calendar]] adesso",
+    "sv": "Jag !{{är|är inte}} i ett videosamtal [[keyword]] i [[calendar]] nu",
+    "no": "Jeg !{{er|er ikke}} i en videosamtale [[keyword]] i [[calendar]] nå",
+    "es": "!{{Estoy|No estoy}} en una videollamada [[keyword]] en [[calendar]] ahora",
+    "da": "Jeg !{{er|er ikke}} i et videoopkald [[keyword]] i [[calendar]] nu",
+    "ru": "Я сейчас !{{на|не на}} видеозвонке [[keyword]] в [[calendar]]",
+    "pl": "!{{Jestem|Nie jestem}} teraz na rozmowie wideo [[keyword]] w [[calendar]]",
+    "ko": "지금 [[calendar]]의 영상 통화 [[keyword]] !{{중임|중이 아님}}",
+    "ar": "!{{أنا|لست}} في مكالمة فيديو [[keyword]] في [[calendar]] الآن"
+  },
+  "args": [
+    {
+      "name": "keyword",
+      "type": "text",
+      "required": false,
+      "title": {
+        "en": "Title contains (optional)",
+        "nl": "Titel bevat (optioneel)",
+        "de": "Titel enthält (optional)",
+        "fr": "Le titre contient (facultatif)",
+        "it": "Il titolo contiene (facoltativo)",
+        "sv": "Titeln innehåller (valfritt)",
+        "no": "Tittelen inneholder (valgfritt)",
+        "es": "El título contiene (opcional)",
+        "da": "Titlen indeholder (valgfrit)",
+        "ru": "Название содержит (необязательно)",
+        "pl": "Tytuł zawiera (opcjonalnie)",
+        "ko": "제목에 포함(선택)",
+        "ar": "العنوان يحتوي على (اختياري)"
+      },
+      "placeholder": {
+        "en": "with any title",
+        "nl": "met elke titel",
+        "de": "mit beliebigem Titel",
+        "fr": "avec n'importe quel titre",
+        "it": "con qualsiasi titolo",
+        "sv": "med valfri titel",
+        "no": "med hvilken som helst tittel",
+        "es": "con cualquier título",
+        "da": "med enhver titel",
+        "ru": "с любым названием",
+        "pl": "z dowolnym tytułem",
+        "ko": "모든 제목",
+        "ar": "بأي عنوان"
+      }
+    },
+    {
+      "name": "calendar",
+      "type": "autocomplete",
+      "title": {
+        "en": "Calendar",
+        "nl": "Agenda",
+        "de": "Kalender",
+        "fr": "Calendrier",
+        "it": "Calendario",
+        "sv": "Kalender",
+        "no": "Kalender",
+        "es": "Calendario",
+        "da": "Kalender",
+        "ru": "Календарь",
+        "pl": "Kalendarz",
+        "ko": "캘린더",
+        "ar": "التقويم"
+      },
+      "placeholder": {
+        "en": "Any calendar",
+        "nl": "Elke agenda",
+        "de": "Jeder Kalender",
+        "fr": "N'importe quel calendrier",
+        "it": "Qualsiasi calendario",
+        "sv": "Valfri kalender",
+        "no": "Hvilken som helst kalender",
+        "es": "Cualquier calendario",
+        "da": "Enhver kalender",
+        "ru": "Любой календарь",
+        "pl": "Dowolny kalendarz",
+        "ko": "모든 캘린더",
+        "ar": "أي تقويم"
+      }
+    }
+  ]
+}

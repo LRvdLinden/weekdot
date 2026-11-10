@@ -57,7 +57,10 @@
     "countdown_none": "Nessun evento in arrivo con “__word__”",
     "events_count": "Eventi: __count__",
     "week_n": "Settimana __n__",
-    "dir": "ltr"
+    "dir": "ltr",
+    "video_call": "Videochiamata",
+    "no_call": "Nessuna videochiamata in arrivo",
+    "no_call_hint": "Weekdot 1.0.4 o successivo sul tuo iPhone invia qui le chiamate Meet, Teams, FaceTime e Zoom."
   },
   "more_apps": {
     "section": "Scopri",

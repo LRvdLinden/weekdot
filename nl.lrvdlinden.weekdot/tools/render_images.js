@@ -88,7 +88,7 @@ function preview(dark) {
     </div></body></html>`;
 }
 
-// Previews of the six small widgets: shapes and colours only, no real text
+// Previews of the small widgets: shapes and colours only, no real text
 function smallPreview(kind, dark) {
   const card = dark ? '#1d1d22' : '#ffffff', line = dark ? 'rgba(255,255,255,.16)' : 'rgba(0,0,0,.10)',
     line2 = dark ? 'rgba(255,255,255,.09)' : 'rgba(0,0,0,.06)', soft = dark ? 'rgba(255,255,255,.07)' : 'rgba(0,0,0,.05)';
@@ -115,6 +115,10 @@ function smallPreview(kind, dark) {
     const blocks = [[8, 10, C[0]], [20, 18, C[0]], [48, 13, C[1]], [74, 18, C[3]]].map(([l, w, c]) => `<div style="position:absolute;top:22px;bottom:22px;left:${l}%;width:${w}%;border-radius:16px;background:${c}"></div>`).join('');
     body = `<div style="position:relative;height:170px;border-radius:28px;background:${soft}">${blocks}<div style="position:absolute;top:0;bottom:0;left:33%;width:7px;background:${R}"></div></div>
       <div style="display:flex;justify-content:space-between;margin-top:22px">${Array.from({ length: 6 }, () => bar('46px', 16, line2)).join('')}</div>`;
+  } else if (kind === 'next_call') {
+    const cam = `<div style="width:120px;height:120px;border-radius:34px;background:#34B553;display:grid;place-items:center"><svg width="66" height="66" viewBox="0 0 24 24" fill="#fff"><path d="M3 7.5A2.5 2.5 0 0 1 5.5 5h8A2.5 2.5 0 0 1 16 7.5v9a2.5 2.5 0 0 1-2.5 2.5h-8A2.5 2.5 0 0 1 3 16.5zM17 10l4-2.6v9.2L17 14z"/></svg></div>`;
+    body = `<div style="display:flex;gap:34px;align-items:center">${cam}<div style="flex:1;display:flex;flex-direction:column;gap:22px">${bar('80%', 50, line, 16)}${bar('55%', 28, line2)}</div></div>
+      <div style="margin-top:34px">${bar('230px', 44, '#34B553')}</div>`;
   } else if (kind === 'month') {
     const cells = Array.from({ length: 35 }, (_, i) => `<div style="display:flex;flex-direction:column;align-items:center;gap:8px">
       <div style="width:62px;height:62px;border-radius:50%;background:${i === 9 ? R : (i < 5 ? line2 : line)}"></div>
@@ -138,7 +142,7 @@ function smallPreview(kind, dark) {
     await p.setContent(preview(dark));
     await p.screenshot({ path: path.join(ROOT, 'widgets', 'agenda', `preview-${dark ? 'dark' : 'light'}.png`), omitBackground: true });
   }
-  for (const kind of ['next_event', 'free_busy', 'countdown', 'week', 'timeline', 'month']) {
+  for (const kind of ['next_event', 'free_busy', 'countdown', 'week', 'timeline', 'month', 'next_call']) {
     for (const dark of [false, true]) {
       await p.setContent(smallPreview(kind, dark));
       await p.screenshot({ path: path.join(ROOT, 'widgets', kind, `preview-${dark ? 'dark' : 'light'}.png`), omitBackground: true });

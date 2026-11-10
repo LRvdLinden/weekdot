@@ -57,7 +57,10 @@
     "countdown_none": "Aucun événement à venir avec « __word__ »",
     "events_count": "Événements : __count__",
     "week_n": "Semaine __n__",
-    "dir": "ltr"
+    "dir": "ltr",
+    "video_call": "Appel vidéo",
+    "no_call": "Aucun appel vidéo à venir",
+    "no_call_hint": "Weekdot 1.0.4 ou plus récent sur votre iPhone envoie ici les appels Meet, Teams, FaceTime et Zoom."
   },
   "more_apps": {
     "section": "Découvrir",

@@ -383,6 +383,11 @@ final class HomeyService: NSObject, ObservableObject {
                 "color": e.colorHex,
                 "free": e.isFree,
             ]
+            // video call: the service always (it says nothing about the content), the link only with details shown
+            if let c = e.conference {
+                ev["call"] = c.service.rawValue
+                if !hideDetails { ev["callUrl"] = c.url.absoluteString }
+            }
             if hideDetails {
                 ev["title"] = busy
             } else {
