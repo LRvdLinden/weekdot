@@ -279,6 +279,7 @@ final class LocalStore: ObservableObject {
         item.isLocal = true
         item.isFree = e.availability == "free"
         item.travelMinutes = e.travelMinutes
+        item.conference = ConferenceDetector.detect(urlString: e.urlString, location: e.location, notes: e.notes)
         return item
     }
 

@@ -230,6 +230,14 @@ struct SettingsView: View {
                 }
 
                 Section {
+                    NavigationLink { VideoCallSettingsView() } label: {
+                        Label("Video Calls", systemImage: "video")
+                    }
+                } footer: {
+                    Text("Join Google Meet, Teams, FaceTime, Zoom and other calls with one tap, and add a Meet or Teams meeting to new events.")
+                }
+
+                Section {
                     NavigationLink { HomeySettingsView() } label: {
                         Label("Homey", systemImage: "house")
                     }

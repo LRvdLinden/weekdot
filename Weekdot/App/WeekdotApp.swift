@@ -186,7 +186,7 @@ struct WeekdotApp: App {
     }
 
     /// weekdot://today, weekdot://new, weekdot://day?d=<unix time>, weekdot://week, weekdot://month,
-    /// weekdot://event?id=<event item id>&d=<unix time of its day> (used by widgets)
+    /// weekdot://event?id=<event item id>&d=<unix time of its day>, weekdot://join?url=<video call link> (used by widgets)
     private func handle(_ url: URL) {
         guard url.scheme == "weekdot" else { return }
         let comps = URLComponents(url: url, resolvingAgainstBaseURL: false)
@@ -204,6 +204,12 @@ struct WeekdotApp: App {
         case "month":
             state.date = Date()
             state.mode = .month
+        case "join":
+            // From the widget: only known video-call links are opened, never arbitrary URLs.
+            if let v = comps?.queryItems?.first(where: { $0.name == "url" })?.value, let u = URL(string: v),
+               ConferenceDetector.service(for: u) != nil {
+                ExternalURL.open(u)
+            }
         case "event":
             let q = comps?.queryItems ?? []
             let id = q.first(where: { $0.name == "id" })?.value

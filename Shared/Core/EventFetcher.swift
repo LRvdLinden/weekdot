@@ -73,7 +73,7 @@ enum EventFetcher {
         var declined = false
         if let me = e.attendees?.first(where: { $0.isCurrentUser }) { declined = me.participantStatus == .declined }
         let ident = e.eventIdentifier ?? e.calendarItemIdentifier
-        return EventItem(
+        var item = EventItem(
             id: ident + "|" + String(Int(start.timeIntervalSince1970)),
             eventIdentifier: ident,
             styleKey: key,
@@ -94,6 +94,8 @@ enum EventFetcher {
             isFree: e.availability == .free,
             travelMinutes: style.travelMinutes ?? 0
         )
+        item.conference = ConferenceDetector.detect(url: e.url, location: e.location, notes: e.notes)
+        return item
     }
 
     /// Calendars that are switched off, plus the birthday calendar when birthdays are turned off in Settings.

@@ -93,6 +93,11 @@ struct WeekdotProvider: TimelineProvider {
         let horizon = now.addingTimeInterval(24 * 3600)
         for item in data.items where !item.isAllDay {
             if item.start > now && item.start < horizon { dates.insert(item.start) }
+            // video calls: the Join badge appears 10 minutes before the start
+            if item.conference != nil {
+                let join = item.start.addingTimeInterval(-Conference.joinLead)
+                if join > now && join < horizon { dates.insert(join) }
+            }
             if item.end > now && item.end < horizon { dates.insert(item.end) }
         }
         let midnight = cal.addingDays(1, to: cal.startOfDay(for: now))
@@ -258,12 +263,21 @@ struct UpNextView: View {
                 }
             } else {
                 if timedToday.count == 1, let e = allDayToday.first { WidgetAllDayPill(item: e.item) }
-                ForEach(timedToday.prefix(2)) { e in WidgetEventRow(item: e.item, showLocation: false) }
+                ForEach(timedToday.prefix(2)) { e in
+                    WidgetEventRow(item: e.item, showLocation: false,
+                                   joinBadge: e.id == target?.id && joinNow(e))
+                }
             }
             Spacer(minLength: 0)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-        .widgetURL(target.map { WidgetLink.event($0) } ?? WidgetLink.today)
+        .widgetURL(target.flatMap { t in joinNow(t) ? t.item.conference.map { WidgetLink.join($0) } : nil }
+                   ?? target.map { WidgetLink.event($0) } ?? WidgetLink.today)
+    }
+
+    /// Small widget: when the next event is a video call that can be joined now, tapping joins it.
+    private func joinNow(_ e: DayEvent) -> Bool {
+        e.item.conference != nil && !e.item.isAllDay && Conference.isJoinable(start: e.item.start, end: e.item.end, now: entry.date)
     }
 
     // Medium: date column on the left, paged list of upcoming events on the right.

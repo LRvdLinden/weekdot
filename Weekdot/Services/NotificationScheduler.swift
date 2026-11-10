@@ -24,6 +24,8 @@ enum NotificationScheduler {
     static let snoozeAction = "wd.snooze"
     static let openAction = "wd.open"
     static let routeAction = "wd.route"
+    static let categoryJoinID = "wd.event.join"
+    static let joinAction = "wd.join"
     private static let prefix = "wd."
     /// iOS keeps at most 64 pending notifications per app.
     private static let maxPending = 60
@@ -42,6 +44,8 @@ enum NotificationScheduler {
                                          options: [.foreground], icon: UNNotificationActionIcon(systemImageName: "car.fill"))
         let open = UNNotificationAction(identifier: openAction, title: String(localized: "Open in Weekdot"),
                                         options: [.foreground], icon: UNNotificationActionIcon(systemImageName: "calendar"))
+        let join = UNNotificationAction(identifier: joinAction, title: String(localized: "Join"),
+                                        options: [.foreground], icon: UNNotificationActionIcon(systemImageName: "video.fill"))
         // Ask for permission right away (also for new users), so alerts arrive from the first event on.
         Task {
             guard !ScreenshotMode.isActive else { return }
@@ -53,6 +57,7 @@ enum NotificationScheduler {
         center.setNotificationCategories([
             UNNotificationCategory(identifier: categoryID, actions: [snooze, open], intentIdentifiers: [], options: []),
             UNNotificationCategory(identifier: categoryWithPlaceID, actions: [snooze, route, open], intentIdentifiers: [], options: []),
+            UNNotificationCategory(identifier: categoryJoinID, actions: [join, snooze, open], intentIdentifiers: [], options: []),
         ])
     }
 
@@ -198,11 +203,13 @@ enum NotificationScheduler {
         content.body = lines.joined(separator: "\n")
 
         content.sound = .default
-        content.categoryIdentifier = (item.location?.isEmpty == false) ? categoryWithPlaceID : categoryID
+        content.categoryIdentifier = item.conference != nil ? categoryJoinID
+            : (item.location?.isEmpty == false) ? categoryWithPlaceID : categoryID
         content.threadIdentifier = item.calendarID
         content.targetContentIdentifier = item.id
         var info: [String: Any] = ["start": item.start.timeIntervalSince1970, "event": item.id]
         if let loc = item.location { info["location"] = loc }
+        if let c = item.conference { info["join"] = c.url.absoluteString }
         content.userInfo = info
         content.relevanceScore = 1
         #if os(iOS)
@@ -356,8 +363,11 @@ final class NotificationDelegate: NSObject, UNUserNotificationCenterDelegate, @u
         let start = request.content.userInfo["start"] as? Double
         let eventID = request.content.userInfo["event"] as? String
         let location = request.content.userInfo["location"] as? String
+        let join = (request.content.userInfo["join"] as? String).flatMap(URL.init(string:))
         Task { @MainActor in
             switch action {
+            case NotificationScheduler.joinAction:
+                if let join { ExternalURL.open(join) }
             case NotificationScheduler.snoozeAction:
                 await NotificationScheduler.snooze(request)
             case NotificationScheduler.routeAction:
@@ -374,5 +384,17 @@ final class NotificationDelegate: NSObject, UNUserNotificationCenterDelegate, @u
             }
             completionHandler()
         }
+    }
+}
+
+/// Opens a link outside SwiftUI (notification actions, deep links).
+@MainActor
+enum ExternalURL {
+    static func open(_ url: URL) {
+        #if os(iOS)
+        UIApplication.shared.open(url)
+        #elseif os(macOS)
+        NSWorkspace.shared.open(url)
+        #endif
     }
 }

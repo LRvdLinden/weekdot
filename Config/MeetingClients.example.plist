@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Video calls: client IDs for creating Google Meet and Microsoft Teams meetings (no secrets, PKCE sign-in).
+  GoogleClientID: Google Cloud Console > APIs & Services > Credentials > OAuth client ID, type iOS,
+    bundle ID nl.lrvdlinden.weekdot; enable the "Google Meet REST API"; scope meetings.space.created.
+  MicrosoftClientID: Microsoft Entra admin center > App registrations > New (accounts in any organizational
+    directory); Authentication > Mobile and desktop > redirect URI msauth.nl.lrvdlinden.weekdot://auth;
+    API permissions > Microsoft Graph > Delegated > OnlineMeetings.ReadWrite.
+  Leave YOUR_… to hide that service in the app. FaceTime and joining calls need nothing here.
+-->
+<plist version="1.0">
+<dict>
+	<key>GoogleClientID</key>
+	<string>YOUR_GOOGLE_CLIENT_ID</string>
+	<key>MicrosoftClientID</key>
+	<string>YOUR_MICROSOFT_CLIENT_ID</string>
+</dict>
+</plist>

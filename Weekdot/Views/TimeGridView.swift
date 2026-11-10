@@ -313,7 +313,7 @@ struct EventBlockView: View {
         let mode = synced.settings.eventStyle
         let h = max(18, height + resize)
         VStack(alignment: .leading, spacing: 1) {
-            Text(item.displayTitle)
+            Text("\(item.conference != nil ? Text(Image(systemName: "video.fill")) + Text(" ") : Text(""))\(item.displayTitle)")
                 .font(.system(size: 11 * scale, weight: .semibold))
                 .lineLimit(h > 40 ? 3 : 1)
                 .strikethrough(item.isDeclined)
@@ -329,6 +329,9 @@ struct EventBlockView: View {
                     .opacity(0.8)
             }
             Spacer(minLength: 0)
+            if h > 52 && width > 70 {
+                JoinIfSoon(item: item, badgeWhenNotSoon: false)
+            }
         }
         .foregroundStyle(mode == .filled ? Color.white : Color.primary)
         .padding(.horizontal, 5)

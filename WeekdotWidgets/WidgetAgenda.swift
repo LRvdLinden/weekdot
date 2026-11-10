@@ -171,6 +171,15 @@ enum WidgetLink {
         return c.url ?? today
     }
 
+    /// Opens the video call through Weekdot (widgets can only reliably link into their own app).
+    static func join(_ c: Conference) -> URL {
+        var comps = URLComponents()
+        comps.scheme = "weekdot"
+        comps.host = "join"
+        comps.queryItems = [URLQueryItem(name: "url", value: c.url.absoluteString)]
+        return comps.url ?? today
+    }
+
     static func day(_ d: Date) -> URL {
         URL(string: "weekdot://day?d=\(Int(d.timeIntervalSince1970))") ?? today
     }
@@ -210,12 +219,16 @@ struct WidgetEventRow: View {
     let item: EventItem
     var prefix: String? = nil
     var showLocation = true
+    /// Video-call events show a camera; true makes it the green Join badge.
+    var joinBadge = false
+    var showsCamera = true
 
     private var subtitle: String {
         var parts: [String] = []
         if let prefix { parts.append(prefix) }
         parts.append(Fmt.timeRange(item))
-        if showLocation, let loc = item.location, !loc.isEmpty { parts.append(loc) }
+        if let c = item.conference { parts.append(c.service.name) }
+        else if showLocation, let loc = item.location, !loc.isEmpty { parts.append(loc) }
         return parts.joined(separator: " · ")
     }
 
@@ -236,9 +249,26 @@ struct WidgetEventRow: View {
                     .lineLimit(1)
             }
             Spacer(minLength: 0)
+            if item.conference != nil && showsCamera {
+                WidgetJoinBadge(active: joinBadge)
+            }
         }
         .padding(.vertical, 1.5)
         .frame(height: AgendaMetrics.event, alignment: .leading)
+    }
+}
+
+/// Camera for video-call events; green circle when the call can be joined (tap opens it).
+struct WidgetJoinBadge: View {
+    var active: Bool
+    var body: some View {
+        Image(systemName: "video.fill")
+            .font(.system(size: active ? 10 : 9, weight: .semibold))
+            .foregroundStyle(active ? Color.white : Color.secondary)
+            .frame(width: active ? 22 : 14, height: active ? 22 : 14)
+            .background { if active { Circle().fill(Color(red: 0.20, green: 0.70, blue: 0.33)) } }
+            .widgetAccentable()
+            .accessibilityLabel(Text("Join"))
     }
 }
 
@@ -359,11 +389,23 @@ struct WidgetAgendaList: View {
                 case .header(let d):
                     WidgetDayHeader(day: d, today: today, cal: cal)
                 case .event(let e):
-                    Link(destination: WidgetLink.event(e)) {
-                        if e.item.isAllDay {
-                            WidgetAllDayPill(item: e.item)
-                        } else {
-                            WidgetEventRow(item: e.item)
+                    if let c = e.item.conference, !e.item.isAllDay, e.day == today {
+                        // separate tap targets: the event, and Join
+                        HStack(spacing: 4) {
+                            Link(destination: WidgetLink.event(e)) {
+                                WidgetEventRow(item: e.item, showLocation: false, showsCamera: false)
+                            }
+                            Link(destination: WidgetLink.join(c)) {
+                                WidgetJoinBadge(active: true)
+                            }
+                        }
+                    } else {
+                        Link(destination: WidgetLink.event(e)) {
+                            if e.item.isAllDay {
+                                WidgetAllDayPill(item: e.item)
+                            } else {
+                                WidgetEventRow(item: e.item)
+                            }
                         }
                     }
                 }

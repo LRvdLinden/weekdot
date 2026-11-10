@@ -67,6 +67,7 @@ struct EventRow: View {
                 .foregroundStyle(.secondary)
             }
             Spacer(minLength: 0)
+            JoinIfSoon(item: item)
             if item.isRecurring {
                 Image(systemName: "repeat").font(.caption).foregroundStyle(.secondary)
             }

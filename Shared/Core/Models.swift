@@ -304,6 +304,8 @@ struct EventItem: Identifiable, Hashable, Codable {
     /// A reminder (from the Reminders app) shown in the calendar.
     var isReminder: Bool = false
     var isCompleted: Bool = false
+    /// Video call found in the event's URL, location or notes (Join button).
+    var conference: Conference? = nil
 
     var displayTitle: String {
         let t = title.isEmpty ? String(localized: "New Event") : title

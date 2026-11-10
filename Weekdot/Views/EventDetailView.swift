@@ -48,6 +48,10 @@ struct EventDetailView: View {
                     .padding(.vertical, 4)
                 }
 
+                if let conference = item.conference {
+                    ConferenceSection(conference: conference)
+                }
+
                 if item.isReminder {
                     Section {
                         Button { store.toggleReminder(item); dismiss() } label: {
@@ -71,7 +75,9 @@ struct EventDetailView: View {
                             Label("Travel Time", systemImage: "car")
                         }
                     }
-                    if let loc = item.location {
+                    if let loc = item.location, isOnlineLocation {
+                        Label(loc, systemImage: "video").foregroundStyle(.secondary).lineLimit(2)
+                    } else if let loc = item.location {
                         Button { openRoute(loc) } label: {
                             HStack(alignment: .top, spacing: 12) {
                                 Image(systemName: "mappin.and.ellipse").foregroundStyle(Color.accentColor).frame(width: 22)
@@ -198,7 +204,7 @@ struct EventDetailView: View {
         }
         .task(id: item.location) {
             await geocode()
-            if let loc = item.location {
+            if let loc = item.location, !isOnlineLocation {
                 travelMinutes = await TravelService.shared.travelMinutes(to: loc)
             }
         }
@@ -278,8 +284,16 @@ struct EventDetailView: View {
         state.showToast(String(localized: "Template saved"))
     }
 
+    /// "Microsoft Teams Meeting", "https://zoom.us/j/…": no map, route or travel time for those.
+    private var isOnlineLocation: Bool {
+        guard let loc = item.location?.lowercased() else { return false }
+        if loc.contains("http") || loc.contains("://") { return true }
+        guard item.conference != nil else { return false }
+        return ["teams", "zoom", "google meet", "facetime", "webex", "online", "video"].contains { loc.contains($0) }
+    }
+
     private func geocode() async {
-        guard let loc = item.location, !loc.isEmpty else { return }
+        guard let loc = item.location, !loc.isEmpty, !isOnlineLocation else { return }
         if let p = await TravelService.shared.place(for: loc) { coordinate = p.coordinate }
     }
 

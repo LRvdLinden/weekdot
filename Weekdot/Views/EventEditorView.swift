@@ -45,6 +45,7 @@ struct EventEditorView: View {
                 timeSection
                 repeatSection
                 calendarSection
+                VideoCallEditorSection(draft: $draft)
                 alertsSection
                 inviteesSection
                 lookSection
