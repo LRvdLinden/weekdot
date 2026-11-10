@@ -19,13 +19,14 @@ def ea(k):
 # topic id, number of questions, icon path(s)
 # section ids used in the address bar (must not clash with ids app.js fills on the home page)
 SID = {"start": "getting-started", "cals": "calendars", "views": "views", "subs": "subscriptions", "alerts": "alerts",
-       "watch": "apple-watch", "sync": "sync", "homey": "homey"}
+       "watch": "apple-watch", "sync": "sync", "homey": "homey", "calls": "video-calls"}
 TOPICS = [
     ("start", 5, '<path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/>'),
     ("cals", 6, '<rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/>'),
-    ("views", 7, '<rect x="3.5" y="4.5" width="7" height="7" rx="1.8"/><rect x="13.5" y="4.5" width="7" height="7" rx="1.8"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.8"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.8"/>'),
+    ("views", 8, '<rect x="3.5" y="4.5" width="7" height="7" rx="1.8"/><rect x="13.5" y="4.5" width="7" height="7" rx="1.8"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.8"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.8"/>'),
     ("subs", 5, '<circle cx="12" cy="12" r="8.5"/><path d="M12 3.5a12.5 12.5 0 0 1 0 17M12 3.5a12.5 12.5 0 0 0 0 17M3.8 9.5h16.4M3.8 14.5h16.4"/>'),
     ("alerts", 7, '<path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 21h4"/>'),
+    ("calls", 4, '<rect x="3" y="6" width="13" height="12" rx="2.5"/><path d="m16 10 5-3v10l-5-3"/>'),
     ("watch", 4, '<rect x="6" y="6" width="12" height="12" rx="3.5"/><path d="M9 6l.8-3h4.4l.8 3M9 18l.8 3h4.4l.8-3M12 9.5V12l1.6 1.2"/>'),
     ("sync", 5, '<path d="M7 18.5h10a4 4 0 0 0 .6-7.96A6 6 0 0 0 6.1 9.2 4.7 4.7 0 0 0 7 18.5z"/><path d="m10 14 1.6 1.6L15 12"/>'),
     ("homey", 6, '<path d="M4 11 12 4l8 7"/><path d="M6 9.5V20h12V9.5"/><path d="M10 20v-5h4v5"/>'),
