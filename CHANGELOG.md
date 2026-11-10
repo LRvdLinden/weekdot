@@ -1,3 +1,7 @@
+## 1.0.4 (build 93) — Microsoft Teams switched on
+
+- Microsoft client ID filled in (Weekdot/MeetingClients.plist): Add Video Call › Microsoft Teams and Settings › Video Calls › Microsoft are now available (work or school accounts).
+
 ## 1.0.4 (build 92) — Google Meet switched on
 
 - Google client ID filled in (Weekdot/MeetingClients.plist): Add Video Call › Google Meet and Settings › Video Calls › Google are now available.
