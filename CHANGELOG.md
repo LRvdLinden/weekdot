@@ -1,3 +1,7 @@
+## 1.0.4 (build 92) — Google Meet switched on
+
+- Google client ID filled in (Weekdot/MeetingClients.plist): Add Video Call › Google Meet and Settings › Video Calls › Google are now available.
+
 ## 1.0.4 (build 91) — Video calls
 
 - Weekdot recognises video-call links (Google Meet, Microsoft Teams, FaceTime, Zoom, Webex, WhatsApp, GoTo, Jitsi, Whereby, Slack and more) in the URL, location or notes of an event. A camera shows in the week, day and list views; from 10 minutes before the start until the end a green Join button appears (list, Month & List, day/week blocks), and the event details have Join, Dial In (number + PIN) and Copy Meeting Link.
