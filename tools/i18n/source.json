@@ -711,7 +711,32 @@
   "Visit",
   "Month & List",
   "Send to Homey",
-  "Flows on Homey can look this far ahead, for example to remind you days before an appointment."
+  "Flows on Homey can look this far ahead, for example to remind you days before an appointment.",
+  "Video Call",
+  "Video Calls",
+  "Join",
+  "Join %@",
+  "Dial In",
+  "Copy Meeting Link",
+  "Remove Video Call",
+  "Creating %@ meeting…",
+  "Add Video Call",
+  "Paste FaceTime Link",
+  "FaceTime with %@",
+  "For a FaceTime link: in the FaceTime app, tap Create Link, copy it and choose Paste FaceTime Link here.",
+  "The clipboard does not contain a FaceTime link.",
+  "Join Google Meet, Teams, FaceTime, Zoom and other calls with one tap, and add a Meet or Teams meeting to new events.",
+  "Accounts",
+  "Weekdot only uses these accounts to create a meeting link when you add a video call to an event. The sign-in stays on this device. Teams meetings need a work or school account.",
+  "No account needed",
+  "Weekdot recognises links to Google Meet, Microsoft Teams, FaceTime, Zoom, Webex, WhatsApp and more in your events, and shows a Join button 10 minutes before the start, in the alert and in the widgets.",
+  "Sign In",
+  "Sign Out",
+  "This service is not available in this version of Weekdot.",
+  "The meeting could not be created. Try again.",
+  "Microsoft only allows Teams meetings from apps for work or school accounts.",
+  "Join with %@: %@",
+  "Dial in: %@, conference ID %@"
  ],
  "plist": [
   "Weekdot shows, creates and edits the events in your calendars.",
@@ -1012,6 +1037,7 @@
   "gallery.list.d": "Everything that is coming up, grouped per day with time and place. Ideal for a quick look ahead.",
   "gallery.event.d": "Place, alerts, travel time and notes together. Duplicate an event or save it as a template in one tap.",
   "gallery.discover.d": "Public holidays for more than 60 countries, school holidays, flag days and waste collection, kept up to date automatically.",
-  "gallery.sports.d": "Choose your club, competition or Formula 1, and every match and race appears in your week."
+  "gallery.sports.d": "Choose your club, competition or Formula 1, and every match and race appears in your week.",
+  "privacy.meetings": "Video calls (optional): when you add a Google Meet or Microsoft Teams meeting to an event, you sign in with that Google or Microsoft account and Weekdot asks Google or Microsoft to create a meeting link (for Teams with the event title and time). Weekdot keeps the sign-in only on your device, can only see meetings it created itself and does not read your mail, contacts or other calendars. Join buttons for links already in your events work on your device without any account. You can sign out at any time in Settings › Video Calls."
  }
 }

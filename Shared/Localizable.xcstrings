@@ -4511,6 +4511,209 @@
         }
       }
     },
+    "Accounts": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الحسابات"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comptes"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Účty"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Konti"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accounts"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Λογαριασμοί"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cuentas"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tilit"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comptes"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "חשבונות"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "अकाउंट"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Računi"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fiókok"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Akun"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Account"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アカウント"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "계정"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Akaun"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kontoer"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accounts"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Konta"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Contas"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Contas"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conturi"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Учётные записи"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Účty"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Konton"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "บัญชี"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hesaplar"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Облікові записи"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tài khoản"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "账户"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "帳號"
+          }
+        }
+      }
+    },
     "Add": {
       "extractionState": "manual",
       "localizations": {
@@ -5736,6 +5939,209 @@
           "stringUnit": {
             "state": "translated",
             "value": "Andere sportagenda toevoegen"
+          }
+        }
+      }
+    },
+    "Add Video Call": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إضافة مكالمة فيديو"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afegeix una videotrucada"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Přidat videohovor"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tilføj videoopkald"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Videoanruf hinzufügen"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Προσθήκη βιντεοκλήσης"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añadir videollamada"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lisää videopuhelu"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajouter un appel vidéo"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "הוספת שיחת וידאו"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "वीडियो कॉल जोड़ें"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dodaj videopoziv"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Videohívás hozzáadása"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tambah Panggilan Video"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aggiungi videochiamata"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ビデオ通話を追加"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "영상 통화 추가"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tambah Panggilan Video"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Legg til videosamtale"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voeg videogesprek toe"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dodaj rozmowę wideo"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adicionar videochamada"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adicionar videochamada"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adaugă apel video"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Добавить видеозвонок"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pridať videohovor"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lägg till videosamtal"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เพิ่มวิดีโอคอล"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Görüntülü arama ekle"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Додати відеодзвінок"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thêm cuộc gọi video"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "添加视频通话"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "加入視訊通話"
           }
         }
       }
@@ -24617,6 +25023,209 @@
         }
       }
     },
+    "Copy Meeting Link": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "نسخ رابط الاجتماع"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copia l’enllaç de la reunió"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kopírovat odkaz na schůzku"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kopiér mødelink"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Besprechungslink kopieren"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Αντιγραφή συνδέσμου σύσκεψης"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copiar enlace de la reunión"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kopioi kokouslinkki"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copier le lien de la réunion"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "העתקת קישור לפגישה"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "मीटिंग लिंक कॉपी करें"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kopiraj poveznicu sastanka"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Megbeszélés linkjének másolása"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salin Tautan Rapat"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copia link della riunione"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "会議リンクをコピー"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "회의 링크 복사"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salin Pautan Mesyuarat"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kopier møtelenke"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kopieer vergaderlink"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kopiuj link do spotkania"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copiar link da reunião"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copiar ligação da reunião"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copiază linkul întâlnirii"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Скопировать ссылку на встречу"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kopírovať odkaz na schôdzu"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kopiera möteslänk"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "คัดลอกลิงก์การประชุม"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toplantı bağlantısını kopyala"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Копіювати посилання на нараду"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sao chép liên kết cuộc họp"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "拷贝会议链接"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "拷貝會議連結"
+          }
+        }
+      }
+    },
     "Copy and Paste Elsewhere": {
       "extractionState": "manual",
       "localizations": {
@@ -25458,6 +26067,209 @@
           "stringUnit": {
             "state": "translated",
             "value": "製作行程，或使用你自己儲存的範本。"
+          }
+        }
+      }
+    },
+    "Creating %@ meeting…": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جارٍ إنشاء اجتماع %@…"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Creant la reunió de %@…"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vytváření schůzky %@…"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Opretter %@-møde …"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@-Besprechung wird erstellt …"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Δημιουργία σύσκεψης %@…"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Creando reunión de %@…"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Luodaan %@-kokousta…"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Création de la réunion %@…"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "יוצר פגישת %@…"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ मीटिंग बनाई जा रही है…"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Izrada sastanka %@…"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@-megbeszélés létrehozása…"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Membuat rapat %@…"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Creazione riunione %@…"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@の会議を作成中…"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 회의 생성 중…"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mencipta mesyuarat %@…"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oppretter %@-møte …"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@-vergadering maken…"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tworzenie spotkania %@…"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Criando reunião do %@…"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A criar reunião do %@…"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se creează întâlnirea %@…"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Создание встречи %@…"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vytvára sa schôdza %@…"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skapar %@-möte …"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "กำลังสร้างการประชุม %@…"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ toplantısı oluşturuluyor…"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Створення наради %@…"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đang tạo cuộc họp %@…"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正在创建 %@ 会议…"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正在建立 %@ 會議…"
           }
         }
       }
@@ -32777,6 +33589,412 @@
           "stringUnit": {
             "state": "translated",
             "value": "此垃圾收運業者已收錄在目錄中，但在 Weekdot 中尚無可用的直接連線。"
+          }
+        }
+      }
+    },
+    "Dial In": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اتصال هاتفي"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Marca"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vytočit"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ring ind"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einwählen"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Κλήση"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Marcar"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Soita sisään"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Composer"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "חיוג"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "डायल इन"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nazovi"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Betárcsázás"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Telepon Masuk"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chiama"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ダイヤルイン"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "전화 참가"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dail Masuk"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ring inn"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inbellen"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wybierz numer"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Discar"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Marcar"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Formează"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Позвонить"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vytočiť"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ring in"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "โทรเข้า"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Telefonla katıl"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Подзвонити"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gọi vào"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "拨入"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "撥入"
+          }
+        }
+      }
+    },
+    "Dial in: %@, conference ID %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الاتصال الهاتفي: %@، معرّف المؤتمر %@"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trucada: %@, ID de conferència %@"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vytáčení: %@, ID konference %@"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ring ind: %@, konference-id %@"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einwahl: %@, Konferenz-ID %@"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Κλήση: %@, ID σύσκεψης %@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Llamar: %@, ID de conferencia %@"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Soita sisään: %@, kokoustunnus %@"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accès par téléphone : %@, ID de conférence %@"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "חיוג: %@, מזהה ועידה %@"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "डायल इन: %@, कॉन्फ़्रेंस ID %@"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Biranje: %@, ID konferencije %@"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Betárcsázás: %@, konferenciaazonosító: %@"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Telepon masuk: %@, ID konferensi %@"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chiamata: %@, ID conferenza %@"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ダイヤルイン：%@、会議ID %@"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "전화 참가: %@, 회의 ID %@"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dail masuk: %@, ID persidangan %@"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ring inn: %@, konferanse-ID %@"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inbellen: %@, vergader-ID %@"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Połączenie telefoniczne: %@, identyfikator konferencji %@"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Discagem: %@, ID da conferência %@"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Marcação: %@, ID da conferência %@"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apelare: %@, ID conferință %@"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Дозвон: %@, ID конференции %@"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vytáčanie: %@, ID konferencie %@"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ring in: %@, konferens-ID %@"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "โทรเข้า: %@, รหัสการประชุม %@"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Telefonla katılım: %@, konferans kimliği %@"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Дозвон: %@, ID конференції %@"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gọi vào: %@, ID hội nghị %@"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "拨入：%@，会议 ID %@"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "撥入：%@，會議 ID %@"
           }
         }
       }
@@ -43195,6 +44413,209 @@
         }
       }
     },
+    "FaceTime with %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FaceTime مع %@"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FaceTime amb %@"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FaceTime s %@"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FaceTime med %@"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FaceTime mit %@"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FaceTime με %@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FaceTime con %@"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FaceTime: %@"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FaceTime avec %@"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FaceTime עם %@"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ के साथ FaceTime"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FaceTime s %@"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FaceTime: %@"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FaceTime dengan %@"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FaceTime con %@"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@とFaceTime"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 님과 FaceTime"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FaceTime dengan %@"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FaceTime med %@"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FaceTime met %@"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FaceTime z %@"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FaceTime com %@"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FaceTime com %@"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FaceTime cu %@"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FaceTime с %@"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FaceTime s %@"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FaceTime med %@"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FaceTime กับ %@"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ ile FaceTime"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FaceTime з %@"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FaceTime với %@"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "与 %@ FaceTime 通话"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "與 %@ FaceTime 通話"
+          }
+        }
+      }
+    },
     "Fahrenheit": {
       "extractionState": "manual",
       "localizations": {
@@ -45446,6 +46867,209 @@
           "stringUnit": {
             "state": "translated",
             "value": "Zoek voor Circulus je adres op via de officiële website en importeer de geëxporteerde afvalkalender."
+          }
+        }
+      }
+    },
+    "For a FaceTime link: in the FaceTime app, tap Create Link, copy it and choose Paste FaceTime Link here.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "للحصول على رابط FaceTime: في تطبيق FaceTime اضغط على «إنشاء رابط»، وانسخه، ثم اختر هنا «لصق رابط FaceTime»."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Per a un enllaç de FaceTime: a l’app FaceTime, toca Crea un enllaç, copia’l i tria aquí Enganxa l’enllaç de FaceTime."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odkaz FaceTime: v aplikaci FaceTime klepněte na Vytvořit odkaz, zkopírujte ho a zde zvolte Vložit odkaz FaceTime."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "For et FaceTime-link: tryk på Opret link i FaceTime-appen, kopiér det, og vælg Indsæt FaceTime-link her."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Für einen FaceTime-Link: Tippe in der FaceTime-App auf „Link erstellen“, kopiere ihn und wähle hier „FaceTime-Link einfügen“."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Για σύνδεσμο FaceTime: στην εφαρμογή FaceTime πατήστε «Δημιουργία συνδέσμου», αντιγράψτε τον και επιλέξτε εδώ «Επικόλληση συνδέσμου FaceTime»."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Para un enlace de FaceTime: en la app FaceTime, toca Crear enlace, cópialo y elige aquí Pegar enlace de FaceTime."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FaceTime-linkki: napauta FaceTime-apissa Luo linkki, kopioi se ja valitse täältä Liitä FaceTime-linkki."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pour un lien FaceTime : dans l’app FaceTime, touchez Créer un lien, copiez-le et choisissez ici Coller un lien FaceTime."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "לקישור FaceTime: ביישום FaceTime הקש/י על ״צור קישור״, העתק/י אותו ובחר/י כאן ״הדבקת קישור FaceTime״."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FaceTime लिंक के लिए: FaceTime ऐप में लिंक बनाएँ पर टैप करें, उसे कॉपी करें और यहाँ FaceTime लिंक पेस्ट करें चुनें।"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Za FaceTime poveznicu: u aplikaciji FaceTime dodirnite Stvori poveznicu, kopirajte je i ovdje odaberite Zalijepi FaceTime poveznicu."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FaceTime-linkhez: a FaceTime appban koppints a Link létrehozása gombra, másold ki, majd válaszd itt a FaceTime-link beillesztése lehetőséget."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Untuk tautan FaceTime: di app FaceTime, ketuk Buat Tautan, salin, lalu pilih Tempel Tautan FaceTime di sini."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Per un link FaceTime: nell’app FaceTime tocca Crea link, copialo e scegli qui Incolla link FaceTime."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FaceTimeリンクを使うには：FaceTime Appで「リンクを作成」をタップしてコピーし、ここで「FaceTimeリンクをペースト」を選びます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FaceTime 링크를 사용하려면: FaceTime 앱에서 링크 생성을 탭하고 복사한 다음 여기에서 FaceTime 링크 붙여넣기를 선택하세요."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Untuk pautan FaceTime: dalam app FaceTime, ketik Cipta Pautan, salin dan pilih Tampal Pautan FaceTime di sini."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "For en FaceTime-lenke: trykk på Opprett lenke i FaceTime-appen, kopier den og velg Lim inn FaceTime-lenke her."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voor een FaceTime-link: tik in de FaceTime-app op Maak link, kopieer hem en kies hier Plak FaceTime-link."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aby uzyskać link FaceTime: w aplikacji FaceTime stuknij Utwórz łącze, skopiuj je i wybierz tutaj Wklej link FaceTime."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Para um link do FaceTime: no app FaceTime, toque em Criar Link, copie-o e escolha aqui Colar link do FaceTime."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Para uma ligação FaceTime: na app FaceTime, toque em Criar ligação, copie-a e escolha aqui Colar ligação FaceTime."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pentru un link FaceTime: în aplicația FaceTime, atinge Creează link, copiază-l și alege aici Lipește linkul FaceTime."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Чтобы получить ссылку FaceTime: в приложении FaceTime нажмите «Создать ссылку», скопируйте её и выберите здесь «Вставить ссылку FaceTime»."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odkaz FaceTime: v aplikácii FaceTime klepnite na Vytvoriť odkaz, skopírujte ho a tu vyberte Vložiť odkaz FaceTime."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "För en FaceTime-länk: tryck på Skapa länk i FaceTime-appen, kopiera den och välj Klistra in FaceTime-länk här."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "สำหรับลิงก์ FaceTime: ในแอป FaceTime ให้แตะ สร้างลิงก์ คัดลอก แล้วเลือก วางลิงก์ FaceTime ที่นี่"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FaceTime bağlantısı için: FaceTime uygulamasında Bağlantı Oluştur'a dokunun, kopyalayın ve burada FaceTime bağlantısını yapıştır'ı seçin."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Щоб отримати посилання FaceTime: у програмі FaceTime торкніться «Створити посилання», скопіюйте його й виберіть тут «Вставити посилання FaceTime»."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Để có liên kết FaceTime: trong ứng dụng FaceTime, chạm vào Tạo liên kết, sao chép rồi chọn Dán liên kết FaceTime tại đây."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "获取 FaceTime 链接：在 FaceTime App 中轻点“创建链接”，拷贝后在此处选取“粘贴 FaceTime 链接”。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "取得 FaceTime 連結：在 FaceTime App 中點一下「建立連結」，拷貝後在此選擇「貼上 FaceTime 連結」。"
           }
         }
       }
@@ -54662,6 +56286,818 @@
         }
       }
     },
+    "Join": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "انضمام"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uneix-t’hi"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Připojit"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deltag"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Teilnehmen"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Συμμετοχή"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unirse"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Liity"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rejoindre"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "הצטרפות"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "शामिल हों"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pridruži se"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Csatlakozás"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gabung"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Partecipa"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "参加"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "참가"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sertai"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bli med"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deelnemen"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dołącz"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Entrar"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Participar"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alătură-te"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Войти"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pripojiť"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anslut"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เข้าร่วม"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Katıl"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Приєднатися"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tham gia"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "加入"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "加入"
+          }
+        }
+      }
+    },
+    "Join %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "انضم إلى %@"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uneix-te a %@"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Připojit se k %@"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deltag i %@"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ beitreten"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Συμμετοχή σε %@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unirse a %@"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Liity: %@"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rejoindre %@"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "הצטרפות ל־%@"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ में शामिल हों"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pridruži se: %@"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Csatlakozás: %@"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gabung ke %@"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Partecipa a %@"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@に参加"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 참가"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sertai %@"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bli med i %@"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deelnemen aan %@"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dołącz do %@"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Entrar no %@"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Participar em %@"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alătură-te la %@"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Войти в %@"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pripojiť sa k %@"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anslut till %@"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เข้าร่วม %@"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ toplantısına katıl"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Приєднатися до %@"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tham gia %@"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "加入 %@"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "加入 %@"
+          }
+        }
+      }
+    },
+    "Join Google Meet, Teams, FaceTime, Zoom and other calls with one tap, and add a Meet or Teams meeting to new events.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "انضم إلى Google Meet وTeams وFaceTime وZoom ومكالمات أخرى بلمسة واحدة، وأضف اجتماع Meet أو Teams إلى الأحداث الجديدة."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uneix-te a Google Meet, Teams, FaceTime, Zoom i altres trucades amb un toc, i afegeix una reunió de Meet o Teams als esdeveniments nous."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Připojujte se ke Google Meet, Teams, FaceTime, Zoom a dalším hovorům jedním klepnutím a přidávejte k novým událostem schůzku Meet nebo Teams."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deltag i Google Meet, Teams, FaceTime, Zoom og andre opkald med ét tryk, og tilføj et Meet- eller Teams-møde til nye aftaler."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mit einem Tippen an Google Meet, Teams, FaceTime, Zoom und anderen Anrufen teilnehmen und neuen Terminen eine Meet- oder Teams-Besprechung hinzufügen."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Συμμετέχετε σε Google Meet, Teams, FaceTime, Zoom και άλλες κλήσεις με ένα πάτημα και προσθέστε σύσκεψη Meet ή Teams σε νέα γεγονότα."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Únete a Google Meet, Teams, FaceTime, Zoom y otras llamadas con un toque, y añade una reunión de Meet o Teams a los eventos nuevos."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Liity Google Meet-, Teams-, FaceTime-, Zoom- ja muihin puheluihin yhdellä napautuksella ja lisää uusiin tapahtumiin Meet- tai Teams-kokous."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rejoignez Google Meet, Teams, FaceTime, Zoom et d’autres appels d’un seul toucher, et ajoutez une réunion Meet ou Teams aux nouveaux événements."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "הצטרפות ל־Google Meet,‏ Teams,‏ FaceTime,‏ Zoom ושיחות נוספות בהקשה אחת, והוספת פגישת Meet או Teams לאירועים חדשים."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Google Meet, Teams, FaceTime, Zoom और अन्य कॉल में एक टैप से शामिल हों, और नए इवेंट में Meet या Teams मीटिंग जोड़ें।"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pridružite se Google Meetu, Teamsu, FaceTimeu, Zoomu i drugim pozivima jednim dodirom i dodajte Meet ili Teams sastanak novim događajima."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Csatlakozz Google Meet-, Teams-, FaceTime-, Zoom- és más hívásokhoz egy koppintással, és adj Meet- vagy Teams-megbeszélést az új eseményekhez."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gabung ke Google Meet, Teams, FaceTime, Zoom, dan panggilan lain dengan satu ketukan, serta tambahkan rapat Meet atau Teams ke acara baru."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Partecipa a Google Meet, Teams, FaceTime, Zoom e altre chiamate con un tocco e aggiungi una riunione Meet o Teams ai nuovi eventi."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Google Meet、Teams、FaceTime、Zoomなどの通話にワンタップで参加し、新しいイベントにMeetまたはTeamsの会議を追加できます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Google Meet, Teams, FaceTime, Zoom 등의 통화에 한 번의 탭으로 참가하고, 새 일정에 Meet 또는 Teams 회의를 추가하세요."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sertai Google Meet, Teams, FaceTime, Zoom dan panggilan lain dengan satu ketikan, dan tambah mesyuarat Meet atau Teams pada acara baharu."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bli med i Google Meet, Teams, FaceTime, Zoom og andre samtaler med ett trykk, og legg til et Meet- eller Teams-møte i nye avtaler."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Neem met één tik deel aan Google Meet, Teams, FaceTime, Zoom en andere gesprekken, en voeg een Meet- of Teams-vergadering toe aan nieuwe afspraken."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dołączaj do Google Meet, Teams, FaceTime, Zoom i innych rozmów jednym stuknięciem oraz dodawaj spotkanie Meet lub Teams do nowych wydarzeń."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Entre no Google Meet, Teams, FaceTime, Zoom e outras chamadas com um toque, e adicione uma reunião do Meet ou Teams a novos eventos."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Participe no Google Meet, Teams, FaceTime, Zoom e outras chamadas com um toque, e adicione uma reunião Meet ou Teams a novos eventos."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alătură-te apelurilor Google Meet, Teams, FaceTime, Zoom și altora cu o atingere și adaugă o întâlnire Meet sau Teams la evenimentele noi."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Подключайтесь к Google Meet, Teams, FaceTime, Zoom и другим звонкам одним касанием и добавляйте встречу Meet или Teams к новым событиям."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pripájajte sa ku Google Meet, Teams, FaceTime, Zoom a ďalším hovorom jedným klepnutím a pridávajte k novým udalostiam schôdzu Meet alebo Teams."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anslut till Google Meet, Teams, FaceTime, Zoom och andra samtal med ett tryck, och lägg till ett Meet- eller Teams-möte i nya händelser."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เข้าร่วม Google Meet, Teams, FaceTime, Zoom และการโทรอื่นๆ ได้ในแตะเดียว และเพิ่มการประชุม Meet หรือ Teams ให้กิจกรรมใหม่"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Google Meet, Teams, FaceTime, Zoom ve diğer aramalara tek dokunuşla katılın ve yeni etkinliklere Meet veya Teams toplantısı ekleyin."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Приєднуйтеся до Google Meet, Teams, FaceTime, Zoom та інших дзвінків одним дотиком і додавайте нараду Meet або Teams до нових подій."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tham gia Google Meet, Teams, FaceTime, Zoom và các cuộc gọi khác chỉ với một chạm, và thêm cuộc họp Meet hoặc Teams vào sự kiện mới."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "轻点一下即可加入 Google Meet、Teams、FaceTime、Zoom 等通话，并为新日程添加 Meet 或 Teams 会议。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "點一下即可加入 Google Meet、Teams、FaceTime、Zoom 等通話，並為新行程加入 Meet 或 Teams 會議。"
+          }
+        }
+      }
+    },
+    "Join with %@: %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "انضم عبر %@: %@"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uneix-te amb %@: %@"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Připojit přes %@: %@"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deltag med %@: %@"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mit %@ teilnehmen: %@"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Συμμετοχή μέσω %@: %@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unirse con %@: %@"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Liity palvelulla %@: %@"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rejoindre avec %@ : %@"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "הצטרפות דרך %@: %@"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ से शामिल हों: %@"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pridruži se putem %@: %@"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Csatlakozás ezzel: %@: %@"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gabung dengan %@: %@"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Partecipa con %@: %@"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@で参加：%@"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@(으)로 참가: %@"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sertai dengan %@: %@"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bli med via %@: %@"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deelnemen met %@: %@"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dołącz przez %@: %@"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Entrar com %@: %@"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Participar com %@: %@"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alătură-te cu %@: %@"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Подключиться через %@: %@"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pripojiť cez %@: %@"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anslut med %@: %@"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เข้าร่วมผ่าน %@: %@"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ ile katıl: %@"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Приєднатися через %@: %@"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tham gia bằng %@: %@"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "通过 %@ 加入：%@"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "透過 %@ 加入：%@"
+          }
+        }
+      }
+    },
     "KNVB Beker": {
       "extractionState": "manual"
     },
@@ -59575,6 +62011,209 @@
           "stringUnit": {
             "state": "translated",
             "value": "Meppel"
+          }
+        }
+      }
+    },
+    "Microsoft only allows Teams meetings from apps for work or school accounts.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تسمح Microsoft باجتماعات Teams من التطبيقات لحسابات العمل أو المدرسة فقط."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Microsoft només permet reunions de Teams des d’apps per a comptes de feina o d’escola."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Microsoft povoluje schůzky Teams z aplikací jen pro pracovní nebo školní účty."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Microsoft tillader kun Teams-møder fra apps for arbejds- eller skolekonti."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Microsoft erlaubt Teams-Besprechungen aus Apps nur für Geschäfts- oder Schulkonten."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Η Microsoft επιτρέπει συσκέψεις Teams από εφαρμογές μόνο για εταιρικούς ή σχολικούς λογαριασμούς."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Microsoft solo permite reuniones de Teams desde apps para cuentas profesionales o educativas."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Microsoft sallii Teams-kokoukset apeista vain työpaikan tai oppilaitoksen tileille."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Microsoft n’autorise les réunions Teams depuis des apps que pour les comptes professionnels ou scolaires."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Microsoft מאפשרת פגישות Teams מיישומים רק לחשבונות עבודה או בית ספר."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Microsoft ऐप से Teams मीटिंग केवल कार्य या स्कूल अकाउंट के लिए अनुमति देता है।"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Microsoft dopušta Teams sastanke iz aplikacija samo za poslovne ili školske račune."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Microsoft csak munkahelyi vagy iskolai fiókoknál engedi Teams-megbeszélések létrehozását appokból."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Microsoft hanya mengizinkan rapat Teams dari app untuk akun kerja atau sekolah."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Microsoft consente riunioni Teams dalle app solo per account di lavoro o dell’istituto."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Microsoftでは、AppからのTeams会議の作成は職場または学校のアカウントのみ許可されています。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Microsoft는 회사 또는 학교 계정에 대해서만 앱에서 Teams 회의를 허용합니다."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Microsoft hanya membenarkan mesyuarat Teams daripada app untuk akaun kerja atau sekolah."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Microsoft tillater bare Teams-møter fra apper for jobb- eller skolekontoer."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Microsoft staat Teams-vergaderingen vanuit apps alleen toe voor werk- of schoolaccounts."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Microsoft pozwala na spotkania Teams z aplikacji tylko dla kont służbowych lub szkolnych."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Microsoft só permite reuniões do Teams a partir de apps para contas corporativas ou de escola."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Microsoft só permite reuniões do Teams a partir de apps para contas profissionais ou escolares."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Microsoft permite întâlniri Teams din aplicații doar pentru conturi de serviciu sau de școală."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Microsoft разрешает встречи Teams из приложений только для рабочих или учебных учётных записей."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Microsoft povoľuje schôdze Teams z aplikácií len pre pracovné alebo školské účty."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Microsoft tillåter bara Teams-möten från appar för arbets- eller skolkonton."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Microsoft อนุญาตให้สร้างการประชุม Teams จากแอปเฉพาะบัญชีที่ทำงานหรือโรงเรียนเท่านั้น"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Microsoft, uygulamalardan Teams toplantılarına yalnızca iş veya okul hesapları için izin verir."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Microsoft дозволяє наради Teams із програм лише для робочих або навчальних облікових записів."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Microsoft chỉ cho phép tạo cuộc họp Teams từ ứng dụng với tài khoản cơ quan hoặc trường học."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Microsoft 仅允许工作或学校账户通过 App 创建 Teams 会议。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Microsoft 只允許公司或學校帳號從 App 建立 Teams 會議。"
           }
         }
       }
@@ -66499,6 +69138,209 @@
           "stringUnit": {
             "state": "translated",
             "value": "未預先選擇俱樂部"
+          }
+        }
+      }
+    },
+    "No account needed": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا حاجة إلى حساب"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No cal cap compte"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Účet není potřeba"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ingen konto nødvendig"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kein Account nötig"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Δεν χρειάζεται λογαριασμός"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No hace falta cuenta"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tiliä ei tarvita"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aucun compte nécessaire"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "אין צורך בחשבון"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "किसी अकाउंट की ज़रूरत नहीं"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Račun nije potreban"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nem kell fiók"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tidak perlu akun"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nessun account necessario"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アカウントは不要"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "계정 필요 없음"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tiada akaun diperlukan"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ingen konto nødvendig"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geen account nodig"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Konto nie jest potrzebne"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nenhuma conta necessária"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não é preciso conta"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nu e nevoie de cont"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Учётная запись не нужна"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Účet nie je potrebný"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inget konto behövs"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ไม่ต้องใช้บัญชี"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hesap gerekmez"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Обліковий запис не потрібен"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Không cần tài khoản"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "无需账户"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "不需要帳號"
           }
         }
       }
@@ -73851,6 +76693,209 @@
           "stringUnit": {
             "state": "translated",
             "value": "外框"
+          }
+        }
+      }
+    },
+    "Paste FaceTime Link": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لصق رابط FaceTime"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enganxa l’enllaç de FaceTime"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vložit odkaz FaceTime"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Indsæt FaceTime-link"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FaceTime-Link einfügen"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Επικόλληση συνδέσμου FaceTime"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pegar enlace de FaceTime"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Liitä FaceTime-linkki"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coller un lien FaceTime"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "הדבקת קישור FaceTime"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FaceTime लिंक पेस्ट करें"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zalijepi FaceTime poveznicu"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FaceTime-link beillesztése"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tempel Tautan FaceTime"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Incolla link FaceTime"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FaceTimeリンクをペースト"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FaceTime 링크 붙여넣기"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tampal Pautan FaceTime"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lim inn FaceTime-lenke"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plak FaceTime-link"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wklej link FaceTime"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Colar link do FaceTime"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Colar ligação FaceTime"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lipește linkul FaceTime"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вставить ссылку FaceTime"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vložiť odkaz FaceTime"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Klistra in FaceTime-länk"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "วางลิงก์ FaceTime"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FaceTime bağlantısını yapıştır"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вставити посилання FaceTime"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dán liên kết FaceTime"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "粘贴 FaceTime 链接"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "貼上 FaceTime 連結"
           }
         }
       }
@@ -81818,6 +84863,209 @@
           "stringUnit": {
             "state": "translated",
             "value": "移除訂閱和行事曆"
+          }
+        }
+      }
+    },
+    "Remove Video Call": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إزالة مكالمة الفيديو"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elimina la videotrucada"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odstranit videohovor"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fjern videoopkald"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Videoanruf entfernen"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Αφαίρεση βιντεοκλήσης"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eliminar videollamada"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poista videopuhelu"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Supprimer l’appel vidéo"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "הסרת שיחת הווידאו"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "वीडियो कॉल हटाएँ"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ukloni videopoziv"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Videohívás eltávolítása"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hapus Panggilan Video"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rimuovi videochiamata"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ビデオ通話を削除"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "영상 통화 제거"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buang Panggilan Video"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fjern videosamtale"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verwijder videogesprek"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usuń rozmowę wideo"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Remover videochamada"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Remover videochamada"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elimină apelul video"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Удалить видеозвонок"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odstrániť videohovor"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ta bort videosamtal"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ลบวิดีโอคอล"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Görüntülü aramayı kaldır"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вилучити відеодзвінок"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Xóa cuộc gọi video"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "移除视频通话"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "移除視訊通話"
           }
         }
       }
@@ -90439,6 +93687,209 @@
         }
       }
     },
+    "Sign In": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تسجيل الدخول"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inicia sessió"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Přihlásit se"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Log ind"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anmelden"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Σύνδεση"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Iniciar sesión"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kirjaudu sisään"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se connecter"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "התחברות"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "साइन इन करें"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prijava"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bejelentkezés"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Masuk"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accedi"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サインイン"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "로그인"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Log Masuk"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Logg på"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Log in"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zaloguj się"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Entrar na conta"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Iniciar sessão"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conectează-te"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Войти в аккаунт"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prihlásiť sa"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Logga in"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ลงชื่อเข้าใช้"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Giriş yap"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Увійти"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đăng nhập"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "登录"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "登入"
+          }
+        }
+      }
+    },
     "Sign In with Homey": {
       "extractionState": "manual",
       "localizations": {
@@ -90638,6 +94089,209 @@
           "stringUnit": {
             "state": "translated",
             "value": "使用 Homey 登入"
+          }
+        }
+      }
+    },
+    "Sign Out": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تسجيل الخروج"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tanca la sessió"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odhlásit se"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Log ud"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abmelden"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Αποσύνδεση"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cerrar sesión"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kirjaudu ulos"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se déconnecter"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "התנתקות"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "साइन आउट करें"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odjava"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kijelentkezés"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keluar"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Esci"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サインアウト"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "로그아웃"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Log Keluar"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Logg av"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Log uit"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wyloguj się"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sair"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Terminar sessão"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deconectează-te"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Выйти"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odhlásiť sa"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Logga ut"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ลงชื่อออก"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çıkış yap"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вийти"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đăng xuất"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "退出登录"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "登出"
           }
         }
       }
@@ -101843,6 +105497,209 @@
         }
       }
     },
+    "The clipboard does not contain a FaceTime link.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا تحتوي الحافظة على رابط FaceTime."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El porta-retalls no conté cap enllaç de FaceTime."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ve schránce není odkaz FaceTime."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Udklipsholderen indeholder ikke et FaceTime-link."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In der Zwischenablage ist kein FaceTime-Link."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το πρόχειρο δεν περιέχει σύνδεσμο FaceTime."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El portapapeles no contiene un enlace de FaceTime."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leikepöydällä ei ole FaceTime-linkkiä."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le presse-papiers ne contient pas de lien FaceTime."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "בלוח אין קישור FaceTime."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "क्लिपबोर्ड में कोई FaceTime लिंक नहीं है।"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "U međuspremniku nema FaceTime poveznice."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A vágólapon nincs FaceTime-link."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Papan klip tidak berisi tautan FaceTime."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Negli appunti non c’è un link FaceTime."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "クリップボードにFaceTimeリンクがありません。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "클립보드에 FaceTime 링크가 없습니다."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Papan keratan tidak mengandungi pautan FaceTime."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Utklippstavlen inneholder ingen FaceTime-lenke."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Op het klembord staat geen FaceTime-link."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schowek nie zawiera linku FaceTime."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A área de transferência não contém um link do FaceTime."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A área de transferência não contém uma ligação FaceTime."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clipboardul nu conține un link FaceTime."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "В буфере обмена нет ссылки FaceTime."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "V schránke nie je odkaz FaceTime."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Urklipp innehåller ingen FaceTime-länk."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "คลิปบอร์ดไม่มีลิงก์ FaceTime"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Panoda FaceTime bağlantısı yok."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "У буфері обміну немає посилання FaceTime."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bảng tạm không chứa liên kết FaceTime."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "剪贴板中没有 FaceTime 链接。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "剪貼板中沒有 FaceTime 連結。"
+          }
+        }
+      }
+    },
     "The current week number.": {
       "extractionState": "manual",
       "localizations": {
@@ -102448,6 +106305,209 @@
           "stringUnit": {
             "state": "translated",
             "value": "目前無法使用即時目錄。精選行事曆仍可使用。"
+          }
+        }
+      }
+    },
+    "The meeting could not be created. Try again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعذّر إنشاء الاجتماع. حاول مرة أخرى."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No s’ha pogut crear la reunió. Torna-ho a provar."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schůzku se nepodařilo vytvořit. Zkuste to znovu."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mødet kunne ikke oprettes. Prøv igen."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Besprechung konnte nicht erstellt werden. Versuche es erneut."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Δεν ήταν δυνατή η δημιουργία της σύσκεψης. Δοκιμάστε ξανά."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se pudo crear la reunión. Inténtalo de nuevo."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kokousta ei voitu luoda. Yritä uudelleen."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La réunion n’a pas pu être créée. Réessayez."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "לא ניתן היה ליצור את הפגישה. נסה/י שוב."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "मीटिंग नहीं बनाई जा सकी। फिर से कोशिश करें।"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sastanak nije bilo moguće izraditi. Pokušajte ponovno."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nem sikerült létrehozni a megbeszélést. Próbáld újra."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rapat tidak dapat dibuat. Coba lagi."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossibile creare la riunione. Riprova."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "会議を作成できませんでした。もう一度お試しください。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "회의를 만들 수 없습니다. 다시 시도하세요."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mesyuarat tidak dapat dicipta. Cuba lagi."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Møtet kunne ikke opprettes. Prøv igjen."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De vergadering kon niet worden gemaakt. Probeer het opnieuw."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nie udało się utworzyć spotkania. Spróbuj ponownie."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível criar a reunião. Tente novamente."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível criar a reunião. Tente novamente."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Întâlnirea nu a putut fi creată. Încearcă din nou."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось создать встречу. Попробуйте ещё раз."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schôdzu sa nepodarilo vytvoriť. Skúste to znova."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mötet kunde inte skapas. Försök igen."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ไม่สามารถสร้างการประชุมได้ ลองอีกครั้ง"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toplantı oluşturulamadı. Yeniden deneyin."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не вдалося створити нараду. Спробуйте ще раз."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Không thể tạo cuộc họp. Hãy thử lại."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "无法创建会议。请重试。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無法建立會議。請再試一次。"
           }
         }
       }
@@ -104895,6 +108955,209 @@
           "stringUnit": {
             "state": "translated",
             "value": "本月一覽。"
+          }
+        }
+      }
+    },
+    "This service is not available in this version of Weekdot.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "هذه الخدمة غير متاحة في هذا الإصدار من Weekdot."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aquest servei no està disponible en aquesta versió del Weekdot."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tato služba není v této verzi Weekdot k dispozici."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Denne tjeneste er ikke tilgængelig i denne version af Weekdot."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dieser Dienst ist in dieser Version von Weekdot nicht verfügbar."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Αυτή η υπηρεσία δεν είναι διαθέσιμη σε αυτή την έκδοση του Weekdot."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Este servicio no está disponible en esta versión de Weekdot."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tämä palvelu ei ole käytettävissä tässä Weekdotin versiossa."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ce service n’est pas disponible dans cette version de Weekdot."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "שירות זה אינו זמין בגרסה זו של Weekdot."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "यह सेवा Weekdot के इस संस्करण में उपलब्ध नहीं है।"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ova usluga nije dostupna u ovoj verziji Weekdota."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ez a szolgáltatás nem érhető el a Weekdot ezen verziójában."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Layanan ini tidak tersedia di versi Weekdot ini."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Questo servizio non è disponibile in questa versione di Weekdot."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このサービスはこのバージョンのWeekdotでは利用できません。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 서비스는 이 버전의 Weekdot에서 사용할 수 없습니다."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Perkhidmatan ini tidak tersedia dalam versi Weekdot ini."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Denne tjenesten er ikke tilgjengelig i denne versjonen av Weekdot."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deze dienst is niet beschikbaar in deze versie van Weekdot."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ta usługa nie jest dostępna w tej wersji Weekdot."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Este serviço não está disponível nesta versão do Weekdot."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Este serviço não está disponível nesta versão do Weekdot."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acest serviciu nu este disponibil în această versiune Weekdot."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Эта служба недоступна в этой версии Weekdot."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Táto služba nie je v tejto verzii Weekdot dostupná."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Den här tjänsten är inte tillgänglig i den här versionen av Weekdot."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "บริการนี้ไม่พร้อมใช้งานใน Weekdot เวอร์ชันนี้"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu hizmet Weekdot'un bu sürümünde kullanılamıyor."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ця служба недоступна в цій версії Weekdot."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dịch vụ này không có trong phiên bản Weekdot này."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "此版本的 Weekdot 不提供此服务。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "此版本的 Weekdot 不提供此服務。"
           }
         }
       }
@@ -112660,6 +116923,412 @@
         }
       }
     },
+    "Video Call": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مكالمة فيديو"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Videotrucada"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Videohovor"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Videoopkald"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Videoanruf"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Βιντεοκλήση"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Videollamada"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Videopuhelu"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appel vidéo"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "שיחת וידאו"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "वीडियो कॉल"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Videopoziv"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Videohívás"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Panggilan Video"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Videochiamata"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ビデオ通話"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "영상 통화"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Panggilan Video"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Videosamtale"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Videogesprek"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rozmowa wideo"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Videochamada"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Videochamada"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apel video"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Видеозвонок"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Videohovor"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Videosamtal"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "วิดีโอคอล"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Görüntülü Arama"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Відеодзвінок"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cuộc gọi video"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "视频通话"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "視訊通話"
+          }
+        }
+      }
+    },
+    "Video Calls": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مكالمات الفيديو"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Videotrucades"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Videohovory"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Videoopkald"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Videoanrufe"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Βιντεοκλήσεις"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Videollamadas"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Videopuhelut"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appels vidéo"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "שיחות וידאו"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "वीडियो कॉल"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Videopozivi"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Videohívások"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Panggilan Video"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Videochiamate"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ビデオ通話"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "영상 통화"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Panggilan Video"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Videosamtaler"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Videogesprekken"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rozmowy wideo"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Videochamadas"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Videochamadas"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apeluri video"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Видеозвонки"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Videohovory"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Videosamtal"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "วิดีโอคอล"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Görüntülü Aramalar"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Відеодзвінки"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cuộc gọi video"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "视频通话"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "視訊通話"
+          }
+        }
+      }
+    },
     "View": {
       "extractionState": "manual",
       "localizations": {
@@ -120414,6 +125083,412 @@
           "stringUnit": {
             "state": "translated",
             "value": "Homey App Store 中的 Weekdot"
+          }
+        }
+      }
+    },
+    "Weekdot only uses these accounts to create a meeting link when you add a video call to an event. The sign-in stays on this device. Teams meetings need a work or school account.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يستخدم Weekdot هذه الحسابات فقط لإنشاء رابط اجتماع عند إضافة مكالمة فيديو إلى حدث. يبقى تسجيل الدخول على هذا الجهاز. تتطلب اجتماعات Teams حساب عمل أو مدرسة."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El Weekdot només fa servir aquests comptes per crear un enllaç de reunió quan afegeixes una videotrucada a un esdeveniment. L’inici de sessió es queda en aquest dispositiu. Les reunions de Teams necessiten un compte de feina o d’escola."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot tyto účty používá jen k vytvoření odkazu na schůzku, když k události přidáte videohovor. Přihlášení zůstává v tomto zařízení. Schůzky Teams vyžadují pracovní nebo školní účet."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot bruger kun disse konti til at oprette et mødelink, når du tilføjer et videoopkald til en aftale. Login bliver på denne enhed. Teams-møder kræver en arbejds- eller skolekonto."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot nutzt diese Accounts nur, um einen Besprechungslink zu erstellen, wenn du einem Termin einen Videoanruf hinzufügst. Die Anmeldung bleibt auf diesem Gerät. Für Teams-Besprechungen brauchst du ein Geschäfts- oder Schulkonto."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το Weekdot χρησιμοποιεί αυτούς τους λογαριασμούς μόνο για να δημιουργήσει σύνδεσμο σύσκεψης όταν προσθέτετε βιντεοκλήση σε γεγονός. Η σύνδεση μένει σε αυτή τη συσκευή. Οι συσκέψεις Teams απαιτούν εταιρικό ή σχολικό λογαριασμό."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot solo usa estas cuentas para crear un enlace de reunión cuando añades una videollamada a un evento. El inicio de sesión se queda en este dispositivo. Las reuniones de Teams requieren una cuenta profesional o educativa."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot käyttää näitä tilejä vain kokouslinkin luomiseen, kun lisäät tapahtumaan videopuhelun. Kirjautuminen pysyy tällä laitteella. Teams-kokoukset vaativat työpaikan tai oppilaitoksen tilin."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot utilise ces comptes uniquement pour créer un lien de réunion lorsque vous ajoutez un appel vidéo à un événement. La connexion reste sur cet appareil. Les réunions Teams nécessitent un compte professionnel ou scolaire."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot משתמש בחשבונות אלה רק כדי ליצור קישור לפגישה כשמוסיפים שיחת וידאו לאירוע. ההתחברות נשארת במכשיר זה. פגישות Teams דורשות חשבון עבודה או בית ספר."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot इन अकाउंट का उपयोग केवल तब मीटिंग लिंक बनाने के लिए करता है जब आप किसी इवेंट में वीडियो कॉल जोड़ते हैं। साइन-इन इसी डिवाइस पर रहता है। Teams मीटिंग के लिए कार्य या स्कूल अकाउंट चाहिए।"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot koristi ove račune samo za izradu poveznice sastanka kad događaju dodate videopoziv. Prijava ostaje na ovom uređaju. Za Teams sastanke potreban je poslovni ili školski račun."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Weekdot ezeket a fiókokat csak arra használja, hogy megbeszéléslinket hozzon létre, amikor videohívást adsz egy eseményhez. A bejelentkezés ezen az eszközön marad. A Teams-megbeszélésekhez munkahelyi vagy iskolai fiók kell."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot hanya menggunakan akun ini untuk membuat tautan rapat saat Anda menambahkan panggilan video ke acara. Proses masuk tetap di perangkat ini. Rapat Teams memerlukan akun kerja atau sekolah."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot usa questi account solo per creare un link della riunione quando aggiungi una videochiamata a un evento. L’accesso resta su questo dispositivo. Le riunioni Teams richiedono un account di lavoro o dell’istituto."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdotがこれらのアカウントを使うのは、イベントにビデオ通話を追加して会議リンクを作成するときだけです。サインイン情報はこのデバイスに保存されます。Teamsの会議には職場または学校のアカウントが必要です。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot은 일정에 영상 통화를 추가할 때 회의 링크를 만드는 데에만 이 계정을 사용합니다. 로그인 정보는 이 기기에 남습니다. Teams 회의에는 회사 또는 학교 계정이 필요합니다."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot hanya menggunakan akaun ini untuk mencipta pautan mesyuarat apabila anda menambah panggilan video pada acara. Log masuk kekal pada peranti ini. Mesyuarat Teams memerlukan akaun kerja atau sekolah."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot bruker bare disse kontoene til å lage en møtelenke når du legger til et videosamtale i en avtale. Påloggingen blir på denne enheten. Teams-møter krever en jobb- eller skolekonto."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot gebruikt deze accounts alleen om een vergaderlink te maken als je een videogesprek aan een afspraak toevoegt. De inlog blijft op dit apparaat. Voor Teams-vergaderingen heb je een werk- of schoolaccount nodig."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot używa tych kont tylko do tworzenia linku do spotkania, gdy dodajesz rozmowę wideo do wydarzenia. Logowanie pozostaje na tym urządzeniu. Spotkania Teams wymagają konta służbowego lub szkolnego."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Weekdot usa essas contas apenas para criar um link de reunião quando você adiciona uma videochamada a um evento. O login fica neste dispositivo. Reuniões do Teams exigem uma conta corporativa ou de escola."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Weekdot só usa estas contas para criar uma ligação de reunião quando adiciona uma videochamada a um evento. A sessão fica neste dispositivo. As reuniões do Teams requerem uma conta profissional ou escolar."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot folosește aceste conturi doar pentru a crea un link de întâlnire când adaugi un apel video la un eveniment. Autentificarea rămâne pe acest dispozitiv. Întâlnirile Teams necesită un cont de serviciu sau de școală."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot использует эти учётные записи только для создания ссылки на встречу, когда вы добавляете видеозвонок к событию. Вход остаётся на этом устройстве. Для встреч Teams нужна рабочая или учебная учётная запись."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot tieto účty používa len na vytvorenie odkazu na schôdzu, keď k udalosti pridáte videohovor. Prihlásenie zostáva v tomto zariadení. Schôdze Teams vyžadujú pracovný alebo školský účet."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot använder bara dessa konton för att skapa en möteslänk när du lägger till ett videosamtal i en händelse. Inloggningen stannar på den här enheten. Teams-möten kräver ett arbets- eller skolkonto."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot ใช้บัญชีเหล่านี้เพื่อสร้างลิงก์การประชุมเมื่อคุณเพิ่มวิดีโอคอลในกิจกรรมเท่านั้น การลงชื่อเข้าใช้จะอยู่ในอุปกรณ์นี้ การประชุม Teams ต้องใช้บัญชีที่ทำงานหรือโรงเรียน"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot bu hesapları yalnızca bir etkinliğe görüntülü arama eklediğinizde toplantı bağlantısı oluşturmak için kullanır. Oturum bu aygıtta kalır. Teams toplantıları için iş veya okul hesabı gerekir."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot використовує ці облікові записи лише для створення посилання на нараду, коли ви додаєте відеодзвінок до події. Вхід залишається на цьому пристрої. Для нарад Teams потрібен робочий або навчальний обліковий запис."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot chỉ dùng các tài khoản này để tạo liên kết cuộc họp khi bạn thêm cuộc gọi video vào sự kiện. Thông tin đăng nhập ở lại trên thiết bị này. Cuộc họp Teams cần tài khoản cơ quan hoặc trường học."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "仅当你为日程添加视频通话时，Weekdot 才会使用这些账户创建会议链接。登录信息保留在此设备上。Teams 会议需要工作或学校账户。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "只有在你為行程加入視訊通話時，Weekdot 才會使用這些帳號建立會議連結。登入資訊會保留在此裝置上。Teams 會議需要公司或學校帳號。"
+          }
+        }
+      }
+    },
+    "Weekdot recognises links to Google Meet, Microsoft Teams, FaceTime, Zoom, Webex, WhatsApp and more in your events, and shows a Join button 10 minutes before the start, in the alert and in the widgets.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يتعرّف Weekdot على روابط Google Meet وMicrosoft Teams وFaceTime وZoom وWebex وWhatsApp وغيرها في أحداثك، ويعرض زر «انضمام» قبل البدء بـ 10 دقائق، وكذلك في التنبيه وفي الأدوات."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El Weekdot reconeix enllaços a Google Meet, Microsoft Teams, FaceTime, Zoom, Webex, WhatsApp i més als teus esdeveniments, i mostra un botó Uneix-t’hi 10 minuts abans de l’inici, també a l’avís i als widgets."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot ve vašich událostech rozpozná odkazy na Google Meet, Microsoft Teams, FaceTime, Zoom, Webex, WhatsApp a další a 10 minut před začátkem zobrazí tlačítko Připojit, i v upozornění a ve widgetech."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot genkender links til Google Meet, Microsoft Teams, FaceTime, Zoom, Webex, WhatsApp og mere i dine aftaler og viser en Deltag-knap 10 minutter før start, også i notifikationen og i widgets."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot erkennt Links zu Google Meet, Microsoft Teams, FaceTime, Zoom, Webex, WhatsApp und mehr in deinen Terminen und zeigt 10 Minuten vor Beginn eine Teilnehmen-Taste, auch in der Mitteilung und in den Widgets."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το Weekdot αναγνωρίζει συνδέσμους προς Google Meet, Microsoft Teams, FaceTime, Zoom, Webex, WhatsApp και άλλα στα γεγονότα σας και δείχνει κουμπί Συμμετοχή 10 λεπτά πριν από την έναρξη, και στην ειδοποίηση και στα widget."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot reconoce enlaces a Google Meet, Microsoft Teams, FaceTime, Zoom, Webex, WhatsApp y más en tus eventos, y muestra un botón Unirse 10 minutos antes del inicio, también en el aviso y en los widgets."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot tunnistaa tapahtumistasi linkit Google Meetiin, Microsoft Teamsiin, FaceTimeen, Zoomiin, Webexiin, WhatsAppiin ja muihin ja näyttää Liity-painikkeen 10 minuuttia ennen alkua, myös ilmoituksessa ja widgeteissä."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot reconnaît les liens Google Meet, Microsoft Teams, FaceTime, Zoom, Webex, WhatsApp et d’autres dans vos événements, et affiche un bouton Rejoindre 10 minutes avant le début, aussi dans l’alerte et les widgets."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot מזהה באירועים שלך קישורים ל־Google Meet,‏ Microsoft Teams,‏ FaceTime,‏ Zoom,‏ Webex,‏ WhatsApp ועוד, ומציג כפתור הצטרפות 10 דקות לפני ההתחלה, גם בהתראה ובווידג׳טים."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot आपके इवेंट में Google Meet, Microsoft Teams, FaceTime, Zoom, Webex, WhatsApp और अन्य के लिंक पहचानता है, और शुरू होने से 10 मिनट पहले शामिल हों बटन दिखाता है, अलर्ट और विजेट में भी।"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot u vašim događajima prepoznaje poveznice na Google Meet, Microsoft Teams, FaceTime, Zoom, Webex, WhatsApp i druge te 10 minuta prije početka prikazuje gumb Pridruži se, i u obavijesti i u widgetima."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Weekdot felismeri az eseményeidben a Google Meet, Microsoft Teams, FaceTime, Zoom, Webex, WhatsApp és más szolgáltatások linkjeit, és 10 perccel a kezdés előtt Csatlakozás gombot mutat, az értesítésben és a widgetekben is."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot mengenali tautan ke Google Meet, Microsoft Teams, FaceTime, Zoom, Webex, WhatsApp, dan lainnya di acara Anda, serta menampilkan tombol Gabung 10 menit sebelum mulai, juga di notifikasi dan widget."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot riconosce i link a Google Meet, Microsoft Teams, FaceTime, Zoom, Webex, WhatsApp e altri nei tuoi eventi e mostra un pulsante Partecipa 10 minuti prima dell’inizio, anche nella notifica e nei widget."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdotはイベント内のGoogle Meet、Microsoft Teams、FaceTime、Zoom、Webex、WhatsAppなどのリンクを認識し、開始10分前に「参加」ボタンを表示します。通知やウィジェットにも表示されます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot은 일정에 있는 Google Meet, Microsoft Teams, FaceTime, Zoom, Webex, WhatsApp 등의 링크를 인식하고, 시작 10분 전에 참가 버튼을 표시합니다. 알림과 위젯에도 표시됩니다."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot mengenali pautan ke Google Meet, Microsoft Teams, FaceTime, Zoom, Webex, WhatsApp dan lain-lain dalam acara anda, dan menunjukkan butang Sertai 10 minit sebelum mula, juga dalam makluman dan widget."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot gjenkjenner lenker til Google Meet, Microsoft Teams, FaceTime, Zoom, Webex, WhatsApp og mer i avtalene dine, og viser en Bli med-knapp 10 minutter før start, også i varselet og i widgetene."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot herkent links naar Google Meet, Microsoft Teams, FaceTime, Zoom, Webex, WhatsApp en meer in je afspraken, en toont 10 minuten voor de start een knop Deelnemen, ook in de melding en de widgets."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot rozpoznaje w wydarzeniach linki do Google Meet, Microsoft Teams, FaceTime, Zoom, Webex, WhatsApp i innych oraz pokazuje przycisk Dołącz 10 minut przed początkiem, także w powiadomieniu i w widżetach."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Weekdot reconhece links do Google Meet, Microsoft Teams, FaceTime, Zoom, Webex, WhatsApp e outros nos seus eventos e mostra um botão Entrar 10 minutos antes do início, também no alerta e nos widgets."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Weekdot reconhece ligações para Google Meet, Microsoft Teams, FaceTime, Zoom, Webex, WhatsApp e outros nos seus eventos e mostra um botão Participar 10 minutos antes do início, também no alerta e nos widgets."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot recunoaște în evenimentele tale linkuri către Google Meet, Microsoft Teams, FaceTime, Zoom, Webex, WhatsApp și altele și afișează un buton Alătură-te cu 10 minute înainte de început, și în alertă și în widgeturi."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot распознаёт в ваших событиях ссылки на Google Meet, Microsoft Teams, FaceTime, Zoom, Webex, WhatsApp и другие и за 10 минут до начала показывает кнопку «Войти», также в уведомлении и виджетах."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot vo vašich udalostiach rozpozná odkazy na Google Meet, Microsoft Teams, FaceTime, Zoom, Webex, WhatsApp a ďalšie a 10 minút pred začiatkom zobrazí tlačidlo Pripojiť, aj v upozornení a vo widgetoch."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot känner igen länkar till Google Meet, Microsoft Teams, FaceTime, Zoom, Webex, WhatsApp med flera i dina händelser och visar en Anslut-knapp 10 minuter före start, även i notisen och i widgetarna."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot รู้จักลิงก์ไปยัง Google Meet, Microsoft Teams, FaceTime, Zoom, Webex, WhatsApp และอื่นๆ ในกิจกรรมของคุณ และแสดงปุ่มเข้าร่วม 10 นาทีก่อนเริ่ม รวมถึงในการแจ้งเตือนและวิดเจ็ต"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot etkinliklerinizdeki Google Meet, Microsoft Teams, FaceTime, Zoom, Webex, WhatsApp ve diğer bağlantıları tanır ve başlangıçtan 10 dakika önce, bildirimde ve widget'larda da bir Katıl düğmesi gösterir."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot розпізнає у ваших подіях посилання на Google Meet, Microsoft Teams, FaceTime, Zoom, Webex, WhatsApp та інші й за 10 хвилин до початку показує кнопку «Приєднатися», також у сповіщенні та віджетах."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot nhận diện liên kết Google Meet, Microsoft Teams, FaceTime, Zoom, Webex, WhatsApp và nhiều dịch vụ khác trong sự kiện của bạn, và hiện nút Tham gia 10 phút trước khi bắt đầu, cả trong thông báo và tiện ích."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot 会识别日程中的 Google Meet、Microsoft Teams、FaceTime、Zoom、Webex、WhatsApp 等链接，并在开始前 10 分钟显示“加入”按钮，提醒和小组件中也会显示。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdot 會辨識行程中的 Google Meet、Microsoft Teams、FaceTime、Zoom、Webex、WhatsApp 等連結，並在開始前 10 分鐘顯示「加入」按鈕，通知和小工具中也會顯示。"
           }
         }
       }

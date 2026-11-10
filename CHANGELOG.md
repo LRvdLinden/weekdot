@@ -1,3 +1,10 @@
+## 1.0.4 (build 91) — Video calls
+
+- Weekdot recognises video-call links (Google Meet, Microsoft Teams, FaceTime, Zoom, Webex, WhatsApp, GoTo, Jitsi, Whereby, Slack and more) in the URL, location or notes of an event. A camera shows in the week, day and list views; from 10 minutes before the start until the end a green Join button appears (list, Month & List, day/week blocks), and the event details have Join, Dial In (number + PIN) and Copy Meeting Link.
+- Alerts for video calls get a Join action; the widgets show a Join button for today's calls (small widget: tapping joins when the call is about to start). Online "locations" such as "Microsoft Teams Meeting" no longer get a map, route or travel time.
+- New events: Add Video Call › Google Meet or Microsoft Teams creates the meeting (sign-in with Google or Microsoft, PKCE, tokens in the keychain on this device) and puts the link in the URL field and the notes; FaceTime: paste a link made in the FaceTime app, or FaceTime an invitee. Settings › Video Calls shows the accounts. Client IDs come from Weekdot/MeetingClients.plist (services stay hidden until filled in). Teams meetings need a work or school account (Microsoft does not allow this for personal accounts).
+- Texts in all 34 languages.
+
 ## 1.0.3 (build 90) — Homey: choose 1, 2 or 3 months
 
 - New setting in Settings › Homey: “Send to Homey” 1, 2 or 3 months ahead (default 1 month). The Homey app's “… days” cards can look as far ahead as you send. Texts in all languages.

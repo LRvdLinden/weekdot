@@ -701,7 +701,32 @@
   "Month & List": "Maand en lijst",
   "Sign in with your Homey account and choose your Homey. Weekdot then sends your upcoming events to the Weekdot app on your Homey.": "Log in met je Homey-account en kies je Homey. Weekdot stuurt dan je komende afspraken naar de Weekdot-app op je Homey.",
   "Send to Homey": "Naar Homey sturen",
-  "Flows on Homey can look this far ahead, for example to remind you days before an appointment.": "Flows op Homey kunnen zo ver vooruitkijken, bijvoorbeeld om je dagen van tevoren aan een afspraak te herinneren."
+  "Flows on Homey can look this far ahead, for example to remind you days before an appointment.": "Flows op Homey kunnen zo ver vooruitkijken, bijvoorbeeld om je dagen van tevoren aan een afspraak te herinneren.",
+  "Video Call": "Videogesprek",
+  "Video Calls": "Videogesprekken",
+  "Join": "Deelnemen",
+  "Join %@": "Deelnemen aan %@",
+  "Dial In": "Inbellen",
+  "Copy Meeting Link": "Kopieer vergaderlink",
+  "Remove Video Call": "Verwijder videogesprek",
+  "Creating %@ meeting…": "%@-vergadering maken…",
+  "Add Video Call": "Voeg videogesprek toe",
+  "Paste FaceTime Link": "Plak FaceTime-link",
+  "FaceTime with %@": "FaceTime met %@",
+  "For a FaceTime link: in the FaceTime app, tap Create Link, copy it and choose Paste FaceTime Link here.": "Voor een FaceTime-link: tik in de FaceTime-app op Maak link, kopieer hem en kies hier Plak FaceTime-link.",
+  "The clipboard does not contain a FaceTime link.": "Op het klembord staat geen FaceTime-link.",
+  "Join Google Meet, Teams, FaceTime, Zoom and other calls with one tap, and add a Meet or Teams meeting to new events.": "Neem met één tik deel aan Google Meet, Teams, FaceTime, Zoom en andere gesprekken, en voeg een Meet- of Teams-vergadering toe aan nieuwe afspraken.",
+  "Accounts": "Accounts",
+  "Weekdot only uses these accounts to create a meeting link when you add a video call to an event. The sign-in stays on this device. Teams meetings need a work or school account.": "Weekdot gebruikt deze accounts alleen om een vergaderlink te maken als je een videogesprek aan een afspraak toevoegt. De inlog blijft op dit apparaat. Voor Teams-vergaderingen heb je een werk- of schoolaccount nodig.",
+  "No account needed": "Geen account nodig",
+  "Weekdot recognises links to Google Meet, Microsoft Teams, FaceTime, Zoom, Webex, WhatsApp and more in your events, and shows a Join button 10 minutes before the start, in the alert and in the widgets.": "Weekdot herkent links naar Google Meet, Microsoft Teams, FaceTime, Zoom, Webex, WhatsApp en meer in je afspraken, en toont 10 minuten voor de start een knop Deelnemen, ook in de melding en de widgets.",
+  "Sign In": "Log in",
+  "Sign Out": "Log uit",
+  "This service is not available in this version of Weekdot.": "Deze dienst is niet beschikbaar in deze versie van Weekdot.",
+  "The meeting could not be created. Try again.": "De vergadering kon niet worden gemaakt. Probeer het opnieuw.",
+  "Microsoft only allows Teams meetings from apps for work or school accounts.": "Microsoft staat Teams-vergaderingen vanuit apps alleen toe voor werk- of schoolaccounts.",
+  "Join with %@: %@": "Deelnemen met %@: %@",
+  "Dial in: %@, conference ID %@": "Inbellen: %@, vergader-ID %@"
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot toont, maakt en wijzigt de activiteiten in je agenda's.",
@@ -1003,6 +1028,7 @@
   "gallery.list.d": "Alles wat eraan komt, per dag gegroepeerd met tijd en plaats. Ideaal om snel vooruit te kijken.",
   "gallery.event.d": "Plaats, meldingen, reistijd en notities bij elkaar. Dupliceer een afspraak of bewaar hem met één tik als sjabloon.",
   "gallery.discover.d": "Feestdagen van meer dan 60 landen, schoolvakanties, vlagdagen en de afvalkalender, automatisch actueel.",
-  "gallery.sports.d": "Kies je club, competitie of Formule 1 en elke wedstrijd en race staat in je week."
+  "gallery.sports.d": "Kies je club, competitie of Formule 1 en elke wedstrijd en race staat in je week.",
+  "privacy.meetings": "Videogesprekken (optioneel): als je een Google Meet- of Microsoft Teams-vergadering aan een afspraak toevoegt, log je in met dat Google- of Microsoft-account en vraagt Weekdot Google of Microsoft om een vergaderlink te maken (voor Teams met de titel en tijd van de afspraak). Weekdot bewaart de inlog alleen op je apparaat, ziet alleen vergaderingen die het zelf heeft gemaakt en leest je mail, contacten of andere agenda's niet. Knoppen om deel te nemen aan links die al in je afspraken staan werken op je apparaat zonder account. Je kunt op elk moment uitloggen via Instellingen › Videogesprekken."
  }
 }
