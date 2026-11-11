@@ -250,7 +250,7 @@ struct WidgetEventRow: View {
             }
             Spacer(minLength: 0)
             if item.conference != nil && showsCamera {
-                WidgetJoinBadge(active: joinBadge)
+                WidgetJoinBadge(active: joinBadge, service: item.conference?.service ?? .generic)
             }
         }
         .padding(.vertical, 1.5)
@@ -261,12 +261,13 @@ struct WidgetEventRow: View {
 /// Camera for video-call events; green circle when the call can be joined (tap opens it).
 struct WidgetJoinBadge: View {
     var active: Bool
+    var service: ConferenceService = .generic
     var body: some View {
         Image(systemName: "video.fill")
             .font(.system(size: active ? 10 : 9, weight: .semibold))
-            .foregroundStyle(active ? Color.white : Color.secondary)
+            .foregroundStyle(active ? Color.white : service.brandColor)
             .frame(width: active ? 22 : 14, height: active ? 22 : 14)
-            .background { if active { Circle().fill(Color(red: 0.20, green: 0.70, blue: 0.33)) } }
+            .background { if active { Circle().fill(service.brandColor) } }
             .widgetAccentable()
             .accessibilityLabel(Text("Join"))
     }
@@ -396,7 +397,7 @@ struct WidgetAgendaList: View {
                                 WidgetEventRow(item: e.item, showLocation: false, showsCamera: false)
                             }
                             Link(destination: WidgetLink.join(c)) {
-                                WidgetJoinBadge(active: true)
+                                WidgetJoinBadge(active: true, service: c.service)
                             }
                         }
                     } else {

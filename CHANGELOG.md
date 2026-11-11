@@ -1,3 +1,7 @@
+## 1.0.4 (build 97) — Join buttons in brand colours
+
+- Join buttons, camera badges (list, week, day, Month & List, details, editor) and the widget Join badge use the service's own colour: Teams purple, Meet green, Zoom blue, FaceTime green, Webex blue, Slack aubergine and so on. Also on the Homey widget (Homey app 1.0.5) and the website demo.
+
 ## 1.0.4 (build 96) — Microsoft Teams sign-in
 
 - Microsoft sign-in uses the common endpoint, so it works whatever account types the app registration allows; personal accounts get a clear message that Teams meetings need a work or school account.

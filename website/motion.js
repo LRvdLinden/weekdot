@@ -82,7 +82,7 @@
   // ---------- Video calls: the event counts down, Join appears, a tap opens the call; next service ----------
   var vc = document.getElementById("vc");
   if (vc) {
-    var SVC = [["Google Meet", "#34c759"], ["Microsoft Teams", "#5b5fc7"], ["FaceTime", "#30d158"], ["Zoom", "#0b5cff"]];
+    var SVC = [["Google Meet", "#00832D"], ["Microsoft Teams", "#5B5FC7"], ["FaceTime", "#30B94D"], ["Zoom", "#0B5CFF"]];   // brand colours, as in the app
     var sub = document.getElementById("vc-sub"), when = document.getElementById("vc-when");
     var join = document.getElementById("vc-join"), joinT = document.getElementById("vc-join-t");
     var chips = $$("#vc-svc span");

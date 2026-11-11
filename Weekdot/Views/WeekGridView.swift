@@ -245,7 +245,7 @@ struct WeekGridEventRow: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .background(RoundedRectangle(cornerRadius: 3, style: .continuous).fill(color))
             } else {
-                Text("\(Text(Fmt.time(item.start)).foregroundStyle(onColor)) \(item.conference != nil ? Text(Image(systemName: "video.fill")).foregroundStyle(Color.secondary) + Text(" ") : Text(""))\(Text(item.displayTitle).foregroundStyle(item.isDeclined || item.isFree ? Color.secondary : Color.primary))\(Text(item.travelMinutes > 0 ? "  🚗 " + Fmt.duration(minutes: item.travelMinutes) : "").foregroundStyle(Color.secondary))")
+                Text("\(Text(Fmt.time(item.start)).foregroundStyle(onColor)) \(item.conference != nil ? Text(Image(systemName: "video.fill")).foregroundStyle(item.conference?.service.brandColor ?? Color.secondary) + Text(" ") : Text(""))\(Text(item.displayTitle).foregroundStyle(item.isDeclined || item.isFree ? Color.secondary : Color.primary))\(Text(item.travelMinutes > 0 ? "  🚗 " + Fmt.duration(minutes: item.travelMinutes) : "").foregroundStyle(Color.secondary))")
                     .font(.system(size: size))
                     .lineLimit(4)
                     .background(alignment: .topLeading) {

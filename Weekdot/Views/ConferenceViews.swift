@@ -19,18 +19,19 @@ struct JoinButton: View {
                     .labelStyle(.titleAndIcon)
                     .padding(.horizontal, 9)
                     .padding(.vertical, 4)
-                    .background(Capsule().fill(Color.joinGreen))
+                    .background(Capsule().fill(conference.service.brandColor))
                     .foregroundStyle(.white)
             }
         }
-        .modifier(ProminentStyle(on: prominent))
+        .modifier(ProminentStyle(on: prominent, tint: conference.service.brandColor))
         .accessibilityLabel(Text("Join \(conference.service.name)"))
     }
 
     private struct ProminentStyle: ViewModifier {
         let on: Bool
+        let tint: Color
         func body(content: Content) -> some View {
-            if on { content.buttonStyle(.borderedProminent).tint(.joinGreen) } else { content.buttonStyle(.plain) }
+            if on { content.buttonStyle(.borderedProminent).tint(tint) } else { content.buttonStyle(.plain) }
         }
     }
 }
@@ -58,7 +59,7 @@ struct ConferenceBadge: View {
     var body: some View {
         Image(systemName: service.symbol)
             .font(.caption)
-            .foregroundStyle(.secondary)
+            .foregroundStyle(service.brandColor)
             .accessibilityLabel(Text(service.name))
     }
 }
@@ -135,7 +136,7 @@ struct VideoCallEditorSection: View {
         Section {
             if let c = current {
                 HStack(spacing: 10) {
-                    Image(systemName: c.service.symbol).foregroundStyle(Color.joinGreen)
+                    Image(systemName: c.service.symbol).foregroundStyle(c.service.brandColor)
                     VStack(alignment: .leading, spacing: 1) {
                         Text(c.service.name)
                         Text(c.url.absoluteString).font(.caption).foregroundStyle(.secondary).lineLimit(1).truncationMode(.middle)

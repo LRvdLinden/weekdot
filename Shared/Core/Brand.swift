@@ -78,3 +78,8 @@ enum ColorHex {
     }
 
 }
+
+extension ConferenceService {
+    /// Brand colour of the video-call service (Teams purple, Meet green, Zoom blue, …).
+    var brandColor: Color { Color(hex: brandHex) ?? Color(red: 0.20, green: 0.70, blue: 0.33) }
+}

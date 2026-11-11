@@ -624,7 +624,7 @@ html:not(.motion) .mq-row { overflow-x: auto; scrollbar-width: none; }
 .tile:has(.new) h3 { padding-inline-end: 64px; }
 
 /* videogesprekken: afspraak telt af, Deelnemen verschijnt, tik opent het gesprek */
-.vc { --svc: #34c759; width: 100%; max-width: 380px; display: grid; gap: 12px; }
+.vc { --svc: #00832D; width: 100%; max-width: 380px; display: grid; gap: 12px; }
 .vc-card { display: flex; align-items: center; gap: 12px; background: var(--bg-2, #f4f4f6); border: 1px solid var(--line); border-radius: 16px; padding: 12px 14px; }
 .vc-bar { width: 5px; align-self: stretch; border-radius: 3px; background: #0a84ff; }
 .vc-tx { flex: 1; min-width: 0; text-align: start; }
@@ -634,14 +634,14 @@ html:not(.motion) .mq-row { overflow-x: auto; scrollbar-width: none; }
 .vc-cam svg { width: 16px; height: 16px; }
 .vc-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 40px; }
 .vc-when { color: var(--muted); font-weight: 600; font-size: 14px; font-variant-numeric: tabular-nums; }
-.vc-join { display: inline-flex; align-items: center; gap: 7px; padding: 9px 16px; border-radius: 99px; background: #34b553; color: #fff; font-weight: 700; font-size: 14px;
+.vc-join { display: inline-flex; align-items: center; gap: 7px; padding: 9px 16px; border-radius: 99px; background: var(--svc); color: #fff; font-weight: 700; font-size: 14px;
   opacity: 0; transform: scale(.6); transition: opacity .35s, transform .45s cubic-bezier(.3,1.6,.5,1); position: relative; }
 .vc-join svg { width: 16px; height: 16px; }
 .vc-join.live { opacity: 1; transform: none; }
-@keyframes joinRing { from { box-shadow: 0 0 0 0 rgba(52,181,83,.55); } to { box-shadow: 0 0 0 14px rgba(52,181,83,0); } }
+@keyframes joinRing { from { box-shadow: 0 0 0 0 color-mix(in srgb, var(--svc) 55%, transparent); } to { box-shadow: 0 0 0 14px transparent; } }
 .motion .vc-join.live { animation: joinRing 1.4s ease-out infinite; }
 .vc-join.tap { transform: scale(.9); }
-.vc-join.opening { background: #2a8f43; }
+.vc-join.opening { filter: brightness(.85); }
 .vc-svc { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; }
 .vc-svc span { font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 99px; border: 1px solid var(--line); color: var(--muted); transition: all .3s; }
 .vc-svc span.on { color: #fff; background: var(--svc); border-color: transparent; }

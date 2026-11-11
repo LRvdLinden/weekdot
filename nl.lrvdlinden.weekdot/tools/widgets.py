@@ -91,13 +91,19 @@ function render(d, t) {
  "next_call": dict(height=130, name="wn_next_call", settings=["calendar", "keyword"], css="""
 .ev{display:flex;gap:11px;align-items:center}
 .cam{width:40px;height:40px;border-radius:12px;flex:none;display:grid;place-items:center;background:var(--soft);color:var(--sec)}
-.cam.live{background:#34b553;color:#fff}
+.cam.live{background:var(--brand);color:#fff}
+.cam:not(.live){color:var(--brand)}
 .cam svg{width:22px;height:22px}
 .ti{font-size:18px;font-weight:800;line-height:1.2;letter-spacing:-.2px}
 .meta{font-size:13px;color:var(--sec);margin-top:2px}
 .svc{display:inline-block;margin-top:8px;font-size:11.5px;font-weight:700;border-radius:99px;padding:3px 9px;background:var(--soft)}
-.svc.live{background:#34b553;color:#fff}
+.svc.live{background:var(--brand);color:#fff}
 """, js=r"""
+// brand colours of the services, as in Weekdot (Teams purple, Meet green, Zoom blue, …)
+const BRAND = { facetime: '#30B94D', teams: '#5B5FC7', meet: '#00832D', zoom: '#0B5CFF', webex: '#0A7FC2', whatsapp: '#128C7E',
+  gotomeeting: '#E5751F', jitsi: '#1D76BA', whereby: '#5B3FD9', slack: '#4A154B', chime: '#0073BB', ringcentral: '#F57C00',
+  bluejeans: '#0071CE', lifesize: '#0077C8', dialpad: '#7C52FF', gather: '#5B5BD6', discord: '#5865F2', signal: '#3A76F0',
+  telegram: '#1E8BC3', generic: '#34B553' };
 const CAM = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 7.5A2.5 2.5 0 0 1 5.5 5h8A2.5 2.5 0 0 1 16 7.5v9a2.5 2.5 0 0 1-2.5 2.5h-8A2.5 2.5 0 0 1 3 16.5zM17 10l4-2.6v9.2L17 14z"/></svg>';
 function rel(ms) {
   const mins = Math.round(ms / 60000);
@@ -115,6 +121,7 @@ function render(d, t) {
   const live = e.now || (e.startMs - d.now) <= 10 * 60000;
   const right = e.now ? t('now_until', { time: e.end }) : rel(e.startMs - d.now);
   const when = `${e.day !== d.today ? fmtDay(e.day, { weekday: 'short', day: 'numeric', month: 'short' }) + ' · ' : ''}${e.start} – ${e.end}`;
+  document.body.style.setProperty('--brand', BRAND[d.call] || BRAND.generic);
   return header(t('video_call'), right)
     + `<div class="ev"><div class="cam${live ? ' live' : ''}">${CAM}</div><div style="min-width:0">`
     + `<div class="ti ell">${e.emoji ? esc(e.emoji) + ' ' : ''}${esc(e.title)}</div>`

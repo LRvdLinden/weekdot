@@ -31,6 +31,33 @@ enum ConferenceService: String, Codable, CaseIterable {
         }
     }
 
+    /// The service's own brand colour (hex), used for Join buttons and badges.
+    /// Slightly deepened where the official colour is too light for white text.
+    var brandHex: String {
+        switch self {
+        case .facetime: return "#30B94D"
+        case .teams: return "#5B5FC7"
+        case .meet: return "#00832D"
+        case .zoom: return "#0B5CFF"
+        case .webex: return "#0A7FC2"
+        case .whatsapp: return "#128C7E"
+        case .gotomeeting: return "#E5751F"
+        case .jitsi: return "#1D76BA"
+        case .whereby: return "#5B3FD9"
+        case .slack: return "#4A154B"
+        case .chime: return "#0073BB"
+        case .ringcentral: return "#F57C00"
+        case .bluejeans: return "#0071CE"
+        case .lifesize: return "#0077C8"
+        case .dialpad: return "#7C52FF"
+        case .gather: return "#5B5BD6"
+        case .discord: return "#5865F2"
+        case .signal: return "#3A76F0"
+        case .telegram: return "#1E8BC3"
+        case .generic: return "#34B553"
+        }
+    }
+
     /// SF Symbol (no third-party logos).
     var symbol: String {
         switch self {

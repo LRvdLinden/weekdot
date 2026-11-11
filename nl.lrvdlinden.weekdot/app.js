@@ -293,7 +293,7 @@ class WeekdotApp extends Homey.App {
       case 'next_call': {
         const calls = evs.filter(e => e.call && !e.allDay && Date.parse(e.end) > nowMs);
         const e = calls.find(x => a.isNow(x, now)) || calls[0] || null;
-        return { ...base, event: view(e), service: a.callName(e), hasLink: !!(e && e.callUrl) };
+        return { ...base, event: view(e), service: a.callName(e), call: e ? e.call : '', hasLink: !!(e && e.callUrl) };
       }
       default:
         return base;
