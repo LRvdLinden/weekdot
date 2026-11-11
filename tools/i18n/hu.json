@@ -650,7 +650,8 @@
   "Microsoft only allows Teams meetings from apps for work or school accounts.": "A Microsoft csak munkahelyi vagy iskolai fiókoknál engedi Teams-megbeszélések létrehozását appokból.",
   "Join with %@: %@": "Csatlakozás ezzel: %@: %@",
   "Dial in: %@, conference ID %@": "Betárcsázás: %@, konferenciaazonosító: %@",
-  "Weekdot did not get permission to create meetings with %@. Try again and tick the box for creating meetings when you sign in.": "A Weekdot nem kapott engedélyt megbeszélések létrehozására ezzel: %@. Próbáld újra, és bejelentkezéskor jelöld be a megbeszélések létrehozására vonatkozó négyzetet."
+  "Weekdot did not get permission to create meetings with %@. Try again and tick the box for creating meetings when you sign in.": "A Weekdot nem kapott engedélyt megbeszélések létrehozására ezzel: %@. Próbáld újra, és bejelentkezéskor jelöld be a megbeszélések létrehozására vonatkozó négyzetet.",
+  "This account can't be used for Teams meetings in Weekdot yet. Use a work or school account, or try again later.": "Ez a fiók még nem használható Teams-megbeszélésekhez a Weekdotban. Használj munkahelyi vagy iskolai fiókot, vagy próbáld újra később."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "A Weekdot megjeleníti, létrehozza és szerkeszti a naptáraiban lévő eseményeket.",

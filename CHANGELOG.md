@@ -1,3 +1,8 @@
+## 1.0.4 (build 96) — Microsoft Teams sign-in
+
+- Microsoft sign-in uses the common endpoint, so it works whatever account types the app registration allows; personal accounts get a clear message that Teams meetings need a work or school account.
+- Readable sign-in errors instead of raw AADSTS codes with trace IDs (new text in all languages).
+
 ## 1.0.4 (build 95) — Video calls for Homey
 
 - Weekdot sends the video-call service of each event to Homey (and the link when details are shown), for the new cards in the Weekdot Homey app 1.0.5: a video call starts / ends / starts in … minutes, I'm in a video call, and the Next video call widget.

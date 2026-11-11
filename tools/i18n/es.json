@@ -650,7 +650,8 @@
   "Microsoft only allows Teams meetings from apps for work or school accounts.": "Microsoft solo permite reuniones de Teams desde apps para cuentas profesionales o educativas.",
   "Join with %@: %@": "Unirse con %@: %@",
   "Dial in: %@, conference ID %@": "Llamar: %@, ID de conferencia %@",
-  "Weekdot did not get permission to create meetings with %@. Try again and tick the box for creating meetings when you sign in.": "Weekdot no recibió permiso para crear reuniones con %@. Inténtalo de nuevo y marca la casilla para crear reuniones al iniciar sesión."
+  "Weekdot did not get permission to create meetings with %@. Try again and tick the box for creating meetings when you sign in.": "Weekdot no recibió permiso para crear reuniones con %@. Inténtalo de nuevo y marca la casilla para crear reuniones al iniciar sesión.",
+  "This account can't be used for Teams meetings in Weekdot yet. Use a work or school account, or try again later.": "Esta cuenta aún no se puede usar para reuniones de Teams en Weekdot. Usa una cuenta profesional o educativa, o inténtalo más tarde."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot muestra, crea y edita los eventos de tus calendarios.",

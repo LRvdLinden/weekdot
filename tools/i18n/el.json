@@ -650,7 +650,8 @@
   "Microsoft only allows Teams meetings from apps for work or school accounts.": "Η Microsoft επιτρέπει συσκέψεις Teams από εφαρμογές μόνο για εταιρικούς ή σχολικούς λογαριασμούς.",
   "Join with %@: %@": "Συμμετοχή μέσω %@: %@",
   "Dial in: %@, conference ID %@": "Κλήση: %@, ID σύσκεψης %@",
-  "Weekdot did not get permission to create meetings with %@. Try again and tick the box for creating meetings when you sign in.": "Το Weekdot δεν έλαβε άδεια να δημιουργεί συσκέψεις με %@. Δοκιμάστε ξανά και επιλέξτε το πλαίσιο για δημιουργία συσκέψεων κατά τη σύνδεση."
+  "Weekdot did not get permission to create meetings with %@. Try again and tick the box for creating meetings when you sign in.": "Το Weekdot δεν έλαβε άδεια να δημιουργεί συσκέψεις με %@. Δοκιμάστε ξανά και επιλέξτε το πλαίσιο για δημιουργία συσκέψεων κατά τη σύνδεση.",
+  "This account can't be used for Teams meetings in Weekdot yet. Use a work or school account, or try again later.": "Αυτός ο λογαριασμός δεν μπορεί ακόμη να χρησιμοποιηθεί για συσκέψεις Teams στο Weekdot. Χρησιμοποιήστε εταιρικό ή σχολικό λογαριασμό ή δοκιμάστε αργότερα."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Το Weekdot εμφανίζει, δημιουργεί και επεξεργάζεται τα συμβάντα στα ημερολόγιά σας.",

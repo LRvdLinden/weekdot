@@ -650,7 +650,8 @@
   "Microsoft only allows Teams meetings from apps for work or school accounts.": "Microsoft는 회사 또는 학교 계정에 대해서만 앱에서 Teams 회의를 허용합니다.",
   "Join with %@: %@": "%@(으)로 참가: %@",
   "Dial in: %@, conference ID %@": "전화 참가: %@, 회의 ID %@",
-  "Weekdot did not get permission to create meetings with %@. Try again and tick the box for creating meetings when you sign in.": "Weekdot이 %@(으)로 회의를 만들 권한을 받지 못했습니다. 다시 시도하고 로그인할 때 회의 만들기 확인란을 선택하세요."
+  "Weekdot did not get permission to create meetings with %@. Try again and tick the box for creating meetings when you sign in.": "Weekdot이 %@(으)로 회의를 만들 권한을 받지 못했습니다. 다시 시도하고 로그인할 때 회의 만들기 확인란을 선택하세요.",
+  "This account can't be used for Teams meetings in Weekdot yet. Use a work or school account, or try again later.": "이 계정은 아직 Weekdot에서 Teams 회의에 사용할 수 없습니다. 회사 또는 학교 계정을 사용하거나 나중에 다시 시도하세요."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot은 캘린더의 이벤트를 표시, 생성 및 편집합니다.",

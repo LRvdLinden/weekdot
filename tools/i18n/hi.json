@@ -650,7 +650,8 @@
   "Microsoft only allows Teams meetings from apps for work or school accounts.": "Microsoft ऐप से Teams मीटिंग केवल कार्य या स्कूल अकाउंट के लिए अनुमति देता है।",
   "Join with %@: %@": "%@ से शामिल हों: %@",
   "Dial in: %@, conference ID %@": "डायल इन: %@, कॉन्फ़्रेंस ID %@",
-  "Weekdot did not get permission to create meetings with %@. Try again and tick the box for creating meetings when you sign in.": "Weekdot को %@ के साथ मीटिंग बनाने की अनुमति नहीं मिली। फिर से कोशिश करें और साइन इन करते समय मीटिंग बनाने वाला बॉक्स चुनें।"
+  "Weekdot did not get permission to create meetings with %@. Try again and tick the box for creating meetings when you sign in.": "Weekdot को %@ के साथ मीटिंग बनाने की अनुमति नहीं मिली। फिर से कोशिश करें और साइन इन करते समय मीटिंग बनाने वाला बॉक्स चुनें।",
+  "This account can't be used for Teams meetings in Weekdot yet. Use a work or school account, or try again later.": "इस अकाउंट का उपयोग अभी Weekdot में Teams मीटिंग के लिए नहीं किया जा सकता। कार्य या स्कूल अकाउंट का उपयोग करें, या बाद में फिर कोशिश करें।"
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot आपके कैलेंडर में इवेंट दिखाता, बनाता और संपादित करता है।",

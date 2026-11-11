@@ -650,7 +650,8 @@
   "Microsoft only allows Teams meetings from apps for work or school accounts.": "Microsoft tillader kun Teams-møder fra apps for arbejds- eller skolekonti.",
   "Join with %@: %@": "Deltag med %@: %@",
   "Dial in: %@, conference ID %@": "Ring ind: %@, konference-id %@",
-  "Weekdot did not get permission to create meetings with %@. Try again and tick the box for creating meetings when you sign in.": "Weekdot fik ikke tilladelse til at oprette møder med %@. Prøv igen, og sæt flueben ved oprettelse af møder, når du logger ind."
+  "Weekdot did not get permission to create meetings with %@. Try again and tick the box for creating meetings when you sign in.": "Weekdot fik ikke tilladelse til at oprette møder med %@. Prøv igen, og sæt flueben ved oprettelse af møder, når du logger ind.",
+  "This account can't be used for Teams meetings in Weekdot yet. Use a work or school account, or try again later.": "Denne konto kan endnu ikke bruges til Teams-møder i Weekdot. Brug en arbejds- eller skolekonto, eller prøv igen senere."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot viser, opretter og redigerer begivenhederne i dine kalendere.",

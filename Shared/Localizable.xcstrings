@@ -107538,6 +107538,209 @@
         }
       }
     },
+    "This account can't be used for Teams meetings in Weekdot yet. Use a work or school account, or try again later.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا يمكن استخدام هذا الحساب بعد لاجتماعات Teams في Weekdot. استخدم حساب عمل أو مدرسة، أو حاول لاحقًا."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aquest compte encara no es pot fer servir per a reunions de Teams al Weekdot. Fes servir un compte de feina o d’escola, o torna-ho a provar més tard."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tento účet zatím nelze v aplikaci Weekdot použít pro schůzky Teams. Použijte pracovní nebo školní účet, nebo to zkuste později."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Denne konto kan endnu ikke bruges til Teams-møder i Weekdot. Brug en arbejds- eller skolekonto, eller prøv igen senere."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dieses Konto kann in Weekdot noch nicht für Teams-Besprechungen verwendet werden. Verwende ein Geschäfts- oder Schulkonto oder versuche es später erneut."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Αυτός ο λογαριασμός δεν μπορεί ακόμη να χρησιμοποιηθεί για συσκέψεις Teams στο Weekdot. Χρησιμοποιήστε εταιρικό ή σχολικό λογαριασμό ή δοκιμάστε αργότερα."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Esta cuenta aún no se puede usar para reuniones de Teams en Weekdot. Usa una cuenta profesional o educativa, o inténtalo más tarde."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tätä tiliä ei voi vielä käyttää Teams-kokouksiin Weekdotissa. Käytä työpaikan tai oppilaitoksen tiliä tai yritä myöhemmin uudelleen."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ce compte ne peut pas encore être utilisé pour les réunions Teams dans Weekdot. Utilisez un compte professionnel ou scolaire, ou réessayez plus tard."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "עדיין אי אפשר להשתמש בחשבון זה לפגישות Teams ב־Weekdot. השתמש/י בחשבון עבודה או בית ספר, או נסה/י שוב מאוחר יותר."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "इस अकाउंट का उपयोग अभी Weekdot में Teams मीटिंग के लिए नहीं किया जा सकता। कार्य या स्कूल अकाउंट का उपयोग करें, या बाद में फिर कोशिश करें।"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ovaj se račun još ne može koristiti za Teams sastanke u Weekdotu. Upotrijebite poslovni ili školski račun ili pokušajte kasnije."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ez a fiók még nem használható Teams-megbeszélésekhez a Weekdotban. Használj munkahelyi vagy iskolai fiókot, vagy próbáld újra később."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Akun ini belum dapat digunakan untuk rapat Teams di Weekdot. Gunakan akun kerja atau sekolah, atau coba lagi nanti."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Questo account non può ancora essere usato per le riunioni Teams in Weekdot. Usa un account di lavoro o dell’istituto, oppure riprova più tardi."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このアカウントはまだWeekdotでTeams会議に使用できません。職場または学校のアカウントを使用するか、後でもう一度お試しください。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 계정은 아직 Weekdot에서 Teams 회의에 사용할 수 없습니다. 회사 또는 학교 계정을 사용하거나 나중에 다시 시도하세요."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Akaun ini belum boleh digunakan untuk mesyuarat Teams dalam Weekdot. Gunakan akaun kerja atau sekolah, atau cuba lagi kemudian."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Denne kontoen kan ikke brukes til Teams-møter i Weekdot ennå. Bruk en jobb- eller skolekonto, eller prøv igjen senere."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dit account kan nog niet worden gebruikt voor Teams-vergaderingen in Weekdot. Gebruik een werk- of schoolaccount, of probeer het later opnieuw."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tego konta nie można jeszcze używać do spotkań Teams w Weekdot. Użyj konta służbowego lub szkolnego albo spróbuj później."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Esta conta ainda não pode ser usada para reuniões do Teams no Weekdot. Use uma conta corporativa ou de escola, ou tente mais tarde."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Esta conta ainda não pode ser usada para reuniões do Teams no Weekdot. Use uma conta profissional ou escolar, ou tente mais tarde."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acest cont nu poate fi folosit încă pentru întâlniri Teams în Weekdot. Folosește un cont de serviciu sau de școală ori încearcă mai târziu."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Эту учётную запись пока нельзя использовать для встреч Teams в Weekdot. Используйте рабочую или учебную учётную запись или повторите попытку позже."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tento účet zatiaľ nemožno vo Weekdot použiť na schôdze Teams. Použite pracovný alebo školský účet, alebo to skúste neskôr."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Det här kontot kan inte användas för Teams-möten i Weekdot ännu. Använd ett arbets- eller skolkonto eller försök igen senare."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ยังใช้บัญชีนี้สำหรับการประชุม Teams ใน Weekdot ไม่ได้ ใช้บัญชีที่ทำงานหรือโรงเรียน หรือลองอีกครั้งในภายหลัง"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu hesap Weekdot'ta henüz Teams toplantıları için kullanılamıyor. İş veya okul hesabı kullanın ya da daha sonra yeniden deneyin."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Цей обліковий запис поки не можна використовувати для нарад Teams у Weekdot. Скористайтеся робочим або навчальним обліковим записом чи спробуйте пізніше."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chưa thể dùng tài khoản này cho cuộc họp Teams trong Weekdot. Hãy dùng tài khoản cơ quan hoặc trường học, hoặc thử lại sau."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "此账户暂时无法在 Weekdot 中用于 Teams 会议。请使用工作或学校账户，或稍后重试。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "此帳號暫時無法在 Weekdot 中用於 Teams 會議。請使用公司或學校帳號，或稍後再試。"
+          }
+        }
+      }
+    },
     "This calendar is already subscribed in Weekdot.": {
       "extractionState": "manual",
       "localizations": {

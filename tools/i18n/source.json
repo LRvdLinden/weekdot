@@ -737,7 +737,8 @@
   "Microsoft only allows Teams meetings from apps for work or school accounts.",
   "Join with %@: %@",
   "Dial in: %@, conference ID %@",
-  "Weekdot did not get permission to create meetings with %@. Try again and tick the box for creating meetings when you sign in."
+  "Weekdot did not get permission to create meetings with %@. Try again and tick the box for creating meetings when you sign in.",
+  "This account can't be used for Teams meetings in Weekdot yet. Use a work or school account, or try again later."
  ],
  "plist": [
   "Weekdot shows, creates and edits the events in your calendars.",

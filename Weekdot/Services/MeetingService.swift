@@ -34,7 +34,7 @@ final class MeetingService: NSObject, ObservableObject {
     }
 
     enum MeetingError: LocalizedError {
-        case notConfigured, cancelled, bad, personalAccount, missingPermission(String), http(Int, String?)
+        case notConfigured, cancelled, bad, personalAccount, accountNotAllowed, missingPermission(String), http(Int, String?)
         var errorDescription: String? {
             switch self {
             case .notConfigured: return String(localized: "This service is not available in this version of Weekdot.")
@@ -42,6 +42,8 @@ final class MeetingService: NSObject, ObservableObject {
             case .bad: return String(localized: "The meeting could not be created. Try again.")
             case .missingPermission(let account):
                 return String(localized: "Weekdot did not get permission to create meetings with \(account). Try again and tick the box for creating meetings when you sign in.")
+            case .accountNotAllowed:
+                return String(localized: "This account can't be used for Teams meetings in Weekdot yet. Use a work or school account, or try again later.")
             case .personalAccount:
                 return String(localized: "Microsoft only allows Teams meetings from apps for work or school accounts.")
             case .http(let code, let msg): return msg.map { "\($0) (\(code))" } ?? String(localized: "The meeting could not be created. Try again.") + " (\(code))"
@@ -110,8 +112,8 @@ final class MeetingService: NSObject, ObservableObject {
         case .microsoft:
             guard let id = plist["MicrosoftClientID"] else { return nil }
             return Config(clientID: id,
-                          authorize: "https://login.microsoftonline.com/organizations/oauth2/v2.0/authorize",
-                          token: "https://login.microsoftonline.com/organizations/oauth2/v2.0/token",
+                          authorize: "https://login.microsoftonline.com/common/oauth2/v2.0/authorize",
+                          token: "https://login.microsoftonline.com/common/oauth2/v2.0/token",
                           scope: "openid profile email offline_access https://graph.microsoft.com/OnlineMeetings.ReadWrite",
                           redirect: "msauth.nl.lrvdlinden.weekdot://auth")
         }
@@ -153,7 +155,7 @@ final class MeetingService: NSObject, ObservableObject {
             let data: Data
             do {
                 data = try await request("POST", "https://graph.microsoft.com/v1.0/me/onlineMeetings", token: token, json: body)
-            } catch MeetingError.http(let code, _) where code == 403 || code == 404 {
+            } catch MeetingError.http(let code, _) where code == 400 || code == 403 || code == 404 {
                 throw MeetingError.personalAccount
             }
             guard let obj = try JSONSerialization.jsonObject(with: data) as? [String: Any],
@@ -205,7 +207,7 @@ final class MeetingService: NSObject, ObservableObject {
         let q = URLComponents(url: callback, resolvingAgainstBaseURL: false)?.queryItems ?? []
         if q.first(where: { $0.name == "error" }) != nil {
             let desc = q.first(where: { $0.name == "error_description" })?.value
-            throw MeetingError.http(400, desc)
+            throw Self.signInError(desc, account: p.accountName)
         }
         guard q.first(where: { $0.name == "state" })?.value == state,
               let code = q.first(where: { $0.name == "code" })?.value else { throw MeetingError.bad }
@@ -267,7 +269,7 @@ final class MeetingService: NSObject, ObservableObject {
         let code = (resp as? HTTPURLResponse)?.statusCode ?? 0
         let obj = (try? JSONSerialization.jsonObject(with: data)) as? [String: Any] ?? [:]
         guard (200..<300).contains(code), let access = obj["access_token"] as? String else {
-            throw MeetingError.http(code, (obj["error_description"] as? String) ?? (obj["error"] as? String))
+            throw Self.signInError((obj["error_description"] as? String) ?? (obj["error"] as? String), code: code)
         }
         let expiresIn = (obj["expires_in"] as? Double) ?? Double(obj["expires_in"] as? String ?? "") ?? 3600
         return Tokens(access: access, refresh: obj["refresh_token"] as? String,
@@ -293,6 +295,24 @@ final class MeetingService: NSObject, ObservableObject {
     }
 
     // MARK: Helpers
+
+    /// Turns an OAuth error ("AADSTS9002346: Application … is configured for use by Microsoft Account users only. …
+    /// Trace ID: …") into a readable message without codes, trace IDs and timestamps.
+    private static func signInError(_ raw: String?, code: Int = 400, account: String = "Microsoft") -> MeetingError {
+        guard var text = raw, !text.isEmpty else { return .http(code, nil) }
+        text = text.replacingOccurrences(of: "+", with: " ")
+        text = text.removingPercentEncoding ?? text
+        // Microsoft: account type the app registration does not accept
+        if ["AADSTS9002346", "AADSTS50020", "AADSTS50194", "AADSTS500200", "AADSTS9002331"].contains(where: { text.contains($0) }) {
+            return .accountNotAllowed
+        }
+        if text.contains("AADSTS65001") || text.contains("access_denied") {
+            return .missingPermission(account)
+        }
+        if let r = text.range(of: " Trace ID") { text = String(text[..<r.lowerBound]) }
+        if let r = text.range(of: #"^AADSTS\d+:\s*"#, options: .regularExpression) { text.removeSubrange(r) }
+        return .http(code, text.trimmingCharacters(in: .whitespacesAndNewlines))
+    }
 
     private static func email(fromIDToken jwt: String) -> String? {
         let parts = jwt.components(separatedBy: ".")

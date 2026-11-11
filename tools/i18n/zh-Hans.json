@@ -650,7 +650,8 @@
   "Microsoft only allows Teams meetings from apps for work or school accounts.": "Microsoft 仅允许工作或学校账户通过 App 创建 Teams 会议。",
   "Join with %@: %@": "通过 %@ 加入：%@",
   "Dial in: %@, conference ID %@": "拨入：%@，会议 ID %@",
-  "Weekdot did not get permission to create meetings with %@. Try again and tick the box for creating meetings when you sign in.": "Weekdot 未获得使用 %@ 创建会议的权限。请重试，并在登录时勾选创建会议的选项。"
+  "Weekdot did not get permission to create meetings with %@. Try again and tick the box for creating meetings when you sign in.": "Weekdot 未获得使用 %@ 创建会议的权限。请重试，并在登录时勾选创建会议的选项。",
+  "This account can't be used for Teams meetings in Weekdot yet. Use a work or school account, or try again later.": "此账户暂时无法在 Weekdot 中用于 Teams 会议。请使用工作或学校账户，或稍后重试。"
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot 会显示、创建和编辑你日历中的日程。",

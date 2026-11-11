@@ -650,7 +650,8 @@
   "Microsoft only allows Teams meetings from apps for work or school accounts.": "Microsoft permite întâlniri Teams din aplicații doar pentru conturi de serviciu sau de școală.",
   "Join with %@: %@": "Alătură-te cu %@: %@",
   "Dial in: %@, conference ID %@": "Apelare: %@, ID conferință %@",
-  "Weekdot did not get permission to create meetings with %@. Try again and tick the box for creating meetings when you sign in.": "Weekdot nu a primit permisiunea de a crea întâlniri cu %@. Încearcă din nou și bifează caseta pentru crearea întâlnirilor la conectare."
+  "Weekdot did not get permission to create meetings with %@. Try again and tick the box for creating meetings when you sign in.": "Weekdot nu a primit permisiunea de a crea întâlniri cu %@. Încearcă din nou și bifează caseta pentru crearea întâlnirilor la conectare.",
+  "This account can't be used for Teams meetings in Weekdot yet. Use a work or school account, or try again later.": "Acest cont nu poate fi folosit încă pentru întâlniri Teams în Weekdot. Folosește un cont de serviciu sau de școală ori încearcă mai târziu."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot afișează, creează și editează evenimentele din calendarele dvs.",

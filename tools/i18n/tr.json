@@ -650,7 +650,8 @@
   "Microsoft only allows Teams meetings from apps for work or school accounts.": "Microsoft, uygulamalardan Teams toplantılarına yalnızca iş veya okul hesapları için izin verir.",
   "Join with %@: %@": "%@ ile katıl: %@",
   "Dial in: %@, conference ID %@": "Telefonla katılım: %@, konferans kimliği %@",
-  "Weekdot did not get permission to create meetings with %@. Try again and tick the box for creating meetings when you sign in.": "Weekdot, %@ ile toplantı oluşturma izni alamadı. Yeniden deneyin ve giriş yaparken toplantı oluşturma kutusunu işaretleyin."
+  "Weekdot did not get permission to create meetings with %@. Try again and tick the box for creating meetings when you sign in.": "Weekdot, %@ ile toplantı oluşturma izni alamadı. Yeniden deneyin ve giriş yaparken toplantı oluşturma kutusunu işaretleyin.",
+  "This account can't be used for Teams meetings in Weekdot yet. Use a work or school account, or try again later.": "Bu hesap Weekdot'ta henüz Teams toplantıları için kullanılamıyor. İş veya okul hesabı kullanın ya da daha sonra yeniden deneyin."
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot, takvimlerinizdeki etkinlikleri gösterir, oluşturur ve düzenler.",

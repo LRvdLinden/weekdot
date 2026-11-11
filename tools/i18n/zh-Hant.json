@@ -650,7 +650,8 @@
   "Microsoft only allows Teams meetings from apps for work or school accounts.": "Microsoft 只允許公司或學校帳號從 App 建立 Teams 會議。",
   "Join with %@: %@": "透過 %@ 加入：%@",
   "Dial in: %@, conference ID %@": "撥入：%@，會議 ID %@",
-  "Weekdot did not get permission to create meetings with %@. Try again and tick the box for creating meetings when you sign in.": "Weekdot 未取得使用 %@ 建立會議的權限。請再試一次，並在登入時勾選建立會議的選項。"
+  "Weekdot did not get permission to create meetings with %@. Try again and tick the box for creating meetings when you sign in.": "Weekdot 未取得使用 %@ 建立會議的權限。請再試一次，並在登入時勾選建立會議的選項。",
+  "This account can't be used for Teams meetings in Weekdot yet. Use a work or school account, or try again later.": "此帳號暫時無法在 Weekdot 中用於 Teams 會議。請使用公司或學校帳號，或稍後再試。"
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot 會顯示、建立和編輯你行事曆中的行程。",
