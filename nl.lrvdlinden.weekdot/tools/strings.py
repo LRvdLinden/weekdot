@@ -483,3 +483,18 @@ CHANGELOG["1.0.5"] = T(
   "Rozmowy wideo: nowe karty, gdy rozmowa wideo (Meet, Teams, FaceTime, Zoom…) się zaczyna, kończy lub zacznie się za … minut, warunek „Jestem na rozmowie wideo” i widżet Następna rozmowa wideo. Nowe są też: „Jestem zajęty”, „pierwsze wydarzenie dnia zacznie się za … minut” i „czas wyjechać” (czas podróży z Weekdot) oraz tokeny z linkiem do rozmowy, czasem podróży i godziną wyjazdu. Do rozmów potrzebny jest Weekdot 1.0.4 na iPhonie.",
   "영상 통화: 영상 통화(Meet, Teams, FaceTime, Zoom 등)가 시작되거나 끝나거나 … 분 후 시작될 때의 새 카드, '영상 통화 중' 조건과 다음 영상 통화 위젯을 추가했습니다. 또한 '바쁨', '오늘 첫 일정이 … 분 후 시작', '출발할 시간'(Weekdot의 이동 시간)과 통화 링크, 이동 시간, 출발 시간 토큰도 새로 추가되었습니다. 통화 기능에는 iPhone의 Weekdot 1.0.4가 필요합니다.",
   "مكالمات الفيديو: بطاقات جديدة عند بدء مكالمة فيديو (Meet وTeams وFaceTime وZoom…) أو انتهائها أو بدئها بعد … دقيقة، وشرط «أنا في مكالمة فيديو» وأداة مكالمة الفيديو التالية. الجديد أيضًا: «أنا مشغول» و«يبدأ أول موعد في اليوم بعد … دقيقة» و«حان وقت المغادرة» (وقت التنقل من Weekdot)، مع رموز لرابط المكالمة ووقت التنقل ووقت المغادرة. تتطلب المكالمات Weekdot 1.0.4 على iPhone.")
+
+CHANGELOG["1.0.6"] = T(
+  "Next video call widget: the service's own colour (Teams purple, Meet green, Zoom blue…), filled in from 10 minutes before the start, just like the Join buttons in Weekdot.",
+  "Widget Volgend videogesprek: in de kleur van de dienst (Teams paars, Meet groen, Zoom blauw…), helemaal ingekleurd vanaf 10 minuten voor de start, net als de knoppen Deelnemen in Weekdot.",
+  "Widget Nächster Videoanruf: in der Farbe des Dienstes (Teams lila, Meet grün, Zoom blau …), ab 10 Minuten vor Beginn voll eingefärbt, wie die Teilnehmen-Tasten in Weekdot.",
+  "Widget Prochain appel vidéo : aux couleurs du service (Teams violet, Meet vert, Zoom bleu…), entièrement coloré dès 10 minutes avant le début, comme les boutons Rejoindre de Weekdot.",
+  "Widget Prossima videochiamata: nel colore del servizio (Teams viola, Meet verde, Zoom blu…), colorato del tutto da 10 minuti prima dell'inizio, come i pulsanti Partecipa di Weekdot.",
+  "Widgeten Nästa videosamtal: i tjänstens egen färg (Teams lila, Meet grön, Zoom blå …), helt ifylld från 10 minuter före start, precis som Anslut-knapparna i Weekdot.",
+  "Widgeten Neste videosamtale: i tjenestens egen farge (Teams lilla, Meet grønn, Zoom blå …), helt fylt fra 10 minutter før start, akkurat som Bli med-knappene i Weekdot.",
+  "Widget Próxima videollamada: con el color del servicio (Teams morado, Meet verde, Zoom azul…), coloreado del todo desde 10 minutos antes del inicio, como los botones Unirse de Weekdot.",
+  "Widgetten Næste videoopkald: i tjenestens egen farve (Teams lilla, Meet grøn, Zoom blå …), helt udfyldt fra 10 minutter før start, ligesom Deltag-knapperne i Weekdot.",
+  "Виджет «Следующий видеозвонок»: в фирменном цвете сервиса (Teams — фиолетовый, Meet — зелёный, Zoom — синий…), полностью окрашен за 10 минут до начала, как кнопки «Войти» в Weekdot.",
+  "Widżet Następna rozmowa wideo: w kolorze usługi (Teams fioletowy, Meet zielony, Zoom niebieski…), w pełni wypełniony od 10 minut przed początkiem, jak przyciski Dołącz w Weekdot.",
+  "다음 영상 통화 위젯: 서비스 고유 색상(Teams 보라, Meet 초록, Zoom 파랑 등)으로 표시되며, Weekdot의 참가 버튼처럼 시작 10분 전부터 완전히 채워집니다.",
+  "أداة مكالمة الفيديو التالية: بلون الخدمة نفسها (Teams بنفسجي، وMeet أخضر، وZoom أزرق…)، وتُلوَّن بالكامل قبل البدء بـ 10 دقائق، مثل أزرار الانضمام في Weekdot.")
