@@ -287,10 +287,26 @@ footer a { color: var(--muted); }
 .wface .dots i { width: 3px; height: 3px; border-radius: 50%; background: var(--red); }
 .wface .dots i.on { width: 5px; height: 5px; }
 
-/* TestFlight button next to the App Store one */
-.store.tf { background: #0a84ff; color: #fff; }
-.band .store.tf { background: #0a84ff; color: #fff; }
-.band-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+/* Official TestFlight artwork: unchanged light/dark icons and localized badge copy. */
+.band-actions { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.tf-download-badge { display: inline-flex; align-items: center; justify-content: flex-start; gap: 10px;
+  box-sizing: border-box; flex: 0 0 auto; width: 246px; height: 82px; padding: 9px 12px;
+  background: #080808; color: #fff; border: 1px solid #909096; border-radius: 12px;
+  text-decoration: none; line-height: 1; transition: transform .2s ease, filter .2s ease; }
+.tf-download-badge:hover { text-decoration: none; transform: translateY(-2px); filter: brightness(1.1); }
+.tf-download-badge:focus-visible { outline: 3px solid var(--red); outline-offset: 3px; }
+.tf-download-icon { display: block; flex: 0 0 60px; width: 60px; height: 60px; }
+.tf-download-icon img { display: block; width: 60px; height: 60px; object-fit: contain; }
+.tf-download-copy { display: flex; flex-direction: column; min-width: 0; justify-content: center; gap: 3px; white-space: nowrap; }
+.tf-download-copy small { color: #fff; font: 400 12px/1.1 var(--font); letter-spacing: -.1px; }
+.tf-download-copy strong { color: #fff; font: 700 27px/1.06 var(--font); letter-spacing: -.7px; }
+@media (max-width: 480px) {
+  .tf-download-badge { width: 200px; height: 67px; padding: 7px 9px; gap: 9px; }
+  .tf-download-icon, .tf-download-icon img { width: 48px; height: 48px; }
+  .tf-download-icon { flex-basis: 48px; }
+  .tf-download-copy small { font-size: 10px; }
+  .tf-download-copy strong { font-size: 23px; }
+}
 .actions { flex-wrap: wrap; }
 
 /* ---------- system font until (and unless) Inter is allowed via the cookie notice ---------- */
