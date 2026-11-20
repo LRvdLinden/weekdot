@@ -22,6 +22,35 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # For correct modification times, so unchanged images are not re-uploaded.
+          fetch-depth: 0
+      - name: Keep unchanged website assets' original Git timestamps
+        run: |
+          python3 - <<'PY'
+          import os
+          import pathlib
+          import subprocess
+
+          # A fresh checkout gives every picture today's timestamp. Without fixing
+          # this, lftp --only-newer replaces *all* screenshots at every deploy.
+          tracked = set(subprocess.check_output(
+              ["git", "ls-files", "website/"], text=True).splitlines())
+          history = subprocess.check_output(
+              ["git", "log", "--format=COMMIT_TS:%ct", "--name-only",
+               "--", "website/"], text=True)
+          changed = {}
+          stamp = None
+          for line in history.splitlines():
+              if line.startswith("COMMIT_TS:"):
+                  stamp = int(line.split(":", 1)[1])
+              elif line in tracked and line not in changed and stamp is not None:
+                  changed[line] = stamp
+          for name, mtime in changed.items():
+              if pathlib.Path(name).is_file():
+                  os.utime(name, (mtime, mtime))
+          print(f"Restored modification times for {len(changed)} website files.")
+          PY
       - name: Version CSS/JS by content (no stale translations in browsers)
         run: python3 tools/bust_cache.py
       - name: Install lftp
@@ -112,7 +141,7 @@ jobs:
             note "Stopped: the target folder already has another website (no Weekdot in index.html). Set the secret FTP_DIR to the folder of the Weekdot domain."
             exit 1
           fi
-          run "mirror -R --verbose --parallel=4 --only-newer --exclude-glob .DS_Store --exclude-glob .htaccess website/ \"$TARGET\""
+          run "mirror -R --overwrite --verbose --parallel=4 --only-newer --exclude-glob .DS_Store --exclude-glob .htaccess website/ \"$TARGET\""
           # .htaccess (clean URLs): keep anything the hoster put there, replace only our block
           rm -f /tmp/htaccess.remote
           run "get \"$TARGET/.htaccess\" -o /tmp/htaccess.remote" >/dev/null 2>&1 || true
