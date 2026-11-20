@@ -29,10 +29,10 @@
       img.alt = nl ? "Download in de App Store" : "Download on the App Store";
     });
     // TestFlight badge: NL and EN use the appropriate Apple-style copy; all other languages fall back to English.
-    $("[data-testflight-copy]").forEach(function (el) {
+    $$("[data-testflight-copy]").forEach(function (el) {
       el.textContent = lang === "nl" ? "Probeer de bèta via" : "Get the beta on";
     });
-    $("[data-testflight-badge]").forEach(function (el) {
+    $$("[data-testflight-badge]").forEach(function (el) {
       el.setAttribute("aria-label", lang === "nl" ? "Probeer de bèta via TestFlight" : "Get the beta on TestFlight");
     });
     document.documentElement.dir = RTL.indexOf(lang) >= 0 ? "rtl" : "ltr";
