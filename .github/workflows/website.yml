@@ -154,6 +154,23 @@ jobs:
           PY
           run "put /tmp/htaccess.new -o \"$TARGET/.htaccess\""
           note "Website uploaded (port $PORT) to ${FTP_DIR:+the FTP_DIR folder}${FTP_DIR:-$TARGET} on the server (certificate checked)."
+      - name: Verify the published Weekdot screenshots
+        run: |
+          set -euo pipefail
+          for path in \
+            assets/shots/nl/iphone-week.png \
+            assets/shots/en/ipad-week.png \
+            assets/shots/nl/gallery/week.jpg \
+            assets/shots/en/gallery/sports.jpg; do
+            url="https://weekdot.com/$path?check=${GITHUB_SHA}"
+            status=$(curl --location --silent --show-error --max-time 25 \
+              --retry 2 --retry-delay 3 --output /dev/null --write-out '%{http_code}' "$url")
+            echo "$path: HTTP $status"
+            if [ "$status" != "200" ]; then
+              echo "::error::Screenshot unavailable: $path (HTTP $status)"
+              exit 1
+            fi
+          done
       - name: Report on the commit
         if: always()
         env:
