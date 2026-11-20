@@ -8,15 +8,29 @@ struct MonthListView: View {
     @EnvironmentObject private var store: CalendarStore
     @EnvironmentObject private var state: AppState
 
+    #if os(iOS)
+    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
+    #endif
+
     private var settings: AppSettings { synced.settings }
     private var cal: Calendar { settings.calendar }
+
+    /// Month next to the list on wide screens: iPad, Mac, and the open (inner) display of iPhone Duo,
+    /// which has a regular width size class. The folded (outer) display stays stacked like any iPhone.
+    private func sideBySide(_ width: CGFloat) -> Bool {
+        #if os(iOS)
+        return horizontalSizeClass == .regular && width > 600
+        #else
+        return width > 700
+        #endif
+    }
 
     /// Days shown in the list, from the selected day.
     private let listDays = 60
 
     var body: some View {
         GeometryReader { geo in
-            if geo.size.width > 700 {
+            if sideBySide(geo.size.width) {
                 HStack(spacing: 0) {
                     MiniMonthGrid(rowHeight: 58)
                         .frame(width: min(440, geo.size.width * 0.45))

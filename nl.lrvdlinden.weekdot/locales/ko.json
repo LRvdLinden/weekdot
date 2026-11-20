@@ -60,7 +60,12 @@
     "dir": "ltr",
     "video_call": "영상 통화",
     "no_call": "예정된 영상 통화 없음",
-    "no_call_hint": "iPhone의 Weekdot 1.0.4 이상이 Meet, Teams, FaceTime, Zoom 통화를 여기로 보냅니다."
+    "no_call_hint": "iPhone의 Weekdot 1.0.4 이상이 Meet, Teams, FaceTime, Zoom 통화를 여기로 보냅니다.",
+    "this_week": "이번 주",
+    "this_month": "이번 달",
+    "nothing_week": "이번 주 남은 일정 없음",
+    "nothing_month": "이번 달 남은 일정 없음",
+    "more": "+__n__개 더"
   },
   "more_apps": {
     "section": "둘러보기",

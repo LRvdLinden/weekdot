@@ -60,7 +60,12 @@
     "dir": "ltr",
     "video_call": "Rozmowa wideo",
     "no_call": "Brak nadchodzących rozmów wideo",
-    "no_call_hint": "Weekdot 1.0.4 lub nowszy na iPhonie wysyła tu rozmowy Meet, Teams, FaceTime i Zoom."
+    "no_call_hint": "Weekdot 1.0.4 lub nowszy na iPhonie wysyła tu rozmowy Meet, Teams, FaceTime i Zoom.",
+    "this_week": "Ten tydzień",
+    "this_month": "Ten miesiąc",
+    "nothing_week": "Do końca tygodnia nic nie zaplanowano",
+    "nothing_month": "Do końca miesiąca nic nie zaplanowano",
+    "more": "+__n__ więcej"
   },
   "more_apps": {
     "section": "Odkrywaj",

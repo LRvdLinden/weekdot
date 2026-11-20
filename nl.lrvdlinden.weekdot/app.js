@@ -5,7 +5,7 @@ const Homey = require('homey');
 const Agenda = require('./lib/agenda');
 
 const TICK = 30 * 1000;
-const WIDGETS = ['next_event', 'free_busy', 'countdown', 'week', 'timeline', 'month', 'next_call'];
+const WIDGETS = ['next_event', 'free_busy', 'countdown', 'week', 'timeline', 'month', 'next_call', 'week_list', 'month_list'];
 const MAX_LATE = 10 * 60 * 1000; // after a restart, do not fire triggers that are more than 10 minutes old
 
 class WeekdotApp extends Homey.App {
@@ -219,7 +219,29 @@ class WeekdotApp extends Homey.App {
       const list = evs.filter(e => a.onDay(e, day));
       return { count: list.length, colors: [...new Set(list.map(e => e.color))].slice(0, 4) };
     };
-    const base = { linked: true, now: nowMs, today, lastDay: a.lastDay };
+    // events of one day for the tappable widgets: time, place and calendar show when a row is opened
+    const eventsOn = day => evs.filter(e => a.onDay(e, day)).map(e => ({
+      title: e.title, emoji: e.emoji || '', color: e.color, allDay: e.allDay,
+      start: e.allDay ? '' : a.time(new Date(e.start)), end: e.allDay ? '' : a.time(new Date(e.end)),
+      location: e.location || '', calendar: e.calendar || '',
+    }));
+    const base = { linked: true, now: nowMs, today, tomorrow: addDays(today, 1), lastDay: a.lastDay };
+    const fmtRange = (from, to) => {
+      const f = d => new Date(`${d}T12:00:00Z`).toLocaleDateString(this.homey.i18n.getLanguage(), { day: 'numeric', month: 'short', timeZone: 'UTC' });
+      return from === to ? f(from) : `${f(from)} – ${f(to)}`;
+    };
+    // list of the rest of a period (from today), grouped by day, at most 30 events
+    const periodList = (to, label, empty) => {
+      const groups = []; let shown = 0, more = 0;
+      for (let day = today; day <= to; day = addDays(day, 1)) {
+        const list = eventsOn(day);
+        if (!list.length) continue;
+        const room = Math.max(0, 30 - shown);
+        if (room) groups.push({ day, events: list.slice(0, room) });
+        shown += Math.min(room, list.length); more += Math.max(0, list.length - room);
+      }
+      return { ...base, label, empty, range: fmtRange(today, to), groups, more };
+    };
 
     switch (type) {
       case 'next_event': {
@@ -258,9 +280,19 @@ class WeekdotApp extends Homey.App {
         const start = addDays(today, -((weekday(today) - first + 7) % 7));
         const days = Array.from({ length: 7 }, (_, i) => {
           const day = addDays(start, i);
-          return { day, today: day === today, known: !!a.lastDay && day <= a.lastDay, ...colorsOn(day) };
+          return { day, today: day === today, known: !!a.lastDay && day <= a.lastDay, ...colorsOn(day), events: eventsOn(day) };
         });
         return { ...base, days, total: days.reduce((n, d) => n + d.count, 0) };
+      }
+      case 'week_list': {
+        const first = q.weekStart === 'sunday' ? 0 : 1;
+        const start = addDays(today, -((weekday(today) - first + 7) % 7));
+        return periodList(addDays(start, 6), 'this_week', 'nothing_week');
+      }
+      case 'month_list': {
+        const [y, m] = today.split('-').map(Number);
+        const last = `${today.slice(0, 8)}${String(new Date(Date.UTC(y, m, 0)).getUTCDate()).padStart(2, '0')}`;
+        return periodList(last, 'this_month', 'nothing_month');
       }
       case 'timeline': {
         const list = evs.filter(e => a.onDay(e, today));
@@ -286,7 +318,7 @@ class WeekdotApp extends Homey.App {
         const days = Array.from({ length: cells }, (_, i) => {
           const day = addDays(gridStart, i);
           const c = colorsOn(day);
-          return { day, inMonth: day.slice(0, 7) === today.slice(0, 7), today: day === today, colors: c.colors.slice(0, 3) };
+          return { day, inMonth: day.slice(0, 7) === today.slice(0, 7), today: day === today, colors: c.colors.slice(0, 3), events: eventsOn(day) };
         });
         return { ...base, month: today.slice(0, 7), days };
       }

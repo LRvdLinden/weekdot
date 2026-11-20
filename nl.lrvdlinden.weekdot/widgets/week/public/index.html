@@ -16,15 +16,32 @@ body{font-family:-apple-system,"SF Pro Text",Inter,Roboto,sans-serif;color:var(-
 .right{font-size:11px;font-weight:700;color:var(--red);text-transform:uppercase;letter-spacing:.3px;white-space:nowrap}
 .hint{font-size:12px;color:var(--sec);line-height:1.4;padding:2px 0}
 .ell{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;-webkit-tap-highlight-color:transparent}
+button:focus-visible{outline:2px solid var(--red);outline-offset:1px;border-radius:8px}
+.sel-h{display:flex;align-items:baseline;gap:6px;margin:10px 0 4px;font-size:12px;font-weight:700;color:var(--sec);text-transform:uppercase;letter-spacing:.3px}
+.sel-h .t{color:var(--red)}
+.er{display:block;width:100%;text-align:start;padding:6px 0;border-top:1px solid var(--line)}
+.er:first-of-type{border-top:0}
+.er .r{display:flex;align-items:center;gap:8px;min-width:0}
+.er .b{width:4px;align-self:stretch;min-height:18px;border-radius:2px;flex:none}
+.er .tm{font-size:12px;color:var(--sec);font-variant-numeric:tabular-nums;flex:none;min-width:38px}
+.er .ti{font-size:14px;font-weight:600;flex:1;min-width:0}
+.er .ch{font-size:11px;color:var(--sec);flex:none;transition:transform .2s}
+.er.open .ch{transform:rotate(90deg)}
+.er .x{display:none;margin:4px 0 2px;padding-inline-start:12px;font-size:12.5px;color:var(--sec);line-height:1.45}
+.er.open .x{display:block}
+.er .x b{color:var(--text);font-weight:600}
+.more{font-size:12px;color:var(--sec);padding-top:6px}
 
 .days{display:grid;grid-template-columns:repeat(7,1fr);text-align:center;gap:2px}
+.dc{display:block;padding:3px 0 4px;border-radius:12px}
+.dc.on{background:var(--soft)}
 .wd{font-size:10.5px;font-weight:700;color:var(--sec);text-transform:uppercase}
 .dn{font-size:15px;font-weight:600;margin:3px auto 0;width:28px;height:28px;line-height:28px;border-radius:9px}
 .dn.t{background:var(--red);color:#fff}
 .dots{display:flex;gap:2px;justify-content:center;height:6px;margin-top:3px}
 .dots i{width:5px;height:5px;border-radius:50%}
 .unk{opacity:.4}
-.foot{font-size:12px;color:var(--sec);margin-top:8px}
 </style>
 </head>
 <body class="homey-widget">
@@ -36,17 +53,37 @@ function isoWeek(day) {
   return 1 + Math.round(((d - f) / 86400000 - 3 + ((f.getUTCDay() + 6) % 7)) / 7);
 }
 function render(d, t) {
-  const cells = d.days.map(x => `<div class="${x.known ? '' : 'unk'}"><div class="wd">${esc(fmtDay(x.day, { weekday: 'short' }).replace('.', ''))}</div>`
+  const sel = d.days.some(x => x.day === SEL) ? SEL : d.today;
+  const cells = d.days.map(x => `<button class="dc${x.known ? '' : ' unk'}${x.day === sel ? ' on' : ''}" data-day="${x.day}" aria-pressed="${x.day === sel}" aria-label="${esc(fmtDay(x.day, { weekday: 'long', day: 'numeric', month: 'long' }))}">`
+    + `<div class="wd">${esc(fmtDay(x.day, { weekday: 'short' }).replace('.', ''))}</div>`
     + `<div class="dn${x.today ? ' t' : ''}">${Number(x.day.slice(8))}</div>`
-    + `<div class="dots">${x.colors.map(c => `<i style="background:${esc(c)}"></i>`).join('')}</div></div>`).join('');
+    + `<div class="dots">${x.colors.map(c => `<i style="background:${esc(c)}"></i>`).join('')}</div></button>`).join('');
+  const day = d.days.find(x => x.day === sel);
+  const list = day.events.length ? evRows(day.events, t, sel) : `<div class="hint">${esc(t('nothing'))}</div>`;
   return header(fmtDay(d.today, { month: 'long', year: 'numeric' }), t('week_n', { n: isoWeek(d.today) }))
-    + `<div class="days">${cells}</div><div class="foot">${esc(t('events_count', { count: d.total }))}</div>`;
+    + `<div class="days">${cells}</div>`
+    + `<div class="sel-h"><span class="${sel === d.today ? 't' : ''}">${esc(dayLabel(sel, d, t))}</span></div>${list}`;
 }
 
 const LOGO = '<svg class="logo" viewBox="0 0 64 64"><defs><clipPath id="wdc"><rect x="2" y="2" width="60" height="60" rx="14"/></clipPath></defs><g clip-path="url(#wdc)"><rect x="2" y="2" width="60" height="60" fill="#fff"/><rect x="2" y="2" width="60" height="19" fill="#E8352F"/><circle cx="13.0" cy="10" r="2.1" fill="#fff"/><circle cx="19.3" cy="10" r="2.1" fill="#fff"/><circle cx="25.6" cy="10" r="2.1" fill="#fff"/><circle cx="31.9" cy="10" r="2.1" fill="#fff"/><circle cx="38.2" cy="10" r="2.1" fill="#fff"/><circle cx="44.5" cy="10" r="2.1" fill="#fff"/><circle cx="50.8" cy="10" r="2.1" fill="#fff"/><rect x="14" y="34" width="36" height="7" rx="3.5" fill="#E8352F"/></g><rect x="2.5" y="2.5" width="59" height="59" rx="13.5" fill="none" stroke="rgba(0,0,0,.12)"/></svg>';
 const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const fill = (s, v) => Object.keys(v || {}).reduce((r, k) => r.split(`__${k}__`).join(v[k]), s);
 const fmtDay = (day, o) => { try { return new Date(day + 'T12:00:00').toLocaleDateString(undefined, o); } catch (e) { return day; } };
+// Tap state survives the minute refresh: the selected day (week/month) and the opened event row.
+let SEL = null, OPEN = null;
+const dayLabel = (day, d, t) => day === d.today ? t('today') : (day === d.tomorrow ? t('tomorrow') : fmtDay(day, { weekday: 'long', day: 'numeric', month: 'long' }));
+// One tappable row per event; a tap shows the time span, place and calendar.
+function evRows(list, t, key) {
+  return list.map((e, i) => {
+    const k = key + '|' + i, open = OPEN === k;
+    const when = e.allDay ? t('all_day') : `${e.start} – ${e.end}`;
+    return `<button class="er${open ? ' open' : ''}" data-ev="${esc(k)}" aria-expanded="${open}">`
+      + `<div class="r"><i class="b" style="background:${esc(e.color || '#8e8e93')}"></i>`
+      + `<span class="tm">${esc(e.allDay ? t('all_day') : e.start)}</span>`
+      + `<span class="ti ell">${e.emoji ? esc(e.emoji) + ' ' : ''}${esc(e.title)}</span><span class="ch">›</span></div>`
+      + `<div class="x"><b>${esc(when)}</b>${e.location ? '<br>' + esc(e.location) : ''}${e.calendar ? '<br>' + esc(e.calendar) : ''}</div></button>`;
+  }).join('');
+}
 const header = (label, right) => `<div class="hdr">${LOGO}<div class="lab">${esc(label)}</div><div class="sp"></div>${right ? `<div class="right">${esc(right)}</div>` : ''}</div>`;
 
 function onHomeyReady(Homey) {
@@ -62,14 +99,24 @@ function onHomeyReady(Homey) {
     if (settings.weekStart) p.set('weekStart', settings.weekStart);
     return '/?' + p.toString();
   };
-  async function load() {
-    let data = null;
-    try { data = await Homey.api('GET', query()); } catch (e) { data = null; }
-    if (!data || !data.linked) root.innerHTML = header('Weekdot') + `<div class="hint">${esc(t('not_linked'))}</div>`;
-    else root.innerHTML = render(data, t, settings);
+  let last = null;
+  function draw() {
+    if (!last || !last.linked) root.innerHTML = header('Weekdot') + `<div class="hint">${esc(t('not_linked'))}</div>`;
+    else root.innerHTML = render(last, t, settings);
     const h = Math.max(document.body.scrollHeight, 70);
     if (first) { first = false; Homey.ready({ height: h }); } else Homey.setHeight(h);
   }
+  async function load() {
+    try { last = await Homey.api('GET', query()); } catch (e) { last = null; }
+    draw();
+  }
+  // taps: a day in the week/month grid, or an event row
+  root.addEventListener('click', ev => {
+    const day = ev.target.closest('[data-day]');
+    const row = ev.target.closest('[data-ev]');
+    if (day) { SEL = day.getAttribute('data-day'); OPEN = null; draw(); }
+    else if (row) { const k = row.getAttribute('data-ev'); OPEN = OPEN === k ? null : k; draw(); }
+  });
   load();
   Homey.on('update', load);
   setInterval(load, 60 * 1000);

@@ -651,7 +651,8 @@
   "Join with %@: %@": "הצטרפות דרך %@: %@",
   "Dial in: %@, conference ID %@": "חיוג: %@, מזהה ועידה %@",
   "Weekdot did not get permission to create meetings with %@. Try again and tick the box for creating meetings when you sign in.": "Weekdot לא קיבל הרשאה ליצור פגישות עם %@. נסה/י שוב וסמן/י את התיבה ליצירת פגישות בעת ההתחברות.",
-  "This account can't be used for Teams meetings in Weekdot yet. Use a work or school account, or try again later.": "עדיין אי אפשר להשתמש בחשבון זה לפגישות Teams ב־Weekdot. השתמש/י בחשבון עבודה או בית ספר, או נסה/י שוב מאוחר יותר."
+  "This account can't be used for Teams meetings in Weekdot yet. Use a work or school account, or try again later.": "עדיין אי אפשר להשתמש בחשבון זה לפגישות Teams ב־Weekdot. השתמש/י בחשבון עבודה או בית ספר, או נסה/י שוב מאוחר יותר.",
+  "Legal attribution": "ייחוס משפטי"
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot מציג, יוצר ועורך את האירועים בלוחות השנה שלך.",

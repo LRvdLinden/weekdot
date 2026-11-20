@@ -99,6 +99,10 @@ function smallPreview(kind, dark) {
       <svg width="58" height="58" viewBox="0 0 120 120"><defs><clipPath id="k"><rect width="120" height="120" rx="28"/></clipPath></defs>
       <g clip-path="url(#k)"><rect width="120" height="120" fill="#fff"/><rect width="120" height="40" fill="${R}"/>${dots}<rect x="26" y="66" width="68" height="14" rx="7" fill="${R}"/></g></svg>
       ${bar('180px', 22, line)}<div style="flex:1"></div>${bar('120px', 22, R)}</div>`;
+  // event rows as in the tappable widgets: colour bar, time, title
+  const evRow = (c, w) => `<div style="display:flex;align-items:center;gap:22px;padding:16px 0;border-top:3px solid ${line2}">
+      <div style="width:12px;height:44px;border-radius:6px;background:${c}"></div>${bar('86px', 20, line2)}${bar(w, 26, line)}</div>`;
+  const dayHead = (red, w) => `<div style="margin:24px 0 6px">${bar(w, 18, red ? R : line2)}</div>`;
   let body = '';
   if (kind === 'next_event') {
     body = `<div style="display:flex;gap:30px"><div style="width:16px;border-radius:8px;background:#007AFF"></div><div style="flex:1;display:flex;flex-direction:column;gap:22px">${bar('78%', 50, line, 16)}${bar('60%', 28, line2)}</div></div>`;
@@ -110,7 +114,7 @@ function smallPreview(kind, dark) {
     const cols = Array.from({ length: 7 }, (_, i) => `<div style="display:flex;flex-direction:column;align-items:center;gap:16px">${bar('46px', 16, line2)}
       <div style="width:76px;height:76px;border-radius:22px;background:${i === 1 ? R : line}"></div>
       <div style="display:flex;gap:6px;height:16px">${C.slice(i % 3, i % 3 + (i === 6 ? 0 : 1 + (i % 3))).map(c => `<i style="width:15px;height:15px;border-radius:50%;background:${c}"></i>`).join('')}</div></div>`).join('');
-    body = `<div style="display:flex;justify-content:space-between">${cols}</div><div style="margin-top:34px">${bar('40%', 22, line2)}</div>`;
+    body = `<div style="display:flex;justify-content:space-between">${cols}</div>${dayHead(true, '150px')}${evRow(C[0], '52%')}${evRow(C[1], '38%')}`;
   } else if (kind === 'timeline') {
     const blocks = [[8, 10, C[0]], [20, 18, C[0]], [48, 13, C[1]], [74, 18, C[3]]].map(([l, w, c]) => `<div style="position:absolute;top:22px;bottom:22px;left:${l}%;width:${w}%;border-radius:16px;background:${c}"></div>`).join('');
     body = `<div style="position:relative;height:170px;border-radius:28px;background:${soft}">${blocks}<div style="position:absolute;top:0;bottom:0;left:33%;width:7px;background:${R}"></div></div>
@@ -121,9 +125,12 @@ function smallPreview(kind, dark) {
       <div style="margin-top:34px">${bar('230px', 44, '#34B553')}</div>`;
   } else if (kind === 'month') {
     const cells = Array.from({ length: 35 }, (_, i) => `<div style="display:flex;flex-direction:column;align-items:center;gap:8px">
-      <div style="width:62px;height:62px;border-radius:50%;background:${i === 9 ? R : (i < 5 ? line2 : line)}"></div>
+      <div style="width:44px;height:44px;border-radius:50%;background:${i === 9 ? R : (i < 5 ? line2 : line)}"></div>
       <div style="display:flex;gap:5px;height:12px">${(i % 4 === 1 || i % 5 === 2) && i < 20 ? C.slice(i % 3, i % 3 + 2).map(c => `<i style="width:12px;height:12px;border-radius:50%;background:${c}"></i>`).join('') : ''}</div></div>`).join('');
-    body = `<div style="display:grid;grid-template-columns:repeat(7,1fr);row-gap:14px">${cells}</div>`;
+    body = `<div style="display:grid;grid-template-columns:repeat(7,1fr);row-gap:6px">${cells}</div>${dayHead(true, '150px')}${evRow(C[3], '46%')}`;
+  } else if (kind === 'week_list' || kind === 'month_list') {
+    body = `${dayHead(true, '150px')}${evRow(C[0], '55%')}${evRow(C[1], '40%')}${dayHead(false, '210px')}${evRow(C[2], '48%')}`
+      + (kind === 'month_list' ? `${dayHead(false, '180px')}${evRow(C[4], '36%')}` : `${evRow(C[3], '30%')}`);
   }
   return `<html><body style="margin:0;width:1024px;height:1024px;background:transparent;display:flex;align-items:center;justify-content:center">
     <div style="width:880px;border-radius:64px;background:${card};padding:52px 60px 56px;box-shadow:0 30px 80px rgba(0,0,0,${dark ? .5 : .18})">${head}${body}</div></body></html>`;
@@ -142,7 +149,7 @@ function smallPreview(kind, dark) {
     await p.setContent(preview(dark));
     await p.screenshot({ path: path.join(ROOT, 'widgets', 'agenda', `preview-${dark ? 'dark' : 'light'}.png`), omitBackground: true });
   }
-  for (const kind of ['next_event', 'free_busy', 'countdown', 'week', 'timeline', 'month', 'next_call']) {
+  for (const kind of ['next_event', 'free_busy', 'countdown', 'week', 'timeline', 'month', 'next_call', 'week_list', 'month_list']) {
     for (const dark of [false, true]) {
       await p.setContent(smallPreview(kind, dark));
       await p.screenshot({ path: path.join(ROOT, 'widgets', kind, `preview-${dark ? 'dark' : 'light'}.png`), omitBackground: true });

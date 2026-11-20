@@ -88,5 +88,20 @@
     "pl": "Widżet Następna rozmowa wideo: w kolorze usługi (Teams fioletowy, Meet zielony, Zoom niebieski…), w pełni wypełniony od 10 minut przed początkiem, jak przyciski Dołącz w Weekdot.",
     "ko": "다음 영상 통화 위젯: 서비스 고유 색상(Teams 보라, Meet 초록, Zoom 파랑 등)으로 표시되며, Weekdot의 참가 버튼처럼 시작 10분 전부터 완전히 채워집니다.",
     "ar": "أداة مكالمة الفيديو التالية: بلون الخدمة نفسها (Teams بنفسجي، وMeet أخضر، وZoom أزرق…)، وتُلوَّن بالكامل قبل البدء بـ 10 دقائق، مثل أزرار الانضمام في Weekdot."
+  },
+  "1.0.7": {
+    "en": "New Week overview and Month overview widgets: a list of your events for the rest of this week or month, like the Agenda widget. The This week and Mini month widgets are now tappable: tap a day to see its events, and tap an event for its time, place and calendar.",
+    "nl": "Nieuwe widgets Weekoverzicht en Maandoverzicht: een lijst van je afspraken voor de rest van deze week of maand, zoals de Agenda-widget. De widgets Deze week en Minimaand zijn nu aantikbaar: tik op een dag voor de afspraken van die dag, en tik op een afspraak voor tijd, plaats en agenda.",
+    "de": "Neue Widgets Wochenübersicht und Monatsübersicht: eine Liste deiner Termine für den Rest dieser Woche oder dieses Monats, wie das Agenda-Widget. Die Widgets Diese Woche und Minimonat sind jetzt antippbar: Tippe auf einen Tag für seine Termine und auf einen Termin für Zeit, Ort und Kalender.",
+    "fr": "Nouveaux widgets Aperçu de la semaine et Aperçu du mois : la liste de vos événements pour le reste de la semaine ou du mois, comme le widget Agenda. Les widgets Cette semaine et Mini-mois sont désormais interactifs : touchez un jour pour voir ses événements, puis un événement pour l'heure, le lieu et le calendrier.",
+    "it": "Nuovi widget Panoramica settimana e Panoramica mese: un elenco dei tuoi eventi per il resto della settimana o del mese, come il widget Agenda. I widget Questa settimana e Mini mese ora sono toccabili: tocca un giorno per vederne gli eventi e un evento per ora, luogo e calendario.",
+    "sv": "Nya widgetar Veckoöversikt och Månadsöversikt: en lista med dina händelser för resten av veckan eller månaden, som widgeten Agenda. Widgetarna Den här veckan och Minimånad går nu att trycka på: tryck på en dag för dess händelser och på en händelse för tid, plats och kalender.",
+    "no": "Nye widgeter Ukeoversikt og Månedsoversikt: en liste over avtalene dine resten av uken eller måneden, som Agenda-widgeten. Widgetene Denne uken og Minimåned kan nå trykkes på: trykk på en dag for dagens avtaler, og på en avtale for tid, sted og kalender.",
+    "es": "Nuevos widgets Resumen semanal y Resumen mensual: una lista de tus eventos para el resto de la semana o del mes, como el widget Agenda. Los widgets Esta semana y Minimes ahora se pueden tocar: toca un día para ver sus eventos y un evento para ver la hora, el lugar y el calendario.",
+    "da": "Nye widgets Ugeoversigt og Månedsoversigt: en liste over dine aftaler resten af ugen eller måneden, ligesom Agenda-widgetten. Widgetterne Denne uge og Minimåned kan nu trykkes på: tryk på en dag for dagens aftaler og på en aftale for tid, sted og kalender.",
+    "ru": "Новые виджеты «Обзор недели» и «Обзор месяца»: список ваших событий до конца недели или месяца, как в виджете «Повестка». Виджеты «Эта неделя» и «Мини-месяц» теперь интерактивны: нажмите на день, чтобы увидеть его события, и на событие — чтобы увидеть время, место и календарь.",
+    "pl": "Nowe widżety Przegląd tygodnia i Przegląd miesiąca: lista Twoich wydarzeń do końca tygodnia lub miesiąca, jak w widżecie Agenda. Widżety Ten tydzień i Mini miesiąc można teraz stukać: stuknij dzień, aby zobaczyć jego wydarzenia, a wydarzenie, aby zobaczyć godzinę, miejsce i kalendarz.",
+    "ko": "새 위젯 주간 개요와 월간 개요: 일정 위젯처럼 이번 주 또는 이번 달 남은 일정을 목록으로 보여 줍니다. 이번 주와 미니 월 위젯을 이제 탭할 수 있습니다. 날짜를 탭하면 그날 일정이, 일정을 탭하면 시간, 장소, 캘린더가 표시됩니다.",
+    "ar": "أداتان جديدتان: نظرة على الأسبوع ونظرة على الشهر، وهما قائمة بمواعيدك لبقية الأسبوع أو الشهر مثل أداة الأجندة. أصبح بالإمكان الآن النقر على أداتي هذا الأسبوع والشهر المصغّر: انقر على يوم لرؤية مواعيده، وعلى موعد لرؤية الوقت والمكان والتقويم."
   }
 }

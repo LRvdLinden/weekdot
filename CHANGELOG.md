@@ -1,3 +1,8 @@
+## 1.0.5 (build 98) — iPhone Duo and WeatherKit attribution
+
+- iPhone Duo: Month & List puts the month next to the list on the open (inner) display, using the regular size class instead of a fixed width; the folded display stays stacked like any iPhone. The rest of Weekdot already sizes to the window (no UIScreen.main, no device checks, iPhone landscape supported, Split View allowed), so it follows folding, unfolding and Split View on its own.
+- Weather: the official Apple Weather mark (light/dark, from WeatherKit's attribution) and the legal attribution link from WeatherKit (attribution.legalPageURL, with Apple's legal page as fallback) are now shown in Settings › Weather, where weather is switched on. New text "Legal attribution" in all languages.
+
 ## 1.0.4 (build 97) — Join buttons in brand colours
 
 - Join buttons, camera badges (list, week, day, Month & List, details, editor) and the widget Join badge use the service's own colour: Teams purple, Meet green, Zoom blue, FaceTime green, Webex blue, Slack aubergine and so on. Also on the Homey widget (Homey app 1.0.5) and the website demo.

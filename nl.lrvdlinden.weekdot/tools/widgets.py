@@ -17,6 +17,22 @@ body{font-family:-apple-system,"SF Pro Text",Inter,Roboto,sans-serif;color:var(-
 .right{font-size:11px;font-weight:700;color:var(--red);text-transform:uppercase;letter-spacing:.3px;white-space:nowrap}
 .hint{font-size:12px;color:var(--sec);line-height:1.4;padding:2px 0}
 .ell{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;-webkit-tap-highlight-color:transparent}
+button:focus-visible{outline:2px solid var(--red);outline-offset:1px;border-radius:8px}
+.sel-h{display:flex;align-items:baseline;gap:6px;margin:10px 0 4px;font-size:12px;font-weight:700;color:var(--sec);text-transform:uppercase;letter-spacing:.3px}
+.sel-h .t{color:var(--red)}
+.er{display:block;width:100%;text-align:start;padding:6px 0;border-top:1px solid var(--line)}
+.er:first-of-type{border-top:0}
+.er .r{display:flex;align-items:center;gap:8px;min-width:0}
+.er .b{width:4px;align-self:stretch;min-height:18px;border-radius:2px;flex:none}
+.er .tm{font-size:12px;color:var(--sec);font-variant-numeric:tabular-nums;flex:none;min-width:38px}
+.er .ti{font-size:14px;font-weight:600;flex:1;min-width:0}
+.er .ch{font-size:11px;color:var(--sec);flex:none;transition:transform .2s}
+.er.open .ch{transform:rotate(90deg)}
+.er .x{display:none;margin:4px 0 2px;padding-inline-start:12px;font-size:12.5px;color:var(--sec);line-height:1.45}
+.er.open .x{display:block}
+.er .x b{color:var(--text);font-weight:600}
+.more{font-size:12px;color:var(--sec);padding-top:6px}
 """
 
 LOGO = ("<svg class=\"logo\" viewBox=\"0 0 64 64\"><defs><clipPath id=\"wdc\"><rect x=\"2\" y=\"2\" width=\"60\" height=\"60\" rx=\"14\"/></clipPath></defs>"
@@ -30,6 +46,21 @@ const LOGO = '__LOGO__';
 const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const fill = (s, v) => Object.keys(v || {}).reduce((r, k) => r.split(`__${k}__`).join(v[k]), s);
 const fmtDay = (day, o) => { try { return new Date(day + 'T12:00:00').toLocaleDateString(undefined, o); } catch (e) { return day; } };
+// Tap state survives the minute refresh: the selected day (week/month) and the opened event row.
+let SEL = null, OPEN = null;
+const dayLabel = (day, d, t) => day === d.today ? t('today') : (day === d.tomorrow ? t('tomorrow') : fmtDay(day, { weekday: 'long', day: 'numeric', month: 'long' }));
+// One tappable row per event; a tap shows the time span, place and calendar.
+function evRows(list, t, key) {
+  return list.map((e, i) => {
+    const k = key + '|' + i, open = OPEN === k;
+    const when = e.allDay ? t('all_day') : `${e.start} – ${e.end}`;
+    return `<button class="er${open ? ' open' : ''}" data-ev="${esc(k)}" aria-expanded="${open}">`
+      + `<div class="r"><i class="b" style="background:${esc(e.color || '#8e8e93')}"></i>`
+      + `<span class="tm">${esc(e.allDay ? t('all_day') : e.start)}</span>`
+      + `<span class="ti ell">${e.emoji ? esc(e.emoji) + ' ' : ''}${esc(e.title)}</span><span class="ch">›</span></div>`
+      + `<div class="x"><b>${esc(when)}</b>${e.location ? '<br>' + esc(e.location) : ''}${e.calendar ? '<br>' + esc(e.calendar) : ''}</div></button>`;
+  }).join('');
+}
 const header = (label, right) => `<div class="hdr">${LOGO}<div class="lab">${esc(label)}</div><div class="sp"></div>${right ? `<div class="right">${esc(right)}</div>` : ''}</div>`;
 
 function onHomeyReady(Homey) {
@@ -45,14 +76,24 @@ function onHomeyReady(Homey) {
     if (settings.weekStart) p.set('weekStart', settings.weekStart);
     return '/?' + p.toString();
   };
-  async function load() {
-    let data = null;
-    try { data = await Homey.api('GET', query()); } catch (e) { data = null; }
-    if (!data || !data.linked) root.innerHTML = header('Weekdot') + `<div class="hint">${esc(t('not_linked'))}</div>`;
-    else root.innerHTML = render(data, t, settings);
+  let last = null;
+  function draw() {
+    if (!last || !last.linked) root.innerHTML = header('Weekdot') + `<div class="hint">${esc(t('not_linked'))}</div>`;
+    else root.innerHTML = render(last, t, settings);
     const h = Math.max(document.body.scrollHeight, 70);
     if (first) { first = false; Homey.ready({ height: h }); } else Homey.setHeight(h);
   }
+  async function load() {
+    try { last = await Homey.api('GET', query()); } catch (e) { last = null; }
+    draw();
+  }
+  // taps: a day in the week/month grid, or an event row
+  root.addEventListener('click', ev => {
+    const day = ev.target.closest('[data-day]');
+    const row = ev.target.closest('[data-ev]');
+    if (day) { SEL = day.getAttribute('data-day'); OPEN = null; draw(); }
+    else if (row) { const k = row.getAttribute('data-ev'); OPEN = OPEN === k ? null : k; draw(); }
+  });
   load();
   Homey.on('update', load);
   setInterval(load, 60 * 1000);
@@ -176,15 +217,16 @@ function render(d, t, s) {
     + `<div class="meta ell">${esc(t('until_title', { title }))}</div></div></div>`;
 }
 """),
- "week": dict(height=130, name="wn_week", settings=["calendar", "week_start"], css="""
+ "week": dict(height=210, name="wn_week", settings=["calendar", "keyword", "week_start"], css="""
 .days{display:grid;grid-template-columns:repeat(7,1fr);text-align:center;gap:2px}
+.dc{display:block;padding:3px 0 4px;border-radius:12px}
+.dc.on{background:var(--soft)}
 .wd{font-size:10.5px;font-weight:700;color:var(--sec);text-transform:uppercase}
 .dn{font-size:15px;font-weight:600;margin:3px auto 0;width:28px;height:28px;line-height:28px;border-radius:9px}
 .dn.t{background:var(--red);color:#fff}
 .dots{display:flex;gap:2px;justify-content:center;height:6px;margin-top:3px}
 .dots i{width:5px;height:5px;border-radius:50%}
 .unk{opacity:.4}
-.foot{font-size:12px;color:var(--sec);margin-top:8px}
 """, js=r"""
 function isoWeek(day) {
   const d = new Date(day + 'T00:00:00Z'); const n = (d.getUTCDay() + 6) % 7;
@@ -192,11 +234,16 @@ function isoWeek(day) {
   return 1 + Math.round(((d - f) / 86400000 - 3 + ((f.getUTCDay() + 6) % 7)) / 7);
 }
 function render(d, t) {
-  const cells = d.days.map(x => `<div class="${x.known ? '' : 'unk'}"><div class="wd">${esc(fmtDay(x.day, { weekday: 'short' }).replace('.', ''))}</div>`
+  const sel = d.days.some(x => x.day === SEL) ? SEL : d.today;
+  const cells = d.days.map(x => `<button class="dc${x.known ? '' : ' unk'}${x.day === sel ? ' on' : ''}" data-day="${x.day}" aria-pressed="${x.day === sel}" aria-label="${esc(fmtDay(x.day, { weekday: 'long', day: 'numeric', month: 'long' }))}">`
+    + `<div class="wd">${esc(fmtDay(x.day, { weekday: 'short' }).replace('.', ''))}</div>`
     + `<div class="dn${x.today ? ' t' : ''}">${Number(x.day.slice(8))}</div>`
-    + `<div class="dots">${x.colors.map(c => `<i style="background:${esc(c)}"></i>`).join('')}</div></div>`).join('');
+    + `<div class="dots">${x.colors.map(c => `<i style="background:${esc(c)}"></i>`).join('')}</div></button>`).join('');
+  const day = d.days.find(x => x.day === sel);
+  const list = day.events.length ? evRows(day.events, t, sel) : `<div class="hint">${esc(t('nothing'))}</div>`;
   return header(fmtDay(d.today, { month: 'long', year: 'numeric' }), t('week_n', { n: isoWeek(d.today) }))
-    + `<div class="days">${cells}</div><div class="foot">${esc(t('events_count', { count: d.total }))}</div>`;
+    + `<div class="days">${cells}</div>`
+    + `<div class="sel-h"><span class="${sel === d.today ? 't' : ''}">${esc(dayLabel(sel, d, t))}</span></div>${list}`;
 }
 """),
  "timeline": dict(height=120, name="wn_timeline", settings=["calendar"], css="""
@@ -232,21 +279,46 @@ function render(d, t) {
     + ad + empty + `<div class="tl">${blocks}<div class="now" style="left:${pos(d.minute)}%"></div></div><div class="hours">${hours}</div>` + line;
 }
 """),
- "month": dict(height=230, name="wn_month", settings=["calendar", "week_start"], css="""
+ "month": dict(height=330, name="wn_month", settings=["calendar", "keyword", "week_start"], css="""
 .m{display:grid;grid-template-columns:repeat(7,1fr);text-align:center;row-gap:2px}
 .wd{font-size:10px;font-weight:700;color:var(--sec);text-transform:uppercase;padding-bottom:3px}
-.c{height:30px;display:flex;flex-direction:column;align-items:center;justify-content:flex-start}
-.n{font-size:13px;font-weight:500;width:22px;height:22px;line-height:22px;border-radius:50%}
-.n.t{background:var(--red);color:#fff;font-weight:700}
+.c{height:32px;display:flex;flex-direction:column;align-items:center;justify-content:flex-start}
+.n{font-size:13px;font-weight:500;width:24px;height:24px;line-height:24px;border-radius:50%}
+.n.t{color:var(--red);font-weight:700}
+.c.on .n{background:var(--sec);color:#fff;font-weight:700}
+.c.on .n.t{background:var(--red);color:#fff}
 .o .n{color:var(--sec);opacity:.55}
 .dots{display:flex;gap:2px;height:5px;margin-top:1px}
 .dots i{width:4px;height:4px;border-radius:50%}
 """, js=r"""
-function render(d) {
+function render(d, t) {
+  const sel = d.days.some(x => x.day === SEL) ? SEL : d.today;
   const heads = d.days.slice(0, 7).map(x => `<div class="wd">${esc(fmtDay(x.day, { weekday: 'narrow' }))}</div>`).join('');
-  const cells = d.days.map(x => `<div class="c${x.inMonth ? '' : ' o'}"><div class="n${x.today ? ' t' : ''}">${Number(x.day.slice(8))}</div>`
-    + `<div class="dots">${x.colors.map(c => `<i style="background:${esc(c)}"></i>`).join('')}</div></div>`).join('');
-  return header(fmtDay(d.today, { month: 'long', year: 'numeric' })) + `<div class="m">${heads}${cells}</div>`;
+  const cells = d.days.map(x => `<button class="c${x.inMonth ? '' : ' o'}${x.day === sel ? ' on' : ''}" data-day="${x.day}" aria-pressed="${x.day === sel}" aria-label="${esc(fmtDay(x.day, { weekday: 'long', day: 'numeric', month: 'long' }))}">`
+    + `<div class="n${x.today ? ' t' : ''}">${Number(x.day.slice(8))}</div>`
+    + `<div class="dots">${x.colors.map(c => `<i style="background:${esc(c)}"></i>`).join('')}</div></button>`).join('');
+  const day = d.days.find(x => x.day === sel);
+  const list = day.events.length ? evRows(day.events, t, sel) : `<div class="hint">${esc(t('nothing'))}</div>`;
+  return header(fmtDay(d.today, { month: 'long', year: 'numeric' })) + `<div class="m">${heads}${cells}</div>`
+    + `<div class="sel-h"><span class="${sel === d.today ? 't' : ''}">${esc(dayLabel(sel, d, t))}</span></div>${list}`;
+}
+"""),
+ "week_list": dict(height=260, name="wn_week_list", settings=["calendar", "keyword", "week_start"], css="""
+.sel-h:first-of-type{margin-top:2px}
+""", js=r"""
+function render(d, t) {
+  if (!d.groups.length) return header(t(d.label), d.range) + `<div class="hint">${esc(t(d.empty))}</div>`;
+  const body = d.groups.map(g => `<div class="sel-h"><span class="${g.day === d.today ? 't' : ''}">${esc(dayLabel(g.day, d, t))}</span></div>` + evRows(g.events, t, g.day)).join('');
+  return header(t(d.label), d.range) + body + (d.more ? `<div class="more">${esc(t('more', { n: d.more }))}</div>` : '');
+}
+"""),
+ "month_list": dict(height=300, name="wn_month_list", settings=["calendar", "keyword"], css="""
+.sel-h:first-of-type{margin-top:2px}
+""", js=r"""
+function render(d, t) {
+  if (!d.groups.length) return header(t(d.label), d.range) + `<div class="hint">${esc(t(d.empty))}</div>`;
+  const body = d.groups.map(g => `<div class="sel-h"><span class="${g.day === d.today ? 't' : ''}">${esc(dayLabel(g.day, d, t))}</span></div>` + evRows(g.events, t, g.day)).join('');
+  return header(t(d.label), d.range) + body + (d.more ? `<div class="more">${esc(t('more', { n: d.more }))}</div>` : '');
 }
 """),
 }

@@ -60,7 +60,12 @@
     "dir": "ltr",
     "video_call": "Videosamtal",
     "no_call": "Inga kommande videosamtal",
-    "no_call_hint": "Weekdot 1.0.4 eller senare på din iPhone skickar Meet-, Teams-, FaceTime- och Zoom-samtal hit."
+    "no_call_hint": "Weekdot 1.0.4 eller senare på din iPhone skickar Meet-, Teams-, FaceTime- och Zoom-samtal hit.",
+    "this_week": "Den här veckan",
+    "this_month": "Den här månaden",
+    "nothing_week": "Inget planerat resten av veckan",
+    "nothing_month": "Inget planerat resten av månaden",
+    "more": "+__n__ till"
   },
   "more_apps": {
     "section": "Upptäck",

@@ -651,7 +651,8 @@
   "Join with %@: %@": "%@で参加：%@",
   "Dial in: %@, conference ID %@": "ダイヤルイン：%@、会議ID %@",
   "Weekdot did not get permission to create meetings with %@. Try again and tick the box for creating meetings when you sign in.": "Weekdotは%@で会議を作成する権限を取得できませんでした。もう一度お試しいただき、サインイン時に会議の作成のチェックボックスをオンにしてください。",
-  "This account can't be used for Teams meetings in Weekdot yet. Use a work or school account, or try again later.": "このアカウントはまだWeekdotでTeams会議に使用できません。職場または学校のアカウントを使用するか、後でもう一度お試しください。"
+  "This account can't be used for Teams meetings in Weekdot yet. Use a work or school account, or try again later.": "このアカウントはまだWeekdotでTeams会議に使用できません。職場または学校のアカウントを使用するか、後でもう一度お試しください。",
+  "Legal attribution": "法的帰属表示"
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdotはカレンダー内のイベントを表示、作成、編集します。",

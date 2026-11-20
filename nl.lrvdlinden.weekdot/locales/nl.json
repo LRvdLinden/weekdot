@@ -60,7 +60,12 @@
     "dir": "ltr",
     "video_call": "Videogesprek",
     "no_call": "Geen komende videogesprekken",
-    "no_call_hint": "Weekdot 1.0.4 of nieuwer op je iPhone stuurt Meet-, Teams-, FaceTime- en Zoom-gesprekken hierheen."
+    "no_call_hint": "Weekdot 1.0.4 of nieuwer op je iPhone stuurt Meet-, Teams-, FaceTime- en Zoom-gesprekken hierheen.",
+    "this_week": "Deze week",
+    "this_month": "Deze maand",
+    "nothing_week": "Niets meer gepland deze week",
+    "nothing_month": "Niets meer gepland deze maand",
+    "more": "+__n__ meer"
   },
   "more_apps": {
     "section": "Ontdekken",

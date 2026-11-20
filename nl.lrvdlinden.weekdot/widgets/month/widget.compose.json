@@ -14,7 +14,7 @@
     "ko": "미니 월",
     "ar": "شهر مصغّر"
   },
-  "height": 230,
+  "height": 330,
   "transparent": false,
   "settings": [
     {
@@ -35,6 +35,26 @@
         "ko": "캘린더",
         "ar": "التقويم"
       }
+    },
+    {
+      "id": "keyword",
+      "type": "text",
+      "title": {
+        "en": "Title contains (optional)",
+        "nl": "Titel bevat (optioneel)",
+        "de": "Titel enthält (optional)",
+        "fr": "Le titre contient (facultatif)",
+        "it": "Il titolo contiene (facoltativo)",
+        "sv": "Titeln innehåller (valfritt)",
+        "no": "Tittelen inneholder (valgfritt)",
+        "es": "El título contiene (opcional)",
+        "da": "Titlen indeholder (valgfrit)",
+        "ru": "Название содержит (необязательно)",
+        "pl": "Tytuł zawiera (opcjonalnie)",
+        "ko": "제목에 포함(선택)",
+        "ar": "العنوان يحتوي على (اختياري)"
+      },
+      "value": ""
     },
     {
       "id": "weekStart",

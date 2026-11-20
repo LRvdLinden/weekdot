@@ -60,7 +60,12 @@
     "dir": "rtl",
     "video_call": "مكالمة فيديو",
     "no_call": "لا توجد مكالمات فيديو قادمة",
-    "no_call_hint": "يرسل Weekdot 1.0.4 أو أحدث على iPhone مكالمات Meet وTeams وFaceTime وZoom إلى هنا."
+    "no_call_hint": "يرسل Weekdot 1.0.4 أو أحدث على iPhone مكالمات Meet وTeams وFaceTime وZoom إلى هنا.",
+    "this_week": "هذا الأسبوع",
+    "this_month": "هذا الشهر",
+    "nothing_week": "لا شيء مخطط لبقية هذا الأسبوع",
+    "nothing_month": "لا شيء مخطط لبقية هذا الشهر",
+    "more": "+__n__ أخرى"
   },
   "more_apps": {
     "section": "اكتشف",

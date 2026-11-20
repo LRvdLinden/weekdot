@@ -651,7 +651,8 @@
   "Join with %@: %@": "Dołącz przez %@: %@",
   "Dial in: %@, conference ID %@": "Połączenie telefoniczne: %@, identyfikator konferencji %@",
   "Weekdot did not get permission to create meetings with %@. Try again and tick the box for creating meetings when you sign in.": "Weekdot nie otrzymał uprawnień do tworzenia spotkań w %@. Spróbuj ponownie i podczas logowania zaznacz pole tworzenia spotkań.",
-  "This account can't be used for Teams meetings in Weekdot yet. Use a work or school account, or try again later.": "Tego konta nie można jeszcze używać do spotkań Teams w Weekdot. Użyj konta służbowego lub szkolnego albo spróbuj później."
+  "This account can't be used for Teams meetings in Weekdot yet. Use a work or school account, or try again later.": "Tego konta nie można jeszcze używać do spotkań Teams w Weekdot. Użyj konta służbowego lub szkolnego albo spróbuj później.",
+  "Legal attribution": "Informacje prawne"
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot pokazuje, tworzy i edytuje wydarzenia w Twoich kalendarzach.",

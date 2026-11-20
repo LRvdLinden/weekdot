@@ -60,7 +60,12 @@
     "dir": "ltr",
     "video_call": "Videollamada",
     "no_call": "No hay videollamadas próximas",
-    "no_call_hint": "Weekdot 1.0.4 o posterior en tu iPhone envía aquí las llamadas de Meet, Teams, FaceTime y Zoom."
+    "no_call_hint": "Weekdot 1.0.4 o posterior en tu iPhone envía aquí las llamadas de Meet, Teams, FaceTime y Zoom.",
+    "this_week": "Esta semana",
+    "this_month": "Este mes",
+    "nothing_week": "Nada previsto para el resto de la semana",
+    "nothing_month": "Nada previsto para el resto del mes",
+    "more": "+__n__ más"
   },
   "more_apps": {
     "section": "Descubrir",

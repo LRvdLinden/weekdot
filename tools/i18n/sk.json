@@ -651,7 +651,8 @@
   "Join with %@: %@": "Pripojiť cez %@: %@",
   "Dial in: %@, conference ID %@": "Vytáčanie: %@, ID konferencie %@",
   "Weekdot did not get permission to create meetings with %@. Try again and tick the box for creating meetings when you sign in.": "Weekdot nedostal povolenie vytvárať schôdze v %@. Skúste to znova a pri prihlásení začiarknite políčko na vytváranie schôdzí.",
-  "This account can't be used for Teams meetings in Weekdot yet. Use a work or school account, or try again later.": "Tento účet zatiaľ nemožno vo Weekdot použiť na schôdze Teams. Použite pracovný alebo školský účet, alebo to skúste neskôr."
+  "This account can't be used for Teams meetings in Weekdot yet. Use a work or school account, or try again later.": "Tento účet zatiaľ nemožno vo Weekdot použiť na schôdze Teams. Použite pracovný alebo školský účet, alebo to skúste neskôr.",
+  "Legal attribution": "Právne informácie"
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot zobrazuje, vytvára a upravuje udalosti vo vašich kalendároch.",

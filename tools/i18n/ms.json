@@ -651,7 +651,8 @@
   "Join with %@: %@": "Sertai dengan %@: %@",
   "Dial in: %@, conference ID %@": "Dail masuk: %@, ID persidangan %@",
   "Weekdot did not get permission to create meetings with %@. Try again and tick the box for creating meetings when you sign in.": "Weekdot tidak mendapat kebenaran untuk mencipta mesyuarat dengan %@. Cuba lagi dan tandakan kotak untuk mencipta mesyuarat semasa log masuk.",
-  "This account can't be used for Teams meetings in Weekdot yet. Use a work or school account, or try again later.": "Akaun ini belum boleh digunakan untuk mesyuarat Teams dalam Weekdot. Gunakan akaun kerja atau sekolah, atau cuba lagi kemudian."
+  "This account can't be used for Teams meetings in Weekdot yet. Use a work or school account, or try again later.": "Akaun ini belum boleh digunakan untuk mesyuarat Teams dalam Weekdot. Gunakan akaun kerja atau sekolah, atau cuba lagi kemudian.",
+  "Legal attribution": "Atribusi undang-undang"
  },
  "plist": {
   "Weekdot shows, creates and edits the events in your calendars.": "Weekdot menunjukkan, mencipta dan mengedit acara dalam kalendar anda.",

@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "nl.lrvdlinden.weekdot",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "compatibility": ">=12.3.0",
   "sdk": 3,
   "platforms": [
@@ -6266,7 +6266,7 @@
         "ko": "미니 월",
         "ar": "شهر مصغّر"
       },
-      "height": 230,
+      "height": 330,
       "transparent": false,
       "settings": [
         {
@@ -6287,6 +6287,26 @@
             "ko": "캘린더",
             "ar": "التقويم"
           }
+        },
+        {
+          "id": "keyword",
+          "type": "text",
+          "title": {
+            "en": "Title contains (optional)",
+            "nl": "Titel bevat (optioneel)",
+            "de": "Titel enthält (optional)",
+            "fr": "Le titre contient (facultatif)",
+            "it": "Il titolo contiene (facoltativo)",
+            "sv": "Titeln innehåller (valfritt)",
+            "no": "Tittelen inneholder (valgfritt)",
+            "es": "El título contiene (opcional)",
+            "da": "Titlen indeholder (valgfrit)",
+            "ru": "Название содержит (необязательно)",
+            "pl": "Tytuł zawiera (opcjonalnie)",
+            "ko": "제목에 포함(선택)",
+            "ar": "العنوان يحتوي على (اختياري)"
+          },
+          "value": ""
         },
         {
           "id": "weekStart",
@@ -6354,6 +6374,73 @@
         }
       },
       "id": "month"
+    },
+    "month_list": {
+      "name": {
+        "en": "Month overview",
+        "nl": "Maandoverzicht",
+        "de": "Monatsübersicht",
+        "fr": "Aperçu du mois",
+        "it": "Panoramica mese",
+        "sv": "Månadsöversikt",
+        "no": "Månedsoversikt",
+        "es": "Resumen mensual",
+        "da": "Månedsoversigt",
+        "ru": "Обзор месяца",
+        "pl": "Przegląd miesiąca",
+        "ko": "월간 개요",
+        "ar": "نظرة على الشهر"
+      },
+      "height": 300,
+      "transparent": false,
+      "settings": [
+        {
+          "id": "calendar",
+          "type": "autocomplete",
+          "title": {
+            "en": "Calendar",
+            "nl": "Agenda",
+            "de": "Kalender",
+            "fr": "Calendrier",
+            "it": "Calendario",
+            "sv": "Kalender",
+            "no": "Kalender",
+            "es": "Calendario",
+            "da": "Kalender",
+            "ru": "Календарь",
+            "pl": "Kalendarz",
+            "ko": "캘린더",
+            "ar": "التقويم"
+          }
+        },
+        {
+          "id": "keyword",
+          "type": "text",
+          "title": {
+            "en": "Title contains (optional)",
+            "nl": "Titel bevat (optioneel)",
+            "de": "Titel enthält (optional)",
+            "fr": "Le titre contient (facultatif)",
+            "it": "Il titolo contiene (facoltativo)",
+            "sv": "Titeln innehåller (valfritt)",
+            "no": "Tittelen inneholder (valgfritt)",
+            "es": "El título contiene (opcional)",
+            "da": "Titlen indeholder (valgfrit)",
+            "ru": "Название содержит (необязательно)",
+            "pl": "Tytuł zawiera (opcjonalnie)",
+            "ko": "제목에 포함(선택)",
+            "ar": "العنوان يحتوي على (اختياري)"
+          },
+          "value": ""
+        }
+      ],
+      "api": {
+        "getData": {
+          "method": "GET",
+          "path": "/"
+        }
+      },
+      "id": "month_list"
     },
     "next_call": {
       "name": {
@@ -6552,7 +6639,7 @@
         "ko": "이번 주",
         "ar": "هذا الأسبوع"
       },
-      "height": 130,
+      "height": 210,
       "transparent": false,
       "settings": [
         {
@@ -6573,6 +6660,26 @@
             "ko": "캘린더",
             "ar": "التقويم"
           }
+        },
+        {
+          "id": "keyword",
+          "type": "text",
+          "title": {
+            "en": "Title contains (optional)",
+            "nl": "Titel bevat (optioneel)",
+            "de": "Titel enthält (optional)",
+            "fr": "Le titre contient (facultatif)",
+            "it": "Il titolo contiene (facoltativo)",
+            "sv": "Titeln innehåller (valfritt)",
+            "no": "Tittelen inneholder (valgfritt)",
+            "es": "El título contiene (opcional)",
+            "da": "Titlen indeholder (valgfrit)",
+            "ru": "Название содержит (необязательно)",
+            "pl": "Tytuł zawiera (opcjonalnie)",
+            "ko": "제목에 포함(선택)",
+            "ar": "العنوان يحتوي على (اختياري)"
+          },
+          "value": ""
         },
         {
           "id": "weekStart",
@@ -6640,6 +6747,131 @@
         }
       },
       "id": "week"
+    },
+    "week_list": {
+      "name": {
+        "en": "Week overview",
+        "nl": "Weekoverzicht",
+        "de": "Wochenübersicht",
+        "fr": "Aperçu de la semaine",
+        "it": "Panoramica settimana",
+        "sv": "Veckoöversikt",
+        "no": "Ukeoversikt",
+        "es": "Resumen semanal",
+        "da": "Ugeoversigt",
+        "ru": "Обзор недели",
+        "pl": "Przegląd tygodnia",
+        "ko": "주간 개요",
+        "ar": "نظرة على الأسبوع"
+      },
+      "height": 260,
+      "transparent": false,
+      "settings": [
+        {
+          "id": "calendar",
+          "type": "autocomplete",
+          "title": {
+            "en": "Calendar",
+            "nl": "Agenda",
+            "de": "Kalender",
+            "fr": "Calendrier",
+            "it": "Calendario",
+            "sv": "Kalender",
+            "no": "Kalender",
+            "es": "Calendario",
+            "da": "Kalender",
+            "ru": "Календарь",
+            "pl": "Kalendarz",
+            "ko": "캘린더",
+            "ar": "التقويم"
+          }
+        },
+        {
+          "id": "keyword",
+          "type": "text",
+          "title": {
+            "en": "Title contains (optional)",
+            "nl": "Titel bevat (optioneel)",
+            "de": "Titel enthält (optional)",
+            "fr": "Le titre contient (facultatif)",
+            "it": "Il titolo contiene (facoltativo)",
+            "sv": "Titeln innehåller (valfritt)",
+            "no": "Tittelen inneholder (valgfritt)",
+            "es": "El título contiene (opcional)",
+            "da": "Titlen indeholder (valgfrit)",
+            "ru": "Название содержит (необязательно)",
+            "pl": "Tytuł zawiera (opcjonalnie)",
+            "ko": "제목에 포함(선택)",
+            "ar": "العنوان يحتوي على (اختياري)"
+          },
+          "value": ""
+        },
+        {
+          "id": "weekStart",
+          "type": "dropdown",
+          "title": {
+            "en": "Week starts on",
+            "nl": "Week begint op",
+            "de": "Woche beginnt am",
+            "fr": "La semaine commence le",
+            "it": "La settimana inizia il",
+            "sv": "Veckan börjar på",
+            "no": "Uken starter på",
+            "es": "La semana empieza el",
+            "da": "Ugen starter på",
+            "ru": "Неделя начинается с",
+            "pl": "Tydzień zaczyna się w",
+            "ko": "주 시작 요일",
+            "ar": "يبدأ الأسبوع يوم"
+          },
+          "value": "monday",
+          "values": [
+            {
+              "id": "monday",
+              "title": {
+                "en": "Monday",
+                "nl": "Maandag",
+                "de": "Montag",
+                "fr": "Lundi",
+                "it": "Lunedì",
+                "sv": "Måndag",
+                "no": "Mandag",
+                "es": "Lunes",
+                "da": "Mandag",
+                "ru": "Понедельник",
+                "pl": "Poniedziałek",
+                "ko": "월요일",
+                "ar": "الاثنين"
+              }
+            },
+            {
+              "id": "sunday",
+              "title": {
+                "en": "Sunday",
+                "nl": "Zondag",
+                "de": "Sonntag",
+                "fr": "Dimanche",
+                "it": "Domenica",
+                "sv": "Söndag",
+                "no": "Søndag",
+                "es": "Domingo",
+                "da": "Søndag",
+                "ru": "Воскресенье",
+                "pl": "Niedziela",
+                "ko": "일요일",
+                "ar": "الأحد"
+              }
+            }
+          ]
+        }
+      ],
+      "api": {
+        "getData": {
+          "method": "GET",
+          "path": "/"
+        }
+      },
+      "id": "week_list"
     }
   }
 }

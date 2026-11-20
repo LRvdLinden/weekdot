@@ -60,7 +60,12 @@
     "dir": "ltr",
     "video_call": "Video call",
     "no_call": "No upcoming video calls",
-    "no_call_hint": "Weekdot 1.0.4 or later on your iPhone sends Meet, Teams, FaceTime and Zoom calls here."
+    "no_call_hint": "Weekdot 1.0.4 or later on your iPhone sends Meet, Teams, FaceTime and Zoom calls here.",
+    "this_week": "This week",
+    "this_month": "This month",
+    "nothing_week": "Nothing planned for the rest of this week",
+    "nothing_month": "Nothing planned for the rest of this month",
+    "more": "+__n__ more"
   },
   "more_apps": {
     "section": "Discover",

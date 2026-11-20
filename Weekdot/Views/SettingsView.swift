@@ -215,17 +215,13 @@ struct SettingsView: View {
                             ForEach(TemperatureUnit.allCases) { Text(LocalizedStringKey($0.titleKey)).tag($0) }
                         }
                     }
+                    // WeatherKit attribution: Apple Weather mark + legal link, right where weather is switched on
+                    WeatherAttributionView()
                 } header: {
                     Text("Weather")
                 } footer: {
                     VStack(alignment: .leading, spacing: 4) {
                         Text("Uses your approximate location. Weather data is provided only by Apple WeatherKit.")
-                        if synced.settings.showWeather {
-                            Link("Weather data: Apple Weather · Legal attribution",
-                                 destination: URL(string: "https://weatherkit.apple.com/legal-attribution.html")!)
-                        } else if !weather.sourceName.isEmpty {
-                            Text("Forecast source: \(weather.sourceName)")
-                        }
                     }
                 }
 
