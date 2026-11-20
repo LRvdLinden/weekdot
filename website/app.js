@@ -28,6 +28,13 @@
       img.src = "https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/white/" + (nl ? "nl-nl" : "en-us") + "?releaseDate=1793491200";
       img.alt = nl ? "Download in de App Store" : "Download on the App Store";
     });
+    // TestFlight badge: NL and EN use the appropriate Apple-style copy; all other languages fall back to English.
+    $("[data-testflight-copy]").forEach(function (el) {
+      el.textContent = lang === "nl" ? "Probeer de bèta via" : "Get the beta on";
+    });
+    $("[data-testflight-badge]").forEach(function (el) {
+      el.setAttribute("aria-label", lang === "nl" ? "Probeer de bèta via TestFlight" : "Get the beta on TestFlight");
+    });
     document.documentElement.dir = RTL.indexOf(lang) >= 0 ? "rtl" : "ltr";
     $$("[data-i18n]").forEach(function (el) { var v = t(el.getAttribute("data-i18n")); if (v) el.textContent = v; });
     $$("[data-i18n-content]").forEach(function (el) { var v = t(el.getAttribute("data-i18n-content")); if (v) el.setAttribute("content", v); });
